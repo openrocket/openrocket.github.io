@@ -46,3 +46,9 @@ body { background:#f7f7f7; }
     padding: 15px 0;
 }
 
+#posts h1 {
+    font-size:  1.0em;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
