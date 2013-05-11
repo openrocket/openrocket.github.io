@@ -1,0 +1,48 @@
+/* Sticky CSS Footer */
+html, body, .wrapper { height: 100%; margin: 0; padding: 0; }
+body > .wrapper { height: auto; min-height: 100%; }
+#content { padding-bottom: 300px; }
+#footer { clear: both; position: relative; z-index: 10; height: 150px; margin-top: -200px; }
+
+/* Subtle Shaded Background */
+body { background:#f7f7f7; }
+
+/* Header Style */
+#header {
+    height:78px;
+    background:#333;
+    color:#eee;
+    padding-top:7px;
+    padding-bottom: 7px;
+    border-top:4px solid #000;
+    box-shadow: 0 0 5px #777;
+}
+
+    #header h1 {
+        font-weight: 300;
+        font-size: 25px;
+        color: #e8e8e8;
+        margin-top: 0;
+        padding-top: 0;
+        text-shadow: 0 1px 2px #000;
+        float: left;
+    }
+
+    #header a {
+        color: #e8e8e8;
+    }
+
+    #header .tagline {
+        font-size: 13px;
+        padding-left: 1.0em;
+    }
+
+#content {
+    margin-top: 35px;
+}
+
+
+.navwell {
+    padding: 15px 0;
+}
+
