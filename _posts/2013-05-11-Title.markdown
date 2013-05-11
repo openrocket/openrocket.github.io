@@ -1,7 +1,18 @@
 ---
 layout: base
-name: post
-title: OpenRocket — an Open Source model rocket simulator
+title: OpenRocket 13.05 Released!
 ---
 
-# Release Notes
+# 13.05 Released!
+
+Major fixes:
+
+ - Added a thing
+ - And another
+
+<!-- bump -->
+
+## More things we might care about:
+
+ - other ideas
+ - notes

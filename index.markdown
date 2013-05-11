@@ -1,7 +1,6 @@
 ---
 layout: frontpage
 name: home
-permalink: /
 title: OpenRocket — an Open Source model rocket simulator
 ---
 
