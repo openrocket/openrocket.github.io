@@ -21,10 +21,13 @@
       <div class="well navwell">
        <ul class="nav nav-list">
         <li class="nav-header">OpenRocket</li>
-        <li class="active">
-          <a href="">Features and screenshots</a>
-        </li>
-        <li ><a href="">Download</a></li>
+
+        {% for link in site.navigation %}
+          <li {% if page.name == link.name %}class="active"{% endif %}>
+            <a href="{{ link.url }}">{{ link.text }}</a>
+          </li>
+        {% endfor %}
+
        </ul>
       </div>
      </div>
