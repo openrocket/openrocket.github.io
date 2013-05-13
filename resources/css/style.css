@@ -9,7 +9,7 @@ body { background:#f7f7f7; }
 
 /* Header Style */
 #header {
-    height:78px;
+    height:85px;
     background:#333;
     color:#eee;
     padding-top:7px;
@@ -35,6 +35,10 @@ body { background:#f7f7f7; }
     #header .tagline {
         font-size: 13px;
         padding-left: 1.0em;
+    }
+
+    #header .btn {
+        margin-top: 15px;
     }
 
 #content {
