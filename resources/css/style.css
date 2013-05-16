@@ -50,6 +50,15 @@ body { background:#f7f7f7; }
     padding: 15px 0;
 }
 
+
+.nav-list>.active>a, .nav-list>.active>a:hover, .nav-list>.active>a:focus {
+    background-color: #282;
+}
+
+.nav-list>li>a {
+    color: #282;
+}
+
 #posts h1 {
     font-size:  1.0em;
     display: inline;
