@@ -8,8 +8,10 @@ layout: base
 <ul id="posts">
     {% for post in site.posts %}
       <li>
-        <a href="{{ post.url }}">{{ post.date | date: "%Y-%m-%d" }}:</a>
-        <div class="excerpt">
+        <div class="span2 date">
+          <p><a href="{{ post.url }}">{{ post.date | date: "%Y-%m-%d" }}:</a></p>
+        </div>
+        <div class="span7 excerpt">
             {{ post.content | split: '<!-- bump -->' | first }}
         </div>
       </li>
