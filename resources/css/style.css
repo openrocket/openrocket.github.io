@@ -4,8 +4,10 @@ body > .wrapper { height: auto; min-height: 100%; }
 #content { padding-bottom: 300px; }
 #footer { clear: both; position: relative; z-index: 10; height: 150px; margin-top: -200px; }
 
-/* Subtle Shaded Background */
-body { background: #f2efe6; }
+body {
+    background: #f2efe6;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}
 
 /* Header Style */
 #header {
@@ -34,7 +36,6 @@ body { background: #f2efe6; }
 
     #header .tagline {
         font-size: 13px;
-        padding-left: 1.0em;
     }
 
     #header .btn {
@@ -45,12 +46,6 @@ body { background: #f2efe6; }
 #content {
     margin-top: 35px;
 }
-
-    #content p,
-    #content ul,
-    #content table {
-        font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-    }
 
     #content h1,
     #content h2,
@@ -86,7 +81,20 @@ body { background: #f2efe6; }
         margin-bottom: 1.333em;
     }
 
+    #content ol {
+        font-size: 1.1em;
+        margin-bottom: 1.333em;
+    }
 
+    #content li p {
+        margin: 0;
+        font-size: 1.1em;
+        line-height: 1em;
+    }
+
+ol>li>ol {
+    list-style-type: upper-alpha;
+}
 
 .navwell {
     padding: 15px 0;
@@ -103,6 +111,7 @@ body { background: #f2efe6; }
 
     #posts .excerpt {
         margin-left: 0;
+        margin-bottom: 13px;
     }
 
     #posts p {
