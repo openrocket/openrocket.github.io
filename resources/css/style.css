@@ -141,6 +141,7 @@ ol>li>ol {
 
     #slides .slidesjs-navigation {
       margin-top:3px;
+      font-size: 21px;
     }
 
     #slides .slidesjs-previous {
@@ -191,6 +192,25 @@ ol>li>ol {
 
     #slides a:hover,
     #slides a:active {
-      color: #9e2020
+      color: #08c;
+      text-decoration: none;
     }
 
+
+.features {}
+
+    .features div {
+        height: 64px;
+        padding: 10px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+
+    .features div img {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .features div p {
+        padding-top: 6px;
+    }
