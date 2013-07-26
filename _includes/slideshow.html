@@ -1,13 +1,21 @@
 <div class="slide-container">
   <div id="slides">
-    <img src="http://placehold.it/870x335" alt="An image">
-    <img src="http://placehold.it/870x335/cc22ff/ffffff" alt="An image">
   </div>
 </div>
+<!-- Add extra images in js, if no js support you see one staticly-->
+<script>
+    $(function() {
+        for (i in images) {
+            var img = "<img src='SRC' alt='ALT'>".replace("SRC", images[i][0]);
+            img = img.replace("ALT", images[i][1]);
+            $('#slides').append(img);
+        }
+    });
+</script>
 <!-- SlidesJS Required: Link to jquery.slides.js -->
 <script src="resources/js/jquery.slides.min.js"> </script>
 <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
-  <script>
+<script>
     $(function() {
       $('#slides').slidesjs({
         height: 335,
@@ -22,6 +30,5 @@
         }
       });
     });
-  </script>
-  <!-- End SlidesJS Required -->
-
+</script>
+<!-- End SlidesJS Required -->

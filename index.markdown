@@ -8,7 +8,14 @@ title: OpenRocket — an Open Source model rocket simulator
 
 **OpenRocket** is a free, fully featured model rocket simulator that allows you to design and simulate your rockets before actually building and flying them.
 
-{% include front_slideshow.html %}
+<script>
+    var images = [
+        ["http://placehold.it/870x335", "alt text grey"],
+        ["http://placehold.it/870x335/ff22cc/ffffff", "alt text magenta"],
+        ["http://placehold.it/870x335/cc22ff/ffffff", "alt text purple"]
+    ];
+</script>
+{% include slideshow.html %}
 
 The main features include:
 
