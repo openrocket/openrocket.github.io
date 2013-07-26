@@ -17,15 +17,10 @@ title: OpenRocket — an Open Source model rocket simulator
 </script>
 {% include slideshow.html %}
 
-The main features include:
+### Main Features
 
-{% include box.html param="test" %}
+{% include features-special.html %}
 
- - Six-degree-of-freedom flight simulation
- - Automatic design optimization
- - Realtime simulated altitude, velocity and acceleration display
- - Staging and clustering support
- - Cross-platform (Java-based)
 
 Read more about its [features and see screenshots](features).
 
