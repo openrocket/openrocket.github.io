@@ -10,8 +10,6 @@
             img = img.replace("ALT", images[i][1]);
             $('#slides').append(img);
         }
-        $('#slides').append("<a href="#" class="slidesjs-previous slidesjs-navigation">&laquo; </a>");
-        $('#slides').append("<a href="#" class="slidesjs-next slidesjs-navigation"> &raquo;</a>");
     });
 </script>
 <!-- SlidesJS Required: Link to jquery.slides.js -->
@@ -20,9 +18,7 @@
 <script>
     $(function() {
       $('#slides').slidesjs({
-        width: 870,
         height: 335,
-        navigation: false,
         play: {
           active: false,
           effect: "slide",

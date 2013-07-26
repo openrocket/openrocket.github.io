@@ -141,7 +141,6 @@ ol>li>ol {
 
     #slides .slidesjs-navigation {
       margin-top:3px;
-      font-size: 21px;
     }
 
     #slides .slidesjs-previous {
@@ -190,7 +189,8 @@ ol>li>ol {
       color: #333
     }
 
-    #slides a:hover {
-        color: #08a;
-        text-decoration: none;
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
     }
+
