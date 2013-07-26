@@ -5,7 +5,7 @@ body > .wrapper { height: auto; min-height: 100%; }
 #footer { clear: both; position: relative; z-index: 10; height: 150px; margin-top: -200px; }
 
 body {
-    background: #f2efe6;
+    background: #fff;
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 }
 
@@ -27,7 +27,7 @@ body {
         margin-top: 0;
         padding-top: 0;
         text-shadow: 0 1px 2px #000;
-        float: left;
+        display: inline;
     }
 
     #header a {
@@ -129,4 +129,12 @@ ol>li>ol {
         font-weight: bold;
         font-family: 'PT Sans', Helvetica, Arial, sans-serif;
         line-height: 1em;
+    }
+
+#slide-container {
+
+}
+
+    #slides {
+      display: none
     }

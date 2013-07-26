@@ -1,0 +1,27 @@
+<div class="slide-container">
+  <div id="slides">
+    <img src="http://placehold.it/870x335" alt="An image">
+    <img src="http://placehold.it/870x335/cc22ff/ffffff" alt="An image">
+  </div>
+</div>
+<!-- SlidesJS Required: Link to jquery.slides.js -->
+<script src="resources/js/jquery.slides.min.js"> </script>
+<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        height: 335,
+        play: {
+          active: false,
+          effect: "slide",
+          interval: 5000,
+          auto: true,
+          swap: false,
+          pauseOnHover: true,
+          restartDelay: 2500
+        }
+      });
+    });
+  </script>
+  <!-- End SlidesJS Required -->
+
