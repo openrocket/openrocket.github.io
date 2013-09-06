@@ -3,9 +3,11 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+  {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700|PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
-  <link href="resources/css/bootstrap.min.css" rel="stylesheet">
-  <link href="resources/css/style.css" rel="stylesheet">
+  <link href="{{ relative }}resources/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ relative }}resources/css/style.css" rel="stylesheet">
 
   <!-- SlidesJS Required: Link to jQuery -->
   <script src="resources/js/jquery-1.10.2.min.js"></script>
@@ -16,7 +18,7 @@
  <div class="wrapper">
   <div id="header">
    <div class="container">
-    <h1><a href="/"><img src="resources/img/icon.png" width="75" /> OpenRocket</a>
+    <h1><a href="/"><img src="{{ relative }}resources/img/icon.png" width="75" /> OpenRocket</a>
         <span class="tagline"> an Open Source model rocket simulator</span>
     </h1>
     <a class="btn btn-success pull-right">Download!<br>OpenRocket-13.05.jar</a>
