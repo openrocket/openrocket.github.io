@@ -2,16 +2,16 @@ permalink: /news/:year-:month-:day/:title/
 
 navigation:
 - text: Home
-  url: /
+  url: ''
   name: home
 - text: Features and screenshots
-  url: /features
+  url: features
   name: features
 - text: Download
-  url: /download
+  url: download
   name: download
 - text: Documentation
-  url: /documentation
+  url: documentation
   name: documentation
 - text: Wiki
   url: http://sourceforge.net/apps/mediawiki/openrocket
@@ -20,11 +20,11 @@ navigation:
   url: http://openrocket.trans.free.fr/
   name: translations
 - text: Get Involved!
-  url: /collaborate
+  url: collaborate
   name: collaborate
 - text: Support/Mailing Lists/Contact
-  url: /contact
+  url: contact
   name: contact
 - text: License
-  url: /license
+  url: license
   name: license

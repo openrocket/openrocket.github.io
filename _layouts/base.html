@@ -34,7 +34,7 @@
 
         {% for link in site.navigation %}
           <li {% if page.name == link.name %}class="active"{% endif %}>
-            <a href="{{ link.url }}">{{ link.text }}</a>
+            <a href="{{ relative }}{{ link.url }}">{{ link.text }}</a>
           </li>
         {% endfor %}
 
