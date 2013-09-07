@@ -1,8 +1,8 @@
 /* Sticky CSS Footer */
 html, body, .wrapper { height: 100%; margin: 0; padding: 0; }
 body > .wrapper { height: auto; min-height: 100%; }
-#content { padding-bottom: 300px; }
-#footer { clear: both; position: relative; z-index: 10; height: 150px; margin-top: -200px; }
+#content { padding-bottom: 250px; }
+#footer { clear: both; position: relative; z-index: 10; height: 150px; margin-top: -150px; }
 
 body {
     background: #fff;
@@ -226,3 +226,13 @@ ol>li>ol {
     #content .gallery p {
         margin-bottom: 0;
     }
+
+
+#footer {
+    background: #ddd;
+    border-top: 1px solid #aaa;
+    color: #777;
+    font-size: 1.0em;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    padding-top: 60px;
+}
