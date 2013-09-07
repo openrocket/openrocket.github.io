@@ -34,7 +34,11 @@
 
         {% for link in site.navigation %}
           <li {% if page.name == link.name %}class="active"{% endif %}>
-            <a href="{{ relative }}{{ link.url }}">{{ link.text }}</a>
+            {% if link.url contains 'http://' %}
+              <a href="{{ link.url }}">{{ link.text }}</a>
+            {% else %}
+              <a href="{{ relative }}{{ link.url }}">{{ link.text }}</a>
+            {% endif %}
           </li>
         {% endfor %}
 
