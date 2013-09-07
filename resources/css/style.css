@@ -214,3 +214,15 @@ ol>li>ol {
     .features div p {
         padding-top: 6px;
     }
+
+.gallery {
+    font-size: 0.78em;
+}
+
+    .gallery .thumbnail {
+        margin-bottom: 1.4em;
+    }
+
+    #content .gallery p {
+        margin-bottom: 0;
+    }

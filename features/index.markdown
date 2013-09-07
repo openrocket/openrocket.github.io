@@ -4,6 +4,12 @@ name: features
 title: OpenRocket — Features and screenshots
 ---
 
+# Sceenshots
+
+{% include screenshots.html %}
+
+---
+
 # Features of OpenRocket
 
 ## Current features
