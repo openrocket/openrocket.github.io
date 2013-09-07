@@ -10,9 +10,9 @@ title: OpenRocket — an Open Source model rocket simulator
 
 <script>
     var images = [
-        ["resources/img/slideshow_1.png", "alt text grey"],
-        ["http://placehold.it/870x335/ff22cc/ffffff", "alt text magenta"],
-        ["http://placehold.it/870x335/cc22ff/ffffff", "alt text purple"]
+        ["screenshots/slideshow_1.png", "alt text grey"],
+        ["screenshots/slideshow_2.png", "alt text magenta"],
+        ["screenshots/slideshow_3.png", "alt text purple"]
     ];
 </script>
 {% include slideshow.html %}
