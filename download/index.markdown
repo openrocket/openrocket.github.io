@@ -6,12 +6,18 @@ title: OpenRocket — Download
 
 # Ready packages
 
-These are packages ready for use and are the recommended download for normal users. They are pre-packaged with motor thrust curves from thrustcurve.org.
+These are packages ready for use and are the recommended download for normal users. They are pre-packaged with motor thrust curves from [thrustcurve.org](http://www.thrustcurve.org/).
+
+<a href="http://sourceforge.net/donate/index.php?group_id=260357" class="pull-right">
+  <img src="../resources/img/project-support.jpg" width="88" height="32" alt="Support This Project">
+</a>
 
 OpenRocket requires **Java version 6** or later. The Sun Java Runtime is recommended.
 
 
 ## Desktop version
+
+{% include downloadbutton.html %}
 
 This is the latest version of the desktop version of OpenRocket. It contains the latest and greatest features, and runs on any system supporting Java.
 
@@ -20,7 +26,7 @@ OpenRocket can be started in most graphical environments (including Windows) by 
 From the command line OpenRocket can be started by `java -jar OpenRocket-13.05.jar`
 
 
-##Android version
+## Android version
 
 The Android version allows opening OpenRocket files, viewing simulations and motors. Later versions will allow running simulations as well.
 
@@ -29,10 +35,10 @@ The Android version is thanks to the fantastic work by Kevin Ruland.
 Installation:
 
  1. Go to Settings → Applications and check Unknown sources.
- 1. Download OpenRocket-Android-12.09.apk on your device and accept installation.
+ 1. Download [OpenRocket-Android-12.09.apk](https://sourceforge.net/projects/openrocket/files/openrocket/12.09/OpenRocket-Android-12.09.apk/download) on your device and accept installation.
 
 
-##Source code and older versions
+# Source code and older versions
 
 Source packages and older versions of OpenRocket are available in the SourceForge repository.
 

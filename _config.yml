@@ -28,3 +28,7 @@ navigation:
 - text: License
   url: license
   name: license
+
+release:
+  url: 'https://github.com/openrocket/openrocket/archive/release-13.09.zip'
+  name: 'release-13.09.zip'
