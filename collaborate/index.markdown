@@ -8,7 +8,7 @@ title: OpenRocket — Get Involved!
 
 OpenRocket is an Open Source project, meaning that the source code is freely available and anybody can help make the software better. The program is mainly developed by Sampo Niskanen in his free time. Help is very much appreciated. You don't even need coding skills, as there are other things to do as well.
 
-Below are a few suggestions of areas that would need help. If you'd like to participate, please join the development mailing list and introduce your ideas there.
+Below are a few suggestions of areas that would need help. If you'd like to participate, please [join the development mailing list](https://lists.sourceforge.net/lists/listinfo/openrocket-devel) and introduce your ideas there.
 
  - Java development
  - Aerodynamic computation methods
@@ -18,7 +18,7 @@ Below are a few suggestions of areas that would need help. If you'd like to part
 
 ## Java development
 
-Below are a few ideas about what kind of input developers can provide or features that could be implemented. For more information see the feature roadmap in the distribution TODO-file.
+Below are a few ideas about what kind of input developers can provide or features that could be implemented. For more information see the feature roadmap in the distribution [TODO-file.](https://github.com/openrocket/openrocket/blob/master/core/TODO)
 
  - 3D visualization of the rocket during design and flight (Help needed!)
  - Printing of designs, simulation results, fin planforms etc
@@ -38,7 +38,7 @@ There is still work to be done in the aerodynamic computation methods of OpenRoc
 
 ## Documentation tasks
 
-Contributions to the OpenRocket User's guide are dearly needed. Below are examples of topics.
+Contributions to the [OpenRocket User's guide](http://wiki.openrocket.info/User%27s_Guide) are dearly needed. Below are examples of topics.
 
 _(Unfortunately the SourceForge wiki currently does not support public write access to the wiki. If you'd like to contribute, please contact me and I will provide you write access.)_
 
@@ -53,7 +53,7 @@ _(Unfortunately the SourceForge wiki currently does not support public write acc
 
 ## Other
 
- - Translating OpenRocket to your language
+ - [Translating OpenRocket](http://openrocket.trans.free.fr/) to your language
  - Creating good and interesting example designs that demonstrate some OpenRocket features.
  - Hosting a place to share rocket designs with other enthusiasts.
  - Giving input and suggestions on how to make OpenRocket better.
