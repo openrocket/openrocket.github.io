@@ -1,0 +1,238 @@
+/* Sticky CSS Footer */
+html, body, .wrapper { height: 100%; margin: 0; padding: 0; }
+body > .wrapper { height: auto; min-height: 100%; }
+#content { padding-bottom: 250px; }
+#footer { clear: both; position: relative; z-index: 10; height: 150px; margin-top: -150px; }
+
+body {
+    background: #fff;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}
+
+/* Header Style */
+#header {
+    height:85px;
+    background:#333;
+    color:#eee;
+    padding-top:7px;
+    padding-bottom: 7px;
+    border-top:4px solid #000;
+    box-shadow: 0 0 5px #777;
+}
+
+    #header h1 {
+        font-weight: 300;
+        font-size: 25px;
+        color: #e8e8e8;
+        margin-top: 0;
+        padding-top: 0;
+        text-shadow: 0 1px 2px #000;
+        display: inline;
+    }
+
+    #header a {
+        color: #e8e8e8;
+    }
+
+    #header .tagline {
+        font-size: 13px;
+    }
+
+    #header .btn {
+        margin-top: 15px;
+    }
+
+/* Content Style */
+#content {
+    margin-top: 35px;
+}
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4 {
+        font-family: Arvo, Helvetica, Arial, sans-serif;
+        font-weight: normal;
+    }
+
+    #content h1 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    #content h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    #content h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    #content p {
+        font-size: 1.25em;
+        line-height: 1.5em;
+        margin-bottom: 1.333em;
+    }
+
+    #content ul {
+        font-size: 1.1em;
+        margin-bottom: 1.333em;
+    }
+
+    #content ol {
+        font-size: 1.1em;
+        margin-bottom: 1.333em;
+    }
+
+    #content li p {
+        margin: 0;
+        font-size: 1.1em;
+        line-height: 1em;
+    }
+
+ol>li>ol {
+    list-style-type: upper-alpha;
+}
+
+.navwell {
+    padding: 15px 0;
+}
+
+#posts {
+    margin: 0;
+    list-style: none;
+}
+
+    #posts .date {
+        width: 100px;
+    }
+
+    #posts .excerpt {
+        margin-left: 0;
+        margin-bottom: 13px;
+    }
+
+    #posts p {
+        margin: 0;
+        padding: 0;
+        display: inline;
+        font-size: 1.1em;
+    }
+
+    #posts h1 {
+        margin: 0;
+        padding: 0;
+        display: inline;
+        font-size: 1.1em;
+        font-weight: bold;
+        font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+        line-height: 1em;
+    }
+
+#slide-container {
+
+}
+
+    #slides {
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:3px;
+      font-size: 21px;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(/resources/img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #08c;
+      text-decoration: none;
+    }
+
+
+.features {}
+
+    .features div {
+        height: 64px;
+        padding: 10px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+
+    .features div img {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .features div p {
+        padding-top: 6px;
+    }
+
+.gallery {
+    font-size: 0.78em;
+}
+
+    .gallery .thumbnail {
+        margin-bottom: 1.4em;
+    }
+
+    #content .gallery p {
+        margin-bottom: 0;
+    }
+
+
+#footer {
+    background: #ddd;
+    border-top: 1px solid #aaa;
+    color: #777;
+    font-size: 1.0em;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    padding-top: 60px;
+}

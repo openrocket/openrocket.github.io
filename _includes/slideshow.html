@@ -1,0 +1,38 @@
+<div class="slide-container">
+  <div id="slides">
+  </div>
+</div>
+<!-- Add extra images in js, if no js support you see one staticly-->
+<script>
+    $(function() {
+        for (i in images) {
+            var img = "<img src='SRC' alt='ALT'>".replace("SRC", images[i][0]);
+            img = img.replace("ALT", images[i][1]);
+            $('#slides').append(img);
+        }
+        $('#slides').append("<a href="#" class="slidesjs-previous slidesjs-navigation">&laquo; </a>");
+        $('#slides').append("<a href="#" class="slidesjs-next slidesjs-navigation"> &raquo;</a>");
+    });
+</script>
+<!-- SlidesJS Required: Link to jquery.slides.js -->
+<script src="resources/js/jquery.slides.min.js"> </script>
+<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 870,
+        height: 335,
+        navigation: false,
+        play: {
+          active: false,
+          effect: "slide",
+          interval: 5000,
+          auto: true,
+          swap: false,
+          pauseOnHover: true,
+          restartDelay: 2500
+        }
+      });
+    });
+</script>
+<!-- End SlidesJS Required -->

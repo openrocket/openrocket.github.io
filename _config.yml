@@ -1,0 +1,34 @@
+permalink: /news/:year-:month-:day/:title/
+
+navigation:
+- text: Home
+  url: ''
+  name: home
+- text: Features and screenshots
+  url: features
+  name: features
+- text: Download
+  url: download
+  name: download
+- text: Documentation
+  url: documentation
+  name: documentation
+- text: Wiki
+  url: http://sourceforge.net/apps/mediawiki/openrocket
+  name: wiki
+- text: Translations
+  url: http://openrocket.trans.free.fr/
+  name: translations
+- text: Get Involved!
+  url: collaborate
+  name: collaborate
+- text: Support/Mailing Lists/Contact
+  url: contact
+  name: contact
+- text: License
+  url: license
+  name: license
+
+release:
+  url: 'https://github.com/openrocket/openrocket/archive/release-13.09.zip'
+  name: 'release-13.09.zip'
