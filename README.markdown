@@ -17,7 +17,7 @@ Screenshots should be stored in the `screenshots` directory. Design and other he
 
 ### News
 
-To make a new News post, add a file under the `_posts` directory with the format `YYYY-MM-DD-title-goes-here.markdown`. Look at existing files to get the idea. The header of the file needs to be proper YAML Front Matter, again just copy the last post as a template. Please be verbose as you like. An except can be created by placing a new line with `&lt;!-- bump --&gt;` in the file. Only the content before the bump will show on the front page. The front page is automatically updated to reflect new posts. Just create the post and commit it!
+To make a new News post, add a file under the `_posts` directory with the format `YYYY-MM-DD-title-goes-here.markdown`. Look at existing files to get the idea. The header of the file needs to be proper YAML Front Matter, again just copy the last post as a template. Please be verbose as you like. An excerpt can be created by placing a new line with `<!-- bump -->` in the file. Only the content before the bump will show on the front page. The front page is automatically updated to reflect new posts. Just create the post and commit it!
 
 ### Release
 
