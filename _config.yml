@@ -32,5 +32,5 @@ navigation:
   name: license
 
 release:
-  url: 'https://github.com/openrocket/openrocket/archive/release-13.09.zip'
-  name: 'release-13.09.zip'
+  url: 'https://github.com/openrocket/openrocket/releases/tag/release-13.09.1'
+  name: 'OpenRocket 13.09.1'
