@@ -586,6 +586,10 @@ span.licenseimage {
     margin-top: 2px;
 }
 
+span.licenseimage img {
+  height: 20px;
+}
+
 .instructions {
   margin-left: 100px;
 }
