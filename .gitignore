@@ -1,0 +1,6 @@
+# Node Moduels - Installed and manged by npm
+node_modules
+
+# Vim Editor Files
+*.swp
+*.swo
