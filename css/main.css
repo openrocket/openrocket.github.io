@@ -1,3 +1,9 @@
 div.features h3 {
   font-size: 24px;
 }
+
+a.btn {
+  text-transform: none
+}
+
+body { padding-top: 70px }
