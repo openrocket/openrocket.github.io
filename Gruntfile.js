@@ -2,7 +2,7 @@ module.exports = function( grunt ) {
   grunt.initConfig({
     watch: {
       livereload: {
-        files: [ '*.html', 'css/*.css', 'js/*.js', 'img/*.{png,jpg,jpeg,gif,webp,svg}' ],
+        files: [ '_config.yml', 'Gruntfile.js', '*.html', 'css/*.css', 'js/*.js', 'img/*.{png,jpg,jpeg,gif,webp,svg}' ],
         options: { livereload: true }
       }
     },
@@ -10,7 +10,15 @@ module.exports = function( grunt ) {
       server: {
         options: {
           open: true,
-          livereload: true
+          livereload: true,
+          base: '_site'
+        }
+      }
+    },
+    jekyll: {
+      dist: {
+        options: {
+          config: '_config.yml'
         }
       }
     }
@@ -18,6 +26,7 @@ module.exports = function( grunt ) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-jekyll');
 
-  grunt.registerTask('default', ['connect:server', 'watch'] );
+  grunt.registerTask('default', ['jekyll', 'connect:server', 'watch'] );
 };
