@@ -2,7 +2,7 @@ module.exports = function( grunt ) {
   grunt.initConfig({
     watch: {
       livereload: {
-        files: [ '*.html', '*.css', '*.js', '*.{png,jpg,jpeg,gif,webp,svg}' ],
+        files: [ '*.html', 'css/*.css', 'js/*.js', 'img/*.{png,jpg,jpeg,gif,webp,svg}' ],
         options: { livereload: true }
       }
     },
