@@ -12,6 +12,7 @@ body {
 
 div.jumbotron {
   position: fixed;
+  top: 65px;
   width: 100%;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
@@ -30,4 +31,8 @@ body#landing-page a.navbar-brand {
 body#landing-page a.navbar-brand.opaque {
   opacity: 1;
   transition: opacity 1s ease 0s;
+}
+
+nav.navbar {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
