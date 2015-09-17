@@ -25,12 +25,12 @@ div.features, div.footer {
 
 body#landing-page a.navbar-brand {
   opacity: 0;
-  transition: opacity 1s ease 0s;
+  transition: opacity 2s ease 0s;
 }
 
-body#landing-page a.navbar-brand.opaque {
+body#landing-page a.navbar-brand.navbar-brand-opaque {
   opacity: 1;
-  transition: opacity 1s ease 0s;
+  transition: opacity 2s ease 0s;
 }
 
 nav.navbar {
