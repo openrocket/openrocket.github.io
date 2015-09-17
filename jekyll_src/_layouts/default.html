@@ -1,45 +1,13 @@
 <!doctype html>
 <html class="no-js" lang="">
   {% include head.html %}
-    <body id="landing-page">
+    <body {% if page.id %}id="{{ page.id }}"{% endif %}>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-<!-- Content -->
-  <!-- Header -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-          OpenRocket <i class="fa fa-globe"></i><i class="fa fa-rocket"></i>
-        </a>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Download <span class="sr-only">(current)</span></a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Docs <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">User Guide</a></li>
-              <li><a href="#">Developer Guide</a></li>
-              <li><a href="#">Rocketry Forum (Help & Support)</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Contribute</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- /Header -->
-
+{% include navbar.html %}
+<h1>{{ page.page_id }}</h1>
 {{ content }}
 
   <!-- Footer -->
