@@ -1,9 +1,13 @@
 module.exports = function( grunt ) {
   grunt.initConfig({
     watch: {
-      livereload: {
-        files: [ '_config.yml', 'Gruntfile.js', '*.html', 'css/*.css', 'js/*.js', 'img/*.{png,jpg,jpeg,gif,webp,svg}' ],
-        options: { livereload: true }
+      site: {
+        files: [ '_site/**' ],
+        options: { livereload: true },
+      },
+      jekyll: {
+        files: [ 'jekyll_src/**' ],
+        tasks: [ 'jekyll' ]
       }
     },
     connect: {

@@ -8,7 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://openrocket.info" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  openrocket 
-exclude: ['package.json', 'CNAME', 'node_modules', 'params.json', 'original']
+source: 'jekyll_src'
 defaults:
   -
     scope:
