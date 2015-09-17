@@ -21,3 +21,13 @@ div.features, div.footer {
   position: relative;
   top: 400px;
 }
+
+body#landing-page a.navbar-brand {
+  opacity: 0;
+  transition: opacity 1s ease 0s;
+}
+
+body#landing-page a.navbar-brand.opaque {
+  opacity: 1;
+  transition: opacity 1s ease 0s;
+}
