@@ -15,6 +15,11 @@ div.jumbotron {
   top: 65px;
   width: 100%;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  background-image: url('/img/starfield.jpg');
+}
+
+div.jumbotron, div.jumbotron h1 {
+  color: #fff;
 }
 
 div.features, div.footer {
