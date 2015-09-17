@@ -14,7 +14,6 @@ div.jumbotron {
   position: fixed;
   top: 65px;
   width: 100%;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
   background-image: url('/img/starfield.jpg');
 }
 
@@ -25,7 +24,7 @@ div.jumbotron, div.jumbotron h1 {
 div.features, div.footer {
   background: #ffffff;
   position: relative;
-  top: 400px;
+  top: 280px;
 }
 
 body#landing-page a.navbar-brand {
