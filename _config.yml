@@ -9,13 +9,13 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://openrocket.info" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  openrocket 
-source: 'jekyll_src'
 defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+exclude: ['CNAME', 'Gruntfile.js', 'node_modules', 'original', 'resources', 'params.json', 'package.json']
 
 # Build settings
 markdown: kramdown
