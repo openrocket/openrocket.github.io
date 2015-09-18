@@ -27,12 +27,12 @@ div.features, div.footer {
   top: 280px;
 }
 
-body#landing-page a.navbar-brand {
+body#landing-page a.navbar-brand, #navbar_download_button {
   opacity: 0;
   transition: opacity 2s ease 0s;
 }
 
-body#landing-page a.navbar-brand.navbar-brand-opaque {
+body#landing-page a.navbar-brand.navbar-visible-on-scroll, #navbar_download_button.navbar-visible-on-scroll {
   opacity: 1;
   transition: opacity 2s ease 0s;
 }
