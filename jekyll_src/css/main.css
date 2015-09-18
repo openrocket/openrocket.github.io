@@ -1,0 +1,42 @@
+div.features h3 {
+  font-size: 24px;
+}
+
+a.btn {
+  text-transform: none
+}
+
+body {
+  padding-top: 80px
+}
+
+div.jumbotron {
+  position: fixed;
+  top: 65px;
+  width: 100%;
+  background-image: url('/img/starfield.jpg');
+}
+
+div.jumbotron, div.jumbotron h1 {
+  color: #fff;
+}
+
+div.features, div.footer {
+  background: #ffffff;
+  position: relative;
+  top: 280px;
+}
+
+body#landing-page a.navbar-brand, #navbar_download_button {
+  opacity: 0;
+  transition: opacity 2s ease 0s;
+}
+
+body#landing-page a.navbar-brand.navbar-visible-on-scroll, #navbar_download_button.navbar-visible-on-scroll {
+  opacity: 1;
+  transition: opacity 2s ease 0s;
+}
+
+nav.navbar {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
