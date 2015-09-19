@@ -8,6 +8,10 @@ body {
   padding-top: 80px
 }
 
+div.footer p {
+  font-size: 8px;
+}
+
 div.jumbotron {
   position: fixed;
   top: 65px;
