@@ -6,7 +6,7 @@ module.exports = function( grunt ) {
         options: { livereload: true },
       },
       jekyll: {
-        files: [ 'jekyll_src/**' ],
+        files: [ '**/*.html', '**/*.js', '**/*.png', '**/*.svg', '_config.yml' ],
         tasks: [ 'jekyll' ]
       }
     },
