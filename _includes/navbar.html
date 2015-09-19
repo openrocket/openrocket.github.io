@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <a href="#" class="navbar-brand">
+      <a href="/index.html" class="navbar-brand">
         {% include openrocket.html %}
       </a>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -14,21 +14,28 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+
         <li>
           <p class="navbar-btn" id="navbar_download_button" style="padding-right: 10px;"> {% include download_button.html %} </p>
         </li>
+
+
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Docs <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Wiki</a></li>
-            <li><a href="#">Rocketry Forum (Help & Support)</a></li>
-            <li><a href="#">Release information</a></li>
-            <li><a href="#">Contribute</a></li>
 
+            <li><a href="http://wiki.openrocket.info/User%27s_Guide">User Guides (Wiki)</a></li>
+            <li><a href="http://wiki.openrocket.info/Main_Page">More Guides (Wiki)</a></li>
+            <li><a href="/documentation.html">Technical Guides</a></li>
+            <li><a href="release_notes.html">Release Notes</a></li>
           </ul>
         </li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Contribute</a></li>
+
+        <li><a href="http://www.rocketryforum.com/forumdisplay.php?36-Rocketry-Electronics-and-Software">Help & Support (Rocketry Forum)</a></li>
+        <li><a href="packages.html">Packages and Source Code</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contribute.html">Get Involved!</a></li>
       </ul>
     </div>
   </div>
