@@ -1,6 +1,6 @@
 # Site settings
 title: OpenRocket Simulator
-mantra: Building better rockets
+mantra: Build better rockets
 email: openrocket-devel@lists.sourceforge.net 
 description: > # this means to ignore newlines until "baseurl:"
   OpenRocket is a free, fully featured model rocket simulator that allows you to
