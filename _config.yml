@@ -9,6 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://openrocket.info" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  openrocket 
+current_version: 15.03
 defaults:
   -
     scope:

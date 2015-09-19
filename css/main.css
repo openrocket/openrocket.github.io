@@ -1,10 +1,8 @@
-div.features h3 {
-  font-size: 24px;
-}
-
 a.btn {
   text-transform: none
 }
+
+
 
 body {
   padding-top: 80px
@@ -21,18 +19,22 @@ div.jumbotron, div.jumbotron h1 {
   color: #fff;
 }
 
-div.features, div.footer {
+body#landing-page div.landing-features h3 {
+  font-size: 24px;
+}
+
+body#landing-page div.landing-features, body#landing-page div.footer {
   background: #ffffff;
   position: relative;
   top: 280px;
 }
 
-body#landing-page a.navbar-brand, #navbar_download_button {
+body#landing-page a.navbar-brand, body#landing-page #navbar_download_button {
   opacity: 0;
   transition: opacity 2s ease 0s;
 }
 
-body#landing-page a.navbar-brand.navbar-visible-on-scroll, #navbar_download_button.navbar-visible-on-scroll {
+body#landing-page a.navbar-brand.navbar-visible-on-scroll, body#landing-page #navbar_download_button.navbar-visible-on-scroll {
   opacity: 1;
   transition: opacity 2s ease 0s;
 }

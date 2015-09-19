@@ -1,0 +1,59 @@
+{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+
+<div class="gallery row">
+ <div class="col-xs-6">
+  <a class="thumbnail" href="{{ relative }}screenshots/main.png">
+   <img alt="Main interface" src="{{ relative }}screenshots/main.png" class="responsive">
+   <div class="caption">
+    <p>The main rocket design window is used to design the rocket and it also provides information about a flight simulation in real-time.</p>
+   </div>
+  </a>
+ </div>
+
+ <div class="col-xs-3">
+  <a class="thumbnail" href="{{ relative }}screenshots/dialog-edit.png">
+   <img alt="Main interface" src="{{ relative }}screenshots/dialog-edit.png" class="responsive">
+   <div class="caption">
+    <p>
+      The component shape and properties are defined in their own dialog.
+    </p>
+   </div>
+  </a>
+ </div>
+</div>
+<div class="gallery row">
+ <div class="col-xs-3">
+  <a class="thumbnail" href="{{ relative }}screenshots/dialog-analysis.png">
+   <img alt="Main interface" src="{{ relative }}screenshots/dialog-analysis.png" class="responsive">
+   <div class="caption">
+    <p>
+      You can analyze the effect of individual components on the stability, drag and roll characteristics of the rocket.
+    </p>
+   </div>
+  </a>
+ </div>
+
+ <div class="col-xs-3">
+  <a class="thumbnail" href="{{ relative }}screenshots/dialog-plot-options.png">
+   <img alt="Main interface" src="{{ relative }}screenshots/dialog-plot-options.png" class="responsive">
+   <div class="caption">
+    <p>
+      The simulation results can be plotted in a multitude of ways. You can either use the predefined plot configurations or define your own.
+    </p>
+   </div>
+  </a>
+ </div>
+
+ <div class="col-xs-3">
+  <a class="thumbnail" href="{{ relative }}screenshots/dialog-plot.png">
+   <img alt="Main interface" src="{{ relative }}screenshots/dialog-plot.png" class="responsive">
+   <div class="caption">
+    <p>
+      The simulations are plotted using the JFreeChart plotting library.
+    </p>
+   </div>
+  </a>
+ </div>
+
+</div>
