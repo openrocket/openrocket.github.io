@@ -4,7 +4,7 @@ a.btn {
 
 
 
-body {
+body#landing-page {
   padding-top: 80px
 }
 
@@ -13,10 +13,11 @@ div.footer p {
 }
 
 div.jumbotron {
-  position: fixed;
-  top: 65px;
+  position: relative;
+  top: -10px;
   width: 100%;
   background-image: url('/img/starfield.jpg');
+  background-attachment: fixed;
 }
 
 div.jumbotron, div.jumbotron h1 {
@@ -29,8 +30,6 @@ body#landing-page div.landing-features h3 {
 
 body#landing-page div.landing-features, body#landing-page div.footer {
   background: #ffffff;
-  position: relative;
-  top: 280px;
 }
 
 body#landing-page a.navbar-brand, body#landing-page #navbar_download_button {
