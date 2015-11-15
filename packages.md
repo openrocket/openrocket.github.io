@@ -11,12 +11,13 @@ id: packages
 
 {% include download_button.html %}
 
-This is the latest version of the desktop version of OpenRocket. It contains the latest and greatest features, and runs on any system supporting Java.
+This is the latest version of the desktop version of OpenRocket. It contains
+the latest and greatest features, and runs on any system supporting Java.
 
-OpenRocket can be started in most graphical environments (including Windows) by double-clicking the package icon. No installation is required.
+OpenRocket can be started in most graphical environments (including Windows) by
+double-clicking the package icon. No installation is required.
 
-From the command line OpenRocket can be started by `java -jar
-OpenRocket-15.03.jar`
+From the command line OpenRocket can be started by `java -jar OpenRocket-15.03.jar`
 
 
 ## Android version
