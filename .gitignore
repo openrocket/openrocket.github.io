@@ -1,0 +1,12 @@
+# Jekyll
+_site
+
+# Notes for the next commit message
+next_commit.md
+
+# Node Moduels - Installed and manged by npm
+node_modules
+
+# Vim Editor Files
+*.swp
+*.swo
