@@ -61,6 +61,5 @@ Below are a few major features that are under consideration:
  - Importing and plotting actual flight data from altimeters
  - Rocket flight animation
  - A "wizard" for creating new rocket designs
- - More ideas are listed in the [TODO-file](https://github.com/openrocket/openrocket/blob/master/core/TODO)!
 
 If you want to help make OpenRocket the best rocket simulator, don't hesitate to [Get involved](/contribute.html)!
