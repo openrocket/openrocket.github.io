@@ -10,3 +10,6 @@ node_modules
 # Vim Editor Files
 *.swp
 *.swo
+
+# macOS files
+.DS_Store
