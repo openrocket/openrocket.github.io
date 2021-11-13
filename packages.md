@@ -25,9 +25,15 @@ The Linux package is an AppImage.  Download it, make it executable
 and run it  
 `./OpenRocket-{{site.current_version}}.AppImage`  
 <a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.AppImage" role="button">Download OpenRocket-{{site.current_version}}.AppImage</a>
+
 ## Windows
-The Windows package is a Windows installer.  Download it and double
-click on the icon to start the installation process.  
+The Windows package is a Windows installer.  Download
+it and double click on the icon to start the installation process.
+The application uses a standard installer, but it doesn't (at present)
+provide a shortcut on the desktop or the start menu. After installing, the actual
+executable file for the application is installed into your user/AppData/Local/OpenRocket
+folder. So you can go in there, right click the "OpenRocket.exe" file, and create a shortcut,
+pin it to the taskbar and/or pin it in the start menu.  
 <a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.exe" role="button">Download OpenRocket-{{site.current_version}}.exe</a>
 
 ## .jar File
@@ -39,7 +45,7 @@ command line with
 You **must** use Java 8 (a really, really old version) for this to work.
 
 # Source code
-The source code can be downloaded as either a .zip file or a .tar.gz file
+The source code can be downloaded as either a .zip file or a .tar.gz file  
 <a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.zip" role="button">Download OpenRocket-{{site.current_version}}.zip</a>  
 <a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.tar.gz" role="button">Download OpenRocket-{{site.current_version}}.tar.gz</a>  
 
