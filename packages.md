@@ -46,8 +46,9 @@ You **must** use Java 8 (a really, really old version) for this to work.
 
 # Source code
 The source code can be downloaded as either a .zip file or a .tar.gz file  
-<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.zip" role="button">Download OpenRocket-{{site.current_version}}.zip</a>  
-<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.tar.gz" role="button">Download OpenRocket-{{site.current_version}}.tar.gz</a>  
+<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/archive/refs/tags/release-{{site.current_version}}.zip" role="button">Download release-{{site.current_version}}.zip</a>  
+<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/archive/refs/tags/release-{{site.current_version}}.tar.gz" role="button">Download release-{{site.current_version}}.tar.gz</a>  
+
 
 # Obtain from the Repository on github
 Finally, you can simply go to the source repository on GitHub  
