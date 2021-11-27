@@ -34,7 +34,7 @@ provide a shortcut on the desktop or the start menu. After installing, the actua
 executable file for the application is installed into your user/AppData/Local/OpenRocket
 folder. So you can go in there, right click the "OpenRocket.exe" file, and create a shortcut,
 pin it to the taskbar and/or pin it in the start menu.  
-<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.exe" role="button">Download OpenRocket-{{site.current_version}}.exe</a>
+<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}-installer.exe" role="button">Download OpenRocket-{{site.current_version}}-installer.exe</a>
 
 ## .jar File
 Again, we **strongly** recommend you use one of the packages described
