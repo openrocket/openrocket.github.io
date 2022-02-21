@@ -1,5 +1,7 @@
 # Jekyll
 _site
+.jekyll-cache
+Gemfile.lock
 
 # Notes for the next commit message
 next_commit.md
