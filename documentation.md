@@ -19,9 +19,8 @@ The technical documentation is licensed under a [Creative Commons Attribution-Sh
 
 ## install4j
 
-![install4j](img/install4j_logo.svg)
-
-Thanks to a generous license for open source projects, OpenRocket uses [install4j](https://www.ej-technologies.com/products/install4j/overview.html) to produce installers for Windows, macOS and Linux. 
+Thanks to a generous license for open source projects, OpenRocket uses
+the [install4j multi-platform installer builder](https://www.ej-technologies.com/products/install4j/overview.html) to produce installers for Windows, macOS and Linux. 
 
 <a href="https://www.ej-technologies.com/products/install4j/overview.html" role="button">
     <img alt="Download install4j" src="img/install4j_download_btn.png">
