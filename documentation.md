@@ -17,11 +17,16 @@ Master's thesis.
 
 The technical documentation is licensed under a [Creative Commons Attribution-ShareAlike License](http://creativecommons.org/licenses/by-sa/3.0/) while the Master's thesis is licensed under a [Attribution-NonCommercial-NoDerivs License](http://creativecommons.org/licenses/by-nd-nc/1.0/fi/deed.en).
 
-## Install4j
+## install4j
 
-![Install4j](img/install4j_logo.svg)
+![install4j](img/install4j_logo.svg)
 
-Thanks to a generous license for open source projects, OpenRocket uses [Install4j](https://www.ej-technologies.com/products/install4j/overview.html) to produce installers for Windows, macOS and Linux. 
+Thanks to a generous license for open source projects, OpenRocket uses [install4j](https://www.ej-technologies.com/products/install4j/overview.html) to produce installers for Windows, macOS and Linux. 
+
+<a href="https://www.ej-technologies.com/products/install4j/overview.html" role="button">
+    <img alt="Download install4j" src="img/install4j_download_btn.png">
+</a>
+
 
 ## Resources
 
