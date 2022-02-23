@@ -13,7 +13,7 @@ div.footer p {
 }
 
 div.jumbotron {
-  position: fixed;
+  position: absolute;
   top: 65px;
   width: 100%;
   background-image: url('/img/starfield.jpg');
