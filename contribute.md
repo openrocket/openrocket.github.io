@@ -40,7 +40,7 @@ There is still work to be done in the aerodynamic computation methods of OpenRoc
 
 ## Documentation tasks
 
-Contributions to the [OpenRocket User's guide](http://wiki.openrocket.info/User%27s_Guide) are dearly needed. Below are examples of topics.
+Contributions to the [OpenRocket User's guide](https://wiki.openrocket.info/User%27s_Guide) are dearly needed. Below are examples of topics.
 
  - Getting started guide
  - How to make staged and clustered designs
