@@ -4,7 +4,7 @@ id: contact
 title: OpenRocket — Support and contact information
 ---
 
-## Slack Workspace
+<h2 id="slack">Slack Workspace</h2>
 
 The most active communication channel is our Slack workspace, which you can join by clicking the link below.
 
