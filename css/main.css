@@ -5,7 +5,7 @@ a.btn {
 
 
 body#landing-page {
-  padding-top: 100px
+  padding-top: 145px
 }
 
 div.footer p {
@@ -17,6 +17,10 @@ div.jumbotron {
   top: 65px;
   width: 100%;
   background-image: url('/img/starfield.jpg');
+}
+
+div.jumbotron {
+  position: absolute;
 }
 
 div.jumbotron, div.jumbotron h1 {
