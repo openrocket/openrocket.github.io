@@ -55,3 +55,14 @@ Finally, you can simply go to the source repository on GitHub
 <a class="btn btn-success btn-lg" href="https://github.com/openrocket/openrocket" role="button">Fork me on GitHub</a>
   </div>
 </div>
+
+<hr/>
+
+## install4j
+
+Thanks to a generous license for open source projects, OpenRocket uses
+the [install4j multi-platform installer builder](https://www.ej-technologies.com/products/install4j/overview.html) to produce installers for Windows, macOS and Linux. 
+
+<a href="https://www.ej-technologies.com/products/install4j/overview.html" role="button">
+    <img alt="Download install4j" src="img/install4j_download_btn.png">
+</a>
