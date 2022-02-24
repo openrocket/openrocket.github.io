@@ -56,3 +56,20 @@ h2 a.a-no-format {
 nav.navbar {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
+
+.nav-button {
+  transition: background-color 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #eeeeee;
+  border-bottom: 2px solid #666666;
+}
+
+.nav-button > a {
+  border-bottom: none;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
