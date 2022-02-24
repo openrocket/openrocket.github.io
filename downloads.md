@@ -50,7 +50,7 @@ You **must** use Java 8 (a really, really old version) for this to work.
 
 <hr/>
 ## Beta release
-You can download OpenRocket beta 22.02.beta.01 [here](http://wiki.openrocket.info/Downloading_%26_Installing).
+You can download OpenRocket beta 22.02.beta.01 [here](https://wiki.openrocket.info/Downloading_%26_Installing).
 
 <hr/>
 
