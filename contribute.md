@@ -4,21 +4,22 @@ layout: interior-page
 id: contribute
 ---
 
-# How you can contribute to OpenRocket.
+# How you can contribute to OpenRocket 🚀
 
-OpenRocket is an Open Source project, meaning that the source code is freely available and anybody can help make the software better. The program is mainly developed by Sampo Niskanen in his free time. Help is very much appreciated. You don't even need coding skills, as there are other things to do as well.
+OpenRocket is an Open Source project, meaning that the source code is freely available and anybody can help make the software better. You don't even need coding skills, as there are other things to do as well.
 
-Below are a few suggestions of areas that would need help. If you'd like to participate, please [join the development mailing list](https://lists.sourceforge.net/lists/listinfo/openrocket-devel) and introduce your ideas there.
+Below are a few suggestions of areas that would need help. If you'd like to participate, you can send us a message [on Slack](contact.html#slack), file an issue for your suggestion [on GitHub](https://github.com/openrocket/openrocket/issues) or [join the development mailing list](https://lists.sourceforge.net/lists/listinfo/openrocket-devel) and introduce your ideas there.
 
  - Java development
  - Aerodynamic computation methods
  - Documentation
  - Other
 
+**To help you guide through the different roles of an OpenRocket contributer you can read [our contribution guidelines](https://github.com/openrocket/openrocket/blob/unstable/CONTRIBUTING.md).**
 
 ## Java development
 
-Below are a few ideas about what kind of input developers can provide or features that could be implemented. For more information see the feature roadmap in the distribution [TODO-file.](https://github.com/openrocket/openrocket/blob/master/core/TODO)
+Below are a few ideas about what kind of input developers can provide or features that could be implemented. For more information see the [GitHub issues page](https://github.com/openrocket/openrocket/issues) and feature roadmap in the distribution [TODO-file.](https://github.com/openrocket/openrocket/blob/master/core/TODO)
 
  - 3D visualization of the rocket during design and flight (Help needed!)
  - Printing of designs, simulation results, fin planforms etc
@@ -50,6 +51,9 @@ Contributions to the [OpenRocket User's guide](https://wiki.openrocket.info/User
  - Simulation method limitations
  - Using simulation listeners (including examples)
 
+## Testing
+
+Testers are both a developer's best friend and worst nightmare. They test new features and push OpenRocket to the limits to discover new bugs, or propose useful additions to the program. If you noticed anomalies in OpenRocket's behavior or have a cool idea, don't be afraid to create [an issue on our GitHub repository](https://github.com/openrocket/openrocket/issues/new/choose).
 
 ## Other
 

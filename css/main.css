@@ -43,6 +43,33 @@ body#landing-page a.navbar-brand.navbar-visible-on-scroll, body#landing-page #na
   transition: opacity 2s ease 0s;
 }
 
+div.contribute-home {
+  padding-top: 2px;
+  padding-bottom: 40px;
+}
+
+h2 a.a-no-format {
+  text-decoration:none;
+  color:inherit;
+}
+
 nav.navbar {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.nav-button {
+  transition: background-color 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #eeeeee;
+  border-bottom: 2px solid #666666;
+}
+
+.nav-button > a {
+  border-bottom: none;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
 }

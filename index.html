@@ -94,3 +94,10 @@ id: landing-page
 
 
 </div>
+
+<hr style="margin-top: 53px;"/>
+
+<div class="contribute-home">
+  {% capture my_include %}{% include contribute-home.md %}{% endcapture %}
+  {{ my_include | markdownify }}
+</div>
