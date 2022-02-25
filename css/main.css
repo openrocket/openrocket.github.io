@@ -5,7 +5,7 @@ a.btn {
 
 
 body#landing-page {
-  padding-top: 125px
+  padding-top: 135px
 }
 
 div.footer p {
@@ -14,7 +14,7 @@ div.footer p {
 
 div.jumbotron {
   position: absolute;
-  top: 65px;
+  top: 55px;
   width: 100%;
   background-image: url('/img/starfield.jpg');
 }
@@ -25,6 +25,21 @@ div.jumbotron {
 
 div.jumbotron, div.jumbotron h1 {
   color: #fff;
+}
+
+div.beta_download a {
+  color: rgb(233, 233, 233);
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+div.beta_download a:link a:active a:visited {
+  text-decoration: underline;
+}
+
+div.beta_download a:hover {
+  color: rgb(148, 198, 255);
+  text-decoration: underline;
 }
 
 body#landing-page div.landing-features h3 {
