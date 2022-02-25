@@ -72,6 +72,11 @@ h2 a.a-no-format {
   color:inherit;
 }
 
+h2 a.a-no-format:hover {
+  text-decoration: underline;
+  color:inherit;
+}
+
 nav.navbar {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
