@@ -48,31 +48,31 @@ command line with
 <a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.jar" role="button">Download OpenRocket-{{site.current_version}}.jar</a>  
 You **must** use Java 8 (a really, really old version) for this to work.
 
+### Source code
+The source code can be downloaded as either a .zip file or a .tar.gz file  
+<div><a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/archive/refs/tags/release-{{site.current_version}}.zip" role="button">Download release-{{site.current_version}}.zip</a>  
+<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/archive/refs/tags/release-{{site.current_version}}.tar.gz" role="button">Download release-{{site.current_version}}.tar.gz</a>  </div>
+
 <hr/>
+
 ## Beta release
 You can download OpenRocket beta 22.02.beta.01 [here](https://wiki.openrocket.info/Downloading_%26_Installing).
 
 <hr/>
 
-## Source code
-The source code can be downloaded as either a .zip file or a .tar.gz file  
-<div><a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/archive/refs/tags/release-{{site.current_version}}.zip" role="button">Download release-{{site.current_version}}.zip</a>  
-<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/archive/refs/tags/release-{{site.current_version}}.tar.gz" role="button">Download release-{{site.current_version}}.tar.gz</a>  </div>
 
-
-### Obtain from the Repository on github
+## Obtain from the Repository on github
 Finally, you can simply go to the source repository on GitHub  
 <a class="btn btn-success btn-lg" href="https://github.com/openrocket/openrocket" role="button">Fork me on GitHub</a>
-  </div>
-</div>
 
 <hr/>
 
 ## install4j
-
 Thanks to a generous license for open source projects, OpenRocket uses
 the [install4j multi-platform installer builder](https://www.ej-technologies.com/products/install4j/overview.html) to produce installers for Windows, macOS and Linux. 
 
 <a href="https://www.ej-technologies.com/products/install4j/overview.html" role="button">
     <img alt="Download install4j" src="img/install4j_download_btn.png">
 </a>
+
+</div>
