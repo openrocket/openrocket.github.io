@@ -5,9 +5,9 @@ This repository allows you to edit the content of the [openrocket.info](https://
 
 After Jekyll has successfully been installed, you can run a local version of openrocket.info by running:
 
-  `bundle install`
+  `bundle install` (you only have to run this once, when you first cloned the repo)
   
-  `bundle exec jekyll serve`
+  `bundle exec jekyll serve` (rerun this command to adopt changes to the code into your local site)
   
 from the openrocket.github.io root directory. You can then go to your browser and display the site on the URL `http://localhost:4000`.
 
