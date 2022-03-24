@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   OpenRocket is a free, fully featured model rocket simulator that allows you to
   design and simulate your rockets before actually building and flying them.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://openrocket.info" # the base hostname & protocol for your site
+url: "https://openrocket.info" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  openrocket 
 current_version: 15.03

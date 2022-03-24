@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/openrocket/openrocket.github.io/issues"
   },
-  "homepage": "http://openrocket.info",
+  "homepage": "https://openrocket.info",
   "devDependencies": {
     "connect-livereload": "^0.5.3",
     "grunt": "^0.4.5",
