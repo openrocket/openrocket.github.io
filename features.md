@@ -18,7 +18,7 @@ id: features
 
  - **Fully cross-platform**, written in Java
  - **Fully documented** [simulation methods](/documentation.html)
- - **Open Source**, source code available under the [GNU GPL](http://www.gnu.org/licenses/gpl-3.0.txt)
+ - **Open Source**, source code available under the [GNU GPL](https://www.gnu.org/licenses/gpl-3.0.txt)
 
 ### User interface
 

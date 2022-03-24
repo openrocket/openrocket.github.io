@@ -5,7 +5,7 @@ a.btn {
 
 
 body#landing-page {
-  padding-top: 80px
+  padding-top: 135px
 }
 
 div.footer p {
@@ -13,14 +13,33 @@ div.footer p {
 }
 
 div.jumbotron {
-  position: fixed;
-  top: 65px;
+  position: absolute;
+  top: 55px;
   width: 100%;
   background-image: url('/img/starfield.jpg');
 }
 
+div.jumbotron {
+  position: absolute;
+}
+
 div.jumbotron, div.jumbotron h1 {
   color: #fff;
+}
+
+div.beta_download a {
+  color: rgb(233, 233, 233);
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+div.beta_download a:link a:active a:visited {
+  text-decoration: underline;
+}
+
+div.beta_download a:hover {
+  color: rgb(148, 198, 255);
+  text-decoration: underline;
 }
 
 body#landing-page div.landing-features h3 {
@@ -43,6 +62,38 @@ body#landing-page a.navbar-brand.navbar-visible-on-scroll, body#landing-page #na
   transition: opacity 2s ease 0s;
 }
 
+div.contribute-home {
+  padding-top: 2px;
+  padding-bottom: 40px;
+}
+
+h2 a.a-no-format {
+  text-decoration:none;
+  color:inherit;
+}
+
+h2 a.a-no-format:hover {
+  text-decoration: underline;
+  color:inherit;
+}
+
 nav.navbar {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.nav-button {
+  transition: background-color 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #eeeeee;
+  border-bottom: 2px solid #666666;
+}
+
+.nav-button > a {
+  border-bottom: none;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
 }
