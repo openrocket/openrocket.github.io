@@ -16,6 +16,7 @@ the needed dependencies, including the correct version of Java.
     <button class="dropbtn dropbtn-light" id="dropbtn"></button>
     <div id="dropdown-content" class="dropdown-content">
       <a href="downloads.html?vers=22.02.beta.02">22.02.beta.02</a>
+      <a href="downloads.html?vers=22.02.beta.01">22.02.beta.01</a>
       <a href="downloads.html?vers=15.03">15.03</a>
     </div>
   </div>
