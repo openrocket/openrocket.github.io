@@ -36,7 +36,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Linux_22.02.beta.01/linux-1.png" alt="Installation Wizard Welcome" width="180">
+        <img src="downloads/instructions/img/Linux_22.02.beta.01/linux-1.png" alt="Installation Wizard Welcome" width="240">
       </td>
       <td>
         Click <strong>Next</strong> to start the installation process|
@@ -44,7 +44,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Linux_22.02.beta.01/linux-2.png" alt="Select Destination Directory" width="180">
+        <img src="downloads/instructions/img/Linux_22.02.beta.01/linux-2.png" alt="Select Destination Directory" width="240">
       </td>
       <td>
         Select the directory in which you wish to install OpenRocket. The
@@ -54,7 +54,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-	    <img src="downloads/instructions/img/Linux_22.02.beta.01/linux-3.png" alt="Enable File Association" width="180">
+	    <img src="downloads/instructions/img/Linux_22.02.beta.01/linux-3.png" alt="Enable File Association" width="240">
 	  </td>
       <td>
 	    If you wish to be able to double-click on a design file to
@@ -69,7 +69,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-	    <img src="downloads/instructions/img/Linux_22.02.beta.01/linux-4.png" alt="Installation Progress" width="180">
+	    <img src="downloads/instructions/img/Linux_22.02.beta.01/linux-4.png" alt="Installation Progress" width="240">
       </td>
       <td>
 	    As the OpenRocket application is installed, the installation
@@ -78,7 +78,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-	    <img src="downloads/instructions/img/Linux_22.02.beta.01/linux-5.png" alt="Final Prompt" width="180">
+	    <img src="downloads/instructions/img/Linux_22.02.beta.01/linux-5.png" alt="Final Prompt" width="240">
 	  </td>
       <td>
 	    After the installation has finished, the final prompt appears,
