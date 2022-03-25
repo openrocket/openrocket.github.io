@@ -15,6 +15,11 @@ function getConfigObj(version) {
     })
 }
 
+function selectDropdownVersion(version) {
+    let dropbtn = document.getElementById('dropbtn');
+    dropbtn.innerHTML = `${version}<i class="fa-solid fa-angle-down" style="margin-left: 15px;"></i>`
+}
+
 /**
  * Fills the download content of a specific OS
  * @param {string} version The targetted OpenRocket version
@@ -60,8 +65,11 @@ window.onload = function() {
     if ((typeof version === 'undefined') || (typeof configObj === 'undefined')) {
         var content = document.getElementById('downloads-content');
         content.style.display = 'none';
+        selectDropdownVersion('INVALID VERSION');
         return
     }
+
+    selectDropdownVersion(version);
 
     fillOSContent(version, configObj, 'Windows');
     fillOSContent(version, configObj, 'macOS');

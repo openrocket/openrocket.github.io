@@ -13,7 +13,7 @@ the needed dependencies, including the correct version of Java.
 <div>
   OpenRocket version: 
   <div class="dropdown" style="margin-left: 20px">
-    <button class="dropbtn dropbtn-light">15.03<i class="fa-solid fa-angle-down" style="margin-left: 15px;"></i></button>
+    <button class="dropbtn dropbtn-light" id="dropbtn"></button>
     <div id="dropdown-content" class="dropdown-content">
       <a href="downloads.html?vers=22.02.beta.02">22.02.beta.02</a>
       <a href="downloads.html?vers=15.03">15.03</a>
