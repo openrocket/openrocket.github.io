@@ -58,6 +58,17 @@ function fillOSContent(version, configObj, OSName) {
     instr.append(instrContent);
 }
 
+/**
+ * Fills in the necessary information in the source code buttons
+ * @param {string} version The targetted OpenRocket version
+ * @param {string} format The source code format ('zip' or 'tar.gz')
+ */
+function fillSourceCode(version, format) {
+    let elem = document.getElementById(`source-${format}`)
+    elem.href = `https://github.com/openrocket/openrocket/archive/refs/tags/release-${version}.${format}`;
+    elem.innerHTML = `Download release-${version}.${format}`;
+}
+
 window.onload = function() {
     const version = getVersion();
     let configObj = getConfigObj(version);
@@ -75,5 +86,8 @@ window.onload = function() {
     fillOSContent(version, configObj, 'macOS');
     fillOSContent(version, configObj, 'Linux');
     fillOSContent(version, configObj, 'JAR');
+
+    fillSourceCode(version, 'zip');
+    fillSourceCode(version, 'tar.gz');
 }
 

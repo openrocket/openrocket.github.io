@@ -52,40 +52,13 @@ the needed dependencies, including the correct version of Java.
   </div>
 </div>
 
-## Official Release
-
-### macOS
-{% include_relative downloads/instructions/macOS_15.03.md %}
-
-<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.dmg" role="button">Download OpenRocket-{{site.current_version}}.dmg</a>
-
-### Linux
-{% include_relative downloads/instructions/Linux_15.03.md %}
-
-<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.AppImage" role="button">Download OpenRocket-{{site.current_version}}.AppImage</a>
-
-### Windows
-{% include_relative downloads/instructions/Windows_15.03.md %}
-
-<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}-installer.exe" role="button">Download OpenRocket-{{site.current_version}}-installer.exe</a>
-
-### .jar File
-Again, we **strongly** recommend you use one of the packages described
-above.
-
-{% include_relative downloads/instructions/JAR_15.03.md %}
-
-<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.jar" role="button">Download OpenRocket-{{site.current_version}}.jar</a>  
-
 ### Source code
 The source code can be downloaded as either a .zip file or a .tar.gz file  
-<div><a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/archive/refs/tags/release-{{site.current_version}}.zip" role="button">Download release-{{site.current_version}}.zip</a>  
-<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/archive/refs/tags/release-{{site.current_version}}.tar.gz" role="button">Download release-{{site.current_version}}.tar.gz</a>  </div>
+<div>
+  <a id="source-zip" class="btn btn-primary btn-lg" role="button"></a>  
+  <a id="source-tar.gz" class="btn btn-primary btn-lg" role="button"></a>
+</div>
 
-<hr/>
-
-## Beta release
-You can download OpenRocket beta 22.02.beta.01 [here](https://wiki.openrocket.info/Downloading_%26_Installing).
 
 <hr/>
 
