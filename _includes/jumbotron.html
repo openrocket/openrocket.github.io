@@ -3,8 +3,25 @@
     <center>
     <h1>{% include openrocket.html %}</i></h1>
     <p>{{ site.mantra }}</p>
-    <div style="margin-top: 35px;">{% include download_button.html %} {% include other_os.html %}</div>
-    <p>{% include beta_download.html %}</p>
+    <div style="margin-top: 35px; margin-bottom: 15px;">
+      {% include download_button.html %}
+
+      <!-- Other OS dropdown -->
+      <div class="dropdown" style="margin-left: 20px;">
+        <button class="dropbtn dropbtn-dark">Other operating systems<i class="fa-solid fa-angle-down" style="margin-left: 15px;"></i></button>
+        <div class="dropdown-content">
+          <a href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}-installer.exe">Windows</a>
+          <a href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.dmg">macOS</a>
+          <a href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.AppImage">Linux</a>
+          <a href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.jar">JAR</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Beta download subtext -->
+    <div class="beta_download">
+      <a href="downloads.html?vers=22.02.beta.02">Download beta version 22.02.beta.02 here!</a>
+    </div>
     </center>
   </div>
 </div>

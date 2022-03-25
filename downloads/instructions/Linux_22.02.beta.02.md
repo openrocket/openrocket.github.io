@@ -1,16 +1,15 @@
----
-layout: interior-page
-title: Linux Installer
-permalink: linux_os.html
----
 <style>
-	code {color:black}
+	code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+  }
 	th, td {
 	  padding: 15px;
 	}
+  table {
+	  padding: 5px;
+	}
 </style>
-### 2022 Beta Release
-[<b>OpenRocket-22.02.beta.02 Installer for Linux</b>](https://github.com/openrocket/openrocket/releases/download/release-22.02.beta.02/OpenRocket-22.02.beta.02-Linux.sh )
 
 Download the Linux installer above for the <font
 color="red"><i>NEW</i></font> OpenRocket beta release, saying yes to
@@ -20,8 +19,8 @@ and run it.
 <html>
 <pre>
 <code>% cd Downloads</code> <em>(or wherever you downloaded it to)</em>
-<code>% chmod +x OpenRocket_unix_22_02_beta_01.sh
-% ./OpenRocket_unix_22_02_beta_01.sh```</code>
+<code>% chmod +x OpenRocket_unix_22_02_beta_02.sh
+% ./OpenRocket_unix_22_02_beta_02.sh```</code>
 </pre>
 </html>
 
@@ -29,7 +28,7 @@ The installer will now guide you through the process of installing
 OpenRocket on your system. At any step you can click '''Cancel''' to
 stop the process.
 <html>
-  <table class="left" style="width:840px; padding: 5px;">
+  <table class="left">
     <tr>
         <th style="text-align:center">
 		  What you see
@@ -40,7 +39,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-        <img src="/img/linux-1.png" alt="Installation Wizard Welcome" width="180">
+        <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-1.png" alt="Installation Wizard Welcome" width="240">
       </td>
       <td>
         Click <strong>Next</strong> to start the installation process|
@@ -48,7 +47,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-        <img src="/img/linux-2.png" alt="Select Destination Directory" width="180">
+        <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-2.png" alt="Select Destination Directory" width="240">
       </td>
       <td>
         Select the directory in which you wish to install OpenRocket. The
@@ -58,7 +57,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-	    <img src="/img/linux-3.png" alt="Enable File Association" width="180">
+	    <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-3.png" alt="Enable File Association" width="240">
 	  </td>
       <td>
 	    If you wish to be able to double-click on a design file to
@@ -73,7 +72,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-	    <img src="/img/linux-4.png" alt="Installation Progress" width="180">
+	    <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-4.png" alt="Installation Progress" width="240">
       </td>
       <td>
 	    As the OpenRocket application is installed, the installation
@@ -82,7 +81,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-	    <img src="/img/linux-5.png" alt="Final Prompt" width="180">
+	    <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-5.png" alt="Final Prompt" width="240">
 	  </td>
       <td>
 	    After the installation has finished, the final prompt appears,
@@ -96,17 +95,17 @@ stop the process.
 This process will have placed a number of files and directories in the
 installation directory. Three that will be of the most use to you are
 
-- **```OpenRocket```**\
+- **OpenRocket**\
   The OpenRocket executable.\
   You can run OpenRocket by giving the command\
   ```% ./OpenRocket```
   
-- **```'OpenRocket 22.02.beta.02.desktop'```**\
+- **OpenRocket 22.02.beta.02.desktop**\
   The OpenRocket desktop file.\
   As stated above, the installer isn't capable of actually creating the desktop icon at this time. You can create an OpenRocket desktop icon by copying this file to your desktop with\
   ```% cp 'OpenRocket 22.02.beta.02.desktop' ../Desktop```
 
-- **```uninstall```**\
+- **uninstall**\
   The uninstaller.\
   You can uninstall OpenRocket with the command\
   ```% ./uninstall```\
@@ -115,9 +114,3 @@ installation directory. Three that will be of the most use to you are
   ```% rm -r OpenRocket```
 
 You will also be able to run OpenRocket from your desktop's menu.  It will appear in the "Other" software category.
-
-### 2015 Version 15.03
-
-Before beginning, you will need to have the FUSE filesystem installed; most distributions have it installed by default. Download the AppImage file from the link below and run it by double-clicking, or from the command line.
-
-[OpenRocket 15.03 AppImage for Linux](https://github.com/openrocket/openrocket/releases/download/release-15.03/OpenRocket-15.03.AppImage)
