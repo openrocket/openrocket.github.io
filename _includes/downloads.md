@@ -1,52 +1,81 @@
----
-title: OpenRocket — Packages, Downloads and Source
-layout: interior-page
-id: downloads
----
-
-<div class="downloads">
-  <div class="container" markdown="1">
+Downloads
+=============
 
 OpenRocket is available as packages for Linux, macOS and Windows.  A .jar file
 is also available, as is all of the source code.
 
 For most users, we **strongly** recommend using the package
 appropriate for your operating system. These packages contain all of
-the needed dependencies, including the correct version of Java (Java 8).
+the needed dependencies, including the correct version of Java.
 
 <hr/>
+
+<div>
+  OpenRocket version: 
+  <div class="dropdown" style="margin-left: 20px">
+    <button class="dropbtn dropbtn-light">15.03<i class="fa-solid fa-angle-down" style="margin-left: 15px;"></i></button>
+    <div id="dropdown-content" class="dropdown-content">
+      <a href="downloads.html?vers=22.02.beta.02">22.02.beta.02</a>
+      <a href="downloads.html?vers=15.03">15.03</a>
+    </div>
+  </div>
+</div>
+
+<div id="downloads-content">
+  <div id="content-Windows">
+    <h3>Windows</h3>
+    <a class="btn btn-primary btn-lg" role="button"></a>
+    <button type="button" class="collapsible" style="margin-top: 15px">Show Windows installation instructions</button>
+    <div id="instructions-Windows" class="collapsible-content"></div>
+  </div>
+
+  <div id="content-macOS">
+    <h3>macOS</h3>
+    <a class="btn btn-primary btn-lg" role="button"></a>
+    <button type="button" class="collapsible" style="margin-top: 15px">Show macOS installation instructions</button>
+    <div id="instructions-macOS" class="collapsible-content"></div>
+  </div>
+
+  <div id="content-Linux">
+    <h3>Linux</h3>
+    <a class="btn btn-primary btn-lg" role="button"></a>
+    <button type="button" class="collapsible" style="margin-top: 15px">Show Linux installation instructions</button>
+    <div id="instructions-Linux" class="collapsible-content"></div>
+  </div>
+
+  <div id="content-JAR">
+    <h3>JAR</h3>
+    Again, we **strongly** recommend you use one of the packages described above.
+    <a class="btn btn-primary btn-lg" role="button"></a>
+    <button type="button" class="collapsible" style="margin-top: 15px">Show JAR installation instructions</button>
+    <div id="instructions-JAR" class="collapsible-content"></div>
+  </div>
+</div>
 
 ## Official Release
 
 ### macOS
-The macOS package is a .dmg file.  Download it, and drag it into your
-Applications folder.  
+{% include_relative downloads/instructions/macOS_15.03.md %}
+
 <a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.dmg" role="button">Download OpenRocket-{{site.current_version}}.dmg</a>
 
 ### Linux
-The Linux package is an AppImage.  Download it, make it executable  
-`chmod +x OpenRocket-{{site.current_version}}.AppImage`  
-and run it  
-`./OpenRocket-{{site.current_version}}.AppImage`  
+{% include_relative downloads/instructions/Linux_15.03.md %}
+
 <a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.AppImage" role="button">Download OpenRocket-{{site.current_version}}.AppImage</a>
 
 ### Windows
-The Windows package is a Windows installer.  Download
-it and double click on the icon to start the installation process.
-The application uses a standard installer, but it doesn't (at present)
-provide a shortcut on the desktop or the start menu. After installing, the actual
-executable file for the application is installed into your user/AppData/Local/OpenRocket
-folder. So you can go in there, right click the "OpenRocket.exe" file, and create a shortcut,
-pin it to the taskbar and/or pin it in the start menu.  
+{% include_relative downloads/instructions/Windows_15.03.md %}
+
 <a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}-installer.exe" role="button">Download OpenRocket-{{site.current_version}}-installer.exe</a>
 
 ### .jar File
 Again, we **strongly** recommend you use one of the packages described
-above.  To use the .jar file, download it, and start it from the
-command line with  
-`java -jar OpenRocket-15.03.jar`  
+above.
+
+{% include_relative downloads/instructions/JAR_15.03.md %}
+
 <a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.jar" role="button">Download OpenRocket-{{site.current_version}}.jar</a>  
-You **must** use Java 8 (a really, really old version) for this to work.
 
 ### Source code
 The source code can be downloaded as either a .zip file or a .tar.gz file  
@@ -74,5 +103,3 @@ the [install4j multi-platform installer builder](https://www.ej-technologies.com
 <a href="https://www.ej-technologies.com/products/install4j/overview.html" role="button">
     <img alt="Download install4j" src="img/install4j_download_btn.png">
 </a>
-
-</div>
