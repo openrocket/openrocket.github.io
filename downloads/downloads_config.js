@@ -6,7 +6,7 @@ const downloads_config = [
         LinuxFile: "OpenRocket-22.02.beta.02.AppImage",
         LinuxInstr: "downloads/instructions/Linux_22.02.beta.01.md",
         WindowsFile: "OpenRocket-22.02.beta.02-installer.exe",
-        WindowsInstr: "downloads/instructions/Windows_22.02.beta.02.md",
+        WindowsInstr: "downloads/instructions/Windows_22.02.beta.01.md",
         JAR: "OpenRocket-22.02.beta.02.jar",
         JARInstr: "downloads/instructions/JAR_22.02.beta.01.md"
     },
