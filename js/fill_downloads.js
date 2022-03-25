@@ -15,6 +15,10 @@ function getConfigObj(version) {
     })
 }
 
+/**
+ * Sets the text of the dropdown button to the targetted version
+ * @param {string} version The targetted OpenRocket version
+ */
 function selectDropdownVersion(version) {
     let dropbtn = document.getElementById('dropbtn');
     dropbtn.innerHTML = `${version}<i class="fa-solid fa-angle-down" style="margin-left: 15px;"></i>`
