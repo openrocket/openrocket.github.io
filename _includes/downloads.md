@@ -10,7 +10,7 @@ the needed dependencies, including the correct version of Java.
 
 <hr/>
 
-<div>
+<div style="width: 100%;">
   OpenRocket version: 
   <div class="dropdown" style="margin-left: 20px">
     <button class="dropbtn dropbtn-light" id="dropbtn"></button>
@@ -19,6 +19,7 @@ the needed dependencies, including the correct version of Java.
       <a href="downloads.html?vers=15.03">15.03</a>
     </div>
   </div>
+  <div style="float: right;"><i>(You can view all the releases on our <a href="https://github.com/openrocket/openrocket/releases">GitHub page</a>)</i></div>
 </div>
 
 <div id="downloads-content">
