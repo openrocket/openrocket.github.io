@@ -19,8 +19,8 @@ and run it.
 <html>
 <pre>
 <code>% cd Downloads</code> <em>(or wherever you downloaded it to)</em>
-<code>% chmod +x OpenRocket_unix_22_02_beta_01.sh
-% ./OpenRocket_unix_22_02_beta_01.sh```</code>
+<code>% chmod +x OpenRocket_unix_22_02_beta_02.sh
+% ./OpenRocket_unix_22_02_beta_02.sh```</code>
 </pre>
 </html>
 
@@ -39,7 +39,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Linux_22.02.beta.01/linux-1.png" alt="Installation Wizard Welcome" width="240">
+        <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-1.png" alt="Installation Wizard Welcome" width="240">
       </td>
       <td>
         Click <strong>Next</strong> to start the installation process|
@@ -47,7 +47,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Linux_22.02.beta.01/linux-2.png" alt="Select Destination Directory" width="240">
+        <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-2.png" alt="Select Destination Directory" width="240">
       </td>
       <td>
         Select the directory in which you wish to install OpenRocket. The
@@ -57,7 +57,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-	    <img src="downloads/instructions/img/Linux_22.02.beta.01/linux-3.png" alt="Enable File Association" width="240">
+	    <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-3.png" alt="Enable File Association" width="240">
 	  </td>
       <td>
 	    If you wish to be able to double-click on a design file to
@@ -72,7 +72,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-	    <img src="downloads/instructions/img/Linux_22.02.beta.01/linux-4.png" alt="Installation Progress" width="240">
+	    <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-4.png" alt="Installation Progress" width="240">
       </td>
       <td>
 	    As the OpenRocket application is installed, the installation
@@ -81,7 +81,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-	    <img src="downloads/instructions/img/Linux_22.02.beta.01/linux-5.png" alt="Final Prompt" width="240">
+	    <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-5.png" alt="Final Prompt" width="240">
 	  </td>
       <td>
 	    After the installation has finished, the final prompt appears,
