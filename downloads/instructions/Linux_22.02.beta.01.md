@@ -6,6 +6,9 @@
 	th, td {
 	  padding: 15px;
 	}
+  table {
+	  padding: 5px;
+	}
 </style>
 
 Download the Linux installer above for the <font
@@ -25,7 +28,7 @@ The installer will now guide you through the process of installing
 OpenRocket on your system. At any step you can click '''Cancel''' to
 stop the process.
 <html>
-  <table class="left" style="width:840px; padding: 5px;">
+  <table class="left">
     <tr>
         <th style="text-align:center">
 		  What you see
