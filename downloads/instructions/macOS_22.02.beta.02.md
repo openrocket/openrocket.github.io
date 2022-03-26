@@ -41,7 +41,7 @@ Download the macOS installer above for the <font color="red"><i>NEW</i></font> O
 
 ### First Launch of OpenRocket
 
-Upon opening the OpenRocket application for the first time, you will get some security warnings. To let macOS know that OpenRocket is not a malicious software (trust us, it isn't), you will need to open it in a special way the first time. Normal ways of starting the application such as double clicking on it in Finder or launching it with Spotlight will not work for the first launch. To launch the application the first time, and tell macOS that you trust this application for future launnches, follow this process:
+Upon opening the OpenRocket application for the first time, you will get some security warnings. To let macOS know that OpenRocket is not a malicious software (trust us, it isn't), you will need to open it in a special way the first time. Normal ways of starting the application such as double clicking on it in Finder or launching it with Spotlight will not work for the first launch. To launch the application the first time, and tell macOS that you trust this application for future launches, follow this process:
 
 <html>
   <table class="left">
