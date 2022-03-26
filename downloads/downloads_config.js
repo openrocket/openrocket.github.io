@@ -1,11 +1,11 @@
 const downloads_config = [
     {
         name: "22.02.beta.02",
-        macOSFile: "OpenRocket-22.02.beta.02.dmg",
+        macOSFile: "OpenRocket-22.02.beta.02-macOS.dmg",
         macOSInstr: "downloads/instructions/macOS_22.02.beta.02.md",
-        LinuxFile: "OpenRocket-22.02.beta.02.AppImage",
+        LinuxFile: "OpenRocket-22.02.beta.02-Linux.sh",
         LinuxInstr: "downloads/instructions/Linux_22.02.beta.02.md",
-        WindowsFile: "OpenRocket-22.02.beta.02-installer.exe",
+        WindowsFile: "OpenRocket-22.02.beta.02-Windows.exe",
         WindowsInstr: "downloads/instructions/Windows_22.02.beta.02.md",
         JAR: "OpenRocket-22.02.beta.02.jar",
         JARInstr: "downloads/instructions/JAR_22.02.beta.02.md"
