@@ -1,3 +1,9 @@
+---
+title: Downloads
+layout: interior-page
+id: downloads
+---
+
 Downloads
 =============
 
@@ -77,3 +83,6 @@ the [install4j multi-platform installer builder](https://www.ej-technologies.com
 <a href="https://www.ej-technologies.com/products/install4j/overview.html" role="button">
     <img alt="Download install4j" src="img/install4j_download_btn.png">
 </a>
+
+<script type="text/javascript" src="downloads/downloads_config.js" defer></script>
+<script type="text/javascript" src="js/fill_downloads.js" defer></script>
