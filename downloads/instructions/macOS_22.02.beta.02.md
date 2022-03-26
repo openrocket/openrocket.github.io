@@ -33,7 +33,7 @@ Download the macOS installer above for the <font color="red"><i>NEW</i></font> O
         <img src="downloads/instructions/img/macOS_22.02.beta.02/01.Mounted_disk.gif" alt="Mounted installation disk image" width="320">
       </td>
       <td>
-       After mounting the installation disk, you will be greeted with this window. To install OpenRocket just simply drag and drop the 'OpenRocket 22.02.beta.02' app on the left to the Applications folder to the right. You're done!
+       After mounting the installation disk, you will be greeted with this window. To install OpenRocket just simply drag and drop the 'OpenRocket 22.02.beta.02' app on the left to the Applications folder to the right.
       </td>
     </tr>
   </table>
@@ -41,7 +41,7 @@ Download the macOS installer above for the <font color="red"><i>NEW</i></font> O
 
 ### First Launch of OpenRocket
 
-Upon opening the OpenRocket application for the first time, you will get some security warnings. To let macOS know that OpenRocket is not a malicious software (trust us, it isn't), do the following the first time you open the application:
+Upon opening the OpenRocket application for the first time, you will get some security warnings. To let macOS know that OpenRocket is not a malicious software (trust us, it isn't), you will need to open it in a special way the first time. Normal ways of starting the application such as double clicking on it in Finder or launching it with Spotlight will not work for the first launch. To launch the application the first time, and tell macOS that you trust this application for future launnches, follow this process:
 
 <html>
   <table class="left">
