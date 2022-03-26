@@ -51,7 +51,7 @@ Upon opening the OpenRocket application for the first time, you can get some sec
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/macOS_22.02.beta.02/02.security_1.png" alt="Mounted installation disk image" width="240">
+        <img src="downloads/instructions/img/macOS_22.02.beta.02/02.security_1.png" alt="Security Dialog warning about macOS being unable to check the application for maliciousness" width="240">
       </td>
       <td>
        If you get this pop-up, <strong>click the "OK" button</strong> in the security dialog.
@@ -59,7 +59,7 @@ Upon opening the OpenRocket application for the first time, you can get some sec
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/macOS_22.02.beta.02/03.security_2.png" alt="Mounted installation disk image" width="240">
+        <img src="downloads/instructions/img/macOS_22.02.beta.02/03.security_2.png" alt="System Preferences showing the Security & Privacy settings" width="240">
       </td>
       <td>
        Next, <strong>open System Preferences and select "Security & Privacy"</strong>, which will display the panel at left. <strong>At the bottom right, click the "Open Anyway" button</strong>.
@@ -67,7 +67,7 @@ Upon opening the OpenRocket application for the first time, you can get some sec
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/macOS_22.02.beta.02/04.security_3.png" alt="Mounted installation disk image" width="240">
+        <img src="downloads/instructions/img/macOS_22.02.beta.02/04.security_3.png" alt="Second security screen" width="240">
       </td>
       <td>
        Finally, open the OpenRocket application again and <strong>click the "Open" button in the security dialog</strong>
