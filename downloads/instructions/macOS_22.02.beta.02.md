@@ -54,7 +54,7 @@ Upon opening the OpenRocket application for the first time, you can get some sec
         <img src="downloads/instructions/img/macOS_22.02.beta.02/02.security_1.png" alt="Mounted installation disk image" width="240">
       </td>
       <td>
-       If you get this pop-up, <strong>double-click the "OK" button</strong> in the security dialog.
+       If you get this pop-up, <strong>click the "OK" button</strong> in the security dialog.
       </td>
     </tr>
     <tr>
