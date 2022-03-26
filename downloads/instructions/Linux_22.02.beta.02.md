@@ -20,7 +20,7 @@ and run it.
 <pre>
 <code>% cd Downloads</code> <em>(or wherever you downloaded it to)</em>
 <code>% chmod +x OpenRocket_unix_22_02_beta_02.sh
-% ./OpenRocket_unix_22_02_beta_02.sh```</code>
+% ./OpenRocket_unix_22_02_beta_02.sh</code>
 </pre>
 </html>
 
