@@ -19,8 +19,13 @@ and run it.
 <html>
 <pre>
 <code>% cd Downloads</code> <em>(or wherever you downloaded it to)</em>
+<<<<<<< HEAD:downloads/instructions/Linux_22.02.beta.03.md
 <code>% chmod +x OpenRocket-22.02.beta.03-Linux.sh
 % ./OpenRocket-22.02.beta.03-Linux.sh</code>
+=======
+<code>% chmod +x OpenRocket-22.02.beta.02-Linux.sh
+% ./OpenRocket-22.02.beta.02-Linux.sh</code>
+>>>>>>> 30ab440... Fix version text Linux instructions:downloads/instructions/Linux_22.02.beta.02.md
 </pre>
 </html>
 
