@@ -39,9 +39,9 @@ Download the macOS installer above for the <font color="red"><i>NEW</i></font> O
   </table>
 </html>
 
-### Dealing with OpenRocket app security warnings
+### First Launch of OpenRocket
 
-Upon opening the OpenRocket application for the first time, you can get some security warnings. To let macOS know that OpenRocket is not a malicious software (trust us, it isn't), do the following:
+Upon opening the OpenRocket application for the first time, you will get some security warnings. To let macOS know that OpenRocket is not a malicious software (trust us, it isn't), do the following the first time you open the application:
 
 <html>
   <table class="left">
@@ -51,26 +51,18 @@ Upon opening the OpenRocket application for the first time, you can get some sec
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/macOS_22.02.beta.02/02.security_1.png" alt="Security Dialog warning about macOS being unable to check the application for maliciousness" width="240">
+        <img src="downloads/instructions/img/macOS_22.02.beta.02/02.finder.png" alt="OpenRocket beta icon in finder window with options menu showing" width="240">
       </td>
       <td>
-       If you get this pop-up, <strong>click the "OK" button</strong> in the security dialog.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="downloads/instructions/img/macOS_22.02.beta.02/03.security_2.png" alt="System Preferences showing the Security & Privacy settings" width="240">
-      </td>
-      <td>
-       Next, <strong>open System Preferences and select "Security & Privacy"</strong>, which will display the panel at left. <strong>At the bottom right, click the "Open Anyway" button</strong>.
+       To open OpenRocket the first time <strong>right-click, command-click, or two finger click the application icon</strong> in finder to get it's options menu, <strong>select "Open"</strong> from the menu.
       </td>
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/macOS_22.02.beta.02/04.security_3.png" alt="Second security screen" width="240">
+        <img src="downloads/instructions/img/macOS_22.02.beta.02/04.security_3.png" alt="security screen" width="240">
       </td>
       <td>
-       Finally, open the OpenRocket application again and <strong>click the "Open" button in the security dialog</strong>
+       <strong>Click the "Open" button in the security dialog</strong>. This will tell macOS you trust this application, from now on you can just launch OpenRocket like you would any other application.
       </td>
     </tr>
   </table>
