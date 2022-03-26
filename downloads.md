@@ -4,9 +4,6 @@ layout: interior-page
 id: downloads
 ---
 
-Downloads
-=============
-
 OpenRocket is available as packages for Linux, macOS and Windows.  A .jar file
 is also available, as is all of the source code.
 
@@ -17,7 +14,7 @@ the needed dependencies, including the correct version of Java.
 <hr/>
 
 <div style="width: 100%;">
-  OpenRocket version: 
+  <h3 style="display: inline-block; color: #2196f3; margin-left: 20px;">OpenRocket version: </h3>
   <div class="dropdown" style="margin-left: 20px">
     <button class="dropbtn dropbtn-light" id="dropbtn"></button>
     <div id="dropdown-content" class="dropdown-content">
@@ -27,6 +24,11 @@ the needed dependencies, including the correct version of Java.
   </div>
   <div style="float: right;"><i>(You can view all the releases on our <a href="https://github.com/openrocket/openrocket/releases">GitHub page</a>)</i></div>
 </div>
+<div style="margin-left: 20px; margin-top: 3px;">
+  <strong>What's new?</strong> Check out the <a href="release_notes.html">release notes</a>.
+</div>
+
+<hr/>
 
 <div id="downloads-content">
   <div id="content-Windows">
@@ -70,8 +72,8 @@ The source code can be downloaded as either a .zip file or a .tar.gz file
 <hr/>
 
 
-## Obtain from the Repository on github
-Finally, you can simply go to the source repository on GitHub  
+## Obtain from the Repository on GitHub
+Finally, you can simply go to the source repository on GitHub. 
 <a class="btn btn-success btn-lg" href="https://github.com/openrocket/openrocket" role="button">Fork me on GitHub</a>
 
 <hr/>
