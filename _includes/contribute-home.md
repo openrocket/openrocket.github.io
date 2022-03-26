@@ -5,3 +5,5 @@
 </h2>
 
 OpenRocket is an open source program, which means you can help improve it! **Check out how you can contribute [here](contribute.html)**.
+
+Did you find an issue or have a feature request? [File an issue](https://github.com/openrocket/openrocket/issues/new/choose) on GitHub or [contact us](contact.html).

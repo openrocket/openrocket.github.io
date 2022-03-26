@@ -1,68 +1,79 @@
 ---
-title: OpenRocket — Packages, Downloads and Source
+title: Downloads
 layout: interior-page
 id: downloads
 ---
-
-<div class="downloads">
-  <div class="container" markdown="1">
 
 OpenRocket is available as packages for Linux, macOS and Windows.  A .jar file
 is also available, as is all of the source code.
 
 For most users, we **strongly** recommend using the package
 appropriate for your operating system. These packages contain all of
-the needed dependencies, including the correct version of Java (Java 8).
+the needed dependencies, including the correct version of Java.
 
 <hr/>
 
-## Official Release
+<div style="width: 100%;">
+  <h3 style="display: inline-block; color: #2196f3; margin-left: 20px;">OpenRocket version: </h3>
+  <div class="dropdown" style="margin-left: 20px">
+    <button class="dropbtn dropbtn-light" id="dropbtn"></button>
+    <div id="dropdown-content" class="dropdown-content">
+      <a href="downloads.html?vers=22.02.beta.02"><i>22.02.beta.02</i></a>
+      <a href="downloads.html?vers=15.03">15.03</a>
+    </div>
+  </div>
+  <div style="float: right;"><i>(You can view all the releases on our <a href="https://github.com/openrocket/openrocket/releases">GitHub page</a>)</i></div>
+</div>
+<div style="margin-left: 20px; margin-top: 3px;">
+  <strong>What's new?</strong> Check out the <a href="release_notes.html">release notes</a>.
+</div>
 
-### macOS
-The macOS package is a .dmg file.  Download it, and drag it into your
-Applications folder.  
-<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.dmg" role="button">Download OpenRocket-{{site.current_version}}.dmg</a>
+<hr/>
 
-### Linux
-The Linux package is an AppImage.  Download it, make it executable  
-`chmod +x OpenRocket-{{site.current_version}}.AppImage`  
-and run it  
-`./OpenRocket-{{site.current_version}}.AppImage`  
-<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.AppImage" role="button">Download OpenRocket-{{site.current_version}}.AppImage</a>
+<div id="downloads-content">
+  <div id="content-Windows">
+    <h3>Windows</h3>
+    <a class="btn btn-primary btn-lg" role="button"></a>
+    <button type="button" class="collapsible" style="margin-top: 15px">Show Windows installation instructions</button>
+    <div id="instructions-Windows" class="collapsible-content"></div>
+  </div>
 
-### Windows
-The Windows package is a Windows installer.  Download
-it and double click on the icon to start the installation process.
-The application uses a standard installer, but it doesn't (at present)
-provide a shortcut on the desktop or the start menu. After installing, the actual
-executable file for the application is installed into your user/AppData/Local/OpenRocket
-folder. So you can go in there, right click the "OpenRocket.exe" file, and create a shortcut,
-pin it to the taskbar and/or pin it in the start menu.  
-<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}-installer.exe" role="button">Download OpenRocket-{{site.current_version}}-installer.exe</a>
+  <div id="content-macOS">
+    <h3>macOS</h3>
+    <a class="btn btn-primary btn-lg" role="button"></a>
+    <button type="button" class="collapsible" style="margin-top: 15px">Show macOS installation instructions</button>
+    <div id="instructions-macOS" class="collapsible-content"></div>
+  </div>
 
-### .jar File
-Again, we **strongly** recommend you use one of the packages described
-above.  To use the .jar file, download it, and start it from the
-command line with  
-`java -jar OpenRocket-15.03.jar`  
-<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.jar" role="button">Download OpenRocket-{{site.current_version}}.jar</a>  
-You **must** use Java 8 (a really, really old version) for this to work.
+  <div id="content-Linux">
+    <h3>Linux</h3>
+    <a class="btn btn-primary btn-lg" role="button"></a>
+    <button type="button" class="collapsible" style="margin-top: 15px">Show Linux installation instructions</button>
+    <div id="instructions-Linux" class="collapsible-content"></div>
+  </div>
+
+  <div id="content-JAR">
+    <h3>JAR</h3>
+    Again, we **strongly** recommend you use one of the packages described above.
+    <a class="btn btn-primary btn-lg" role="button"></a>
+    <button type="button" class="collapsible" style="margin-top: 15px">Show JAR installation instructions</button>
+    <div id="instructions-JAR" class="collapsible-content"></div>
+  </div>
+</div>
 
 ### Source code
 The source code can be downloaded as either a .zip file or a .tar.gz file  
-<div><a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/archive/refs/tags/release-{{site.current_version}}.zip" role="button">Download release-{{site.current_version}}.zip</a>  
-<a class="btn btn-primary btn-lg" href="https://github.com/openrocket/openrocket/archive/refs/tags/release-{{site.current_version}}.tar.gz" role="button">Download release-{{site.current_version}}.tar.gz</a>  </div>
+<div>
+  <a id="source-zip" class="btn btn-primary btn-lg" role="button"></a>  
+  <a id="source-tar.gz" class="btn btn-primary btn-lg" role="button"></a>
+</div>
+
 
 <hr/>
 
-## Beta release
-You can download OpenRocket beta 22.02.beta.01 [here](https://wiki.openrocket.info/Downloading_%26_Installing).
 
-<hr/>
-
-
-## Obtain from the Repository on github
-Finally, you can simply go to the source repository on GitHub  
+## Obtain from the Repository on GitHub
+Finally, you can simply go to the source repository on GitHub. 
 <a class="btn btn-success btn-lg" href="https://github.com/openrocket/openrocket" role="button">Fork me on GitHub</a>
 
 <hr/>
@@ -75,4 +86,5 @@ the [install4j multi-platform installer builder](https://www.ej-technologies.com
     <img alt="Download install4j" src="img/install4j_download_btn.png">
 </a>
 
-</div>
+<script type="text/javascript" src="downloads/downloads_config.js" defer></script>
+<script type="text/javascript" src="js/fill_downloads.js" defer></script>
