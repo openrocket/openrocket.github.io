@@ -15,6 +15,10 @@ function getConfigObj(version) {
     })
 }
 
+function getLatestVersion() {
+    return downloads_config[0].name;
+}
+
 /**
  * Sets the text of the dropdown button to the targetted version
  * @param {string} version The targetted OpenRocket version
@@ -75,9 +79,15 @@ function fillSourceCode(version, format) {
 
 window.onload = function() {
     const version = getVersion();
+    
+    if ((typeof version === 'undefined') || ( version == null)) {
+        // Redirect to latest version
+        window.location.replace(`downloads.html?vers=${getLatestVersion()}`);
+    }
+
     let configObj = getConfigObj(version);
 
-    if ((typeof version === 'undefined') || (typeof configObj === 'undefined')) {
+    if ((typeof configObj === 'undefined') || (configObj == null)) {
         var content = document.getElementById('downloads-content');
         content.style.display = 'none';
         selectDropdownVersion('INVALID VERSION');
