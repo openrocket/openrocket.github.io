@@ -54,7 +54,7 @@ Upon opening the OpenRocket application for the first time, you will get some se
         <img src="downloads/instructions/img/macOS_22.02.beta.02/02.finder.png" alt="OpenRocket beta icon in finder window with options menu showing" width="240">
       </td>
       <td>
-       Locate the OpenRocket application in Finder in the Applications directory. To open OpenRocket the first time <strong>right-click, command-click, or two finger click the application icon</strong> in Finder to get the options menu for it, then <strong>select "Open"</strong> from the menu.
+       Locate the OpenRocket application in Finder in the Applications directory. To open OpenRocket the first time <strong>right-click, control-click, or two finger click the application icon</strong> in Finder to get the options menu for it, then <strong>select "Open"</strong> from the menu.
       </td>
     </tr>
     <tr>
