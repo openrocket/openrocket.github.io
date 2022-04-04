@@ -33,15 +33,15 @@ Download the macOS installer above for the <font color="red"><i>NEW</i></font> O
         <img src="downloads/instructions/img/macOS_22.02.beta.02/01.Mounted_disk.gif" alt="Mounted installation disk image" width="320">
       </td>
       <td>
-       After mounting the installation disk, you will be greeted with this window. To install OpenRocket just simply drag and drop the 'OpenRocket 22.02.beta.02' app on the left to the Applications folder to the right. You're done!
+       After mounting the installation disk, you will be greeted with this window. To install OpenRocket just simply drag and drop the 'OpenRocket 22.02.beta.02' app on the left to the Applications folder to the right.
       </td>
     </tr>
   </table>
 </html>
 
-### Dealing with OpenRocket app security warnings
+### First Launch of OpenRocket
 
-Upon opening the OpenRocket application for the first time, you can get some security warnings. To let macOS know that OpenRocket is not a malicious software (trust us, it isn't), do the following:
+Upon opening the OpenRocket application for the first time, you will get some security warnings. To let macOS know that OpenRocket is not a malicious software (trust us, it isn't), you will need to open it in a special way the first time. Normal ways of starting the application such as double clicking on it in Finder or launching it with Spotlight will not work for the first launch. To launch the application the first time, and tell macOS that you trust this application for future launches, follow this process:
 
 <html>
   <table class="left">
@@ -51,26 +51,18 @@ Upon opening the OpenRocket application for the first time, you can get some sec
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/macOS_22.02.beta.02/02.security_1.png" alt="Mounted installation disk image" width="240">
+        <img src="downloads/instructions/img/macOS_22.02.beta.02/02.finder.png" alt="OpenRocket beta icon in finder window with options menu showing" width="240">
       </td>
       <td>
-       If you get this pop-up, <strong>double-click the "OK" button</strong> in the security dialog.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="downloads/instructions/img/macOS_22.02.beta.02/03.security_2.png" alt="Mounted installation disk image" width="240">
-      </td>
-      <td>
-       Next, <strong>open System Preferences and select "Security & Privacy"</strong>, which will display the panel at left. <strong>At the bottom right, click the "Open Anyway" button</strong>.
+       Locate the OpenRocket application in Finder in the Applications directory. To open OpenRocket the first time <strong>right-click, control-click, or two finger click the application icon</strong> in Finder to get the options menu for it, then <strong>select "Open"</strong> from the menu.
       </td>
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/macOS_22.02.beta.02/04.security_3.png" alt="Mounted installation disk image" width="240">
+        <img src="downloads/instructions/img/macOS_22.02.beta.02/04.security_3.png" alt="security screen" width="240">
       </td>
       <td>
-       Finally, open the OpenRocket application again and <strong>click the "Open" button in the security dialog</strong>
+       <strong>Click the "Open" button in the security dialog</strong>. This will tell macOS you trust this application, from now on you can just launch OpenRocket like you would any other application.
       </td>
     </tr>
   </table>
