@@ -42,7 +42,7 @@ stop the process.
         <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-1.png" alt="Installation Wizard Welcome" width="240">
       </td>
       <td>
-        Click <strong>Next</strong> to start the installation process|
+        Click <strong>Next</strong> to start the installation process.
       </td>
     </tr>
     <tr>
