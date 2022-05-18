@@ -18,7 +18,7 @@ the needed dependencies, including the correct version of Java.
   <div class="dropdown" style="margin-left: 20px">
     <button class="dropbtn dropbtn-light" id="dropbtn"></button>
     <div id="dropdown-content" class="dropdown-content">
-      <a href="downloads.html?vers=22.02.beta.02"><i>22.02.beta.02</i></a>
+      <a href="downloads.html?vers=22.02.beta.03"><i>22.02.beta.03</i></a>
       <a href="downloads.html?vers=15.03">15.03</a>
     </div>
   </div>
@@ -59,17 +59,18 @@ the needed dependencies, including the correct version of Java.
     <button type="button" class="collapsible" style="margin-top: 15px">Show JAR installation instructions</button>
     <div id="instructions-JAR" class="collapsible-content"></div>
   </div>
+
+  <div id="content-source">
+    <h3>Source code</h3>
+    The source code can be downloaded as either a .zip file or a .tar.gz file  
+    <div>
+      <a id="source-zip" class="btn btn-primary btn-lg" role="button"></a>  
+      <a id="source-tar.gz" class="btn btn-primary btn-lg" role="button"></a>
+    </div>
+  </div>
+
+  <hr/>
 </div>
-
-### Source code
-The source code can be downloaded as either a .zip file or a .tar.gz file  
-<div>
-  <a id="source-zip" class="btn btn-primary btn-lg" role="button"></a>  
-  <a id="source-tar.gz" class="btn btn-primary btn-lg" role="button"></a>
-</div>
-
-
-<hr/>
 
 
 ## Obtain from the Repository on GitHub
