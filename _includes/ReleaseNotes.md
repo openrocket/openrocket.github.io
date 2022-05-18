@@ -37,7 +37,7 @@ Release Notes
 
 <h2>
   <a href="https://github.com/openrocket/openrocket/releases/tag/release-22.02.beta.03" class="a-no-format">
-     OpenRocket 22.02.beta.03 (2022-05-XX)
+     OpenRocket 22.02.beta.03 (2022-05-18)
   </a>
 </h2>
 
