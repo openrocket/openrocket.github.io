@@ -54,7 +54,7 @@ the needed dependencies, including the correct version of Java.
 
   <div id="content-JAR">
     <h3>JAR</h3>
-    Again, we **strongly** recommend you use one of the packages described above.
+    Again, we <b>strongly</b> recommend you use one of the packages described above.<br/>
     <a class="btn btn-primary btn-lg" role="button"></a>
     <button type="button" class="collapsible" style="margin-top: 15px">Show JAR installation instructions</button>
     <div id="instructions-JAR" class="collapsible-content"></div>
