@@ -19,8 +19,13 @@ and run it.
 <html>
 <pre>
 <code>% cd Downloads</code> <em>(or wherever you downloaded it to)</em>
+<<<<<<< HEAD:downloads/instructions/Linux_22.02.beta.03.md
+<code>% chmod +x OpenRocket-22.02.beta.03-Linux.sh
+% ./OpenRocket-22.02.beta.03-Linux.sh</code>
+=======
 <code>% chmod +x OpenRocket-22.02.beta.02-Linux.sh
 % ./OpenRocket-22.02.beta.02-Linux.sh</code>
+>>>>>>> 30ab440... Fix version text Linux instructions:downloads/instructions/Linux_22.02.beta.02.md
 </pre>
 </html>
 
@@ -42,7 +47,7 @@ stop the process.
         <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-1.png" alt="Installation Wizard Welcome" width="240">
       </td>
       <td>
-        Click <strong>Next</strong> to start the installation process|
+        Click <strong>Next</strong> to start the installation process.
       </td>
     </tr>
     <tr>
@@ -103,7 +108,7 @@ installation directory. Three that will be of the most use to you are
 - **OpenRocket 22.02.beta.02.desktop**\
   The OpenRocket desktop file.\
   As stated above, the installer isn't capable of actually creating the desktop icon at this time. You can create an OpenRocket desktop icon by copying this file to your desktop with\
-  ```% cp 'OpenRocket 22.02.beta.02.desktop' ../Desktop```
+  ```% cp 'OpenRocket 22.02.beta.03.desktop' ../Desktop```
 
 - **uninstall**\
   The uninstaller.\
