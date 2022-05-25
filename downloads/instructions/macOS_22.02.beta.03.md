@@ -15,12 +15,12 @@
 </style>
 
 ### Downloading the 2022 Beta Release
-
-Download the macOS installer above for the <font color="red"><i>NEW</i></font> OpenRocket beta release, saying yes to whatever security prompts your browser presents. Once the file is downloaded, open it up either using the browser's "Open" function, or double-click it in the Finder. This will mount the image and open up a window with the drag-and-drop installation window. Then follow the instructions below.
+Download the macOS installer above for the <font color="red"><i>NEW</i></font> OpenRocket beta release, saying yes to whatever security prompts your browser presents. Once the installer file is downloaded, follow the instructions below to install the OpenRocket application.
 
 *NOTE: these instructions and screenshots are for macOS Monterey, but any recent-vintage macOS should behave similarly.*
 
 ### Installing the 2022 Beta Release
+First, the .dmg installer file must be mounted. To do this, locate the downloaded file in Finder and double-click it or right-click it and select 'Open'. This will mount the image and pop up a window with the drag-and-drop installation window. Then follow the instructions below.
 
 <html>
   <table class="left">
@@ -33,7 +33,7 @@ Download the macOS installer above for the <font color="red"><i>NEW</i></font> O
         <img src="downloads/instructions/img/macOS_22.02.beta.02/01.Mounted_disk.gif" alt="Mounted installation disk image" width="320">
       </td>
       <td>
-       After mounting the installation disk, you will be greeted with this window. To install OpenRocket just simply drag and drop the 'OpenRocket 22.02.beta.02' app on the left to the Applications folder to the right.
+       After mounting the installation disk, you will be greeted with this window. To install OpenRocket just simply drag and drop the 'OpenRocket 22.02.beta.03' app on the left to the Applications folder to the right.
       </td>
     </tr>
   </table>
