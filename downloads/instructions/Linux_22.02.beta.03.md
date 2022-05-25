@@ -10,14 +10,18 @@
 	  padding: 5px;
 	}
 </style>
-Before you begin, close any instances of OpenRocket you may have
-running.
-	
+
+### Downloading the 2022 Beta Release	
 Download the Linux installer above for the <font
 color="red"><i>NEW</i></font> OpenRocket beta release, saying yes to
-whatever security prompts your browser presents. Then, navigate to the
-directory in which you downloaded the installer, make it executable,
-and run it.
+whatever security prompts your browser presents.
+
+### Installing the 2022 Beta Release
+Before you begin, close any instances of OpenRocket you may have
+running.
+
+Then, navigate to the directory in which you downloaded the installer,
+make it executable, and run it as follows:
 <html>
 <pre>
 <code>% cd Downloads</code> <em>(or wherever you downloaded it to)</em>
