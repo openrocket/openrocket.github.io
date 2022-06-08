@@ -11,21 +11,22 @@
 	}
 </style>
 
+### Downloading the 2022 Beta Release	
 Download the Linux installer above for the <font
 color="red"><i>NEW</i></font> OpenRocket beta release, saying yes to
-whatever security prompts your browser presents. Then, navigate to the
-directory in which you downloaded the installer, make it executable,
-and run it.
+whatever security prompts your browser presents.
+
+### Installing the 2022 Beta Release
+Before you begin, close any instances of OpenRocket you may have
+running.
+
+Then, navigate to the directory in which you downloaded the installer,
+make it executable, and run it as follows:
 <html>
 <pre>
 <code>% cd Downloads</code> <em>(or wherever you downloaded it to)</em>
-<<<<<<< HEAD:downloads/instructions/Linux_22.02.beta.03.md
 <code>% chmod +x OpenRocket-22.02.beta.03-Linux.sh
 % ./OpenRocket-22.02.beta.03-Linux.sh</code>
-=======
-<code>% chmod +x OpenRocket-22.02.beta.02-Linux.sh
-% ./OpenRocket-22.02.beta.02-Linux.sh</code>
->>>>>>> 30ab440... Fix version text Linux instructions:downloads/instructions/Linux_22.02.beta.02.md
 </pre>
 </html>
 
@@ -70,9 +71,10 @@ stop the process.
 		you wish to put an icon for OpenRocket on the desktop, leave
 		the second checkbox checked. Click <strong>Next</strong> to
 		continue. <em>Unfortunately, in this Beta release, the installer
-		isn't able to actually create the desktop icon. It won't hurt
-		anything to leave the box checked; instructions for creating a
-		desktop icon after OpenRocket is installed are below.</em>
+		isn't able to actually create the desktop icon nor the desired
+		file association. It won't hurt anything to leave the boxes
+		checked; instructions for creating a desktop icon after
+		OpenRocket is installed are below.</em>
       </td>
     </tr>
     <tr>
