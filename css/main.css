@@ -94,6 +94,18 @@ nav.navbar {
   border-bottom: none;
 }
 
+.donate-button {
+  background-color: rgb(70, 197, 94);
+  color: white;
+  margin-top: 13px;
+  margin-left: 2em;
+}
+
+.donate-button:hover {
+  background-color: rgb(63, 160, 80);
+  color: white;
+}
+
 .dropdown:hover .dropdown-menu{
   display: block;
 }
