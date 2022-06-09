@@ -94,6 +94,26 @@ nav.navbar {
   border-bottom: none;
 }
 
+.btn-green {
+  background-color: rgb(70, 197, 94);
+  color: white;
+}
+
+.btn-green:hover {
+  background-color: rgb(63, 160, 80);
+  color: white;
+}
+
+.donate-button {
+  margin-top: 13px;
+  margin-left: 2em;
+}
+
 .dropdown:hover .dropdown-menu{
   display: block;
+}
+
+#confetti-canvas {
+  position:absolute;
+  top:0;
 }
