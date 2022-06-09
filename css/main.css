@@ -114,6 +114,6 @@ nav.navbar {
 }
 
 #confetti-canvas {
-  position:absolute;
+  position:fixed;
   top:0;
 }
