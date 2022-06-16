@@ -12,6 +12,10 @@ div.footer p {
   font-size: 8px;
 }
 
+.jumbotron p {
+  font-weight: 4;
+}
+
 div.jumbotron {
   position: absolute;
   top: 55px;
