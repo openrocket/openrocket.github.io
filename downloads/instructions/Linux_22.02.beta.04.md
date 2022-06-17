@@ -45,7 +45,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-1.png" alt="Installation Wizard Welcome" width="240">
+        <img src="downloads/instructions/img/Linux_22.02.beta.04/linux-1.png" alt="Installation Wizard Welcome" width="240">
       </td>
       <td>
         Click <strong>Next</strong> to start the installation process.
@@ -53,7 +53,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-2.png" alt="Select Destination Directory" width="240">
+        <img src="downloads/instructions/img/Linux_22.02.beta.04/linux-2.png" alt="Select Destination Directory" width="240">
       </td>
       <td>
         Select the directory in which you wish to install OpenRocket. The
@@ -63,23 +63,25 @@ stop the process.
     </tr>
     <tr>
       <td>
-	    <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-3.png" alt="Enable File Association" width="240">
+	    <img src="downloads/instructions/img/Linux_22.02.beta.04/linux-3.png" alt="Enable File Association" width="240">
 	  </td>
       <td>
 	    If you wish to be able to double-click on a design file to
-		edit it with OpenRocket, leave the first checkbox checked. If
-		you wish to put an icon for OpenRocket on the desktop, leave
-		the second checkbox checked. Click <strong>Next</strong> to
-		continue. <em>Unfortunately, in this Beta release, the installer
-		isn't able to actually create the desktop icon nor the desired
-		file association. It won't hurt anything to leave the boxes
-		checked; instructions for creating a desktop icon after
-		OpenRocket is installed are below.</em>
+		edit it with OpenRocket, leave the checkbox checked. Click
+		<strong>Next</strong> to continue.
       </td>
     </tr>
+	<tr>
+		<td>
+			<img src="downloads/instructions/img/Linux_22.02.beta.04/linux-4.png" alt="Enable File Association" width="240">
+		</td>
+		<td>
+			If you wish to place an OpenRocket icon on your desktop,
+			leave the "Create a desktop icon" checkbox checked.  Click
+			<strong>Next</strong> to continue.
     <tr>
       <td>
-	    <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-4.png" alt="Installation Progress" width="240">
+	    <img src="downloads/instructions/img/Linux_22.02.beta.04/linux-5.png" alt="Installation Progress" width="240">
       </td>
       <td>
 	    As the OpenRocket application is installed, the installation
@@ -88,7 +90,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-	    <img src="downloads/instructions/img/Linux_22.02.beta.02/linux-5.png" alt="Final Prompt" width="240">
+	    <img src="downloads/instructions/img/Linux_22.02.beta.04/linux-6.png" alt="Final Prompt" width="240">
 	  </td>
       <td>
 	    After the installation has finished, the final prompt appears,
@@ -100,20 +102,13 @@ stop the process.
 </html>
 
 This process will have placed a number of files and directories in the
-installation directory. Three that will be of the most use to you are
+installation directory. Two that will be of the most use to you are
 
-- **OpenRocket**\
-  The OpenRocket executable.\
+- **OpenRocket**: the OpenRocket executable.\
   You can run OpenRocket by giving the command\
   ```% ./OpenRocket```
-  
-- **OpenRocket 22.02.beta.02.desktop**\
-  The OpenRocket desktop file.\
-  As stated above, the installer isn't capable of actually creating the desktop icon at this time. You can create an OpenRocket desktop icon by copying this file to your desktop with\
-  ```% cp 'OpenRocket 22.02.beta.04.desktop' ../Desktop```
 
-- **uninstall**\
-  The uninstaller.\
+- **uninstall**\: the uninstaller.\
   You can uninstall OpenRocket with the command\
   ```% ./uninstall```\
   Unfortunately, the uninstaller does not fully empty and delete the installation directory.  To do this, give the commands\
