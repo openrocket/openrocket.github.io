@@ -33,7 +33,7 @@ First, the .dmg installer file must be mounted. To do this, locate the downloade
         <img src="downloads/instructions/img/macOS_22.02.beta.02/01.Mounted_disk.gif" alt="Mounted installation disk image" width="320">
       </td>
       <td>
-       After mounting the installation disk, you will be greeted with this window. To install OpenRocket just simply drag and drop the 'OpenRocket 22.02.beta.03' app on the left to the Applications folder to the right.
+       After mounting the installation disk, you will be greeted with this window. To install OpenRocket just simply drag and drop the 'OpenRocket 22.02.beta.04' app on the left to the Applications folder to the right.
       </td>
     </tr>
   </table>
