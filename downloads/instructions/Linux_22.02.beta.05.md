@@ -25,8 +25,8 @@ make it executable, and run it as follows:
 <html>
 <pre>
 <code>% cd Downloads</code> <em>(or wherever you downloaded it to)</em>
-<code>% chmod +x OpenRocket-22.02.beta.04-Linux.sh
-% ./OpenRocket-22.02.beta.04-Linux.sh</code>
+<code>% chmod +x OpenRocket-22.02.beta.05-Linux.sh
+% ./OpenRocket-22.02.beta.05-Linux.sh</code>
 </pre>
 </html>
 

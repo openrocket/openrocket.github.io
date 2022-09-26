@@ -6,6 +6,6 @@
 </style>
 
 To use the .jar file, download it, and start it from the
-command line with: `java -jar OpenRocket-22.02.beta.04.jar`
+command line with: `java -jar OpenRocket-22.02.beta.05.jar`
 
 You **must** use Java 11 or Java 17 for this to work.
