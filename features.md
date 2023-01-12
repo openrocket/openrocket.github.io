@@ -17,8 +17,8 @@ id: features
 ### General
 
  - **Fully cross-platform**, written in Java
- - **Fully documented** [simulation methods](/documentation.html)
- - **Open Source**, source code available under the [GNU GPL](https://www.gnu.org/licenses/gpl-3.0.txt)
+ - **[Fully documented simulation methods](/documentation.html)**
+ - **Open Source** (see our [GitHub repository](https://github.com/openrocket/openrocket)), source code available under the [GNU GPL](https://www.gnu.org/licenses/gpl-3.0.txt)
 
 ### User interface
 
@@ -30,17 +30,18 @@ id: features
 ### Design
 
  - A multitude of available components to choose from
- - **Trapezoidal**, **elliptical** and **free-form** fins supported
+ - **Trapezoidal**, **elliptical**, **free-form** and **tube** fins supported
  - Support for **canted** fins (roll stabilization)
  - **Staging** and **clustering** support
+ - **Pods** support
  - Automatic calculation of component mass and CG based on shape and density
- - Ability to **override mass and CG** of components or stages separately
+ - Ability to **override mass, CG and CD** of components or stages separately
 
 ### Simulation and analysis
 
  - Full **six degree of freedom** simulation
  - Rocket stability computed using **extended Barrowman method**
- - **Automatic design optimizatio**n — you can optimize any number of rocket parameters for flight altitude, maximum velocity or a number of other values
+ - **Automatic design optimization** — you can optimize any number of rocket parameters for flight altitude, maximum velocity or a number of other values
  - Realistic wind modeling
  - Analysis of the **effect of separate components** on the stability, drag and roll characteristics of the rocket
  - **Fully configurable plotting**, with various preset configurations
