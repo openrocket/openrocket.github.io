@@ -31,6 +31,22 @@ div.jumbotron, div.jumbotron h1 {
   color: #fff;
 }
 
+.header {
+  overflow: auto;
+}
+
+.header img {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin-left: 10px;
+}
+
+.header h1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 div.beta_download a {
   color: rgb(233, 233, 233);
   font-size: 14px;
