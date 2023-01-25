@@ -34,21 +34,67 @@ function selectDropdownVersion(version) {
  * @param {JS object} configObj The configuration object for the targetted version
  * @param {string} OSName The OS to target
  */
-function fillOSContent(version, configObj, OSName) {
+function fillOSContent(version, configObj, OSName, ...architectures) {
     let content = document.getElementById(`content-${OSName}`);
+    let fillContent = document.getElementById(`fillContent-${OSName}`);
     let btn = content.getElementsByTagName('a')[0];
     let instr = document.getElementById(`instructions-${OSName}`);
 
+    // Check for architectures
+    let hasArchitectures = false;
+    if (architectures.length > 0) {
+        hasArchitectures = true;
+        for (let i=0; i < architectures.length; i++) {
+            const arch = architectures[i].replace(/\s/g, '');
+            // All architectures must be present in the configObj, otherwise hide the OS element
+            if (!configObj.hasOwnProperty(`${OSName}File_${arch}`)) {
+                hasArchitectures = false;
+                break;
+            }
+        }
+    }
+
     // Hide this OS element if there is no information about it in the configObj
-    if (!(configObj.hasOwnProperty(`${OSName}File`) && configObj.hasOwnProperty(`${OSName}Instr`))) {
+    if (!((configObj.hasOwnProperty(`${OSName}File`) || hasArchitectures) && configObj.hasOwnProperty(`${OSName}Instr`))) {
         content.style.display = 'none';
         return;
     }
 
-    // Update the download button content
-    const OSFile = configObj[`${OSName}File`];
-    btn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/${OSFile}`;
-    btn.innerHTML = `Download ${OSFile}`;
+    if (hasArchitectures) {
+        // Hide the default button
+        btn.style.display = 'none';
+
+        // Create a new button for each architecture
+        for (let i=0; i < architectures.length; i++) {
+            const arch = architectures[i].replace(/\s/g, '');
+            const archFile = configObj[`${OSName}File_${arch}`];
+
+            fillContent.style.position = "relative";
+
+            // Create label with architecture name
+            const archLabel = document.createElement('h5');
+            archLabel.style.display = 'inline-block';
+            archLabel.innerHTML = architectures[i];
+            fillContent.append(archLabel);
+
+            // Create a download button
+            const archBtn = document.createElement('a');
+            archBtn.className = "btn btn-primary btn-lg";
+            archBtn.style.display = 'inline-block';
+            archBtn.style.position = "absolute";
+            archBtn.style.left = "10em";
+            archBtn.role = "button";
+            archBtn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/${archFile}`;
+            archBtn.innerHTML = `Download ${archFile}`;
+            fillContent.append(archBtn);
+            fillContent.append(document.createElement('br'));
+        }
+    } else {
+        // Update the download button content
+        const OSFile = configObj[`${OSName}File`];
+        btn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/${OSFile}`;
+        btn.innerHTML = `Download ${OSFile}`;
+    }
 
     // Add the instructions
     const OSInstr = configObj[`${OSName}Instr`];
@@ -97,7 +143,7 @@ window.onload = function() {
     selectDropdownVersion(version);
 
     fillOSContent(version, configObj, 'Windows');
-    fillOSContent(version, configObj, 'macOS');
+    fillOSContent(version, configObj, 'macOS', "Intel", "Apple Silicon");
     fillOSContent(version, configObj, 'Linux');
     fillOSContent(version, configObj, 'JAR');
 

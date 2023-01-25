@@ -14,7 +14,7 @@
 	}
 </style>
 
-### Downloading the 2022 Beta Release
+### Downloading the 22.02 Release
 
 Download the Windows installer above for the <font color="red"><i>NEW</i></font> OpenRocket beta release, saying yes to whatever security prompts your browser presents. Then, double-click on or open the file to run the installer, much like other Windows installers.
 
@@ -68,7 +68,7 @@ While downloading the OpenRocket installer, you may see the following prompts:
 
 * Screenshots may vary with the Windows operating system version installed on your device; the screenshots shown above are those of Windows 11.
 
-### Installing the 2022 Beta Release
+### Installing the 22.02 Release
 
 After the OpenRocket installer is downloaded, OpenRocket may be installed by doing the following:
 
@@ -131,7 +131,7 @@ After the OpenRocket installer is downloaded, OpenRocket may be installed by doi
 
 * Screenshots may vary with the Windows operating system version installed on your device; the screenshots shown are those of Windows 11.
 
-### Windows 2022 Beta After Installation Checks
+### After Installation Checks
 
 *Contrary to what the installer states*, the 2022 Beta 2 installer **does not** provide a shortcut on the desktop, taskbar, or start menu. After running the installer, you may create a desktop shortcut by right-clicking on a blank area of the desktop, and then selecting **New &rarr; Shortcut** in the pop-up window. Within the *Create Shortcut* dialog box, on the *Browse* line, navigate to where the installer copied the files (typically "C:\Program&nbsp;Files\OpenRocket") and select "OpenRocket.exe" **NOT* "OpenRocket.jar", then **click "Okay" to move on**, <u>name the shortcut</u>, and **click "Finish"**.
 
