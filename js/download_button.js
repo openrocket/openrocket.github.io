@@ -22,6 +22,7 @@ function setDownloadTextByOS(btn) {
         btnText.innerHTML = btnInitText + " for Linux";
         btn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/OpenRocket-${version}.AppImage`;
     } else {
+        icon.className = "fa-brands fa-java";
         btnText.innerHTML = btnInitText + " as a JAR";
         btn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/OpenRocket-${version}.jar`;
     }

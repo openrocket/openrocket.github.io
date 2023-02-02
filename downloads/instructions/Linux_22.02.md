@@ -11,12 +11,12 @@
 	}
 </style>
 
-### Downloading the 2022 Beta Release	
+### Downloading the 22.02 Release	
 Download the Linux installer above for the <font
 color="red"><i>NEW</i></font> OpenRocket beta release, saying yes to
 whatever security prompts your browser presents.
 
-### Installing the 2022 Beta Release
+### Installing the 22.02 Release
 Before you begin, close any instances of OpenRocket you may have
 running.
 
@@ -25,8 +25,8 @@ make it executable, and run it as follows:
 <html>
 <pre>
 <code>% cd Downloads</code> <em>(or wherever you downloaded it to)</em>
-<code>% chmod +x OpenRocket-22.02.beta.05-Linux.sh
-% ./OpenRocket-22.02.beta.05-Linux.sh</code>
+<code>% chmod +x OpenRocket-22.02-Linux.sh
+% ./OpenRocket-22.02-Linux.sh</code>
 </pre>
 </html>
 
@@ -111,8 +111,8 @@ installation directory. Two that will be of the most use to you are
 - **uninstall**\: the uninstaller.\
   You can uninstall OpenRocket with the command\
   ```% ./uninstall```\
-  Unfortunately, the uninstaller does not fully empty and delete the installation directory.  To do this, give the commands\
+  Unfortunately, the uninstaller does not fully empty and delete the installation directory. To do this, give the commands\
   ```% cd ..```\
   ```% rm -r OpenRocket```
 
-You will also be able to run OpenRocket from your desktop's menu.  It will appear in the "Other" software category.
+You will also be able to run OpenRocket from your desktop's menu. It will appear in the "Other" software category.

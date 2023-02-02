@@ -14,12 +14,14 @@
 	}
 </style>
 
-### Downloading the 2022 Beta Release
+### Downloading the 22.02 Release
 Download the macOS installer above for the <font color="red"><i>NEW</i></font> OpenRocket beta release, saying yes to whatever security prompts your browser presents. Once the installer file is downloaded, follow the instructions below to install the OpenRocket application.
+
+<b style="color: red">Important note</b>: If you have an **Apple Silicon** processor in your Apple computer (e.g. a MacBook Pro **M1**), you should download the Apple Silicon installer. It installs a version of OpenRocket that is optimized for the Apple Silicon processor and will run much faster. If you have an **Intel** processor, you should download the Intel installer. 
 
 *NOTE: these instructions and screenshots are for macOS Monterey, but any recent-vintage macOS should behave similarly.*
 
-### Installing the 2022 Beta Release
+### Installing the 22.02 Release
 First, the .dmg installer file must be mounted. To do this, locate the downloaded file in Finder and double-click it or right-click it and select 'Open'. This will mount the image and pop up a window with the drag-and-drop installation window. Then follow the instructions below.
 
 <html>
