@@ -85,7 +85,7 @@ function fillOSContent(version, configObj, OSName, ...architectures) {
             archBtn.style.left = "10em";
             archBtn.role = "button";
             archBtn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/${archFile}`;
-            archBtn.innerHTML = `Download ${archFile}`;
+            archBtn.innerHTML = `<i class="fa-solid fa-download" style="margin-right: 1.5rem"></i>Download ${archFile}`;
             fillContent.append(archBtn);
             fillContent.append(document.createElement('br'));
         }
@@ -93,7 +93,7 @@ function fillOSContent(version, configObj, OSName, ...architectures) {
         // Update the download button content
         const OSFile = configObj[`${OSName}File`];
         btn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/${OSFile}`;
-        btn.innerHTML = `Download ${OSFile}`;
+        btn.innerHTML = `<i class="fa-solid fa-download" style="margin-right: 1.5rem"></i>Download ${OSFile}`;
     }
 
     // Add the instructions
@@ -120,7 +120,7 @@ function fillOSContent(version, configObj, OSName, ...architectures) {
 function fillSourceCode(version, format) {
     let elem = document.getElementById(`source-${format}`)
     elem.href = `https://github.com/openrocket/openrocket/archive/refs/tags/release-${version}.${format}`;
-    elem.innerHTML = `Download release-${version}.${format}`;
+    elem.innerHTML = `<i class="fa-solid fa-download" style="margin-right: 1.5rem"></i>Download release-${version}.${format}`;
 }
 
 window.onload = function() {

@@ -124,6 +124,14 @@ nav.navbar {
   color: white;
 }
 
+.downloads-os-title {
+  padding-top: 50px;
+}
+
+.separator-downloads {
+  margin-top: 40px;
+}
+
 .donate-button {
   margin-top: 13px;
   margin-left: 2em;
