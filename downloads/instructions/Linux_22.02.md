@@ -45,7 +45,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-        <a href="downloads/instructions/img/Linux_22.02/linux-1.png"><img src="downloads/instructions/img/Linux_22.02/linux-1.png" alt="Installation Wizard Welcome" width="240"></a>
+        <a href="downloads/instructions/img/Linux_22.02/linux-1.png" target="_blank" rel="noreferrer noopener"><img src="downloads/instructions/img/Linux_22.02/linux-1.png" alt="Installation Wizard Welcome" width="240"></a>
       </td>
       <td>
         Click <strong>Next</strong> to start the installation process.
@@ -53,7 +53,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-        <a href="downloads/instructions/img/Linux_22.02/linux-2.png"><img src="downloads/instructions/img/Linux_22.02/linux-2.png" alt="Select Destination Directory" width="240"></a>
+        <a href="downloads/instructions/img/Linux_22.02/linux-2.png" target="_blank" rel="noreferrer noopener"><img src="downloads/instructions/img/Linux_22.02/linux-2.png" alt="Select Destination Directory" width="240"></a>
       </td>
       <td>
         Select the directory in which you wish to install OpenRocket. The
@@ -63,7 +63,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-	    <a href="downloads/instructions/img/Linux_22.02/linux-3.png"><img src="downloads/instructions/img/Linux_22.02/linux-3.png" alt="Enable File Association" width="240"></a>
+	    <a href="downloads/instructions/img/Linux_22.02/linux-3.png" target="_blank" rel="noreferrer noopener"><img src="downloads/instructions/img/Linux_22.02/linux-3.png" alt="Enable File Association" width="240"></a>
 	  </td>
       <td>
 	    If you wish to be able to double-click on a design file to
@@ -73,7 +73,7 @@ stop the process.
     </tr>
 	<tr>
 		<td>
-			<a href="downloads/instructions/img/Linux_22.02/linux-4.png"><img src="downloads/instructions/img/Linux_22.02/linux-4.png" alt="Enable File Association" width="240"></a>
+			<a href="downloads/instructions/img/Linux_22.02/linux-4.png" target="_blank" rel="noreferrer noopener"><img src="downloads/instructions/img/Linux_22.02/linux-4.png" alt="Enable File Association" width="240"></a>
 		</td>
 		<td>
 			If you wish to place an OpenRocket icon on your desktop,
@@ -81,7 +81,7 @@ stop the process.
 			<strong>Next</strong> to continue.
     <tr>
       <td>
-	    <a href="downloads/instructions/img/Linux_22.02/linux-5.png"><img src="downloads/instructions/img/Linux_22.02/linux-5.png" alt="Installation Progress" width="240"></a>
+	    <a href="downloads/instructions/img/Linux_22.02/linux-5.png" target="_blank" rel="noreferrer noopener"><img src="downloads/instructions/img/Linux_22.02/linux-5.png" alt="Installation Progress" width="240"></a>
       </td>
       <td>
 	    As the OpenRocket application is installed, the installation
@@ -90,7 +90,7 @@ stop the process.
     </tr>
     <tr>
       <td>
-	    <a href="downloads/instructions/img/Linux_22.02/linux-6.png"><img src="downloads/instructions/img/Linux_22.02/linux-6.png" alt="Final Prompt" width="240"></a>
+	    <a href="downloads/instructions/img/Linux_22.02/linux-6.png" target="_blank" rel="noreferrer noopener"><img src="downloads/instructions/img/Linux_22.02/linux-6.png" alt="Final Prompt" width="240"></a>
 	  </td>
       <td>
 	    After the installation has finished, the final prompt appears,
@@ -138,7 +138,7 @@ directory as described above, there are four other ways to run it:
   Note: many desktops require you to "trust" an application launcher.
   If this is the case, you will now see a dialog similar to this one:
   
-  <a href="downloads/instructions/img/Linux_22.02/linux-7.png"><img src="downloads/instructions/img/Linux_22.02/linux-7.png" alt="Desktop Trust Dialog" width="240"></a>
+  <a href="downloads/instructions/img/Linux_22.02/linux-7.png" target="_blank" rel="noreferrer noopener"><img src="downloads/instructions/img/Linux_22.02/linux-7.png" alt="Desktop Trust Dialog" width="240"></a>
   
   (the image shows the dialog from XFCE 4.18).  You will need to
   authorize execution of the program in order for it to launch the
