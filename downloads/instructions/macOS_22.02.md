@@ -15,11 +15,11 @@
 </style>
 
 ### Downloading the 22.02 Release
-Download the macOS installer above for the <font color="red"><i>NEW</i></font> OpenRocket beta release, saying yes to whatever security prompts your browser presents. Once the installer file is downloaded, follow the instructions below to install the OpenRocket application.
+Download the macOS installer above, saying yes to whatever security prompts your browser presents. Once the installer file is downloaded, follow the instructions below to install the OpenRocket application.
 
 <b style="color: red">Important note</b>: If you have an **Apple Silicon** processor in your Apple computer (e.g. a MacBook Pro **M1**), you should download the Apple Silicon installer. It installs a version of OpenRocket that is optimized for the Apple Silicon processor and will run much faster. If you have an **Intel** processor, you should download the Intel installer. 
 
-*NOTE: these instructions and screenshots are for macOS Monterey, but any recent-vintage macOS should behave similarly.*
+*NOTE: these instructions and screenshots are for macOS Ventura, but any other (recent) macOS version should behave similarly.*
 
 ### Installing the 22.02 Release
 First, the .dmg installer file must be mounted. To do this, locate the downloaded file in Finder and double-click it or right-click it and select 'Open'. This will mount the image and pop up a window with the drag-and-drop installation window. Then follow the instructions below.
@@ -32,10 +32,10 @@ First, the .dmg installer file must be mounted. To do this, locate the downloade
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/macOS_22.02.beta.02/01.Mounted_disk.gif" alt="Mounted installation disk image" width="320">
+        <img src="downloads/instructions/img/macOS_22.02/01.Mounted_disk.gif" alt="Mounted installation disk image" width="320">
       </td>
       <td>
-       After mounting the installation disk, you will be greeted with this window. To install OpenRocket just simply drag and drop the 'OpenRocket 22.02.beta.05' app on the left to the Applications folder to the right.
+       After mounting the installation disk, you will be greeted with this window. To install OpenRocket just simply drag and drop the 'OpenRocket' app on the left to the Applications folder on the right.
       </td>
     </tr>
   </table>
@@ -43,7 +43,7 @@ First, the .dmg installer file must be mounted. To do this, locate the downloade
 
 ### First Launch of OpenRocket
 
-Upon opening the OpenRocket application for the first time, you will get some security warnings. To let macOS know that OpenRocket is not a malicious software (trust us, it isn't), you will need to open it in a special way the first time. Normal ways of starting the application such as double clicking on it in Finder or launching it with Spotlight will not work for the first launch. To launch the application the first time, and tell macOS that you trust this application for future launches, follow this process:
+Upon opening the OpenRocket application for the first time, you will get a security warning. The OpenRocket app is code-signed and is safe to install, but Apple still gives a small warning. To get rid of this warning, just click 'Open' and you will be greeted with the OpenRocket splash screen.
 
 <html>
   <table class="left">
@@ -53,18 +53,10 @@ Upon opening the OpenRocket application for the first time, you will get some se
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/macOS_22.02.beta.02/02.finder.png" alt="OpenRocket beta icon in finder window with options menu showing" width="240">
+        <img src="downloads/instructions/img/macOS_22.02/02.security_warning.png" alt="OpenRocket security warning" width="240">
       </td>
       <td>
-       Locate the OpenRocket application in Finder in the Applications directory. To open OpenRocket the first time <strong>right-click, control-click, or two finger click the application icon</strong> in Finder to get the options menu for it, then <strong>select "Open"</strong> from the menu.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="downloads/instructions/img/macOS_22.02.beta.02/04.security_3.png" alt="security screen" width="240">
-      </td>
-      <td>
-       <strong>Click the "Open" button in the security dialog</strong>. This will tell macOS you trust this application, from now on you can just launch OpenRocket like you would any other application.
+       Click "Open".
       </td>
     </tr>
   </table>
