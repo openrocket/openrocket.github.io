@@ -18,7 +18,7 @@
 
 Download the Windows installer above for the <font color="red"><i>NEW</i></font> OpenRocket beta release, saying yes to whatever security prompts your browser presents. Then, double-click on or open the file to run the installer, much like other Windows installers.
 
-While downloading the OpenRocket installer, you may see the following prompts:
+Although the Windows installer download file has signed with a Microsoft signing certificate for Java, it may take some time before Microsift recognizes the use of that certificate when downloading OpenRocket. Because of this, when downloading the OpenRocket installer, you may see cautionary prompts that require a response that may not be completely clear as to what needs to be done. Following is an example of these prompts when downloading the OpenRocket installer using the Microsoft Edge browser:
 <html>
   <table class="left">
     <tr>
@@ -27,7 +27,7 @@ While downloading the OpenRocket installer, you may see the following prompts:
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Windows_22.02.beta.02/01.Download.01.Security_Warning.png" alt="Download Security Warning" width="240">
+        <img src="downloads/instructions/img/Windows_22.02/2022-02.01.01.Download.Cannot_Scan.png" alt="Download Security Warning" width="340">
       </td>
       <td>
         When you begin downloading the installer, this prompt may appear.  If you wish to continue with the download, <strong>left-click on "DOWNLOAD ANYWAY" to start the installer download</strong>.
@@ -35,21 +35,29 @@ While downloading the OpenRocket installer, you may see the following prompts:
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Windows_22.02.beta.02/02.Download.02.01.Trusted_Warning.png" alt="Download Progress" width="240">
+        <img src="downloads/instructions/img/Windows_22.02/2022-02.01.02.Download.Save_As.png" alt="Save as" width="300">
       </td>
-      <td>Then, wait until the download stops.</td>
+      <td>Left-click "Save as", then select the folder where the download will be saved and left-click "Save".</td>
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Windows_22.02.beta.02/03.Download.02.02.Trust_Warning.png" alt="Trust Warning 1" width="240">	
+        <img src="downloads/instructions/img/Windows_22.02/2022-02.01.04.Download.More_Actions.png" alt="Trust Warning 2" width="300">	
       </td>
       <td>
-        After the download stops, this prompt may appear. If you wish to finish the download, <em>open the additional options by left-clicking on the three dots</em>. Then, <strong>left-click on "Keep" to save the OpenRocket installer</strong>.
+        This prompt may then appear.To continue, <strong>move your cursor to the warning</strong> and three dots will appear.
       </td>
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Windows_22.02.beta.02/04.Download.02.03.Trust_Warning.png" alt="Trust Warning 2" width="240">	
+        <img src="downloads/instructions/img/Windows_22.02/2022-02.01.05.Download.Keep.png" alt="Trust Warning 3" width="300">
+      </td>
+      <td>
+        If you wish to finish the download, <strong>open the additional options by left-clicking on the three dots</strong>. Then, <strong>left-click on "Keep" to save the OpenRocket installer</strong>.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="downloads/instructions/img/Windows_22.02/2022-02.01.06.Download.Affirm_Trust.png" alt="Trust Warning 4" width="240">
       </td>
       <td>
         Then, <em>Windows</em> wants you to be sure that you really want to keep the downloaded file. So, if you wish to keep the OpenRocket installer, then <strong>left-click the "Show more" option</strong>.
@@ -57,16 +65,24 @@ While downloading the OpenRocket installer, you may see the following prompts:
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Windows_22.02.beta.02/05.Download.02.04.Trust_Warning.png" alt="Trust Warning 3" width="240">
+        <img src="downloads/instructions/img/Windows_22.02/2022-02.01.07.Download.Keep_Anyway.png" alt="Trust Warning 5" width="240">
       </td>
       <td>
         When you do so, this prompt should appear. If you wish to finish saving the downloaded file, then <strong>left-click on "Keep anyway" to complete the process of saving the OpenRocket installer</strong>.
       </td>
     </tr>
+    <tr>
+      <td>
+        <img src="downloads/instructions/img/Windows_22.02/2022-02.01.08.Download.Open_File.png" alt="Trust Warning 6" width="300">
+      </td>
+      <td>
+        Wait for the OpenRocket installer to download, then left-click "Open" to run the installer.
+      </td>
+    </tr>
   </table>
 </html>
 
-* Screenshots may vary with the Windows operating system version installed on your device; the screenshots shown above are those of Windows 11.
+*Screenshots may vary with the Windows operating system version installed on your device; the screenshots shown above are those of Windows 11.*
 
 ### Installing the 22.02 Release
 
@@ -80,31 +96,31 @@ After the OpenRocket installer is downloaded, OpenRocket may be installed by doi
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Windows_22.02.beta.02/Install_Windows_Prompt_01.png" alt="Install Prompt 1" width="240">
+        <img src="downloads/instructions/img/Windows_22.02/2022-02.02.01.Install.Status_Bar.png" alt="Install Prompt 1" width="330">
 	  </td>
       <td>
-	    <strong>Double-left-click on or open the installation file to run the installer</strong> (to start the <em>instal4j</em> installation wizard), displaying the progress of the installation wizard setup.
+	    As the installer opens, a status bar appears. Wait until the temporary files have been installed, after which the next installation screen will appear. Then, allow the installer to make changes to your device.
 	  </td>
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Windows_22.02.beta.02/Install_Windows_Prompt_02.png" alt="Make Changes Prompt" width="240">
+        <img src="downloads/instructions/img/Windows_22.02/2022-02.02.02.Install.Setup_Next.png" alt="Make Changes Prompt" width="330">
       </td>
       <td>
-        After the wizard setup is complete, a warning screen will appear asking for your permission to allow this application to make changes to your device. To continue with the installation, <strong>left-click on the "Yes" button</strong>.
+        Left-click <strong>"Next"</strong>.
 	</td>
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Windows_22.02.beta.02/Install_Windows_Prompt_03.png" alt="Welcome Screen" width="240">
+        <img src="downloads/instructions/img/Windows_22.02/2022-02.02.03.Install.Select_Directory.png" alt="Welcome Screen" width="330">
       </td>
       <td>
-        The <em>Welcome</em> screen for the OpenRocket installation will then appear, giving you the option of choosing a different directory in which to save the OpenRocket files. <u>Unless you are familiar with directory structures</u>, you should <strong>leave "Yes..." selected and left-click the "Next" button</strong>.
+       You can choose a different directory in which to save the OpenRocket files. <u>Unless you are familiar with directory structures</u>, you should leave this unchanged. If you have a previous installation of OpenRocket and the dialog prompts you whether you want to update the existing installation, or install the new program in a different directory, choose either one to your desire.<br><br>Click <strong>"Next"</strong>.
       </td>
     </tr>
     <tr>
       <td>
-	    <img src="downloads/instructions/img/Windows_22.02.beta.02/Install_Windows_Prompt_04.png" alt="File Extension Associations" width="240">
+	    <img src="downloads/instructions/img/Windows_22.02/2022-02.02.04.Install.Extension_Association.png" alt="File Extension Associations" width="330">
       </td>
       <td>
         The next step is to set the file extension associations. The "OpenRocket Rocket Files (*ork)" box should already be checked, so, <u>unless you want to change the file associations</u>, you can just <strong>left-click the "Next" box</strong>.
@@ -112,15 +128,15 @@ After the OpenRocket installer is downloaded, OpenRocket may be installed by doi
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Windows_22.02.beta.02/Install_Windows_Prompt_05.png" alt="Progress bar" width="240">
+        <img src="downloads/instructions/img/Windows_22.02/2022-02.02.05.Install.Desktop_Icon.png" alt="Progress bar" width="330">
       </td>
       <td>
-        As the OpenRocket application is installed, the installation progress is displayed.
+        Decide whether you wish to create a desktop shortcut for OpenRocket, then the left-click <strong>"Next"</strong>.
       </td>
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Windows_22.02.beta.02/Install_Windows_Prompt_06.png" alt="Finished" width="240">
+        <img src="downloads/instructions/img/Windows_22.02/2022-02.02.06.Install.Finished.png" alt="Finished" width="330">
       </td>
       <td>
         After the installation has finished, the final prompt appears, stating that OpenRocket can be launched by selecting the installed icons. <strong>Left-click the "Finish" button</strong> to return to the <em>Desktop</em>
@@ -129,23 +145,6 @@ After the OpenRocket installer is downloaded, OpenRocket may be installed by doi
   </table>
 </html>
 
-* Screenshots may vary with the Windows operating system version installed on your device; the screenshots shown are those of Windows 11.
+*Screenshots may vary with the Windows operating system version installed on your device; the screenshots shown are those of Windows 11.*
 
-### After Installation Checks
-
-*Contrary to what the installer states*, the 2022 Beta 2 installer **does not** provide a shortcut on the desktop, taskbar, or start menu. After running the installer, you may create a desktop shortcut by right-clicking on a blank area of the desktop, and then selecting **New &rarr; Shortcut** in the pop-up window. Within the *Create Shortcut* dialog box, on the *Browse* line, navigate to where the installer copied the files (typically "C:\Program&nbsp;Files\OpenRocket") and select "OpenRocket.exe" **NOT* "OpenRocket.jar", then **click "Okay" to move on**, <u>name the shortcut</u>, and **click "Finish"**.
-
-<html>
-  <table class="left">
-    <tr>
-      <td>
-        <img src="downloads/instructions/img/Windows_22.02.beta.02/Shortcut.Show-Exe.png" alt="Create Shortcut" width="240">
-	  </td>
-      <td>
-	    To confirm the proper creation of the shortcut, left-click on the shortcut and select <em>Properties</em>. The shortcut tab should open, and <strong>MUST</strong> direct you to the OpenRocket.exe </em>Target</em> file, like this.
-      </td>
-    </tr>
-  </table>
-</html>
-
-Alternatively, *if you are using Windows 11*, for easy access to OpenRocket in the future, after installing OpenRocket, navigate to the executable OpenRocket.exe file (usually located in the "C:\Program&nbsp;Files\OpenRocket” folder), then right click on the "OpenRocket.exe" file (NOT the “OpenRocket.jar” file), and create a shortcut, pin OpenRocket to the taskbar, and/or pin OpenRocket to the start menu, as you wish.
+**You're done!** We apologize that the process can be tricky. If you want to make yourself feel bad, take a look at the size of the installation instructions for macOS 🙂.
