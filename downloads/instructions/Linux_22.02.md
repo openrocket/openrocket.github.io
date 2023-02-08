@@ -13,7 +13,7 @@
 
 ### Downloading the 22.02 Release	
 Download the Linux installer above for the <font
-color="red"><i>NEW</i></font> OpenRocket beta release, saying yes to
+color="red"><i>NEW</i></font> OpenRocket release, saying yes to
 whatever security prompts your browser presents.
 
 ### Installing the 22.02 Release
@@ -126,11 +126,11 @@ directory as described above, there are four other ways to run it:
   ```% OpenRocket```\
   just like any other application.
 
-- **From Your Desktop Menu**
+- **From Your Desktop Menu**\
   You will also be able to run OpenRocket from your desktop's menu. It
   will appear in the "Other" software category.
 
-- **From Your Desktop**
+- **From Your Desktop**\
   If you enabled creating a desktop item when you installed
   OpenRocket, there will now be an OpenRocket icon on your desktop.
   Double-clicking the icon will execute OpenRocket.
@@ -144,9 +144,8 @@ directory as described above, there are four other ways to run it:
   authorize execution of the program in order for it to launch the
   first time.
   
-- **From a .ork File Icon**
-
+- **From a .ork File Icon**\
   If you have saved a .ork file so it appears on the desktop, and you
-  requested file associations, the .ork file will appear as an icon.
-  Double-clicking the icon will execute OpenRocket and open the .ork
-  file for editing.
+  requested file associations, the .ork file will appear as an
+  OpenRocket icon.  Double-clicking the icon will execute OpenRocket
+  and open the .ork file for editing.
