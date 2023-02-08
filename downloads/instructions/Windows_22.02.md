@@ -18,7 +18,7 @@
 
 Download the Windows installer above for the <font color="red"><i>NEW</i></font> OpenRocket beta release, saying yes to whatever security prompts your browser presents. Then, double-click on or open the file to run the installer, much like other Windows installers.
 
-Although the Windows installer download file has signed with a Microsoft signing certificate for Java, it may take some time before Microsift recognizes the use of that certificate when downloading OpenRocket. Because of this, when downloading the OpenRocket installer, you may see cautionary prompts that require a response that may not be completely clear as to what needs to be done. Following is an example of these prompts when downloading the OpenRocket installer using the Microsoft Edge browser:
+Instructions for downloading the OpenRocket installer:
 <html>
   <table class="left">
     <tr>
@@ -30,53 +30,23 @@ Although the Windows installer download file has signed with a Microsoft signing
         <img src="downloads/instructions/img/Windows_22.02/2022-02.01.01.Download.Cannot_Scan.png" alt="Download Security Warning" width="340">
       </td>
       <td>
-        When you begin downloading the installer, this prompt may appear.  If you wish to continue with the download, <strong>left-click on "DOWNLOAD ANYWAY" to start the installer download</strong>.
+        When you begin downloading the installer, this prompt may appear.  If you wish to continue with the download, <strong>left-click</strong> on <strong>"DOWNLOAD ANYWAY"</strong> to start the installer download.
       </td>
     </tr>
     <tr>
       <td>
         <img src="downloads/instructions/img/Windows_22.02/2022-02.01.02.Download.Save_As.png" alt="Save as" width="300">
       </td>
-      <td>Left-click "Save as", then select the folder where the download will be saved and left-click "Save".</td>
-    </tr>
-    <tr>
       <td>
-        <img src="downloads/instructions/img/Windows_22.02/2022-02.01.04.Download.More_Actions.png" alt="Trust Warning 2" width="300">	
-      </td>
-      <td>
-        This prompt may then appear.To continue, <strong>move your cursor to the warning</strong> and three dots will appear.
+        <strong>Left-click "Save as"</strong>, then <strong>select the folder</strong> where the download will be saved and <strong>left-click</strong> "Save".
       </td>
     </tr>
     <tr>
       <td>
-        <img src="downloads/instructions/img/Windows_22.02/2022-02.01.05.Download.Keep.png" alt="Trust Warning 3" width="300">
+        <img src="downloads/instructions/img/Windows_22.02/2022-02.01.03.Download.Open_File.png" alt="Trust Warning 6" width="300">
       </td>
       <td>
-        If you wish to finish the download, <strong>open the additional options by left-clicking on the three dots</strong>. Then, <strong>left-click on "Keep" to save the OpenRocket installer</strong>.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="downloads/instructions/img/Windows_22.02/2022-02.01.06.Download.Affirm_Trust.png" alt="Trust Warning 4" width="240">
-      </td>
-      <td>
-        Then, <em>Windows</em> wants you to be sure that you really want to keep the downloaded file. So, if you wish to keep the OpenRocket installer, then <strong>left-click the "Show more" option</strong>.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="downloads/instructions/img/Windows_22.02/2022-02.01.07.Download.Keep_Anyway.png" alt="Trust Warning 5" width="240">
-      </td>
-      <td>
-        When you do so, this prompt should appear. If you wish to finish saving the downloaded file, then <strong>left-click on "Keep anyway" to complete the process of saving the OpenRocket installer</strong>.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="downloads/instructions/img/Windows_22.02/2022-02.01.08.Download.Open_File.png" alt="Trust Warning 6" width="300">
-      </td>
-      <td>
-        Wait for the OpenRocket installer to download, then left-click "Open" to run the installer.
+        Wait for the OpenRocket installer to download, then <strong>left-click "Open"</strong> to run the installer.
       </td>
     </tr>
   </table>
@@ -107,7 +77,7 @@ After the OpenRocket installer is downloaded, OpenRocket may be installed by doi
         <img src="downloads/instructions/img/Windows_22.02/2022-02.02.02.Install.Setup_Next.png" alt="Make Changes Prompt" width="330">
       </td>
       <td>
-        Left-click <strong>"Next"</strong>.
+        If you already have a previous version of OpenRocket installed, you will be greeted with this dialog. Choose whether you want to update the existing installation (= removes the current installation of OpenRocket and replaces it with this new installation), or not and <strong>left-click "Next"</strong>.<br><br>If this is your first installation, the dialog will be different. Just <strong>left-click "Next"</strong>.
 	</td>
     </tr>
     <tr>
@@ -115,7 +85,7 @@ After the OpenRocket installer is downloaded, OpenRocket may be installed by doi
         <img src="downloads/instructions/img/Windows_22.02/2022-02.02.03.Install.Select_Directory.png" alt="Welcome Screen" width="330">
       </td>
       <td>
-       You can choose a different directory in which to save the OpenRocket files. <u>Unless you are familiar with directory structures</u>, you should leave this unchanged. If you have a previous installation of OpenRocket and the dialog prompts you whether you want to update the existing installation, or install the new program in a different directory, choose either one to your desire.<br><br>Click <strong>"Next"</strong>.
+       You can choose a different directory in which to save the OpenRocket files. <u>Unless you are familiar with directory structures</u>, you should leave this unchanged..<br><br>This step will not show when you have updated an existing OpenRocket installation (see previous step).
       </td>
     </tr>
     <tr>
@@ -123,7 +93,7 @@ After the OpenRocket installer is downloaded, OpenRocket may be installed by doi
 	    <img src="downloads/instructions/img/Windows_22.02/2022-02.02.04.Install.Extension_Association.png" alt="File Extension Associations" width="330">
       </td>
       <td>
-        The next step is to set the file extension associations. The "OpenRocket Rocket Files (*ork)" box should already be checked, so, <u>unless you want to change the file associations</u>, you can just <strong>left-click the "Next" box</strong>.
+        The next step is to set the file extension associations. The "OpenRocket Rocket Files (*ork)" box should already be checked, so, <u>unless you want to change the file associations</u>, you can just <strong>left-click "Next"</strong>.
       </td>
     </tr>
     <tr>
