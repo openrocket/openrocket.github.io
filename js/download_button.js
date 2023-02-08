@@ -12,18 +12,19 @@ function setDownloadTextByOS(btn) {
     if (os.indexOf("Win") != -1) {
         icon.className = "fa-brands fa-windows";
         btnText.innerHTML = btnInitText + " for Windows";
-        btn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/OpenRocket-${version}-installer.exe`;
+        btn.href = `downloads.html?vers=${version}#content-Windows`;
     } else if (os.indexOf("Mac") != -1) {
         icon.className = "fa-brands fa-apple";
         btnText.innerHTML = btnInitText + " for macOS";
-        btn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/OpenRocket-${version}.dmg`;
+        btn.href = `downloads.html?vers=${version}#content-macOS`;
     } else if (os.indexOf("Linux") != -1) {
         icon.className = "fa-brands fa-linux";
         btnText.innerHTML = btnInitText + " for Linux";
-        btn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/OpenRocket-${version}.AppImage`;
+        btn.href = `downloads.html?vers=${version}#content-Linux`;
     } else {
-        btnText.innerHTML = btnInitText + " as a JAR";
-        btn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/OpenRocket-${version}.jar`;
+        icon.className = "fa-solid fa-download";
+        btnText.innerHTML = btnInitText;
+        btn.href = `downloads.html?vers=${version}`;
     }
 }
 
