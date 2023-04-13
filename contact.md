@@ -4,11 +4,11 @@ id: contact
 title: OpenRocket — Support and contact information
 ---
 
-<h2 id="slack">Slack Workspace</h2>
+<h2 id="discord">Discord Server</h2>
 
-The most active communication channel is our Slack workspace, which you can join by clicking the link below.
+The most active communication channel is our Discord server, which you can join by clicking the link below.
 
-[https://join.slack.com/t/openrocket/shared_invite/zt-dh0wtpc4-WmkSK1ysqAOqHa6eFN7zgA](https://join.slack.com/t/openrocket/shared_invite/zt-dh0wtpc4-WmkSK1ysqAOqHa6eFN7zgA)
+[https://discord.gg/qD2G5v2FAw](https://discord.gg/qD2G5v2FAw)
 
 ## Mailing Lists
 

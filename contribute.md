@@ -8,7 +8,7 @@ id: contribute
 
 OpenRocket is an Open Source project, meaning that the source code is freely available and anybody can help make the software better. You don't even need coding skills, as there are other things to do as well.
 
-Below are a few suggestions of areas that would need help. If you'd like to participate, you can send us a message [on Slack](contact.html#slack){:target="_blank"}, file an issue for your suggestion [on GitHub](https://github.com/openrocket/openrocket/issues){:target="_blank"} or [join the development mailing list](https://lists.sourceforge.net/lists/listinfo/openrocket-devel){:target="_blank"} and introduce your ideas there.
+Below are a few suggestions of areas that would need help. If you'd like to participate, you can send us a message [on Discord](contact.html#discord){:target="_blank"}, file an issue for your suggestion [on GitHub](https://github.com/openrocket/openrocket/issues){:target="_blank"} or [join the development mailing list](https://lists.sourceforge.net/lists/listinfo/openrocket-devel){:target="_blank"} and introduce your ideas there.
 
  - Java development
  - Aerodynamic computation methods
