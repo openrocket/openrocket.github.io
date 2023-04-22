@@ -82,6 +82,10 @@ body#landing-page a.navbar-brand.navbar-visible-on-scroll, body#landing-page #na
   transition: opacity 2s ease 0s;
 }
 
+div.join-discord {
+  padding-top: 2px;
+}
+
 div.contribute-home {
   padding-top: 2px;
   padding-bottom: 40px;
