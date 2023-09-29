@@ -94,8 +94,8 @@ Thanks to a generous license for open source projects, OpenRocket uses
 the [install4j multi-platform installer builder](https://www.ej-technologies.com/products/install4j/overview.html) to produce installers for Windows, macOS and Linux. 
 
 <a href="https://www.ej-technologies.com/products/install4j/overview.html" role="button">
-    <img alt="Download install4j" src="img/install4j_download_btn.png">
+    <img alt="Download install4j" src="/img/install4j_download_btn.png">
 </a>
 
-<script type="text/javascript" src="downloads/downloads_config.js" defer></script>
-<script type="text/javascript" src="js/fill_downloads.js" defer></script>
+<script type="text/javascript" src="/downloads/downloads_config.js" defer></script>
+<script type="text/javascript" src="/js/fill_downloads.js" defer></script>
