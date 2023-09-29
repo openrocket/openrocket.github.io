@@ -13,6 +13,9 @@ permalink: /tutorials/
 <hr style="width: 80%">
 
 <div class="tutorial-container">
+  <!-- This will be our button to show the tutorial list on mobile -->
+  <div id="mobile-toggle" class="mobile-toggle" onclick="toggleList()">Tutorials List ▼</div>
+
   <!-- Tutorial content -->
   <div class="tutorials">
     {% assign sorted_tutorials = site.tutorials | sort: "date" | reverse %}
@@ -46,10 +49,3 @@ permalink: /tutorials/
     </div>
   </div>
 </div>
-
-<script>
-  function toggleList() {
-    var list = document.getElementById('tutorialsList');
-    list.classList.toggle('collapsed');
-  }
-</script>
