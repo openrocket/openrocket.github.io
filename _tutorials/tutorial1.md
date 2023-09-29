@@ -1,8 +1,8 @@
 ---
 layout: tutorial
-title: "Tutorial Title"
+title: "Tutorial 1"
 id: tutorial1
-thumbnail: /img/tutorials/thumbnails/tn_tutorial1.png
+thumbnail: /img/tutorials/thumbnails/tn_dummy.png
 description: Short description of the tutorial.
 date: 2023-09-29
 ---

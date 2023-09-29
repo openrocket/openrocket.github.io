@@ -1,34 +1,32 @@
-.tutorial-thumbnail {
-    max-width: 40%;     /* or whatever width you desire */
-    height: auto;
+.tutorial-introduction {
+    width: 80%;
+    padding-top: 30px;
+    margin: 0 auto;
 }
 
 .tutorial-container {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    position: relative;
+    width: 90%;
+    left: 10%;
+    padding-right: 2.5%;
+    gap: 2%;  /* Adjust this value to set the margin between the tutorials and tutorial-selection */
 }
 
 .tutorials {
-    flex: 2;
+    flex: 5;
+    display: flex;
+    flex-wrap: wrap;
     margin-right: 20px;
-}
-
-.tutorial {
-    border-bottom: 1px solid #e3e3e3;
-    padding-bottom: 10px;
-    margin-bottom: 10px; /* Space between border and next tutorial */
+    justify-content: flex-start;
 }
 
 .tutorial:last-child {
-    border-bottom: none; /* Remove border from the last tutorial to avoid double border */
+    border-bottom: none;
 }
 
 .tutorial-selection {
     flex: 1;
-    max-width: 200px;
-    margin-left: auto;
-    margin-right: 20px;
 }
 
 .toggle-list {
@@ -65,8 +63,69 @@
 }
 
 .tutorial-content header .tutorial-date {
-    font-size: 0.8em;  /* Smaller font size for the date */
-    color: #888;      /* Dim grey color */
-    margin-top: 5px;  /* Optional margin to space it out a bit */
-    display: block;   /* Makes the date display on its own line */
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 3px;
+    display: block;
+    text-align: left;
+}
+
+.tutorial-tile {
+    flex: 0 0 calc(33.333% - 20px);  /* Adjust the margin value accordingly */
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    text-decoration: none;
+    color: inherit;
+    display: block;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.tutorial-tile h3 {
+    font-size: 1.5em;
+    margin: 5px 5px;
+    padding: 0;
+}
+
+.tutorial-tile:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tutorial-thumbnail img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.tutorial-title {
+    text-align: center;
+}
+
+.tutorial-date {
+    font-size: 0.8em;
+    color: #888;
+    text-align: left;
+    margin-bottom: 6px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .tutorial-tile {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tutorial-tile {
+        flex: 1 1 100%;
+    }
 }

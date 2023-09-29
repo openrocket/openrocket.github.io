@@ -1,5 +1,5 @@
 ---
-layout: interior-page
+layout: default
 title: Tutorials
 permalink: /tutorials/
 ---
@@ -7,24 +7,28 @@ permalink: /tutorials/
 <!-- Introduction -->
 <div class="tutorial-introduction">
   <h1>Welcome to Our Tutorials!</h1>
-  <p>Here you'll find a curated list of tutorials to help you understand and master the various aspects of OpenRocket. Whether you're a beginner just starting out or an expert looking to refine your knowledge, there's something here for everyone. Dive in and happy learning!</p>
-  <p><i>(Click on a tutorial's title to visit its page.)</i></p>
+  <p>Here you'll find a curated list of tutorials to help you understand and master the various aspects of OpenRocket. <br>Whether you're a beginner just starting out or an expert looking to refine your knowledge, there's something here for everyone. Dive in and happy learning!</p>
 </div>
+
+<hr style="width: 80%">
 
 <div class="tutorial-container">
   <!-- Tutorial content -->
   <div class="tutorials">
     {% assign sorted_tutorials = site.tutorials | sort: "date" | reverse %}
-    {% for tutorial in site.tutorials %}
-      <div class="tutorial">
-        <a href="{{ tutorial.url }}">
-          <h3>{{ tutorial.title }}</h3>
-        </a>
-        {% if tutorial.thumbnail %}
-          <img class="tutorial-thumbnail" src="{{ tutorial.thumbnail }}" alt="{{ tutorial.title }}">
-        {% endif %}
-        <p>{{ tutorial.description }}</p>
-      </div>
+    {% for tutorial in sorted_tutorials %}
+      <a href="{{ tutorial.url }}" class="tutorial-tile">
+            {% if tutorial.thumbnail %}
+                <div class="tutorial-thumbnail">
+                    <img src="{{ tutorial.thumbnail }}" alt="{{ tutorial.title }}">
+                </div>
+            {% endif %}
+            <div class="tutorial-title">
+                <h3>{{ tutorial.title }}</h3>
+            </div>
+            <div class="filler" style="flex-grow: 1;"></div>
+            <div class="tutorial-date">{{ tutorial.date | date: "%B %d, %Y" }}</div>
+      </a>
     {% endfor %}
   </div>
 
