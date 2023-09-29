@@ -7,7 +7,6 @@ description: > # this means to ignore newlines until "baseurl:"
   design and simulate your rockets before actually building and flying them.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://openrocket.info" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
 github_username:  openrocket 
 current_version: 22.02
 defaults:

@@ -1,7 +1,10 @@
 <div class="jumbotron">
   <div class="container">
     <center>
-    <h1>{% include openrocket.html %}</i></h1>
+    <div class="header">
+      <h1>OpenRocket</h1>
+      <img src="img/OpenRocket_icon.png" alt=""/>
+    </div>
     <p>{{ site.mantra }}</p>
     <div style="margin-top: 35px; margin-bottom: 15px;">
       {% include download_button.html %}
@@ -10,18 +13,19 @@
       <div class="dropdown" style="margin-left: 20px;">
         <button class="dropbtn dropbtn-dark">Other operating systems<i class="fa-solid fa-angle-down" style="margin-left: 15px;"></i></button>
         <div class="dropdown-content">
-          <a href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}-installer.exe">Windows</a>
-          <a href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.dmg">macOS</a>
-          <a href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.AppImage">Linux</a>
-          <a href="https://github.com/openrocket/openrocket/releases/download/release-{{site.current_version}}/OpenRocket-{{site.current_version}}.jar">JAR</a>
+          <a href="downloads.html?vers={{site.current_version}}#content-Windows">Windows</a>
+          <a href="downloads.html?vers={{site.current_version}}#content-macOS">macOS</a>
+          <a href="downloads.html?vers={{site.current_version}}#content-Linux">Linux</a>
+          <a href="downloads.html?vers={{site.current_version}}#content-JAR">JAR</a>
         </div>
       </div>
     </div>
 
-    <!-- Beta download subtext -->
+    <!-- Beta download subtext 
     <div class="beta_download">
       <a href="downloads.html?vers=22.02.beta.05">Download beta version 22.02.beta.05 here!</a>
     </div>
+    -->
     </center>
   </div>
 </div>

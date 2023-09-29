@@ -4326,16 +4326,26 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   padding: 20.5px 15px;
-  font-size: 17px;
-  line-height: 23px;
   height: 64px;
+}
+.navbar-brand > div {
+  display: inline-block;
+  margin-top: -5px;
+}
+.navbar-brand > div > div {
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: -40%;
+  margin-left: 6px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
 }
-.navbar-brand > img {
-  display: block;
+.navbar-brand img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
@@ -6801,9 +6811,6 @@ button.close {
   border: none;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-.navbar-brand {
-  font-size: 24px;
 }
 .navbar-inverse .navbar-form input[type=text],
 .navbar-inverse .navbar-form input[type=password] {

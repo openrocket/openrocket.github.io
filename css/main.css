@@ -31,6 +31,22 @@ div.jumbotron, div.jumbotron h1 {
   color: #fff;
 }
 
+.header {
+  overflow: auto;
+}
+
+.header img {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin-left: 10px;
+}
+
+.header h1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 div.beta_download a {
   color: rgb(233, 233, 233);
   font-size: 14px;
@@ -64,6 +80,10 @@ body#landing-page a.navbar-brand, body#landing-page #navbar_download_button {
 body#landing-page a.navbar-brand.navbar-visible-on-scroll, body#landing-page #navbar_download_button.navbar-visible-on-scroll {
   opacity: 1;
   transition: opacity 2s ease 0s;
+}
+
+div.join-discord {
+  padding-top: 2px;
 }
 
 div.contribute-home {
@@ -106,6 +126,14 @@ nav.navbar {
 .btn-green:hover {
   background-color: rgb(63, 160, 80);
   color: white;
+}
+
+.downloads-os-title {
+  padding-top: 40px;
+}
+
+.separator-downloads {
+  margin-top: 40px;
 }
 
 .donate-button {

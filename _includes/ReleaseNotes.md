@@ -1,6 +1,152 @@
 Release Notes
 =============
 
+<h2>
+  <a href="https://github.com/openrocket/openrocket/releases/tag/release-22.02" class="a-no-format">
+     OpenRocket 22.02 (2023-02-08)
+  </a>
+</h2>
+
+The 22.02 release includes hundreds of new features, bug fixes, and UI improvements, more than we could ever fit into one set of release notes.  These notes summarize the highlights of the entire release; for more detail consult the notes from the five previous public beta releases.
+ 
+Please note that version 22.02 is required for Macs running macOS 13.0 or later.
+ 
+## New Features
+* Rocket design features
+  * Pods and strap-on boosters
+  * Tail cones
+  * Freeform fins on nose cones and transitions
+  * Highly configurable rail buttons
+  * Massive update to parachute configuration and part library
+  * Dave Cook's extensive component library now built-in
+  * Coefficient of Drag Override for components and assemblies (and more flexible override settings in general)
+  * Lots more detailed geometry warnings which identify the components involved
+* Appearance updates
+  * Settable opacity per-component
+  * Separate left/right appearance for fins, and inner/outer appearance for tubes
+* App Infrastructure
+  * Packaged installers for Windows, Linux, and macOS (JAR file still available)
+  * Updated to Java 11
+  * Native ARM version for Apple Silicon Macs (snappy!)
+  * File association for ORK files: double-click files to open in the app
+  * On Mac, app stays open after last window is closed
+
+## Simulation and Staging Improvements
+  * Assorted CP calculation fixes
+  * Improved nose cone drag calculations
+  * Improved ground hit velocity calculations
+  * Completely reworked tube fin simulation (no longer "experimental")
+  * Improved time step selection for descent
+  * Improved simulation plot appearance
+  * Support for scientific notation and custom decimal places in simulation exports
+  * Simulations now properly account for disabled stages
+  * Update CG correctly when stages are toggled on or off
+  * Display stage names in stage enable buttons
+  * More reliable deployment of booster stage recovery device
+
+## UI Improvements
+* Updated icons everywhere
+* Rocket figure display updates
+  * Option to display stability margin as percentage of rocket length
+  * New "Top View" option
+  * Cleaned-up toolbar
+  * Option to show/hide warnings
+  * Option to show/hide CG and CP markings 
+  * Improved click and double-click behavior on rocket
+* Component Configuration Editor
+  * Extensively reorganized for clarity and consistency
+  * Massively improved keyboard navigation
+  * Config panels remember which tab you were on previously
+  * Cancel button to exit config panel without saving changes
+* Contextual menus for managing the component tree
+* Simultaneous multi-component edit (great for appearance editing)
+* Completely updated operation of motor config and simulation tables
+* Improved workflow when creating motor configurations
+* Greatly improved component library browser
+* Greatly improved freeform fin editor operation
+* Photo Studio
+  * sliders for settings
+  * keyboard input for settings
+  * settings remembered for each rocket
+ 
+## Misc
+* Extensively updated and reorganized example rocket collection
+* Much improved RockSim import and export
+* Updated motor database
+ 
+_...plus about a billion bug fixes and so much more._
+ 
+Huge thanks to all the users who gave us feedback throughout the public beta period and helped us get to our first release in eight years!
+
+<hr/>
+
+<h2>
+  <a href="https://github.com/openrocket/openrocket/releases/tag/release-22.02.beta.05" class="a-no-format">
+     OpenRocket 22.02.beta.05 (2022-09-28)
+  </a>
+</h2>
+
+### New Features
+* **C_D Override for subassemblies now implemented.  Please test!** [See this wiki help page](http://wiki.openrocket.info/Overrides_and_Surface_Finish#How_and_Why_to_Use_Surface_Finish_Settings_and_Coefficient_of_Drag_.28CD.29_Overrides) for important instructions (fixes #1171)
+* Simulations now properly account for disabled stages (fixes #1477 and #1460)
+* Rail Button improvements:
+  * Additional parameters for rail buttons (fixes #1537)
+  * Added rail buttons to preset parts database
+  * Scaling now supported for rail buttons (fixes #1661)
+* Don't include inactive stages in calculations. Disabling stages using the stage selector buttons now also affects the simulation results. (fixes #1477 and #1460)
+* Mass objects maintain fixed volume when container diameter changes in auto mode (fixes #1315)
+* Inner tubes can have custom inner/outer appearance (fixes #1509)
+
+### UI Improvements
+* Visually select child components of assembly components when selecting the parent (fixes #1489).  Try selecting a pod, stage, or booster and see.
+* Significant improvements to preset selection window (fixes #1481)
+* Added sliders to Photo Studio settings (fixes #1524)
+* Show markers for pods and boosters in rocket side view (fixes #1146)
+* Major improvements to focus behavior.  Keyboard navigation in the Component Config dialog is now _much_ more convenient.
+  * When setting focus to a spinner field, select the entire field by default (fixes #1506)
+  * After selecting a preset, automatically highlight most commonly edited parameter (fixes #1488). So, for example, after selecting a body tube preset the Length parameter will be selected by default.
+  * Restore focus to motors, recovery, stage and simulation tables after table action and others (fixes #1558).  Simply put, you shouldn't need to click in the table areas just to enable keyboard shortcuts to work.
+  * Use tab and arrow keys to traverse sim table (fixes #1552)
+* Added and/or improved hover texts on a bunch of different buttons and controls
+* Apply preset after double-clicking (fixes #1539)
+* Pre-check diameter filters in preset chooser (fixes #1480)
+* Preset selection window opens larger, and remembers column widths (fixes #1305).  Separate column widths are remembered for each component type.
+* Ctrl/Cmd+A (select all) keyboard shortcut in component tree, simulation and motor configuration tables (fixes #1549)
+
+### Notable Bug Fixes
+* **Scripting now works again.  Please test!** (fixes #308, #826, #1108, and #1270)
+* Don't re-run simulations when new sim is created with same motor (fixes #1510)
+* Ensure simulations finish when running from scripts (fixes #1575)
+* Fixed Cd reporting for fin sets (fixes #1440)
+* Move component config window back to same monitor as main app window first time it is opened.  No more lost config windows! (fixes #1470)
+* Rocket side view updates
+  * Don't recenter rocket when zooming (fixes #1464)
+  * Ensure full rocket is always visible and positioned correctly in rocket side view (fixes #1465)
+* Fixed root edge display in 3D view and fin templates (fixes #1227).  This matters when you are attaching fins to a nose cone or transition.
+* Numerous bug fixes in component scaling (fixes #1649, #1651, #1653, #1661, #1662, and #1663)
+* Better register of double-clicks in 3D view (fixes #1054)
+* Increased component analysis drag precision to three decimal digits (fixes #1476)
+* Select recovery device/stage after config panel select (fixes #1490)
+* Fixed an exception when scaling freeform fins (fixes #1520)
+* Improved performance of freeform fin shape editor (fixes #1533)
+* Better automatic calculation of fin tab sizes (fixes #1600)
+* Fixed simulation errors when there were empty stages in the design (fixes #1617)
+* Fixed stage activeness not updating when moving, deleting, or copying stages (fixes #1680)
+* Fixed exception for zero-length transitions and nose cones (fixes #1677)
+
+### Other
+* Don't open motor selection dialog when duplicating motor configurations (fixes #1555)
+* A bunch of updated component icons
+* Added icons to most buttons
+* Improvements to Undo behavior when adding new components (fixes #1513)
+* Improvements to scale dialog (fixes #411)
+* Component tree now set to reasonable minimum width (fixes #1648)
+* Removed "show all compatible" option in preset chooser (fixes #1405)
+* Cleaned up several of the example rockets
+* Added warning to launch preferences that changes only affect new sims (fixes #1497)
+* Fixed overlapping labels in motor selection diameter filter slider (fixes #1643)
+* More Russian translation updates
+
 <hr/>
 
 <h2>

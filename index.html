@@ -85,7 +85,7 @@ id: landing-page
 
   <div class="col-xs-8 col-sm-7 col-md-6">
     <h3>Choose the best and safest motors for your model</h3>
-    <p>With a huge database of motor data from <a href="http://www.thrustcurve.org">ThrustCurve</a> you can find the most appropriate motors for your model specifications.  Easily filter and search the database for motors that are suitable for your design.</p>
+    <p>With a huge database of motor data from <a href="http://www.thrustcurve.org" target="_blank">ThrustCurve</a> you can find the most appropriate motors for your model specifications.  Easily filter and search the database for motors that are suitable for your design.</p>
   </div>
 
   <div class="col-xs-4 col-sm-3 col-md-2">
@@ -97,7 +97,27 @@ id: landing-page
 
 <hr style="margin-top: 53px;"/>
 
-<div class="contribute-home">
+<div class="row join-discord">
+  <h2>
+    <a href="https://discord.gg/qD2G5v2FAw" class="a-no-format" target="_blank">
+        <i class="fab fa-discord"></i> Join our Discord community
+    </a>
+  </h2>
+
+  <div>
+    <p>Connect with fellow rocket enthusiasts, ask questions about rocket designs, share your experiences, and get in touch with our developers.</p>
+    <p>Our Discord server is the perfect place to <b>discuss, learn</b>, and <b>have fun with like-minded individuals</b>. Click the button below to join:</p>
+    <p>
+      <a href="https://discord.gg/qD2G5v2FAw" target="_blank" class="btn btn-lg btn-primary">
+        <i class="fab fa-discord" style="margin-right: 1rem"></i> Join our Discord Server
+      </a>
+    </p>
+  </div>
+</div>
+
+<hr style="margin-top: 23px;"/>
+
+<div class="row contribute-home">
   {% capture my_include %}{% include contribute-home.md %}{% endcapture %}
   {{ my_include | markdownify }}
 </div>
