@@ -121,3 +121,9 @@ nav.navbar {
   position:fixed;
   top:0;
 }
+
+.new-tag {
+  color: red;
+  font-size: 0.7em;
+  margin-left: 5px;
+}
