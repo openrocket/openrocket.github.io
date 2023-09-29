@@ -9,8 +9,8 @@
     position: relative;
     width: 90%;
     left: 10%;
-    padding-right: 2.5%;
-    gap: 5%;  /* Adjust this value to set the margin between the tutorials and tutorial-selection */
+    padding-right: 5%;
+    gap: 4%;  /* Adjust this value to set the margin between the tutorials and tutorial-selection */
 }
 
 .tutorials {
