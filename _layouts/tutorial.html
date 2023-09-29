@@ -1,0 +1,38 @@
+---
+layout: interior-page
+---
+
+<article class="tutorial-content">
+    <header>
+        <h1>{{ page.title }}</h1>
+        <span class="tutorial-date">{{ page.date | date: "%B %d, %Y" }}</span>
+    </header>
+
+    <section>
+        {{ content }}
+    </section>
+
+    <!-- You can add tutorial-specific elements here, if needed -->
+    <!-- For instance, a "Back to Tutorials" link -->
+    <footer>
+        <a href="/tutorials/">← Back to Tutorials</a>
+    </footer>
+</article>
+
+<!-- Tutorial-specific styles or scripts can be added here -->
+<style>
+    .tutorial-content {
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
+
+    .tutorial-content header {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+
+    .tutorial-content footer {
+        margin-top: 20px;
+    }
+</style>

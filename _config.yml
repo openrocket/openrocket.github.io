@@ -9,7 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://openrocket.info" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  openrocket 
-current_version: 15.03
+current_version: 22.02
 defaults:
   -
     scope:
@@ -17,6 +17,11 @@ defaults:
     values:
       layout: "default"
 exclude: ['CNAME', 'Gruntfile.js', 'node_modules', 'original', 'resources', 'params.json', 'package.json']
+
+collections:
+  tutorials:
+    output: true
+    permalink: /tutorials/:name.html
 
 # Build settings
 markdown: kramdown

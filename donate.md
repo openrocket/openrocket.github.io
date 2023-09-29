@@ -4,7 +4,7 @@ layout: interior-page
 id: donate
 ---
 
-<script src="js/confetti.js" type="text/javascript"></script>
+<script src="/js/confetti.js" type="text/javascript"></script>
 <script>fetti = toggleConfetti;
 setTimeout(fetti, 300);
 setTimeout(fetti, 800);</script>
