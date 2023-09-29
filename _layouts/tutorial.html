@@ -3,10 +3,18 @@ layout: interior-page
 ---
 
 <article class="tutorial-content">
-    <header>
-        <h1>{{ page.title }}</h1>
-        <span class="tutorial-date">{{ page.date | date: "%B %d, %Y" }}</span>
-        <p>{{ page.description }}</p>
+    <header class="tutorial-header">
+        <div class="header-info">
+            <h2>{{ page.title }}</h2>
+            <span class="tutorial-date">{{ page.date | date: "%B %d, %Y" }}</span>
+            <p>{{ page.description }}</p>
+        </div>
+        
+        {% if page.thumbnail %}
+        <div class="header-thumbnail">
+            <img src="{{ page.thumbnail }}" alt="{{ page.title }} Thumbnail">
+        </div>
+        {% endif %}
     </header>
 
     <section>
@@ -28,9 +36,30 @@ layout: interior-page
         border-radius: 5px;
     }
 
-    .tutorial-content header {
+    .tutorial-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; 
         border-bottom: 1px solid #ddd;
         margin-bottom: 20px;
+    }
+
+    .header-info {
+        flex-basis: 60%;
+    }
+
+    .header-thumbnail {
+        flex-basis: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header-thumbnail img {
+        max-width: 65%; /* Ensuring thumbnail doesn't overflow its container */
+        height: auto;
+        padding: 10px;
     }
 
     .tutorial-content footer {

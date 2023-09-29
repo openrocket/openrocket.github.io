@@ -7,7 +7,7 @@ permalink: /tutorials/
 <!-- Introduction -->
 <div class="tutorial-introduction">
   <h1>Welcome to Our Tutorials!</h1>
-  <p>Here you'll find a curated list of tutorials to help you understand and master the various aspects of OpenRocket. <br>Whether you're a beginner just starting out or an expert looking to refine your knowledge, there's something here for everyone. Dive in and happy learning!</p>
+  <p>Here you'll find a curated list of tutorials to help you <b>master OpenRocket</b>. <br>Whether you're just starting our, or looking to refine your knowledge, there's something here for everyone. Dive in and happy learning! 😊🚀</p>
 </div>
 
 <hr style="width: 80%">
