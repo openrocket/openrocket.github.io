@@ -22,5 +22,8 @@ collections:
     output: true
     permalink: /tutorials/:name.html
 
+plugins:
+  - jekyll-toc
+
 # Build settings
 markdown: kramdown

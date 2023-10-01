@@ -1,0 +1,25 @@
+.toc {
+    padding: 10px 15px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.toc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.toc ul li {
+    margin-bottom: 5px;
+}
+
+.toc ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.toc ul li a:hover {
+    text-decoration: underline;
+}
