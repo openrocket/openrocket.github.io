@@ -22,6 +22,11 @@ layout: interior-page
         {% toc %}
     </div>
 
+    <!-- This will be our modal (only add one per page) -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img id="modalImage">
+    </div>
+
     <section>
         {{ content }}
     </section>

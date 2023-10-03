@@ -7,14 +7,11 @@ date: 2023-09-30
 toc: true
 ---
 
-<!-- This will be our modal (only add one per page) -->
-<div id="imageModal" class="modal" onclick="closeModal()">
-  <img id="modalImage">
-</div>
-
 ### Preparing your design
 TODO: no zero-widths, thick enough walls, add shoulder for nose cone (make it slightly smaller than the inner width of the next tube, so after printing the parts fit well together) etc.
 Take a look at the example file
+
+Since you're now moving from the digital, simulation world to the physical, 3D printing world, you'll have to take into account some things that you didn't have to worry about before. For example, you'll have to make sure that your design is printable. This means that you'll have to make sure that there are no zero-widths in your design, that the walls are thick enough, and that the parts fit together well. This tutorial will show you how to do this.
 
 <figure class="enlargeable-image">
   <img src="/img/tutorials/tutorial1/cool_image.jpg" alt="<Interesting alt>" onclick="enlargeImage(this)">
