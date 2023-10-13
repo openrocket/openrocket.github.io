@@ -156,6 +156,22 @@
     justify-content: center; /* Center the number horizontally */
 }
 
+.warning-message {
+    background-color: #fff1d1;  /* Light orange background */
+    border: 1px solid #ffb700; /* Orange border */
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.icon-warning {
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
 @media screen and (max-width: 768px) {
     .tutorial-container {
         flex-direction: column;  /* Stack the tutorials and selection vertically */
