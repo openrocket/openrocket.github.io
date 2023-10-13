@@ -13,9 +13,9 @@ Since you're now moving from the digital, simulation world to the physical, 3D p
 We recommend you take a look at our "A 3D printable model rocket" example file, which you can access by going to `File > Open example > A 3D printable model rocket`. This file contains a design that is ready to be exported to OBJ and 3D printed.
 
 <figure class="enlargeable-image">
-    <img src="/img/tutorials/export_OBJ_3D_printing/ExampleRocket.png" width="60%" onclick="enlargeImage(this)">
-    <figcaption>Example file "A 3D printable model rocket"</figcaption>
-  </figure>
+  <img src="/img/tutorials/export_OBJ_3D_printing/ExampleRocket.png" width="60%" onclick="enlargeImage(this)">
+  <figcaption>Example file "A 3D printable model rocket"</figcaption>
+</figure>
 
 ### Exporting to OBJ
 <ol class="step-list">

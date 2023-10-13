@@ -172,6 +172,23 @@
     margin-right: 15px;
 }
 
+.progress-container {
+    height: 8px;
+    background: #ccc;
+    position: fixed;
+    bottom: 0;
+    left: 20px; /* Match the left padding of .tutorial-content */
+    right: 20px; /* Match the right padding of .tutorial-content */
+    z-index: 1;
+}
+
+.progress-bar {
+    height: 8px;
+    width: 0%;
+    background: #2196f3; /* Change to a color that matches your theme */
+    position: relative;
+}
+
 @media screen and (max-width: 768px) {
     .tutorial-container {
         flex-direction: column;  /* Stack the tutorials and selection vertically */
