@@ -1,0 +1,32 @@
+.version-section {
+    width: 100%;
+}
+
+.version-header {
+    display: inline-block;
+    color: #2196f3;
+    margin-left: 20px;
+}
+
+.dropdown {
+    margin-left: 20px;
+}
+
+.github-link {
+    float: right;
+}
+
+.whats-new {
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+.collapsible-download {
+    margin-top: 15px;
+}
+
+.thin-separator {
+    height: 0px;
+    border: none;
+    border-top: 1px solid #d8d8d8;
+}
