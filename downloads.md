@@ -16,8 +16,7 @@ the needed dependencies, including the correct version of Java.
   <div class="dropdown">
     <button class="dropbtn dropbtn-light" id="dropbtn"></button>
     <div id="dropdown-content" class="dropdown-content">
-      <a href="downloads.html?vers=22.02"><b>22.02</b></a>
-      <a href="downloads.html?vers=15.03">15.03</a>
+      <!-- Will be populated by fill_downloads.js script -->
     </div>
   </div>
   <div class="github-link"><i>(You can view all the releases on our <a href="https://github.com/openrocket/openrocket/releases">GitHub page</a>)</i></div>
@@ -95,6 +94,11 @@ the [install4j multi-platform installer builder](https://www.ej-technologies.com
 </a>
 
 <link rel="stylesheet" href="/css/downloads.css">
+
+<!-- Define CURRENT_VERSION first -->
+<script type="text/javascript">
+  var CURRENT_VERSION = "{{ site.current_version }}";
+</script>
 
 <script type="text/javascript" src="/downloads/downloads_config.js" defer></script>
 <script type="text/javascript" src="/js/fill_downloads.js" defer></script>
