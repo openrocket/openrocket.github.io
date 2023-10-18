@@ -30,7 +30,7 @@ function fillDownloadsDropdown() {
     downloads_config.forEach(version => {
         const versionLink = document.createElement('a');
         versionLink.href = `downloads.html?vers=${version.name}`;
-        versionLink.innerHTML = (version.name === CURRENT_VERSION) ? `<b>${version.name}</b>` : version.name;
+        versionLink.innerHTML = (version.name === CURRENT_VERSION) ? `<b>${version.name}</b>` + " <i>(latest)</i>" : version.name;
         dropdownContent.appendChild(versionLink);
     });
 }
