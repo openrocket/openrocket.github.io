@@ -21,6 +21,20 @@
     margin-top: 3px;
 }
 
+.arch-label {
+    display: inline-block;
+}
+
+.arch-btn {
+    display: inline-block;
+    position: absolute;
+    left: 10em;
+}
+
+.download-content-OS {
+    position: relative;
+}
+
 .collapsible-download {
     margin-top: 15px;
 }

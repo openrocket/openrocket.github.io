@@ -94,3 +94,10 @@ Contributions of any size are greatly appreciated.
 ​</div>
 
 **Thanks again to everyone who uses and supports OpenRocket!**
+
+<script type="text/javascript" src="/js/collapsible.js" defer></script>
+<script>
+  window.onload = function() {
+        attachCollapsibleListeners();
+    }
+</script>
