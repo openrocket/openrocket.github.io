@@ -4,13 +4,6 @@ layout: interior-page
 id: downloads
 ---
 
-OpenRocket is available as packages for Linux, macOS and Windows.  A .jar file
-is also available, as is all of the source code.
-
-For most users, we **strongly** recommend using the package
-appropriate for your operating system. These packages contain all of
-the needed dependencies, including the correct version of Java.
-
 <div class="version-section">
   <h3 class="version-header">OpenRocket version: </h3>
   <div class="dropdown">
@@ -21,6 +14,13 @@ the needed dependencies, including the correct version of Java.
   </div>
   <div class="github-link"><i>(You can view all the releases on our <a href="https://github.com/openrocket/openrocket/releases">GitHub page</a>)</i></div>
 </div>
+
+OpenRocket is available as packages for Linux, macOS and Windows.  A .jar file
+is also available, as is all of the source code.
+
+For most users, we **strongly** recommend using the package
+appropriate for your operating system. These packages contain all of
+the needed dependencies, including the correct version of Java.
 
 <button id='button-whats-new' onclick="scrollToSection('whats-new')" type="button" class="whats-new-btn btn btn-red">
           See what's new in this release <i class="fa-solid fa-arrow-down" style="margin-left: 1em"></i></button>
