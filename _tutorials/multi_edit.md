@@ -222,6 +222,13 @@ First let's talk about sims, because this is genuinely useful.  Recall that if y
 
 ...that nice bold red text reminds you that the changes will only apply to newly created sims.  If you want to change the conditions of existing sims, you can multi-select sims in the table and then edit them all at once.  So let's say you mistakenly set the launch rod too short, or some other obvious mistake that you want to correct on all the sims... just select them and edit, and the changes will apply to all the selected items.
 
+OR can also export the sim results table to a CSV file.  If you multi-select a group of sims, then you can export just those.  This screenshot shows it being done with the contextual menu, but you can also do it via the same option in the File menu.
+
+<figure class="enlargeable-image">
+  <img src="/img/tutorials/multi_edit/export_csv.png" alt="Export Sim results to CSV" onclick="enlargeImage(this)">
+  <figcaption>Export sim results to CSV file</figcaption>
+</figure>
+
 There are probably fewer occasions where multi-editing motor configurations would be useful, but it's possible.  You can select some set of motors in the table...
 
 <figure class="enlargeable-image">
