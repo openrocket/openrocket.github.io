@@ -21,9 +21,9 @@ the needed dependencies, including the correct version of Java.
   </div>
   <div class="github-link"><i>(You can view all the releases on our <a href="https://github.com/openrocket/openrocket/releases">GitHub page</a>)</i></div>
 </div>
-<div class="whats-new">
-  <strong>What's new?</strong> Check out the <a href="release_notes.html">release notes</a>.
-</div>
+
+<button id='button-whats-new' onclick="scrollToSection('whats-new')" type="button" class="whats-new-btn btn btn-red">
+          See what's new in this release <i class="fa-solid fa-arrow-down" style="margin-left: 1em"></i></button>
 
 <hr class="separator-downloads"/>
 
@@ -50,21 +50,35 @@ the needed dependencies, including the correct version of Java.
   </div>
 
   <br>
-  <hr class="thin-separator"/>
-
-  <div id="content-source">
-    <h2>Source code</h2>
-    The source code can be downloaded as either a .zip file or a .tar.gz file. 
-    <div>
-      <a id="source-zip" class="btn btn-primary btn-lg" role="button"></a>  
-      <a id="source-tar.gz" class="btn btn-primary btn-lg" role="button"></a>
-    </div>
-  </div>
 </div>
 
-<br>
-Or you can simply go to our source repository on GitHub. 
-<div><a class="btn btn-success btn-lg" href="https://github.com/openrocket/openrocket" target="_blank" role="button"><i class="fa-brands fa-github" style="margin-right: 1.5rem"></i>Fork me on GitHub</a></div>
+<hr class="thick-separator"/>
+
+<!-- What's new -->
+<div id="whats-new">
+  <h2><i class="fa-solid fa-bullhorn" style="margin-right: 1.5rem; color: #ec5f5f;"></i>What's new?</h2>
+  <div id="content-whats-new"></div>
+  <hr class="thin-separator"/>
+</div>
+
+<!-- Source code -->
+<div id="content-source">
+  <h2>Source code</h2>
+  The source code can be downloaded as either a .zip file or a .tar.gz file. 
+  <div>
+    <a id="source-zip" class="btn btn-primary btn-lg" role="button"></a>  
+    <a id="source-tar.gz" class="btn btn-primary btn-lg" role="button"></a>
+  </div>
+
+  <br>
+  Or you can simply go to our source repository on GitHub. 
+  <div>
+    <a class="btn btn-success btn-lg" href="https://github.com/openrocket/openrocket" target="_blank" role="button">
+      <i class="fa-brands fa-github" style="margin-right: 1.5rem"></i>
+      Fork me on GitHub
+    </a>
+  </div>
+</div>
 
 <br>
 <hr/>

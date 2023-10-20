@@ -1,3 +1,11 @@
+.whats-new-btn {
+    margin:1em auto;
+    display:block;
+    font-size: 18px;
+    text-transform: none;
+    animation: bounce 2s 3;
+}
+
 .version-section {
     width: 100%;
 }
@@ -43,4 +51,52 @@
     height: 0px;
     border: none;
     border-top: 1px solid #d8d8d8;
+}
+
+.thick-separator {
+    height: 0px;
+    border: none;
+    border-top: 2px solid #d8d8d8;
+}
+
+.figure-left {
+    float: left;
+    margin-right: 30px; /* spacing between image and text */
+}
+
+.figure-right {
+    float: right;
+    margin-left: 30px; /* spacing between image and text */
+}
+
+.figure-rn > img {
+    max-width:100%;
+    max-height:100%;
+    object-fit: contain;
+}
+
+.figure-caption {
+    text-align: center;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.figure-shadow {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+.figure-shadow-caption {
+    margin-top: 15px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-5px);
+    }
+    60% {
+        transform: translateY(-3px);
+    }
 }
