@@ -111,7 +111,7 @@ function fillOSContent(version, configObj, OSName, faIcon, ...architectures) {
     instr.id = `instructions-${OSName}`;
     instr.className = 'collapsible-content';
     const OSInstr = configObj.instructions[OSName];
-    addInstructions(instr, OSInstr);
+    addInstructions(instr, OSInstr, version);
     content.appendChild(instr);
 
     // Attach event listeners for the new collapsible elements
@@ -133,16 +133,31 @@ function handleDefaultOS(btn, version, configObj, OSName) {
     btn.innerHTML = `<i class="fa-solid fa-download" style="margin-right: 1.5rem"></i>Download ${configObj.files[OSName]}`;
 }
 
-function addInstructions(instr, OSInstr) {
-    const instrContent = document.createElement('zero-md');
-    instrContent.src = OSInstr;
-    const template = document.createElement('template');
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = '/css/main.css';
-    template.appendChild(link);
-    instrContent.appendChild(template);
-    instr.appendChild(instrContent);
+function addInstructions(instr, OSInstr, version) {
+    fetch(OSInstr)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            // Replace the placeholder with the actual version
+            const replacedData = data.replaceAll('${VERSION}$', version);
+
+            // Create the zero-md and script elements
+            const instrContent = document.createElement('zero-md');
+            const markdownContent = document.createElement('script');
+            markdownContent.type = 'text/markdown';
+            markdownContent.textContent = replacedData;
+
+            // Append the script to zero-md and zero-md to the instr element
+            instrContent.appendChild(markdownContent);
+            instr.appendChild(instrContent);
+        })
+        .catch(error => {
+            console.error("Error in addInstructions:", error);
+        });
 }
 
 function createDownloadButton(version, file) {

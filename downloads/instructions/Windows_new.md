@@ -14,7 +14,7 @@
 	}
 </style>
 
-### Downloading the 22.02 Release
+### Downloading the ${VERSION}$ Release
 
 Download the Windows installer above for the <font color="red"><i>NEW</i></font> OpenRocket beta release, saying yes to whatever security prompts your browser presents. Then, double-click on or open the file to run the installer, much like other Windows installers.
 
@@ -54,7 +54,7 @@ Instructions for downloading the OpenRocket installer:
 
 *Screenshots may vary with the Windows operating system version installed on your device; the screenshots shown above are those of Windows 11.*
 
-### Installing the 22.02 Release
+### Installing the ${VERSION}$ Release
 
 After the OpenRocket installer is downloaded, OpenRocket may be installed by doing the following:
 

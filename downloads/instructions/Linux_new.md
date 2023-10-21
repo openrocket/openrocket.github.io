@@ -11,12 +11,12 @@
 	}
 </style>
 
-### Downloading the 22.02 Release	
+### Downloading the ${VERSION}$ Release	
 Download the Linux installer above for the <font
 color="red"><i>NEW</i></font> OpenRocket release, saying yes to
 whatever security prompts your browser presents.
 
-### Installing the 22.02 Release
+### Installing the ${VERSION}$ Release
 Before you begin, close any instances of OpenRocket you may have
 running.
 
@@ -27,8 +27,8 @@ Then, navigate to the directory in which you downloaded the installer,
 make it executable, and run it as follows:
 
  ```% cd Downloads``` <em>(or wherever you downloaded it to)</em> \
- ```% chmod +x OpenRocket-22.02-Linux.sh``` \
- ```% ./OpenRocket-22.02-Linux.sh```
+ ```% chmod +x OpenRocket-${VERSION}$-Linux.sh``` \
+ ```% ./OpenRocket-${VERSION}$-Linux.sh```
 
 The installer will now guide you through the process of installing
 OpenRocket on your system. At any step you can click '''Cancel''' to

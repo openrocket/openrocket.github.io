@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://openrocket.info" # the base hostname & protocol for your site
 github_username:  openrocket 
-current_version: 22.02
+current_version: 23.09
 defaults:
   -
     scope:
