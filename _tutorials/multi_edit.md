@@ -22,7 +22,7 @@ For the remainder of this tutorial, I'll be using the Windows/Linux convention o
 
 I'll be focusing on operating on the Component Tree, i.e.:
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/multi_edit/comonent_tree.png" alt="Component Tree" onclick="enlargeImage(this)">
+  <img src="/img/tutorials/multi_edit/component_tree.png" alt="Component Tree" onclick="enlargeImage(this)">
   <figcaption>Component Tree</figcaption>
 </figure>
 
@@ -34,19 +34,19 @@ In a nutshell, multi-selection is the ability to select multiple components simu
 
 Generally, control-clicking the mouse will let you toggle the selection of individual items.  In a few seconds I can do this:
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/multi_edit/comonent_tree_multi_2.png" alt="Multi-Selection in Component Tree" onclick="enlargeImage(this)">
+  <img src="/img/tutorials/multi_edit/component_tree_multi_1.png" alt="Multi-Selection in Component Tree" onclick="enlargeImage(this)">
   <figcaption>Multi-Selection in Component Tree</figcaption>
 </figure>
 
 Shift-clicking, on the other hand, will select the item you're clicking and all items between it and the most recent selected item, and unselect others.  So, let's say I first select "Body tube" and then control-click on "Wadding".  I get this:
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/multi_edit/comonent_tree_multi_1.png" alt="More Multi-Selection in Component Tree" onclick="enlargeImage(this)">
+  <img src="/img/tutorials/multi_edit/component_tree_multi_2.png" alt="More Multi-Selection in Component Tree" onclick="enlargeImage(this)">
   <figcaption>More Multi-Selection in Component Tree</figcaption>
 </figure>
 
 Now I shift-click on "Inner Tube", and I end up with this:
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/multi_edit/comonent_tree_multi_3.png" alt="Still More Multi-Selection in Component Tree" onclick="enlargeImage(this)">
+  <img src="/img/tutorials/multi_edit/component_tree_multi_3.png" alt="Still More Multi-Selection in Component Tree" onclick="enlargeImage(this)">
   <figcaption>Still More Multi-Selection in Component Tree</figcaption>
 </figure>
 
