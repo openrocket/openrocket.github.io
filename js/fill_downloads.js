@@ -1,7 +1,8 @@
+// Utility functions
+
 function getVersion() {
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    return urlParams.get('vers')
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('vers');
 }
 
 /**
@@ -10,106 +11,161 @@ function getVersion() {
  * @returns JS object 
  */
 function getConfigObj(version) {
-    return downloads_config.find(obj => {
-        return obj.name === version
-    })
+    return downloads_config.find(obj => obj.name === version);
 }
 
-function getLatestVersion() {
-    return downloads_config[0].name;
-}
+// Dropdown functions
 
 /**
- * Sets the text of the dropdown button to the targetted version
+ * Sets the text of the dropdown button to the targeted version
  * @param {string} version The targetted OpenRocket version
  */
 function selectDropdownVersion(version) {
-    let dropbtn = document.getElementById('dropbtn');
-    dropbtn.innerHTML = `${version}<i class="fa-solid fa-angle-down" style="margin-left: 15px;"></i>`
+    const dropbtn = document.getElementById('dropbtn');
+    dropbtn.innerHTML = `${version}<i class="fa-solid fa-angle-down" style="margin-left: 15px;"></i>`;
+}
+
+function fillDownloadsDropdown() {
+    const dropdownContent = document.getElementById('dropdown-content');
+    downloads_config.forEach(version => {
+        const versionLink = document.createElement('a');
+        versionLink.href = `downloads.html?vers=${version.name}`;
+        versionLink.innerHTML = (version.name === CURRENT_VERSION) ? `<b>${version.name}</b>` + " <i>(latest)</i>" : version.name;
+        dropdownContent.appendChild(versionLink);
+    });
 }
 
 /**
  * Fills the download content of a specific OS
- * @param {string} version The targetted OpenRocket version
- * @param {JS object} configObj The configuration object for the targetted version
+ * @param {string} version The targeted OpenRocket version
+ * @param {JS object} configObj The configuration object for the targeted version
  * @param {string} OSName The OS to target
+ * @param {string} faIcon The name of the Font Awesome icon to use in the title, or an empty string if no icon is needed
  */
-function fillOSContent(version, configObj, OSName, ...architectures) {
-    let content = document.getElementById(`content-${OSName}`);
-    let fillContent = document.getElementById(`fillContent-${OSName}`);
-    let btn = content.getElementsByTagName('a')[0];
-    let instr = document.getElementById(`instructions-${OSName}`);
+function fillOSContent(version, configObj, OSName, faIcon, ...architectures) {
+    const content = document.getElementById(`content-${OSName}`);
+    const hasArchitectures = architectures.some(arch => configObj.files[`${OSName}_${arch.replace(/\s+/g, '')}`]);
 
-    // Check for architectures
-    let hasArchitectures = false;
-    if (architectures.length > 0) {
-        hasArchitectures = true;
-        for (let i=0; i < architectures.length; i++) {
-            const arch = architectures[i].replace(/\s/g, '');
-            // All architectures must be present in the configObj, otherwise hide the OS element
-            if (!configObj.hasOwnProperty(`${OSName}File_${arch}`)) {
-                hasArchitectures = false;
-                break;
-            }
-        }
+    // Title
+    const title = document.createElement('h3');
+    title.className = 'downloads-os-title';
+    if (faIcon !== '') {
+        const icon = document.createElement('i');
+        icon.className = `fa-brands fa-${faIcon}`;
+        title.appendChild(icon);
+    }
+    title.appendChild(document.createTextNode(` ${OSName}`));
+
+    // Extract existing content
+    let extractedContent = [];
+    while(content.firstChild) {
+        extractedContent.push(content.firstChild);
+        content.removeChild(content.firstChild);
     }
 
-    // Hide this OS element if there is no information about it in the configObj
-    if (!((configObj.hasOwnProperty(`${OSName}File`) || hasArchitectures) && configObj.hasOwnProperty(`${OSName}Instr`))) {
+    // Add the title first
+    content.appendChild(title);
+
+    // Add the extracted content back
+    extractedContent.forEach(node => {
+        content.appendChild(node);
+    });
+
+    if (!hasArchitectures && !configObj.files[OSName]) {
         content.style.display = 'none';
         return;
     }
 
     if (hasArchitectures) {
-        // Hide the default button
-        btn.style.display = 'none';
+        architectures.forEach(arch => {
+            const archKey = `${OSName}_${arch.replace(/\s+/g, '')}`;
+            if (configObj.files[archKey]) {
+                // Create label with architecture name
+                const archLabel = document.createElement('h5');
+                archLabel.classList.add('arch-label');
+                archLabel.innerHTML = arch;
+                content.appendChild(archLabel);
 
-        // Create a new button for each architecture
-        for (let i=0; i < architectures.length; i++) {
-            const arch = architectures[i].replace(/\s/g, '');
-            const archFile = configObj[`${OSName}File_${arch}`];
-
-            fillContent.style.position = "relative";
-
-            // Create label with architecture name
-            const archLabel = document.createElement('h5');
-            archLabel.style.display = 'inline-block';
-            archLabel.innerHTML = architectures[i];
-            fillContent.append(archLabel);
-
-            // Create a download button
-            const archBtn = document.createElement('a');
-            archBtn.className = "btn btn-primary btn-lg";
-            archBtn.style.display = 'inline-block';
-            archBtn.style.position = "absolute";
-            archBtn.style.left = "10em";
-            archBtn.role = "button";
-            archBtn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/${archFile}`;
-            archBtn.innerHTML = `<i class="fa-solid fa-download" style="margin-right: 1.5rem"></i>Download ${archFile}`;
-            fillContent.append(archBtn);
-            fillContent.append(document.createElement('br'));
-        }
+                // Create a download button
+                const archBtn = createDownloadButton(version, configObj.files[archKey]);
+                archBtn.classList.add('arch-btn');
+                content.appendChild(archBtn);
+                content.appendChild(document.createElement('br'));
+            }
+        });
     } else {
-        // Update the download button content
-        const OSFile = configObj[`${OSName}File`];
-        btn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/${OSFile}`;
-        btn.innerHTML = `<i class="fa-solid fa-download" style="margin-right: 1.5rem"></i>Download ${OSFile}`;
+        // Use the default button
+        const btn = createDownloadButton(version, configObj.files[OSName]);
+        content.appendChild(btn);
     }
 
-    // Add the instructions
-    const OSInstr = configObj[`${OSName}Instr`];
-    let instrContent = document.createElement('zero-md');
-    instrContent.src = OSInstr;
+    // Instructions Button
+    const instructionsBtn = document.createElement('button');
+    instructionsBtn.type = 'button';
+    instructionsBtn.className = 'collapsible collapsible-download';
+    instructionsBtn.innerHTML = `Show ${OSName} installation instructions`;
+    content.appendChild(instructionsBtn);
 
-    //// Format the element using the main css
-    let template = document.createElement('template');
-    let link = document.createElement('link');
-    link.rel = 'stylsheet';
-    link.href = 'main.css'
-    template.append(link);
-    instrContent.append(template);
+    // Instructions Content
+    const instr = document.createElement('div');
+    instr.id = `instructions-${OSName}`;
+    instr.className = 'collapsible-content';
+    const OSInstr = configObj.instructions[OSName];
+    addInstructions(instr, OSInstr, version);
+    content.appendChild(instr);
 
-    instr.append(instrContent);
+    // Attach event listeners for the new collapsible elements
+    attachCollapsibleListeners();
+}
+
+function handleArchitectures(btn, version, configObj, OSName, architectures) {
+    architectures.forEach(arch => {
+        const archKey = `${OSName}_${arch.replace(/\s+/g, '')}`;
+        if (configObj.files[archKey]) {
+            btn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/${configObj.files[archKey]}`;
+            btn.innerHTML = `<i class="fa-solid fa-download" style="margin-right: 1.5rem"></i>Download ${configObj.files[archKey]}`;
+        }
+    });
+}
+
+function handleDefaultOS(btn, version, configObj, OSName) {
+    btn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/${configObj.files[OSName]}`;
+    btn.innerHTML = `<i class="fa-solid fa-download" style="margin-right: 1.5rem"></i>Download ${configObj.files[OSName]}`;
+}
+
+function addInstructions(instr, OSInstr, version) {
+    fetch(OSInstr)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            // Replace the placeholder with the actual version
+            const replacedData = data.replaceAll('${VERSION}$', version);
+
+            // Create the zero-md and script elements
+            const instrContent = document.createElement('zero-md');
+            const markdownContent = document.createElement('script');
+            markdownContent.type = 'text/markdown';
+            markdownContent.textContent = replacedData;
+
+            // Append the script to zero-md and zero-md to the instr element
+            instrContent.appendChild(markdownContent);
+            instr.appendChild(instrContent);
+        })
+        .catch(error => {
+            console.error("Error in addInstructions:", error);
+        });
+}
+
+function createDownloadButton(version, file) {
+    const btn = document.createElement('a');
+    btn.className = "btn btn-primary btn-lg";
+    btn.href = `https://github.com/openrocket/openrocket/releases/download/release-${version}/${file}`;
+    btn.innerHTML = `<i class="fa-solid fa-download" style="margin-right: 1.5rem"></i>Download ${file}`;
+    return btn;
 }
 
 /**
@@ -118,36 +174,67 @@ function fillOSContent(version, configObj, OSName, ...architectures) {
  * @param {string} format The source code format ('zip' or 'tar.gz')
  */
 function fillSourceCode(version, format) {
-    let elem = document.getElementById(`source-${format}`)
+    const elem = document.getElementById(`source-${format}`);
     elem.href = `https://github.com/openrocket/openrocket/archive/refs/tags/release-${version}.${format}`;
     elem.innerHTML = `<i class="fa-solid fa-download" style="margin-right: 1.5rem"></i>Download release-${version}.${format}`;
 }
 
+// What's new
+function fillWhatsNew(version) {
+    const whatsNewDiv = document.getElementById('whats-new');
+    const whatsNewBtn = document.getElementById('button-whats-new');
+
+    // Define the URL for the markdown file based on the version
+    const markdownUrl = `/downloads/release-notes/rn-${version}.html`;
+
+    // Fetch the markdown content
+    fetch(markdownUrl)
+        .then(response => {
+            if (!response.ok) {
+                whatsNewDiv.style.display = 'none';
+                whatsNewBtn.style.display = 'none';
+                throw new Error(`Markdown file ${markdownUrl} not found`);
+            }
+            return response.text();
+        })
+        .then(content => {
+            // If you have a markdown-to-HTML converter, use it here.
+            // For this example, we're directly setting the markdown content.
+            const whatsNewDiv = document.getElementById('content-whats-new');
+            if (whatsNewDiv) {
+                whatsNewDiv.innerHTML = content;
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching the markdown:', error);
+        });
+}
+
+// Main function
 window.onload = function() {
     const version = getVersion();
-    
-    if ((typeof version === 'undefined') || ( version == null)) {
-        // Redirect to latest version
+
+    fillDownloadsDropdown();
+
+    if (!version) {
         window.location.replace(`downloads.html?vers=${getLatestVersion()}`);
+        return;
     }
 
-    let configObj = getConfigObj(version);
-
-    if ((typeof configObj === 'undefined') || (configObj == null)) {
-        var content = document.getElementById('downloads-content');
-        content.style.display = 'none';
+    const configObj = getConfigObj(version);
+    if (!configObj) {
+        document.getElementById('downloads-content').style.display = 'none';
         selectDropdownVersion('INVALID VERSION');
-        return
+        return;
     }
 
     selectDropdownVersion(version);
-
-    fillOSContent(version, configObj, 'Windows');
-    fillOSContent(version, configObj, 'macOS', "Intel", "Apple Silicon");
-    fillOSContent(version, configObj, 'Linux');
-    fillOSContent(version, configObj, 'JAR');
-
+    fillOSContent(version, configObj, 'Windows', 'windows');
+    fillOSContent(version, configObj, 'macOS', 'apple', "Intel", "Apple Silicon");
+    fillOSContent(version, configObj, 'Linux', 'linux');
+    fillOSContent(version, configObj, 'JAR', 'java');
     fillSourceCode(version, 'zip');
     fillSourceCode(version, 'tar.gz');
-}
 
+    fillWhatsNew(version);
+}

@@ -128,6 +128,16 @@ nav.navbar {
   color: white;
 }
 
+.btn-red {
+  background-color: rgb(236, 95, 95);
+  color: white;
+}
+
+.btn-red:hover {
+  background-color: rgb(200, 89, 89);
+  color: white;
+}
+
 .downloads-os-title {
   padding-top: 40px;
 }
