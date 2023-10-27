@@ -12,7 +12,7 @@ toc: true
 Ever since the publication of [Apogee's Peak-of-Flight newsletter #154](https://www.apogeerockets.com/education/downloads/Newsletter154.pdf), use and implementation of the "base drag hack", as it is commonly known (but shouldn't be... as we'll discuss below) have been a frequent topic of conversation and a source of many questions.  In this tutorial we'll show how to implement it most correctly and efficiently in OpenRocket, starting with version 23.09.
 
 <div class="warning-message">
-      <i class="icon-warning">??</i> 
+      <i class="icon-warning">⚠️</i> 
       {{ "This tutorial will only address *how* to implement the hack as specified in Peak-of-Flight #154. Debates concerning the validity of the hack, or exactly *when* to use it, are left for discussion elsewhere." | markdownify }}
   </div>
 
