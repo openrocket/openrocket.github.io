@@ -26,7 +26,7 @@ For this reason, we will refer to it in this tutorial as "Base Drag CP Correctio
 
 #### When to use it
 
-The PoF article specifies the use of the hack for rockets with "Less than a 10:1 Length to Diameter Ratio". Although this is a simple rule to follow, it does raise certain questions.  But again, we'll leave those for discussion elsewhere.
+The PoF article specifies the use of the hack for rockets with "Less than a 10:1 Length to Diameter Ratio". Although this is a simple rule to follow, it does raise some thorny questions.  But again, we'll leave those for discussion elsewhere.
 
 #### What to do
 
@@ -43,7 +43,7 @@ Let's start with a short stubby 3FNC:
 
 The stability margin is calculated at 0.287 calibers, or about 5%.  That's too low to fly safely, but this rocket passes the "less than 10:1" test for using base drag CP correction, so all is not yet lost.
 
-The cone we add to the back will be 3" in diameter and 3xPI = 9.42" long.  Let's add it to the back of the rocket, and set wall thickness to zero so that the mass of the cone is zero (you could also use a mass override if you prefer):
+The cone we add to the back will be 3" in diameter and 3xPI = 9.42" long.  We'll set wall thickness to zero so that the mass of the cone is zero (you could also use a mass override if you prefer):
 
 <figure class="enlargeable-image">
   <img src="/img/tutorials/base_drag/add_cone.png" width="70%" class="figure-shadow" alt="Added Base Drag Cone" onclick="enlargeImage(this)">
@@ -52,9 +52,9 @@ The cone we add to the back will be 3" in diameter and 3xPI = 9.42" long.  Let's
 
 Our stability margin is now up to 0.88 calibers / 10.3 %, which is pretty good.  If you want a little more margin you could add a bit of nose weight, but at least we're starting from a much better place than before.
 
-The first thing to notice here is that we now get a discontinuity warning from where the body tube meets the base drag cone.  This is unsurprising and generally unavoidable.  You can always hide the warnings if you like by unchecking "Show warnings" in the bottom right corner.
+The first thing to notice here is that we now get a `Discontinuity` warning from where the body tube meets the base drag cone.  This is unsurprising and generally unavoidable.  You can always hide the warnings if you like by unchecking "Show warnings" in the bottom right corner, but of course that will hide all of them.
 
-Next, notice that with the base drag cone, even though its mass is zero, the apogee has decreased from 1075 ft to 915 ft.  Why is that?  Welll, as we said up front, OpenRocket was already calculating base drag.  So adding the cone has now added a whole bunch of *new* drag that doesn't exist in the rocket.  We can see this if we look at the "Drag Characteristics" tab inside Component Aanalysis (Tools -> Component Analysis):
+Next, notice that with the base drag cone, even though its mass is zero, the apogee has decreased from 1075 ft to 915 ft.  Why is that?  Welll, as we said up front, OpenRocket was already calculating base drag.  So adding the cone has now added a whole bunch of *new* drag that doesn't exist in the rocket.  We can see this if we look at the `Drag Characteristic` tab inside `Component Aanalysis` (`Tools -> Component Analysis`):
 
 <figure class="enlargeable-image">
   <img src="/img/tutorials/base_drag/component_analysis.png" width="70%" class="figure-shadow" alt="Drag Component Analysis" onclick="enlargeImage(this)">
