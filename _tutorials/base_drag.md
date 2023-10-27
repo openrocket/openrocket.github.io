@@ -57,7 +57,7 @@ The first thing to notice here is that we now get a discontinuity warning from w
 Next, notice that with the base drag cone, even though its mass is zero, the apogee has decreased from 1075 ft to 915 ft.  Why is that?  Welll, as we said up front, OpenRocket was already calculating base drag.  So adding the cone has now added a whole bunch of *new* drag that doesn't exist in the rocket.  We can see this if we look at the "Drag Characteristics" tab inside Component Aanalysis (Tools -> Component Analysis):
 
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/base_drag/component_analysis.png" class="figure-shadow" alt="Drag Component Analysis" onclick="enlargeImage(this)">
+  <img src="/img/tutorials/base_drag/component_analysis.png" width="70%" class="figure-shadow" alt="Drag Component Analysis" onclick="enlargeImage(this)">
   <figcaption class="figure-shadow-caption">Component Analysis of Drag</figcaption>
 </figure>
 
