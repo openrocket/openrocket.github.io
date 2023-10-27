@@ -132,7 +132,7 @@ Therefore, if it is your goal to edit the entire rocket appearance and you start
 
 #### Freeform Fins
 
-A fun thing you can do is multi-edit `Freeform fin shape`.  Here the trapezoidal fins have been converted to freeform, and then another freeform set was added. When the `shape editor` is opened, we see the shape of the first selected fin (the trapezoidals):
+A fun thing you can do is multi-edit `Freeform fin shape`.  Here the trapezoidal fins have been converted to freeform, and then another freeform set was added. When the `Shape editor` is opened, we see the shape of the **first selected fin** (the trapezoidals):
 
 <!-- TODO: change this with animation -->
 
