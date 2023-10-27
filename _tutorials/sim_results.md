@@ -13,8 +13,8 @@ Normally you expect your recovery device deployed either (a) close to apogee, wh
 
 Look at these sim results for the "Simple Model Rocket" example design:
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/sim_results/bad_results.png" width="60%" onclick="enlargeImage(this)">
-  <figcaption>Unexpectedly Bad Sim Results</figcaption>
+  <img src="/img/tutorials/sim_results/bad_results.png" width="60%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Unexpectedly Bad Sim Results</figcaption>
 </figure>
 
 It sure seems like this rocket ought to go higher than 355 feet on a C6 motor.  Your first hint that early deployment is the problem is that the sim results table will show a very high velocity at deployment, and there will be a warning indicating such if you `hover` over the `red exclamation point` at the left:
@@ -27,15 +27,15 @@ It sure seems like this rocket ought to go higher than 355 feet on a C6 motor.  
 You can also see it if you create a plot of the sim, using the default settings.  Select the sim, then click the `Plot/Export` button, and then `Plot`.  The resulting plot will show early deployment quite clearly, as in this example (this is heavily zoomed in):
 
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/sim_results/early_deployment_plot.png" width="55%" onclick="enlargeImage(this)">
-  <figcaption>Early Deployment Shown in Plot</figcaption>
+  <img src="/img/tutorials/sim_results/early_deployment_plot.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Early Deployment Shown in Plot</figcaption>
 </figure>
 
 In this example, notice that the `Recovery device deployment` event occurs while `Vertical velocity` (red line) is very high.  Also, not that the `Motor burnout` and `Recovery device deployment` are happening at the same time. Why does this happen?  By far the most common mistake is that a **motor** with a **too short delay** has been configured... in fact, often it is a zero-delay booster motor, as in this example. Let's go look at the motor configurations:
 
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/sim_results/motor_configurations.png" width="55%" onclick="enlargeImage(this)">
-  <figcaption>Motor Configurations Tab</figcaption>
+  <img src="/img/tutorials/sim_results/motor_configurations.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Motor Configurations Tab</figcaption>
 </figure>
 
 Here we can see that the motor in the first (and only) configuration has a `-0` suffix, which means that its ejection charge will fire immediately after burnout. That is appropriate *only* when you're trying to ignite a second stage black powder motor, or in some unusual circumstances in side boosters or pods.
@@ -43,21 +43,21 @@ Here we can see that the motor in the first (and only) configuration has a `-0` 
 Let's select the first configuration and click `Select Motor` and see where things went wrong. Here's the motor selection dialog:
 
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/sim_results/motor_selection.png" width="55%" onclick="enlargeImage(this)">
-  <figcaption>Motor Selection Dialog</figcaption>
+  <img src="/img/tutorials/sim_results/motor_selection.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Motor Selection Dialog</figcaption>
 </figure>
 
 Note the red arrow pointing to the motor delay selection, which currently shows `-0`.  Click on that pull-down to select from the available delay values offered by the manufacturer, or just type a number right into that combobox.  The sim results will tell you the `Optimum delay`, which is the delay value that will yield a perfect apogee deployment.  In this case it's about 6 seconds:
 
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/sim_results/optimum_delay.png" width="55%" onclick="enlargeImage(this)">
+  <img src="/img/tutorials/sim_results/optimum_delay.png" width="70%" onclick="enlargeImage(this)">
   <figcaption>Optimum Delay in Sim Results Table</figcaption>
 </figure>
 
 The pulldown shows that the C6 has `-5` or `-7` second delays available... we could go with either, but for now we'll choose -7 and check out the updated sim results:
 
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/sim_results/new_results.png" width="55%" onclick="enlargeImage(this)">
+  <img src="/img/tutorials/sim_results/new_results.png" width="70%" onclick="enlargeImage(this)">
   <figcaption>Updated Sim Results</figcaption>
 </figure>
 
@@ -70,8 +70,8 @@ For a complete run-down of all the ins and outs of motor selection, go check out
 The second likely culprit is **bad simulation parameters**. Let's go back to the same rocket, now it's showing only 426 ft apogee, and again there's a high-speed deployment warning:
 
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/sim_results/second_bad_result.png" width="55%" onclick="enlargeImage(this)">
-  <figcaption>Low Predicted Apogee, again</figcaption>
+  <img src="/img/tutorials/sim_results/second_bad_result.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Low Predicted Apogee, again</figcaption>
 </figure>
 
 Double-checking the motor delay shows that it's correct.  In fact, everything looks in order.  What's the problem now?
@@ -79,14 +79,14 @@ Double-checking the motor delay shows that it's correct.  In fact, everything lo
 When all else fails, go and check your simulation settings. Click once to select the sim, and then click the `Edit Simulation` button:
 
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/sim_results/sim_settings.png" width="55%" onclick="enlargeImage(this)">
-  <figcaption>Simulation Settings</figcaption>
+  <img src="/img/tutorials/sim_results/sim_settings.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Simulation Settings</figcaption>
 </figure>
 
 There's the problem, the launch rod is angled at 45 degrees. Change that to zero and everything will revert to normal. Other sim settings can mess you up as well, particularly altitude and atmospheric conditions.  These settings are usually not a source of problem but they can be, if you inadvertently make an unwanted change.  Generally, you will set the default sim settings in the `Launch` tab of your OpenRocket preferences, and then only occasionally change the settings for a sim after it has been created.
 
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/sim_results/launch_preferences.png" width="55%" onclick="enlargeImage(this)">
-  <figcaption>Launch Preferences Tab</figcaption>
+  <img src="/img/tutorials/sim_results/launch_preferences.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Launch Preferences Tab</figcaption>
 </figure>
 

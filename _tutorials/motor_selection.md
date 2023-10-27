@@ -13,8 +13,8 @@ When you create a new motor configuration, OR will automatically open the motor 
 
 Let's take a quick tour of the motor selection dialog:
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/motor_selection/motor_selection_dialog.png" width="70%" onclick="enlargeImage(this)">
-  <figcaption>Motor Selection Dialog</figcaption>
+  <img src="/img/tutorials/motor_selection/motor_selection_dialog.png" width="70%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Motor Selection Dialog</figcaption>
 </figure>
 
 <ol class="step-list">
@@ -77,22 +77,22 @@ This is good for when you have a composite motor with adjustable delay.  You can
 Let's click over to the `Show Details` tab on the right. In addition to a bunch of detail about the motor, we see that there are two different thrust curves for the A8, a red one and a blue one.
 
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/motor_selection/show_details.png" width="70%" onclick="enlargeImage(this)">
-  <figcaption>"Show Details" tab</figcaption>
+  <img src="/img/tutorials/motor_selection/show_details.png" width="70%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">"Show Details" tab</figcaption>
 </figure>
 
 Notice also that the red line is significantly heavier than the bluer. That means that is the red curve is currently selected, and will be used in the flight simulations.  You can also see this by clicking on the `Select thrust curve` pulldown:
 
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/motor_selection/red_curve.png" width="70%" onclick="enlargeImage(this)">
-  <figcaption>Red Curve Selected in Pulldown</figcaption>
+  <img src="/img/tutorials/motor_selection/red_curve.png" width="70%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Red Curve Selected in Pulldown</figcaption>
 </figure>
 
 When you click on the pulldown, you'll see a list of the available curves, color-coded, with the selected curve highlighted and checked. If you wanted to use the blue curve, just select that one:
 
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/motor_selection/blue_curve.png" width="70%" onclick="enlargeImage(this)">
-  <figcaption>Blue Curve Selected in Pulldown</figcaption>
+  <img src="/img/tutorials/motor_selection/blue_curve.png" width="70%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Blue Curve Selected in Pulldown</figcaption>
 </figure>
 
 Now you'll notice that the blue curve is heavier than the red, and it is the one that will be used in flight simulation.
@@ -109,8 +109,8 @@ Each time a new version of OpenRocket is released, the complete database of moto
 On the occasion that you do need to add a motor, it's as simple as taking a motor file (`.eng` or `.rse`) and placing it in the motors folder of your OR installation. You can see where that is in the first tab of preferences: 
 
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/motor_selection/motors_folder.png" width="60%" onclick="enlargeImage(this)">
-  <figcaption>User-defined thrust curve folder preferences</figcaption>
+  <img src="/img/tutorials/motor_selection/motors_folder.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">User-defined thrust curve folder preferences</figcaption>
 </figure>
 
 Note that I have set my folder to somewhere on my DropBox, so all the machines on which I use OR can share it. However, in general using a folder of your own is better than using the default location.

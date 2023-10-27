@@ -21,8 +21,8 @@ In addition to this tutorial, check out the example rockets included in OR that 
 
 The `Pods` and `Boosters` components are in the `Assembly Components` section up at the top:
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/pods_and_boosters/pod-button.png" width="55%" onclick="enlargeImage(this)">
-  <figcaption>Pods Component Button</figcaption>
+  <img src="/img/tutorials/pods_and_boosters/pod-button.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Pods Component Button</figcaption>
 </figure>
 
 The first important thing to note is that these are **not physical components**, but represent **attachment points for other complete airframes**. The next important thing is that a pod set can **only be attached to a body tube**. This may change in future releases.
@@ -36,16 +36,16 @@ In the rocket figure display, the pods are shown as little plus-sign targets. He
 #### Parameters
 
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/pods_and_boosters/pod-config.png" width="55%" onclick="enlargeImage(this)">
-  <figcaption>Pods Configuration Dialog</figcaption>
+  <img src="/img/tutorials/pods_and_boosters/pod-config.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Pods Configuration Dialog</figcaption>
 </figure>
 
 The following parameters are available in the `Pods Configuration Dialog`:
 - `Radius relative to`: determines the Radius Positioning Method, i.e. how OR will calculate the distance of the pod components from the center of the rocket. The most commonly useful option, shown selected, is `Surface of the parent component`. This method means that the `Radial Distance` value will define the distance from the surface of the airframe to the surface of the pod body. If we want our pods to be mounted to the surface of the body, we leave `Radial Distance` set to 0 and we're good to go.
 
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/pods_and_boosters/pod-radius.png" width="55%" onclick="enlargeImage(this)">
-  <figcaption>Pods Radial Distance</figcaption>
+  <img src="/img/tutorials/pods_and_boosters/pod-radius.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Pods Radial Distance</figcaption>
 </figure>
 
 - `Radial Distance`: distance offset from the radius positioning method, defined in `Radius relative to`, see above.
@@ -71,16 +71,16 @@ Let's start with the simple case of something that looks like boosters attached 
 <li markdown="1">
   Now, we add components to the pod set just like we were building a new rocket. We'll start with a nose cone...
   <figure class="enlargeable-image">
-    <img src="/img/tutorials/pods_and_boosters/pod-with-nose.png" width="55%" onclick="enlargeImage(this)">
-    <figcaption>Pods with Nose Cone Added</figcaption>
+    <img src="/img/tutorials/pods_and_boosters/pod-with-nose.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
+    <figcaption class="figure-shadow-caption">Pods with Nose Cone Added</figcaption>
   </figure>
 </li>
 
 <li markdown="1">
   Then add a body...
   <figure class="enlargeable-image">
-    <img src="/img/tutorials/pods_and_boosters/pod-with-nose-tube.png" width="85%" onclick="enlargeImage(this)">
-    <figcaption>Pods With Nose Cone and Body Tube, side view (left) and back view (right)</figcaption>
+    <img src="/img/tutorials/pods_and_boosters/pod-with-nose-tube.png" width="85%" class="figure-shadow" onclick="enlargeImage(this)">
+    <figcaption class="figure-shadow-caption">Pods With Nose Cone and Body Tube, side view (left) and back view (right)</figcaption>
   </figure>
 </li>
 
@@ -94,8 +94,8 @@ Sometimes you might want the pods to go on the ends of fins. Lets take the pods 
 
 Edit the pod set:
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/pods_and_boosters/pod-config-finends.png" width="55%" onclick="enlargeImage(this)">
-  <figcaption>Pods Configuration at Ends of Fins</figcaption>
+  <img src="/img/tutorials/pods_and_boosters/pod-config-finends.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Pods Configuration at Ends of Fins</figcaption>
 </figure>
 
 * Because our fins are 1.25" high, we set `Radial Distance` to that value, which means that the surface of the pod body tube will be exactly at the end of the fins.
@@ -104,8 +104,8 @@ Edit the pod set:
 
 The result is...
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/pods_and_boosters/pods-on-finends.png" width="85%" onclick="enlargeImage(this)">
-  <figcaption>Pods on Ends of Fins, side view (left) and back view (right)</figcaption>
+  <img src="/img/tutorials/pods_and_boosters/pods-on-finends.png" width="85%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Pods on Ends of Fins, side view (left) and back view (right)</figcaption>
 </figure>
 
 ### Fins on Fins
@@ -115,8 +115,8 @@ So far so good. What about fins on fins?
 <li markdown="1">
   First let's delete the nose cones, and edit the body tube on the pods:
   <figure class="enlargeable-image">
-    <img src="/img/tutorials/pods_and_boosters/pod-phantom.png" width="55%" onclick="enlargeImage(this)">
-    <figcaption>Phantom Body Tube</figcaption>
+    <img src="/img/tutorials/pods_and_boosters/pod-phantom.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
+    <figcaption class="figure-shadow-caption">Phantom Body Tube</figcaption>
   </figure>
 </li>
 
@@ -132,19 +132,19 @@ So far so good. What about fins on fins?
 <li markdown="1">
   Let's add a trapezoidal fin set to the phantom tube:
   <figure class="enlargeable-image">
-    <img src="/img/tutorials/pods_and_boosters/pod-fintips.png" width="55%" onclick="enlargeImage(this)">
-    <figcaption>Fin Tips Configuration</figcaption>
+    <img src="/img/tutorials/pods_and_boosters/pod-fintips.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
+    <figcaption class="figure-shadow-caption">Fin Tips Configuration</figcaption>
   </figure>
 
   Two fins, set at 90 degrees. For each pod, 0 degrees represents the direction pointing directly away (perpendicular) from the body tube. So if we set fin rotation to 0, our pod fins would be coplanar with the main fins, which is not what we want. By setting them to 90 degrees, they'll be perpendicular. And here they are:
   <figure class="enlargeable-image">
-    <img src="/img/tutorials/pods_and_boosters/pod-fintips-side-rear.png" width="95%" onclick="enlargeImage(this)">
-    <figcaption>Pods with Fin Tips, side view (left) and back view (right)</figcaption>
+    <img src="/img/tutorials/pods_and_boosters/pod-fintips-side-rear.png" width="95%" class="figure-shadow" onclick="enlargeImage(this)">
+    <figcaption class="figure-shadow-caption">Pods with Fin Tips, side view (left) and back view (right)</figcaption>
   </figure>
 
   <figure class="enlargeable-image">
-    <img src="/img/tutorials/pods_and_boosters/pod-fintips-3d.png" width="50%" onclick="enlargeImage(this)">
-    <figcaption>Pods with Fin Tips (3D view)</figcaption>
+    <img src="/img/tutorials/pods_and_boosters/pod-fintips-3d.png" width="50%" class="figure-shadow" onclick="enlargeImage(this)">
+    <figcaption class="figure-shadow-caption">Pods with Fin Tips (3D view)</figcaption>
   </figure>
 </li>
 </ol>
@@ -158,14 +158,14 @@ Not discussed above is the fact that you can put motor mounts in your pods, and 
 
 Let's add boosters to the rocket from the previous example.  Here's the config dialog:
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/pods_and_boosters/booster-config.png" width="50%" onclick="enlargeImage(this)">
-  <figcaption>Booster Set Configuration</figcaption>
+  <img src="/img/tutorials/pods_and_boosters/booster-config.png" width="50%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Booster Set Configuration</figcaption>
 </figure>
 
 The first thing you notice is that there's a new first tab called `Separation`.  Here is where you can specify if and when the boosters will eject from the rocket. Also notice that the booster set is defined as a new stage in the rocket figure display:
 <figure class="enlargeable-image">
-  <img src="/img/tutorials/pods_and_boosters/booster-stage.png" width="55%" onclick="enlargeImage(this)">
-  <figcaption>Boosters as Stage</figcaption>
+  <img src="/img/tutorials/pods_and_boosters/booster-stage.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Boosters as Stage</figcaption>
 </figure>
 
 Other than that, boosters behave exactly like pods.
