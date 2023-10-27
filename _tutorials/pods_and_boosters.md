@@ -12,7 +12,7 @@ OpenRocket 22.02 introduced the concept of `pods` and `boosters`, which are *alm
 
   <div class="warning-message">
       <i class="icon-warning">⚠️</i> 
-      {{ "For this tutorial we'll refer to both generically as `pods`, and only later one will we discuss the few key differences between them." | markdownify }}
+      {{ "For this tutorial we'll refer to both generically as `pods`; at the end we'll discuss the few key differences between them." | markdownify }}
   </div>
 
 In addition to this tutorial, check out the example rockets included in OR that demonstrate what is described here (`File -> Open example`).  
