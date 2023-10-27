@@ -1,0 +1,94 @@
+---
+layout: tutorial
+title: Implementing Base Drag CP Correction
+thumbnail: /img/tutorials/thumbnails/base-drag.png
+description: This tutorial will show the best ways to implement the Base Drag CP Hack in your OR mode.
+date: 2023-10-27
+toc: true
+---
+
+### Introduction
+
+Ever since the publication of [Apogee's Peak-of-Flight newsletter #154](https://www.apogeerockets.com/education/downloads/Newsletter154.pdf), use and implementation of the "base drag hack", as it is commonly known (but shouldn't be... as we'll discuss below) have been a frequent topic of conversation and a source of many questions.  In this tutorial we'll show how to implement it most correctly and efficiently in OpenRocket, starting with version 23.09.
+
+<div class="warning-message">
+      <i class="icon-warning">??</i> 
+      {{ "This tutorial will only address *how* to implement the hack as specified in Peak-of-Flight #154. Debates concerning the validity of the hack, or exactly *when* to use it, are left for discussion elsewhere." | markdownify }}
+  </div>
+
+### About the Hack
+
+#### What it's really for
+
+First let's clear up some misinformation about the hack.  It is commonly referred to as the "base drag hack", which suggests that it is some type of correction for missing base drag.  In fact, base drag is already well-implemented in OpenRocket, and has been for a long time.  The purpose of the hack is to apply a *correction to Center of Pressure* to incorporate the effects of base drag, something which is *not* currently implemented in OpenRocket.
+
+For this reason, we will refer to it in this tutorial as "Base Drag CP Correction", and recommend you do the same.  For short we will just say "the hack", which is not meant as a pejorative; it is simply descriptive.
+
+#### When to use it
+
+The POF article specifies the use of the hack for rockets with "Less than a 10:1 Length to Diameter Ratio". This is a simple rule to follow, although it does raise certain questions.  But again, we'll leave those for discussion elsewhere.
+
+#### What to do
+
+The actual hack is quite simple.  A massless cone with diameter equal to the aft end of the rocket, and length PI times that diameter, is added to the back of the rocket.  This will pull the CP back somewhat (and hence improve reported stability margin), but if done correctly (as we'll describe), will have *no other effect*.
+
+### How to implement it
+
+Let's start with a short stubby 3FNC:
+
+<figure class="enlargeable-image">
+  <img src="/img/tutorials/base_drag/stubby_rocket.png" width="70%" class="figure-shadow" alt="Short Stubby Rocket" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">A Short Stubby Rocket</figcaption>
+</figure>
+
+The stability margin is calculated at 0.287 calibers, or about 5%.  That's too low to fly safely, but this rocket passes the "less than 10:1" test for using base drag CP correction, so all is not yet lost.
+
+The cone we add to the back will be 3" in diameter and 3xPI = 9.42" long.  Let's add a cone to the back of the rocket, with these dimensions.  Wall thickness is set to zero so that the mass of the cone is zero (you could also use a mass override if you prefer):
+
+<figure class="enlargeable-image">
+  <img src="/img/tutorials/base_drag/add_cone.png" width="70%" class="figure-shadow" alt="Added Base Drag Cone" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Base Drag Cone Added to Rocket</figcaption>
+</figure>
+
+Our stability margin is now up to 0.88 calibers / 10.3 %, which is pretty good.  If you want a little more margin you could add a bit of nose weight, but at least we're starting from a much better place than before.
+
+The first thing to notice is that we now get a discontinuity warning from where the body tube meets the base drag cone.  This is unavoidable.  You can always hide the warnings if you like by unchecking "Show warnings" in the bottom right corner.
+
+Next, notice that with the base drag cone, even though its mass is zero, the apogee has decreased from 1075 ft to 915 ft.  Why is that?  Welll, as we said up front, OpenRocket is already calculating drag.  So adding the cone has added both the surface drag of the one *and* another chunk of base drag at its base.  We can see this if we look at the "Drag Characteristics" tab inside Component Aanalysis (Tools -> Component Analysis):
+
+<figure class="enlargeable-image">
+  <img src="/img/tutorials/base_drag/component_analysis.png" width="70%" class="figure-shadow" alt="Drag Component Analysis" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Component Analysis of Drag</figcaption>
+</figure>
+
+Note that the base drag of the original body tube is still there, and now we've added a whole bunch of drag with the new cone. The solution, of course, is straightforward: simply override the Cd of the base drag cone to zero:
+
+<figure class="enlargeable-image">
+  <img src="/img/tutorials/base_drag/drag_override.png" width="70%" class="figure-shadow" alt="Setting Drag to Zero" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Setting Drag to Zero</figcaption>
+</figure>
+
+Now the apogee is back up to 1084 ft, which is within margin of error of where we started.
+
+The base drag cone is not very attractive in the 3D view:
+
+<figure class="enlargeable-image">
+  <img src="/img/tutorials/base_drag/threed_view.png" width="70%" class="figure-shadow" alt="3D View" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Base Drag Cone in 3D View</figcaption>
+</figure>
+
+If we care, we can make this better by setting the cone to be almost transparent.
+
+<figure class="enlargeable-image">
+  <img src="/img/tutorials/base_drag/transparent_cone.png" width="70%" class="figure-shadow" alt="Making the Cone Almost Transparent" onclick="enlargeImage(this)">
+  <figcaption class="figure-shadow-caption">Making the Cone Almost Transparent</figcaption>
+</figure>
+
+Now, we can still see it (so we remember it's there), but it doesn't detract.  You could go even further and set it to be completely transparent so it's invisible in the 3D view, but I prefer to see it just a little.
+
+### Conclusion
+
+This completes the implementation of the hack.  It is providing CP correction interfering with any other flight parameters, and looks decent in 3D view.
+
+If and when to use it on your rockets... well, that's up to you.
+
