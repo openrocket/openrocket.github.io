@@ -42,7 +42,7 @@ permalink: /tutorials/
         Tutorials List ▼
       </div>
       <ul id="tutorialsList" class="collapsed">
-        {% for tutorial in site.tutorials %}
+        {% for tutorial in site.tutorials reversed %}
           <li><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></li>
         {% endfor %}
       </ul>
