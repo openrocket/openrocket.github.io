@@ -93,11 +93,6 @@ the [install4j multi-platform installer builder](https://www.ej-technologies.com
 
 <link rel="stylesheet" href="/css/downloads.css">
 
-<!-- Define CURRENT_VERSION first -->
-<script type="text/javascript">
-  var CURRENT_VERSION = "{{ site.current_version }}";
-</script>
-
 <script type="text/javascript" src="/downloads/downloads_config.js" defer></script>
 <script type="text/javascript" src="/js/fill_downloads.js" defer></script>
 <script type="text/javascript" src="/js/collapsible.js" defer></script>
