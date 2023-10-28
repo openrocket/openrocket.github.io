@@ -12,38 +12,34 @@ Since you're now moving from the digital, simulation world to the physical, 3D p
 
 We recommend you take a look at our "A 3D printable model rocket" example file, which you can access by going to `File > Open example > A 3D printable model rocket`. This file contains a design that is ready to be exported to OBJ and 3D printed.
 
-<figure class="enlargeable-image">
-  <img src="/img/tutorials/export_OBJ_3D_printing/ExampleRocket.png" width="60%" onclick="enlargeImage(this)">
-  <figcaption>Example file "A 3D printable model rocket"</figcaption>
-</figure>
+<script>
+  addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/ExampleRocket.png', 'Example file "A 3D printable model rocket"', '60%', false);
+</script>
 
 ### Exporting to OBJ
 <ol class="step-list">
 <li markdown="1">  <!-- We want to keep markdown -->
   The first step is to select the objects you want to export. You can select single components, or multiple objects by holding down the `Ctrl/Cmd` key while clicking on the components. If the selected component contains children, you can also choose to export the children components as well. If you want to export all objects, you can select the rocket component.
 
-  <figure class="enlargeable-image">
-    <img src="/img/tutorials/export_OBJ_3D_printing/SelectExportComponents.png" width="80%" onclick="enlargeImage(this)">
-    <figcaption>Selecting which components to export</figcaption>
-  </figure>
+  <script>
+    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/SelectExportComponents.png', 'Selecting which components to export', '80%', false);
+  </script>
 </li>
 
 <li markdown="1">
   Once you've selected the objects you want to export, go to `File > Export as > Wavefront OBJ (.obj)`. This will open the OBJ export dialog. Alternatively, you can right-click on the selected components in the component tree and choose `Export as OBJ (.obj)`.
 
-  <figure class="enlargeable-image">
-    <img src="/img/tutorials/export_OBJ_3D_printing/AccessExportDialog.png" width="70%" onclick="enlargeImage(this)">
-    <figcaption>Access the export dialog through the application ribbon or context menu</figcaption>
-  </figure>
+  <script>
+    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/AccessExportDialog.png', 'Access the export dialog through the application ribbon or context menu', '70%', false);
+  </script>
 </li>
 
 <li markdown="1">
   You will then be greeted by the OBJ export dialog. Here, you can choose your export location and filename, and set the export parameters. The export location is the folder where the OBJ file will be saved. The export parameters are explained in the next section. You can verify which components will be exported by hovering over the text in the `Component` field.
 
-  <figure class="enlargeable-image">
-    <img src="/img/tutorials/export_OBJ_3D_printing/ExportDialog.png" width="80%" onclick="enlargeImage(this)">
-    <figcaption>OBJ export dialog</figcaption>
-  </figure>
+  <script>
+    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/ExportDialog.png', 'OBJ export dialog', '80%', false);
+  </script>
 
   <div class="warning-message">
       <i class="icon-warning">⚠️</i> 
@@ -56,10 +52,9 @@ We recommend you take a look at our "A 3D printable model rocket" example file, 
 <li>
   If there are any warnings during the export process, you will be notified by a dialog. For instance, if you have a zero-width body tube, you will get the following warning:
 
-  <figure class="enlargeable-image">
-    <img src="/img/tutorials/export_OBJ_3D_printing/ExportWarning.png" width="50%" onclick="enlargeImage(this)">
-    <figcaption>Export warning due to a body tube width 0 wall thickness</figcaption>
-  </figure>
+  <script>
+    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/ExportWarning.png', 'Export warning due to a body tube width 0 wall thickness', '50%', false);
+  </script>
 </li>
 
 <li>
@@ -70,10 +65,9 @@ We recommend you take a look at our "A 3D printable model rocket" example file, 
       If your slicer does not support importing OBJ files, you can use conversion software to convert the OBJ to for instance STL.
   </div>
 
-  <figure class="enlargeable-image">
-    <img src="/img/tutorials/export_OBJ_3D_printing/Sliced.png" width="80%" onclick="enlargeImage(this)">
-    <figcaption>Sliced geometry using UltiMaker Cura</figcaption>
-  </figure>
+  <script>
+    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/Sliced.png', 'Sliced geometry using UltiMaker Cura', '80%', false);
+  </script>
 </li>
 
 <li markdown="1">
@@ -83,34 +77,30 @@ We recommend you take a look at our "A 3D printable model rocket" example file, 
 
   Edit the fin set, and activate the `Split fins` option on the bottom of the dialog. This will split each fin instance to a separate component. Now, all you have to do is export each separate fin instance as an OBJ file and bring that into your slicer.
 
-  <figure class="enlargeable-image">
-    <img src="/img/tutorials/export_OBJ_3D_printing/FinsEdit.png" width="50%" onclick="enlargeImage(this)">
-    <figcaption>Split fins option in the fin edit dialog</figcaption>
-  </figure>
+  <script>
+    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/FinsEdit.png', 'Split fins option in the fin edit dialog', '50%', false);
+  </script>
 
-  <figure class="enlargeable-image">
-    <img src="/img/tutorials/export_OBJ_3D_printing/SplitFins.png" width="70%" onclick="enlargeImage(this)">
-    <figcaption>Result before and after splitting the fin</figcaption>
-  </figure>
+  <script>
+    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/SplitFins.png', 'Result before and after splitting the fin', '70%', false);
+  </script>
 </li>
 
 <li markdown="1">
   Now, you can export one of the fin instances and duplicate it 3 times in your slicer.
 
-  <figure class="enlargeable-image">
-    <img src="/img/tutorials/export_OBJ_3D_printing/SliceFins.png" width="85%" onclick="enlargeImage(this)">
-    <figcaption>Steps to slice the fins</figcaption>
-  </figure>
+  <script>
+    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/SliceFins.png', 'Steps to slice the fins', '85%', false);
+  </script>
 </li>
 </ol>
 
 ### Export parameters
 The export dialog has a few parameters that you can set to customize your export. Here's a quick overview of what each parameter does:
 
-<figure class="enlargeable-image">
-  <img src="/img/tutorials/export_OBJ_3D_printing/ExportParameters.png" width="25%" onclick="enlargeImage(this)">
-  <figcaption>Export warning due to a body tube with 0 wall thickness</figcaption>
-</figure>
+<script>
+  addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/ExportParameters.png', 'Export warning due to a body tube with 0 wall thickness', '25%', false);
+</script>
 
 By clicking on the `Show Advanced options` button, you can get more detailed settings, which are usually recommended for advanced users.
 
@@ -120,24 +110,24 @@ This denotes the components you've chosen to export. In the given example, multi
 #### Optimize for
 There are two options for optimization:
 
-- **3D Printing**: This setting optimizes the exported OBJ file for 3D printing purposes. It ensures the model is triangulated, appearance exporting is disabled, scaling is set to millimeters, and the level of detail is set to high.
-- **Rendering**: If you're planning to render the model in a 3D software, this setting ensures the model looks its best by optimizing for visual fidelity.
+- `3D Printing`: This setting optimizes the exported OBJ file for 3D printing purposes. It ensures the model is triangulated, appearance exporting is disabled, scaling is set to millimeters, and the level of detail is set to high.
+- `Rendering`: If you're planning to render the model in a 3D software, this setting ensures the model looks its best by optimizing for visual fidelity.
 
 If your export parameters match either one of these settings, the corresponding button will be highlighted. In the given example, the export parameters match the `3D Printing` setting.
 
 #### Basic Options
 
-- **Export children**: If enabled, exports children of the selected components. Note: Component assemblies always export their children. If the selected components don't have children, this option is irrelevant.
-- **Export motors**: If enabled, this exports the motors of the rocket.
-- **Remove origin offset**: If enabled, it removes the offset of the component from the origin. Otherwise, the component is exported at its original location in the rocket.
-- **Export appearance**: If enabled, exports the component appearances to an MTL file. Note: The appearance cannot be exported with the triangulate feature enabled.
-- **Export as separate files**: If enabled, exports each component as a separate OBJ file.
+- `Export children`: If enabled, exports children of the selected components. Note: Component assemblies always export their children. If the selected components don't have children, this option is irrelevant.
+- `Export motors`: If enabled, this exports the motors of the rocket.
+- `Remove origin offset`: If enabled, it removes the offset of the component from the origin. Otherwise, the component is exported at its original location in the rocket.
+- `Export appearance`: If enabled, exports the component appearances to an MTL file. Note: The appearance cannot be exported with the triangulate feature enabled.
+- `Export as separate files`: If enabled, exports each component as a separate OBJ file.
 
 #### Advanced Options
 
-- **Triangulate mesh**: If enabled, triangulates the mesh before exporting, converting all quads or higher-order polygons to triangles.
-- **Export colors in sRGB**: If enabled, exports colors in sRGB instead of a linear color scheme. This can be useful, for example, when exporting for use in Blender.
-- **Scaling**: Allows you to scale the exported geometry by the specified factor. The default dimensions are in SI units (meters), but some software, like 3D printing slicers, often uses millimeters. In such cases, you can set the scale to '1000'.
-- **Level of detail**: Lets you select the desired level of detail for the geometry export.
+- `Triangulate mesh`: If enabled, triangulates the mesh before exporting, converting all quads or higher-order polygons to triangles.
+- `Export colors in sRGB`: If enabled, exports colors in sRGB instead of a linear color scheme. This can be useful, for example, when exporting for use in Blender.
+- `Scaling`: Allows you to scale the exported geometry by the specified factor. The default dimensions are in SI units (meters), but some software, like 3D printing slicers, often uses millimeters. In such cases, you can set the scale to '1000'.
+- `Level of detail`: Lets you select the desired level of detail for the geometry export.
 
 

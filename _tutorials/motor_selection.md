@@ -12,14 +12,13 @@ toc: true
 When you create a new motor configuration, OR will automatically open the motor selection dialog for you. Later on, if you want to change it, you can do so by clicking on the motor in the table and then the `Select Motor` button.
 
 Let's take a quick tour of the motor selection dialog:
-<figure class="enlargeable-image">
-  <img src="/img/tutorials/motor_selection/motor_selection_dialog.png" width="70%" class="figure-shadow" onclick="enlargeImage(this)">
-  <figcaption class="figure-shadow-caption">Motor Selection Dialog</figcaption>
-</figure>
+<script>
+  addImageWithCaption('/img/tutorials/motor_selection/motor_selection_dialog.png', 'Motor Selection Dialog', '70%', true);
+</script>
 
 <ol class="step-list">
 <li markdown="1">  <!-- We want to keep markdown -->
-  At the top are controls to let you customize the thrustcurve and delay of your selected motor. We'll come back to this.
+  At the top are controls to let you customize the `Thrustcurve` and `Delay` of your selected motor. We'll come back to this.
 </li>
 
 <li markdown="1">
@@ -35,7 +34,7 @@ Let's take a quick tour of the motor selection dialog:
 </li>
 
 <li markdown="1">
-  A search field for the motor list.  Often overlooked due to its placement below the list.  Search terms will match any of the columns.
+  A `Search field` for the motor list.  Often overlooked due to its placement below the list.  Search terms will match any of the columns.
 </li>
 
 <li markdown="1">
@@ -55,20 +54,18 @@ The selectors at the top of the dialog for thrust curve and motor delay are the 
 Every motor that has an ejection charge has some delay associated with it, which represents the number of seconds after motor burnout that the ejection charge will fire. Motors will either come with a fixed delay (such as Estes black powder  motors or Quest Q-Jets) or an adjustable delay (such as most reloads). Either way, you *always* need to choose a delay every time you select a motor. The flight simulations will tell you how well you've chosen.
 
 There are 2 ways to set the delay. First, you can choose from available options in the pull-down list:
-<figure class="enlargeable-image">
-  <img src="/img/tutorials/motor_selection/delay_pulldown.png" width="30%" onclick="enlargeImage(this)">
-  <figcaption>Ejection Delay Pull-down</figcaption>
-</figure>
+<script>
+  addImageWithCaption('/img/tutorials/motor_selection/delay_pulldown.png', 'Ejection Delay Pull-down', '30%', true);
+</script>
 
 These represent the available preset delays offered by the manufacturer, *plus* a `plugged` option which means that you have disabled the ejection delay entirely (sometimes the manufacturer offers its own plugged option).
 
 For many motors, the first option shown is `-0`.  Generally, you'll only want this option if you are configuring the booster of a multi-stage rocket, Always set a reasonable value, and if you get unexpected sim results double check that you haven't inadvertently left the delay at 0.
 
 What may not be as obvious is that you can also just type your own value into the combobox, e.g.:
-<figure class="enlargeable-image">
-  <img src="/img/tutorials/motor_selection/delay_combobox.png" width="30%" onclick="enlargeImage(this)">
-  <figcaption>Typing into the Delay Combobox</figcaption>
-</figure>
+<script>
+  addImageWithCaption('/img/tutorials/motor_selection/delay_combobox.png', 'Typing into the Delay Combobox', '30%', true);
+</script>
 
 This is good for when you have a composite motor with adjustable delay.  You can type in just about any value here.
 
@@ -76,24 +73,21 @@ This is good for when you have a composite motor with adjustable delay.  You can
 
 Let's click over to the `Show Details` tab on the right. In addition to a bunch of detail about the motor, we see that there are two different thrust curves for the A8, a red one and a blue one.
 
-<figure class="enlargeable-image">
-  <img src="/img/tutorials/motor_selection/show_details.png" width="70%" class="figure-shadow" onclick="enlargeImage(this)">
-  <figcaption class="figure-shadow-caption">"Show Details" tab</figcaption>
-</figure>
+<script>
+  addImageWithCaption('/img/tutorials/motor_selection/show_details.png', '"Show Details" tab', '70%', true);
+</script>
 
 Notice also that the red line is significantly heavier than the bluer. That means that is the red curve is currently selected, and will be used in the flight simulations.  You can also see this by clicking on the `Select thrust curve` pulldown:
 
-<figure class="enlargeable-image">
-  <img src="/img/tutorials/motor_selection/red_curve.png" width="70%" class="figure-shadow" onclick="enlargeImage(this)">
-  <figcaption class="figure-shadow-caption">Red Curve Selected in Pulldown</figcaption>
-</figure>
+<script>
+  addImageWithCaption('/img/tutorials/motor_selection/red_curve.png', 'Red Curve Selected in Pulldown', '70%', true);
+</script>
 
 When you click on the pulldown, you'll see a list of the available curves, color-coded, with the selected curve highlighted and checked. If you wanted to use the blue curve, just select that one:
 
-<figure class="enlargeable-image">
-  <img src="/img/tutorials/motor_selection/blue_curve.png" width="70%" class="figure-shadow" onclick="enlargeImage(this)">
-  <figcaption class="figure-shadow-caption">Blue Curve Selected in Pulldown</figcaption>
-</figure>
+<script>
+  addImageWithCaption('/img/tutorials/motor_selection/blue_curve.png', 'Blue Curve Selected in Pulldown', '70%', true);
+</script>
 
 Now you'll notice that the blue curve is heavier than the red, and it is the one that will be used in flight simulation.
 
@@ -108,10 +102,9 @@ Each time a new version of OpenRocket is released, the complete database of moto
 #### Adding your own motor files
 On the occasion that you do need to add a motor, it's as simple as taking a motor file (`.eng` or `.rse`) and placing it in the motors folder of your OR installation. You can see where that is in the first tab of preferences: 
 
-<figure class="enlargeable-image">
-  <img src="/img/tutorials/motor_selection/motors_folder.png" width="55%" class="figure-shadow" onclick="enlargeImage(this)">
-  <figcaption class="figure-shadow-caption">User-defined thrust curve folder preferences</figcaption>
-</figure>
+<script>
+  addImageWithCaption('/img/tutorials/motor_selection/motors_folder.png', 'User-defined thrust curve folder preferences', '55%', true);
+</script>
 
 Note that I have set my folder to somewhere on my DropBox, so all the machines on which I use OR can share it. However, in general using a folder of your own is better than using the default location.
 
