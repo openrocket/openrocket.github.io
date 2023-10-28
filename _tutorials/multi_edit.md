@@ -127,9 +127,9 @@ A fun thing you can do is multi-edit `Freeform fin shape`.  Here the trapezoidal
 </script>
 
 Now, what happens if I move the top left vertex?
-<!-- TODO: change this to animation -->
+<!-- TODO: change this animation to a non-laggy one... -->
 <script>
-  addImageWithCaption('/img/tutorials/multi_edit/freeform_2.png', 'Moving a Vertex', '60%', false);
+  addVideoWithCaption('/vid/Moving_vertex.mp4', 'Moving a Vertex', '60%', false, true);
 </script>
 
 As you can see in the rocket figure, both fin sets have been reshaped. This is a bit weird, but can be useful in some circumstances.

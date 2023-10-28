@@ -1,14 +1,14 @@
-figure.enlargeable-image {
+figure.enlargeable-image, figure.enlargeable-video {
     text-align: center;
     cursor: pointer;
 }
 
-figure.enlargeable-image img {
+figure.enlargeable-image img, figure.enlargeable-video video {
     max-width: 100%;
     height: auto;
 }
 
-figure.enlargeable-image figcaption {
+figure.enlargeable-image figcaption, figure.enlargeable-video figcaption {
     margin-top: 10px;
 }
 

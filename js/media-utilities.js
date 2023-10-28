@@ -4,10 +4,10 @@
  * Example usage, for an image with shadow:
  *          addImageWithCaption("images/my-image.png", "My image caption", "50%", true)
  * 
- * @param {*} imagePath path to the image file
- * @param {*} captionText caption text for the image
- * @param {*} width width of the image. Default is 'auto'.
- * @param {*} useShadow if true, the image will have a shadow. Default is false.
+ * @param {string} imagePath path to the image file
+ * @param {string} captionText caption text for the image
+ * @param {string} width width of the image. Default is 'auto'.
+ * @param {boolean} useShadow if true, the image will have a shadow. Default is false.
  */
 function addImageWithCaption(imagePath, captionText, width = 'auto', useShadow = false) {
     const currentScript = document.currentScript;
@@ -36,14 +36,53 @@ function addImageWithCaption(imagePath, captionText, width = 'auto', useShadow =
 }
 
 /**
+ * Add a video to the page.
+ * 
+ * Example usage, for a video with shadow:
+ *          addVideoWithCaption("videos/my-video.mp4", "My video caption", "50%", true)
+ * 
+ * @param {string} videoPath path to the video file
+ * @param {string} captionText caption text for the video
+ * @param {string} width width of the video. Default is 'auto'.
+ * @param {boolean} useShadow if true, the video will have a shadow. Default is false.
+ * @param {boolean} controls if true, the video player will have controls. Default is true.
+ */
+function addVideoWithCaption(videoPath, captionText, width = 'auto', useShadow = false, controls = true) {
+    const currentScript = document.currentScript;
+
+    const figure = document.createElement('figure');
+    figure.className = "enlargeable-video";  // If you want a specific style for videos
+
+    const video = document.createElement('video');
+    video.src = videoPath;
+    video.style.width = width;
+    if (controls) {
+        video.controls = true;
+    }
+    if (useShadow) {
+        video.className = "figure-shadow";  // Assuming you want the same shadow style for videos as images
+    }
+    figure.appendChild(video);
+
+    const figcaption = document.createElement('figcaption');
+    figcaption.textContent = captionText;
+    if (useShadow) {
+        figcaption.className = "figure-shadow-caption";  // Assuming you want the same shadow style for video captions as image captions
+    }
+    figure.appendChild(figcaption);
+
+    currentScript.parentNode.insertBefore(figure, currentScript);
+}
+
+/**
  * Add a warning message to the page.
  * 
  * Example usage:
  *      addWarningMessage("This is a **warning message**.", true)
  *      addWarningMessage("This is normal text.", false)
  * 
- * @param {*} messageText the text of the warning message. This may be markdown.
- * @param {*} isMarkdown if true, the message text will be interpreted as markdown text and formatted accordingly. Use false for normal text.
+ * @param {string} messageText the text of the warning message. This may be markdown.
+ * @param {boolean} isMarkdown if true, the message text will be interpreted as markdown text and formatted accordingly. Use false for normal text.
  */
 function addWarningMessage(messageText, isMarkdown = false) {
     const currentScript = document.currentScript;
