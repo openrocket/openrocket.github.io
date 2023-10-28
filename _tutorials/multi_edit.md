@@ -9,10 +9,9 @@ toc: true
 
 ### Notes
 
-<div class="warning-message">
-    <i class="icon-warning">⚠️</i> 
-    {{ "For the remainder of this tutorial, I'll be using the Windows/Linux convention of `control-click`. macOS users should translate to `command-click`. Everything else is the same across platforms except where noted." | markdownify }}
-</div>
+<script>
+  addWarningMessage('For the remainder of this tutorial, I\'ll be using the Windows/Linux convention of `control-click`. macOS users should translate to `command-click`. Everything else is the same across platforms except where noted.', true)
+</script>
 
 I'll be focusing on operating on the `Component Tree`, i.e.:
 <script>

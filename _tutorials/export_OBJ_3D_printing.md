@@ -41,10 +41,9 @@ We recommend you take a look at our "A 3D printable model rocket" example file, 
     addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/ExportDialog.png', 'OBJ export dialog', '80%', false);
   </script>
 
-  <div class="warning-message">
-      <i class="icon-warning">⚠️</i> 
-      {{ "The OBJ exporting is optimized for individual components. We recommend you export each component separately by enabling the option `Export as separate files`. If not, the exported OBJ geometry may not be manifold and may not be sliced properly by your slicer software." | markdownify }}
-  </div>
+  <script>
+    addWarningMessage('The OBJ exporting is optimized for individual components. We recommend you export each component separately by enabling the option `Export as separate files`. If not, the exported OBJ geometry may not be manifold and may not be sliced properly by your slicer software.', true)
+  </script>
 
   When you're done, click `Save`.
 </li>
@@ -60,10 +59,9 @@ We recommend you take a look at our "A 3D printable model rocket" example file, 
 <li>
   Now you can open the OBJ in your slicer software and prepare it for 3D printing. In the given example, we've used UltiMaker Cura.
 
-  <div class="warning-message">
-      <i class="icon-warning">⚠️</i> 
-      If your slicer does not support importing OBJ files, you can use conversion software to convert the OBJ to for instance STL.
-  </div>
+  <script>
+    addWarningMessage('If your slicer does not support importing OBJ files, you can use conversion software to convert the OBJ to for instance STL.', false)
+  </script>
 
   <script>
     addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/Sliced.png', 'Sliced geometry using UltiMaker Cura', '80%', false);

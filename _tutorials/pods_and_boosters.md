@@ -10,10 +10,9 @@ toc: true
 ### Introduction
 OpenRocket 22.02 introduced the concept of `pods` and `boosters`, which are *almost* the same thing but not quite.
 
-  <div class="warning-message">
-      <i class="icon-warning">⚠️</i> 
-      {{ "For this tutorial we'll refer to both generically as `pods`; at the end we'll discuss the few key differences between them." | markdownify }}
-  </div>
+  <script>
+    addWarningMessage('For this tutorial we'll refer to both generically as `pods`; at the end we'll discuss the few key differences between them.', true)
+  </script>
 
 In addition to this tutorial, check out the example rockets included in OR that demonstrate what is described here (`File -> Open example`).  
 
@@ -114,10 +113,9 @@ So far so good. What about fins on fins?
 <li markdown="1">
   Set the body tube length and diameter to 0. This is the infamous `phantom body tube`, which will be invisible but will give us something to which to attach some fins.
 
-  <div class="warning-message">
-      <i class="icon-warning">⚠️</i> 
-      When you use a phantom body tube you'll get a warning in the corner of the screen, because OR isn't quite sure how to simulate it. In practice, the error is likely to be very small, but be aware.
-  </div>
+  <script>
+    addWarningMessage("When you use a phantom body tube you'll get a warning in the corner of the screen, because OR isn't quite sure how to simulate it. In practice, the error is likely to be very small, but be aware.", false)
+  </script>
 </li>
 
 <li markdown="1">
