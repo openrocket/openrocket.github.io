@@ -1,6 +1,10 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  {% include head.html %}
+    <!-- These scripts must be loaded before the content -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/js/media-utilities.js"></script>
+    
+    {% include head.html %}
     <body {% if page.id %}id="{{ page.id }}"{% endif %}>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -11,6 +15,10 @@
 {{ content }}
 
 {% include footer.html %}
+        <!-- Define CURRENT_VERSION first -->
+        <script type="text/javascript">
+            var CURRENT_VERSION = "{{ site.current_version }}";
+        </script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.3.min.js"><\/script>')</script>

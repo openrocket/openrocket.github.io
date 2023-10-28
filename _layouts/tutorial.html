@@ -17,10 +17,12 @@ layout: interior-page
         {% endif %}
     </header>
 
-    Contents of this tutorial:
+    {% if toc %}
+    <h5>Contents of this tutorial:</h5>
     <div id="table-of-contents">
         {% toc %}
     </div>
+    {% endif %}
 
     <!-- This will be our modal (only add one per page) -->
     <div id="imageModal" class="modal" onclick="closeModal()">

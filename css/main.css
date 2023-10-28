@@ -165,3 +165,11 @@ nav.navbar {
   font-size: 0.7em;
   margin-left: 5px;
 }
+
+.figure-shadow {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+.figure-shadow-caption {
+  margin-top: 15px !important;
+}
