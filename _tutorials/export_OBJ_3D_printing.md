@@ -10,7 +10,7 @@ toc: true
 ### Preparing your design
 Since you're now moving from the digital, simulation world to the physical, 3D printing world, you'll have to take into account some things that you didn't have to worry about before. You'll have to make sure that your design is printable. Ensure that there are no components with a width of zero in your design, that the walls are thick enough, and that the parts fit together well. For example, if you have a nose cone that fits into a tube, make sure that the nose cone shoulder is slightly smaller than the inner width of the tube, so that after printing the parts fit well together.
 
-We recommend you take a look at our "A 3D printable model rocket" example file, which you can access by going to `File > Open example > A 3D printable model rocket`. This file contains a design that is ready to be exported to OBJ and 3D printed.
+We recommend you take a look at our `A 3D printable model rocket` example file, which you can access by going to `File > Open example > A 3D printable model rocket`. This file contains a design that is ready to be exported to OBJ and 3D printed.
 
 <script>
   addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/ExampleRocket.png', 'Example file "A 3D printable model rocket"', '60%', false);

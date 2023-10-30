@@ -172,18 +172,29 @@
     margin-right: 15px;
 }
 
+.current-section {
+    font-size: 12px;
+    color: #333;
+    padding: 2px 4px;
+    position: fixed;
+    bottom: 17px;
+    left: 20px;
+    text-align: left;
+    z-index: 1;
+}
+
 .progress-container {
-    height: 8px;
+    height: 12px;
     background: #ccc;
     position: fixed;
-    bottom: 0;
+    bottom: 5px;
     left: 20px; /* Match the left padding of .tutorial-content */
     right: 20px; /* Match the right padding of .tutorial-content */
     z-index: 1;
 }
 
 .progress-bar {
-    height: 8px;
+    height: 100%;
     width: 0%;
     background: #2196f3; /* Change to a color that matches your theme */
     position: relative;
