@@ -185,7 +185,7 @@ function fillWhatsNew(version) {
     const whatsNewBtn = document.getElementById('button-whats-new');
 
     // Define the URL for the markdown file based on the version
-    const markdownUrl = `/downloads/release-notes/rn-${version}.html`;
+    const markdownUrl = `/whats-new/wn-${version}.html`;
 
     // Fetch the markdown content
     fetch(markdownUrl)
@@ -203,6 +203,9 @@ function fillWhatsNew(version) {
             const whatsNewDiv = document.getElementById('content-whats-new');
             if (whatsNewDiv) {
                 whatsNewDiv.innerHTML = content;
+
+                // Process divs for images
+                processWhatsNewContentDiv(whatsNewDiv);
             }
         })
         .catch(error => {

@@ -21,6 +21,8 @@ collections:
   tutorials:
     output: true
     permalink: /tutorials/:name.html
+  whats-new:
+    output: true
 
 plugins:
   - jekyll-toc

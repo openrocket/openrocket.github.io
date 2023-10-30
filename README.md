@@ -12,3 +12,10 @@ After Jekyll has successfully been installed, you can run a local version of ope
 from the openrocket.github.io root directory. You can then go to your browser and display the site on the URL `http://localhost:4000`.
 
 Note: if you get a warning message `Could not find gem 'webrick' in locally installed gems` after running `bundle exec jekyll serve` just install that gem with the command `gem install webrick`.
+
+## Adding a new OpenRocket release
+TODO
+
+### Release notes
+
+## Adding a new tutorial
