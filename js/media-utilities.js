@@ -19,13 +19,7 @@ function createImage(imagePath, captionText, useShadow = false) {
     }
     figure.appendChild(img);
 
-    const figcaption = document.createElement('div');
-    figcaption.className = "figure-caption";
-    figcaption.textContent = captionText;
-    if (useShadow) {
-        figcaption.className += " figure-shadow-caption";
-    }
-    figure.appendChild(figcaption);
+    addCaption(captionText, useShadow, figure);
 
     return figure;
 }
@@ -72,13 +66,7 @@ function createVideo(videoPath, captionText, useControls = true, useShadow = fal
 
     figure.appendChild(video);
 
-    const figcaption = document.createElement('div');
-    figcaption.className = "figure-caption";
-    figcaption.textContent = captionText;
-    if (useShadow) {
-        figcaption.className += " figure-shadow-caption";
-    }
-    figure.appendChild(figcaption);
+    addCaption(captionText, useShadow, figure);
 
     return figure;
 }
@@ -103,6 +91,22 @@ function addVideoToPlaceholder(placeholderDiv, align = 'center', isInline = fals
 }
 
 // ------------------------------------------- OTHER -------------------------------------------
+function addCaption(captionText, useShadow, figure) {
+    const figcaption = document.createElement('div');
+    figcaption.className = "figure-caption";
+
+    // Create a span element to hold the captionText
+    const captionSpan = document.createElement('span');
+    captionSpan.textContent = captionText;
+    figcaption.appendChild(captionSpan);
+
+    if (useShadow) {
+        figcaption.className += " figure-shadow-caption";
+    }
+
+    figure.appendChild(figcaption);
+}
+
 function formatPlaceholderDiv(placeholderDiv, isInline, align, width) {
     placeholderDiv.classList.add('figure-container');
     if (isInline === true) {

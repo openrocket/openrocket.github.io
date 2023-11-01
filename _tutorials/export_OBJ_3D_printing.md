@@ -52,7 +52,7 @@ We recommend you take a look at our `A 3D printable model rocket` example file, 
   If there are any warnings during the export process, you will be notified by a dialog. For instance, if you have a zero-width body tube, you will get the following warning:
 
   <div data-image-path="/img/tutorials/export_OBJ_3D_printing/ExportWarning.png"
-      data-image-caption='Export warning due to a body tube width 0 wall thickness'
+      data-image-caption='Export warning due to a body tube with 0 wall thickness'
       data-image-width="50%"></div>
 </li>
 

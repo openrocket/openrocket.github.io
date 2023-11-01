@@ -39,9 +39,31 @@
 
 .figure-caption {
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    font-style: italic;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10px;
     color: #666;
+    position: relative;
+}
+
+.figure-caption span {
+    position: relative;
+    display: inline-block;  /* This will make the span only as wide as the text */
+    padding-bottom: 5px;   /* Space for the underline */
+}
+
+/* Bottom border of caption */
+.figure-caption span::after {
+    content: "";
+    position: absolute;
+    left: -30px;  /* Starts 15px from the left of the text */
+    right: -30px; /* Ends 15px from the right of the text */
+    bottom: 0;
+    height: 1px;
+    background-color: #e7e7e7;
 }
 
 .figure-shadow {
