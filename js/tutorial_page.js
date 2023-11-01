@@ -1,3 +1,15 @@
+/**
+ * Replaces all divs with data attributes for images and videos with the appropriate media.
+ */
+function replaceMedia() {
+    const tutorialContentDiv = document.getElementById('tutorial-content');
+
+    // Process divs for images/videos
+    processMediaElement(tutorialContentDiv);
+}
+
+document.addEventListener('DOMContentLoaded', replaceMedia);
+
 window.addEventListener('scroll', function() {
     let winScroll = document.documentElement.scrollTop;
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;

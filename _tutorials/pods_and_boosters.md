@@ -11,7 +11,7 @@ toc: true
 OpenRocket 22.02 introduced the concept of `pods` and `boosters`, which are *almost* the same thing but not quite.
 
   <script>
-    addWarningMessage('For this tutorial we'll refer to both generically as `pods`; at the end we'll discuss the few key differences between them.', true)
+    addWarningMessage("For this tutorial we'll refer to both generically as `pods`; at the end we'll discuss the few key differences between them.", true)
   </script>
 
 In addition to this tutorial, check out the example rockets included in OR that demonstrate what is described here (`File -> Open example`).  
@@ -19,29 +19,33 @@ In addition to this tutorial, check out the example rockets included in OR that 
 ### Basics
 
 The `Pods` and `Boosters` components are in the `Assembly Components` section up at the top:
-<script>
-  addImageWithCaption('/img/tutorials/pods_and_boosters/pod-button.png', 'Pods Component Button', '55%', true);
-</script>
+<div data-image-path="/img/tutorials/pods_and_boosters/pod-button.png"
+    data-image-caption='Pods Component Button'
+    data-image-width="55%"
+    data-image-shadow="true"></div>
 
 The first important thing to note is that these are **not physical components**, but represent **attachment points for other complete airframes**. The next important thing is that a pod set can **only be attached to a body tube**. This may change in future releases.
 
 In the rocket figure display, the pods are shown as little plus-sign targets. Here they're shown in the back view for clarity.
-<script>
-  addImageWithCaption('/img/tutorials/pods_and_boosters/pod-markers.png', 'Pods Markers in Rocket Figure', '55%', true);
-</script>
+<div data-image-path="/img/tutorials/pods_and_boosters/pod-markers.png"
+    data-image-caption='Pods Markers in Rocket Figure'
+    data-image-width="55%"
+    data-image-shadow="true"></div>
 
 #### Parameters
 
-<script>
-  addImageWithCaption('/img/tutorials/pods_and_boosters/pod-config.png', 'Pods Configuration Dialog', '55%', true);
-</script>
+<div data-image-path="/img/tutorials/pods_and_boosters/pod-config.png"
+    data-image-caption='Pods Configuration Dialog'
+    data-image-width="55%"
+    data-image-shadow="true"></div>
 
 The following parameters are available in the `Pods Configuration Dialog`:
 - `Radius relative to`: determines the Radius Positioning Method, i.e. how OR will calculate the distance of the pod components from the center of the rocket. The most commonly useful option, shown selected, is `Surface of the parent component`. This method means that the `Radial Distance` value will define the distance from the surface of the airframe to the surface of the pod body. If we want our pods to be mounted to the surface of the body, we leave `Radial Distance` set to 0 and we're good to go.
 
-<script>
-  addImageWithCaption('/img/tutorials/pods_and_boosters/pod-radius.png', 'Pods Radial Distance', '55%', true);
-</script>
+<div data-image-path="/img/tutorials/pods_and_boosters/pod-radius.png"
+    data-image-caption='Pods Radial Distance'
+    data-image-width="55%"
+    data-image-shadow="true"></div>
 
 - `Radial Distance`: distance offset from the radius positioning method, defined in `Radius relative to`, see above.
 
@@ -65,16 +69,18 @@ Let's start with the simple case of something that looks like boosters attached 
 
 <li markdown="1">
   Now, we add components to the pod set just like we were building a new rocket. We'll start with a nose cone...
-  <script>
-    addImageWithCaption('/img/tutorials/pods_and_boosters/pod-with-nose.png', 'Pods with Nose Cone Added', '55%', true);
-  </script>
+  <div data-image-path="/img/tutorials/pods_and_boosters/pod-with-nose.png"
+      data-image-caption='Pods with Nose Cone Added'
+      data-image-width="55%"
+      data-image-shadow="true"></div>
 </li>
 
 <li markdown="1">
   Then add a body...
-  <script>
-    addImageWithCaption('/img/tutorials/pods_and_boosters/pod-with-nose-tube.png', 'Pods With Nose Cone and Body Tube, side view (left) and back view (right)', '85%', true);
-  </script>
+  <div data-image-path="/img/tutorials/pods_and_boosters/pod-with-nose-tube.png"
+      data-image-caption='Pods With Nose Cone and Body Tube, side view (left) and back view (right)'
+      data-image-width="85%"
+      data-image-shadow="true"></div>
 </li>
 
 <li markdown="1">
@@ -86,18 +92,20 @@ Let's start with the simple case of something that looks like boosters attached 
 Sometimes you might want the pods to go on the ends of fins. Lets take the pods from the previous post and move them there.
 
 Edit the pod set:
-<script>
-  addImageWithCaption('/img/tutorials/pods_and_boosters/pod-config-finends.png', 'Pods Configuration at Ends of Fins', '55%', true);
-</script>
+<div data-image-path="/img/tutorials/pods_and_boosters/pod-config-finends.png"
+    data-image-caption='Pods Configuration at Ends of Fins'
+    data-image-width="55%"
+    data-image-shadow="true"></div>
 
 * Because our fins are 1.25" high, we set `Radial Distance` to that value, which means that the surface of the pod body tube will be exactly at the end of the fins.
 * We change the `Angle` back to 0, so it matches the fins.
 * And finally, we set the `Position offset` to 1/2 inch, which will move the pods back and look a bit better.
 
 The result is...
-<script>
-  addImageWithCaption('/img/tutorials/pods_and_boosters/pods-on-finends.png', 'Pods on Ends of Fins, side view (left) and back view (right)', '85%', true);
-</script>
+<div data-image-path="/img/tutorials/pods_and_boosters/pods-on-finends.png"
+    data-image-caption='Pods on Ends of Fins, side view (left) and back view (right)'
+    data-image-width="85%"
+    data-image-shadow="true"></div>
 
 ### Fins on Fins
 So far so good. What about fins on fins?
@@ -105,9 +113,10 @@ So far so good. What about fins on fins?
 <ol class="step-list">
 <li markdown="1">
   First let's delete the nose cones, and edit the body tube on the pods:
-  <script>
-    addImageWithCaption('/img/tutorials/pods_and_boosters/pod-phantom.png', 'Phantom Body Tube', '55%', true);
-  </script>
+  <div data-image-path="/img/tutorials/pods_and_boosters/pod-phantom.png"
+      data-image-caption='Phantom Body Tube'
+      data-image-width="55%"
+      data-image-shadow="true"></div>
 </li>
 
 <li markdown="1">
@@ -120,18 +129,21 @@ So far so good. What about fins on fins?
 
 <li markdown="1">
   Let's add a trapezoidal fin set to the phantom tube:
-  <script>
-    addImageWithCaption('/img/tutorials/pods_and_boosters/pod-fintips.png', 'Fin Tips Configuration', '55%', true);
-  </script>
+  <div data-image-path="/img/tutorials/pods_and_boosters/pod-fintips.png"
+      data-image-caption='Fin Tips Configuration'
+      data-image-width="55%"
+      data-image-shadow="true"></div>
 
   Two fins, set at 90 degrees. For each pod, 0 degrees represents the direction pointing directly away (perpendicular) from the body tube. So if we set fin rotation to 0, our pod fins would be coplanar with the main fins, which is not what we want. By setting them to 90 degrees, they'll be perpendicular. And here they are:
-  <script>
-    addImageWithCaption('/img/tutorials/pods_and_boosters/pod-fintips-side-rear.png', 'Pods with Fin Tips, side view (left) and back view (right)', '95%', true);
-  </script>
+  <div data-image-path="/img/tutorials/pods_and_boosters/pod-fintips-side-rear.png"
+      data-image-caption='Pods with Fin Tips, side view (left) and back view (right)'
+      data-image-width="95%"
+      data-image-shadow="true"></div>
 
-  <script>
-    addImageWithCaption('/img/tutorials/pods_and_boosters/pod-fintips-3d.png', 'Pods with Fin Tips (3D view)', '50%', true);
-  </script>
+  <div data-image-path="/img/tutorials/pods_and_boosters/pod-fintips-3d.png"
+      data-image-caption='Pods with Fin Tips (3D view)'
+      data-image-width="50%"
+      data-image-shadow="true"></div>
 </li>
 </ol>
 
@@ -143,14 +155,16 @@ Not discussed above is the fact that you can put motor mounts in your pods, and 
 * `Boosters` are considered to be **their own stage**, and **may detach** and fall away.
 
 Let's add boosters to the rocket from the previous example.  Here's the config dialog:
-<script>
-    addImageWithCaption('/img/tutorials/pods_and_boosters/booster-config.png', 'Booster Set Configuration', '50%', true);
-</script>
+<div data-image-path="/img/tutorials/pods_and_boosters/booster-config.png"
+    data-image-caption='Booster Set Configuration'
+    data-image-width="50%"
+    data-image-shadow="true"></div>
 
 The first thing you notice is that there's a new first tab called `Separation`.  Here is where you can specify if and when the boosters will eject from the rocket. Also notice that the booster set is defined as a new stage in the rocket figure display:
-<script>
-    addImageWithCaption('/img/tutorials/pods_and_boosters/booster-stage.png', 'Boosters as Stage', '55%', true);
-</script>
+<div data-image-path="/img/tutorials/pods_and_boosters/booster-stage.png"
+    data-image-caption='Boosters as Stage'
+    data-image-width="55%"
+    data-image-shadow="true"></div>
 
 Other than that, boosters behave exactly like pods.
 

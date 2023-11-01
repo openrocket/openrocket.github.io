@@ -35,17 +35,17 @@ The actual hack is quite simple. A **massless cone** with **diameter equal to th
 
 Let's start with a short stubby 3FNC:
 
-<script>
-  addImageWithCaption('/img/tutorials/base_drag/stubby_rocket.png', 'A Short Stubby Rocket', '60%', false);
-</script>
+<div data-image-path="/img/tutorials/base_drag/stubby_rocket.png"
+      data-image-caption='A Short Stubby Rocket'
+      data-image-width="60%"></div>
 
 The stability margin is calculated at 0.287 calibers, or about 5%.  That's too low to fly safely, but this rocket passes the "less than 10:1" test for using base drag CP correction, so all is not yet lost.
 
 The cone we add to the back will be 3" in diameter and 3xPI = 9.42" long.  We'll set wall thickness to zero so that the mass of the cone is zero (you could also use a mass override if you prefer):
 
-<script>
-  addImageWithCaption('/img/tutorials/base_drag/add_cone.png', 'Base Drag Cone Added to Rocket', '60%', false);
-</script>
+<div data-image-path="/img/tutorials/base_drag/add_cone.png"
+      data-image-caption='Base Drag Cone Added to Rocket'
+      data-image-width="60%"></div>
 
 Our stability margin is now up to 0.88 calibers / 10.3 %, which is pretty good.  If you want a little more margin you could add a bit of nose weight, but at least we're starting from a much better place than before.
 
@@ -53,29 +53,29 @@ The first thing to notice here is that we now get a `Discontinuity` warning from
 
 Next, notice that with the base drag cone, even though its mass is zero, the apogee has decreased from 1075 ft to 915 ft.  Why is that?  Well, as we said up front, OpenRocket was already calculating base drag.  So adding the cone has now added a whole bunch of *new* drag that doesn't exist in the rocket.  We can see this if we look at the `Drag Characteristics` tab inside `Component Analysis` (`Tools -> Component Analysis`):
 
-<script>
-  addImageWithCaption('/img/tutorials/base_drag/component_analysis.png', 'Component Analysis of Drag', '60%', false);
-</script>
+<div data-image-path="/img/tutorials/base_drag/component_analysis.png"
+      data-image-caption='Component Analysis of Drag'
+      data-image-width="60%"></div>
 
 Note that the base drag of the original body tube is still there, and the new cone has plenty of its own as well. The solution, of course, is straightforward: simply override the Cd of the base drag cone to zero:
 
-<script>
-  addImageWithCaption('/img/tutorials/base_drag/drag_override.png', 'Setting Drag to Zero', '60%', false);
-</script>
+<div data-image-path="/img/tutorials/base_drag/drag_override.png"
+      data-image-caption='Setting Drag to Zero'
+      data-image-width="60%"></div>
 
 Now the apogee is back up to 1084 ft, which is within margin of error of where we started.
 
 The base drag cone is not very attractive in the 3D view:
 
-<script>
-  addImageWithCaption('/img/tutorials/base_drag/threed_view.png', 'Base Drag Cone in 3D View', '60%', false);
-</script>
+<div data-image-path="/img/tutorials/base_drag/threed_view.png"
+      data-image-caption='Base Drag Cone in 3D View'
+      data-image-width="60%"></div>
 
 If we care, we can make this better by setting the cone to be almost transparent.
 
-<script>
-  addImageWithCaption('/img/tutorials/base_drag/transparent_cone.png', 'Making the Cone Almost Transparent', '60%', false);
-</script>
+<div data-image-path="/img/tutorials/base_drag/transparent_cone.png"
+      data-image-caption='Making the Cone Almost Transparent'
+      data-image-width="60%"></div>
 
 Now, we can still see it (so we remember it's there), but it doesn't detract as much.  We could go even further and set it to be completely transparent so it's invisible in the 3D view, but I prefer to see it just a little, unless I'm generating pretty pictures in Photo Studio or something like that.
 

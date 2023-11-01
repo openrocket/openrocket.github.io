@@ -12,34 +12,34 @@ Since you're now moving from the digital, simulation world to the physical, 3D p
 
 We recommend you take a look at our `A 3D printable model rocket` example file, which you can access by going to `File > Open example > A 3D printable model rocket`. This file contains a design that is ready to be exported to OBJ and 3D printed.
 
-<script>
-  addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/ExampleRocket.png', 'Example file "A 3D printable model rocket"', '60%', false);
-</script>
+<div data-image-path="/img/tutorials/export_OBJ_3D_printing/ExampleRocket.png" 
+     data-image-caption='Example file "A 3D printable model rocket"'
+     data-image-width="60%"></div>
 
 ### Exporting to OBJ
 <ol class="step-list">
 <li markdown="1">  <!-- We want to keep markdown -->
   The first step is to select the objects you want to export. You can select single components, or multiple objects by holding down the `Ctrl/Cmd` key while clicking on the components. If the selected component contains children, you can also choose to export the children components as well. If you want to export all objects, you can select the rocket component.
 
-  <script>
-    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/SelectExportComponents.png', 'Selecting which components to export', '80%', false);
-  </script>
+  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/SelectExportComponents.png" 
+      data-image-caption='Selecting which components to export'
+      data-image-width="80%"></div>
 </li>
 
 <li markdown="1">
   Once you've selected the objects you want to export, go to `File > Export as > Wavefront OBJ (.obj)`. This will open the OBJ export dialog. Alternatively, you can right-click on the selected components in the component tree and choose `Export as OBJ (.obj)`.
 
-  <script>
-    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/AccessExportDialog.png', 'Access the export dialog through the application ribbon or context menu', '70%', false);
-  </script>
+  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/AccessExportDialog.png"
+      data-image-caption='Access the export dialog through the application ribbon or context menu'
+      data-image-width="70%"></div>
 </li>
 
 <li markdown="1">
   You will then be greeted by the OBJ export dialog. Here, you can choose your export location and filename, and set the export parameters. The export location is the folder where the OBJ file will be saved. The export parameters are explained in the next section. You can verify which components will be exported by hovering over the text in the `Component` field.
 
-  <script>
-    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/ExportDialog.png', 'OBJ export dialog', '80%', false);
-  </script>
+  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/ExportDialog.png"
+      data-image-caption='OBJ export dialog'
+      data-image-width="80%"></div>
 
   <script>
     addWarningMessage('The OBJ exporting is optimized for individual components. We recommend you export each component separately by enabling the option `Export as separate files`. If not, the exported OBJ geometry may not be manifold and may not be sliced properly by your slicer software.', true)
@@ -51,9 +51,9 @@ We recommend you take a look at our `A 3D printable model rocket` example file, 
 <li>
   If there are any warnings during the export process, you will be notified by a dialog. For instance, if you have a zero-width body tube, you will get the following warning:
 
-  <script>
-    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/ExportWarning.png', 'Export warning due to a body tube width 0 wall thickness', '50%', false);
-  </script>
+  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/ExportWarning.png"
+      data-image-caption='Export warning due to a body tube width 0 wall thickness'
+      data-image-width="50%"></div>
 </li>
 
 <li>
@@ -63,9 +63,9 @@ We recommend you take a look at our `A 3D printable model rocket` example file, 
     addWarningMessage('If your slicer does not support importing OBJ files, you can use conversion software to convert the OBJ to for instance STL.', false)
   </script>
 
-  <script>
-    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/Sliced.png', 'Sliced geometry using UltiMaker Cura', '80%', false);
-  </script>
+  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/Sliced.png"
+      data-image-caption='Sliced geometry using UltiMaker Cura'
+      data-image-width="80%"></div>
 </li>
 
 <li markdown="1">
@@ -75,30 +75,30 @@ We recommend you take a look at our `A 3D printable model rocket` example file, 
 
   Edit the fin set, and activate the `Split fins` option on the bottom of the dialog. This will split each fin instance to a separate component. Now, all you have to do is export each separate fin instance as an OBJ file and bring that into your slicer.
 
-  <script>
-    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/FinsEdit.png', 'Split fins option in the fin edit dialog', '50%', false);
-  </script>
-
-  <script>
-    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/SplitFins.png', 'Result before and after splitting the fin', '70%', false);
-  </script>
+  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/FinsEdit.png"
+      data-image-caption='Split fins option in the fin edit dialog'
+      data-image-width="50%"></div>
+  
+  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/SplitFins.png"
+      data-image-caption='Result before and after splitting the fin'
+      data-image-width="70%"></div>
 </li>
 
 <li markdown="1">
   Now, you can export one of the fin instances and duplicate it 3 times in your slicer.
 
-  <script>
-    addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/SliceFins.png', 'Steps to slice the fins', '85%', false);
-  </script>
+  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/SliceFins.png"
+      data-image-caption='Steps to slice the fins'
+      data-image-width="85%"></div>
 </li>
 </ol>
 
 ### Export parameters
 The export dialog has a few parameters that you can set to customize your export. Here's a quick overview of what each parameter does:
 
-<script>
-  addImageWithCaption('/img/tutorials/export_OBJ_3D_printing/ExportParameters.png', 'Export warning due to a body tube with 0 wall thickness', '25%', false);
-</script>
+<div data-image-path="/img/tutorials/export_OBJ_3D_printing/ExportParameters.png"
+    data-image-caption='Export warning due to a body tube with 0 wall thickness'
+    data-image-width="25%"></div>
 
 By clicking on the `Show Advanced options` button, you can get more detailed settings, which are usually recommended for advanced users.
 

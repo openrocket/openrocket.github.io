@@ -204,8 +204,8 @@ function fillWhatsNew(version) {
             if (whatsNewDiv) {
                 whatsNewDiv.innerHTML = content;
 
-                // Process divs for images
-                processWhatsNewContentDiv(whatsNewDiv);
+                // Process divs for images/videos
+                processMediaElement(whatsNewDiv);
             }
         })
         .catch(error => {
