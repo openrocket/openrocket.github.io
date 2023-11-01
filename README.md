@@ -102,7 +102,7 @@ toc: true   <-- set to true if you want a table of contents in the beginning of 
 
 That's it :). You can now add the content of the tutorial. You can use markdown in the tutorial. If you want to add images or videos, you can use the same method as described above in the `Adding media` section. We recommend you don't use inline or aligned images, but just centered images. You can do so by leaving out the inline and align attributes:
 ```HTML
-<!-- Non-inline, cenetered image -->
+<!-- Non-inline, centered image -->
 <div data-image-path="<your_path>"
     data-image-caption='<your_caption>'
     data-image-width="<your_width>%"
