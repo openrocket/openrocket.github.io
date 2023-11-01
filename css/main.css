@@ -118,24 +118,24 @@ nav.navbar {
   border-bottom: none;
 }
 
+.btn-green, .btn-green:active, .btn-green:hover, .btn-red, .btn-red:active, .btn-red:hover {
+  color: white !important;
+}
+
 .btn-green {
   background-color: rgb(70, 197, 94);
-  color: white;
 }
 
 .btn-green:hover {
   background-color: rgb(63, 160, 80);
-  color: white;
 }
 
 .btn-red {
   background-color: rgb(236, 95, 95);
-  color: white;
 }
 
 .btn-red:hover {
   background-color: rgb(200, 89, 89);
-  color: white;
 }
 
 .downloads-os-title {
