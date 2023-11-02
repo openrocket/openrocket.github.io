@@ -80,14 +80,6 @@
     gap: 4%;  /* Adjust this value to set the margin between the tutorials and tutorial-selection */
 }
 
-.tutorials {
-    flex: 5;
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 20px;
-    justify-content: flex-start;
-}
-
 .tutorial:last-child {
     border-bottom: none;
 }
@@ -135,6 +127,14 @@
 
 /* ========== TUTORIAL TILE STYLES ========== */
 
+.tutorials {
+    flex: 5;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    justify-content: flex-start;
+}
+
 .tutorial-tile {
     flex: 0 0 calc(33.333% - 30px);  /* Adjust the margin value accordingly */
     box-sizing: border-box;
@@ -154,6 +154,12 @@
     flex-direction: column;
 }
 
+.tutorial-thumbnail img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .tutorial-title {
     text-align: center;
 }
@@ -167,12 +173,6 @@
 .tutorial-tile:hover {
     transform: scale(1.03);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.tutorial-thumbnail img {
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
 .tutorial-content header .tutorial-date {
