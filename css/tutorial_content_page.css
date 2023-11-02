@@ -1,3 +1,29 @@
+/* ========== FLOATING BACK BUTTON ========== */
+.floating-back-btn {
+    position: fixed; /* Fixed position so it floats */
+    left: 20px; /* Distance from the left side of the viewport */
+    top: 50%; /* Centered vertically */
+    transform: translateY(-50%); /* Ensures it's centered at any scroll position */
+    background-color: #3498db; /* Background color */
+    color: white; /* Text color for the icon */
+    padding: 0.5em; /* Padding around the icon */
+    text-decoration: none; /* Removes underline from the link */
+    z-index: 1000; /* Ensures it's above other content */
+    border-radius: 50%; /* Makes it round */
+    font-size: 1.5em; /* Size of the icon */
+    display: flex; /* To center the icon inside the button */
+    align-items: center; /* Centers the icon vertically */
+    justify-content: center; /* Centers the icon horizontally */
+    width: 2em; /* Width of the button */
+    height: 2em; /* Height of the button */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: shadow for better visibility */
+}
+
+.floating-back-btn:hover {
+    background-color: #2980b9; /* Slightly darker background color on hover */
+    color: white; /* Ensures the icon color remains white on hover */
+}
+
 /* ========== TUTORIAL CONTENT PAGE ========== */
 .date-difficulty-wrapper {
     display: flex;
