@@ -133,6 +133,7 @@
     flex-wrap: wrap;
     margin-right: 20px;
     justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .tutorial-tile {
@@ -152,6 +153,19 @@
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* This will push the title down */
+}
+
+.tutorial-tile:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tutorial-thumbnail {
+    flex-grow: 1; /* Grow to take up all available space */
+    display: flex; /* Make the thumbnail container a flexbox */
+    align-items: center; /* Vertically center the thumbnail image */
+    justify-content: center; /* Horizontally center the thumbnail image */
 }
 
 .tutorial-thumbnail img {
@@ -162,17 +176,14 @@
 
 .tutorial-title {
     text-align: center;
+    margin-top: auto;
+    flex-grow: 0; /* Do not grow bigger than its content */
 }
 
 .tutorial-title > h3 {
     font-size: 1.5em;
     margin: 5px 5px;
     padding: 0;
-}
-
-.tutorial-tile:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .tutorial-content header .tutorial-date {
@@ -185,6 +196,7 @@
 
 .date-difficulty-wrapper {
     display: flex;
+    flex-grow: 0; /* Do not grow bigger than its content */
     justify-content: space-between;
     align-items: center;
     padding-bottom: 6px;

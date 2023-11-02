@@ -43,7 +43,6 @@ permalink: /tutorials/
             <div class="tutorial-title">
                 <h3>{{ tutorial.title }}</h3>
             </div>
-            <div class="filler" style="flex-grow: 1;"></div>
             <div class="date-difficulty-wrapper">
               <div class="tutorial-date">{{ tutorial.date | date: "%B %d, %Y" }}</div>
               <div class="tutorial-difficulty" data-difficulty="{{ tutorial.difficulty }}" title="{{ site.data.tutorial_difficulties[tutorial.difficulty].tooltip }}">{{ tutorial.difficulty }}</div>
