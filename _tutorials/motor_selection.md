@@ -4,6 +4,7 @@ title: All about Motor Selection
 thumbnail: /img/tutorials/thumbnails/motor_selection.png
 description: Selecting motors for your flight simulations is a fundamental part of using OpenRocket. While many aspects of motor selection may be pretty obvious, there are some subtleties and semi-hidden features that might not be apparent at first glance.  This tutorial will cover just about everything there is to know on the subject.
 date: 2023-10-21
+difficulty: beginner
 toc: true
 ---
 

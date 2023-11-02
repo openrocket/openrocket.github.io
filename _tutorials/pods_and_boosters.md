@@ -4,6 +4,7 @@ title: "Pods and Boosters"
 thumbnail: /img/tutorials/thumbnails/pods_and_boosters.png
 description: This tutorial shows how to configure pods and boosters for some of the most commonly-desired design configurations.
 date: 2023-09-28
+difficulty: beginner
 toc: true
 ---
 

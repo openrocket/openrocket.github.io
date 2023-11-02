@@ -4,6 +4,7 @@ title: Implementing Base Drag CP Correction
 thumbnail: /img/tutorials/thumbnails/base_drag.png
 description: This tutorial will show the best ways to implement the Base Drag CP Hack in your OR mode.
 date: 2023-10-27
+difficulty: advanced
 toc: true
 ---
 

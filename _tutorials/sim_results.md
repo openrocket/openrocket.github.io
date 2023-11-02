@@ -4,6 +4,7 @@ title: Why is my predicted apogee lower than expected?
 thumbnail: /img/tutorials/thumbnails/sim_results.png
 description: "A frequently asked question is: \"Why is my predicted apogee much lower than expected?\" It turns out that there are only 2 common errors that are responsible for the majority of such cases. In this tutorial we'll go through them, and give some general guidance on how to understand your sim results."
 date: 2023-10-19
+difficulty: beginner
 toc: true
 ---
 

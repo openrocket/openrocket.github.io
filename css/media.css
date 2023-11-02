@@ -1,4 +1,4 @@
-/*      FIGURE CONTAINER    */
+/* ========== FIGURE CONTAINER ========== */
 .figure-container-left {
     margin-left: 0;
     margin-right: auto;
@@ -28,7 +28,8 @@
     margin-left: 30px; /* spacing between image and text */
 }
 
-/*      FIGURE ELEMENTS    */
+/* ========== FIGURE ELEMENTS ========== */
+
 .figure-container > figure > img, .figure-container > figure > video {
     margin-left: auto; 
     margin-right: auto; 
@@ -74,7 +75,8 @@
     margin-top: 15px !important;
 }
 
-/*      FIGURE ENLARGEABLE    */
+/* ========== FIGURE ENLARGEABLE ========== */
+
 figure.enlargeable-image, figure.enlargeable-video {
     text-align: center;
     cursor: pointer;
@@ -117,4 +119,22 @@ figure.enlargeable-image figcaption, figure.enlargeable-video figcaption {
 .modal img {
     max-width: 100%;
     max-height: 100%;
+}
+
+/* ========== WARNING MESSAGE ========== */
+
+.warning-message {
+    background-color: #fff1d1;  /* Light orange background */
+    border: 1px solid #ffb700; /* Orange border */
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.icon-warning {
+    font-size: 1.5em;
+    margin-right: 15px;
 }

@@ -12,6 +12,20 @@ permalink: /tutorials/
 
 <hr style="width: 80%">
 
+<!-- Difficulty filter -->
+<div class="difficulty-filter">
+  <span class="label-select-difficulty">Select difficulty level:</span>
+
+  <input type="checkbox" id="beginner" value="beginner" onchange="filterTutorials()">
+  <label for="beginner" data-difficulty="beginner">Beginner</label>
+
+  <input type="checkbox" id="intermediate" value="intermediate" onchange="filterTutorials()">
+  <label for="intermediate" data-difficulty="intermediate">Intermediate</label>
+
+  <input type="checkbox" id="advanced" value="advanced" onchange="filterTutorials()">
+  <label for="advanced" data-difficulty="advanced">Advanced</label>
+</div>
+
 <div class="tutorial-container">
   <!-- This will be our button to show the tutorial list on mobile -->
   <div id="mobile-toggle" class="mobile-toggle" onclick="toggleList()">Tutorials List ▼</div>
@@ -30,7 +44,10 @@ permalink: /tutorials/
                 <h3>{{ tutorial.title }}</h3>
             </div>
             <div class="filler" style="flex-grow: 1;"></div>
-            <div class="tutorial-date">{{ tutorial.date | date: "%B %d, %Y" }}</div>
+            <div class="date-difficulty-wrapper">
+              <div class="tutorial-date">{{ tutorial.date | date: "%B %d, %Y" }}</div>
+              <div class="tutorial-difficulty" data-difficulty="{{ tutorial.difficulty }}" title="{{ site.data.tutorial_difficulties[tutorial.difficulty].tooltip }}">{{ tutorial.difficulty }}</div>
+          </div>
       </a>
     {% endfor %}
   </div>

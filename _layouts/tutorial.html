@@ -6,7 +6,12 @@ layout: interior-page
     <header class="tutorial-header">
         <div class="header-info">
             <h2>{{ page.title }}</h2>
-            <span class="tutorial-date">{{ page.date | date: "%B %d, %Y" }}</span>
+            <div class="date-difficulty-wrapper">
+                <span class="tutorial-page-date">{{ page.date | date: "%B %d, %Y" }}</span>
+                <span class="tutorial-page-difficulty" data-difficulty="{{ page.difficulty }}" title="{{ site.data.tutorial_difficulties[page.difficulty].tooltip }}">
+                    {{ page.difficulty }}
+                </span>
+            </div>
             <p>{{ page.description }}</p>
         </div>
         
@@ -17,7 +22,7 @@ layout: interior-page
         {% endif %}
     </header>
 
-    {% if toc %}
+    {% if page.toc %}
     <h5>Contents of this tutorial:</h5>
     <div id="table-of-contents">
         {% toc %}
@@ -88,4 +93,5 @@ layout: interior-page
     }
 </style>
 
-<script src="/js/tutorial_page.js"></script>
+<link rel="stylesheet" href="/css/tutorial_content_page.css">
+<script src="/js/tutorial_content_page.js"></script>
