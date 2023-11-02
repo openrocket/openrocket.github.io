@@ -182,8 +182,10 @@
 
 .tutorial-title > h3 {
     font-size: 1.5em;
+    font-weight: bold;
     margin: 5px 5px;
-    padding: 0;
+    padding-top: 10px;
+    border-top: 1px solid #d8d8d8;
 }
 
 .tutorial-content header .tutorial-date {
