@@ -2,37 +2,39 @@
 layout: tutorial
 title: Implementing Base Drag CP Correction
 thumbnail: /img/tutorials/thumbnails/base_drag.png
-description: This tutorial will show the best ways to implement the Base Drag CP Hack in your OR mode.
+description: This tutorial will show the best ways to implement Base Drag CP Correction in your OR model.
 date: 2023-10-27
-difficulty: advanced
+difficulty: intermediate
 toc: true
 ---
 
 ### Introduction
 
-Ever since the publication of [Apogee's Peak-of-Flight newsletter #154](https://www.apogeerockets.com/education/downloads/Newsletter154.pdf), use and implementation of the `base drag hack`, as it is commonly known (but shouldn't be... as we'll discuss below) have been a frequent topic of conversation and a source of many questions.  In this tutorial we'll show how to implement it most correctly and efficiently in OpenRocket, starting with version 23.09.
+Ever since the publication of Bruce Levison's article in [Apogee's Peak-of-Flight newsletter #154](https://www.apogeerockets.com/education/downloads/Newsletter154.pdf), use and implementation of the "base drag hack", as it is commonly known (but shouldn't be... as we'll discuss below) have been a frequent topic of conversation and a source of many questions.  In this tutorial we'll show how to implement it most correctly and efficiently in OpenRocket, starting with version 23.09.
 
 <script>
-  addWarningMessage('This tutorial will only address *how* to implement the hack as specified in Peak-of-Flight #154. Debates concerning the validity of the hack, or exactly *when* to use it, are left for discussion elsewhere.', true)
+  addWarningMessage('This tutorial will focus on *how* to implement the hack as specified in Peak-of-Flight #154. Debates concerning the validity of the hack, or exactly *when* to use it, are left for discussion elsewhere.', true)
 </script>
 
 ### About the Hack
 
 #### What it's really for
 
-First let's clear up some misinformation.  This trick is commonly referred to as the `base drag hack`, which suggests that it is some type of correction for missing base drag.  In fact, base drag is already well-implemented in OpenRocket, and has been for a long time.  The purpose of the hack is, rather, to apply a **correction to Center of Pressure** to incorporate the effects of base drag, something which is *not* currently implemented in OpenRocket.
+First let's clear up some misinformation.  This trick is sometimes referred to as the "base drag hack", which suggests that it is some type of correction for missing base drag.  In fact, base drag is already properly calculated in OpenRocket, and has been for a long time.  The purpose of the hack is, rather, to apply a **correction to Center of Pressure** to incorporate the effects of base drag, something which is *not* currently implemented in OpenRocket.
 
-For this reason, we will refer to it in this tutorial as `Base Drag CP Correction`, and recommend you do the same. For convenience we will sometimes shorten it to just "the hack", which is not meant as a pejorative; it is simply descriptive.
+For this reason, we will refer to this technique more accurately as "Base Drag CP Correction", and recommend you do the same. For convenience we will sometimes shorten it to just "the hack".
 
 #### When to use it
 
-The PoF article specifies the use of the hack for rockets with **Less than a 10:1 Length to Diameter Ratio**. Although this is a simple rule to follow, it does raise some thorny questions.  But again, we'll leave those for discussion elsewhere.
+The PoF article specifies the use of Base Drag CP Correction for rockets with **Less than a 10:1 Length to Diameter Ratio**. Although this is a simple rule to follow, it does raise some thorny questions; we'll leave those for discussion elsewhere.  Ultimately, you will need to decide when to use it based on whatever criteria you choose.
 
 #### What to do
 
-The actual hack is quite simple. A **massless cone** with **diameter equal to the aft end of the rocket**, and **length Pi (π) times that diameter**, is added to the back of the rocket.  This will pull the CP back somewhat (and hence improve reported stability margin), and if done correctly (as we'll describe), will have *no other effect*.
+The hack itself is quite simple. A **massless cone** with **diameter equal to the aft end of the rocket**, and **length Pi (π) times that diameter**, is added to the tail end of the rocket.  This will pull the CP back somewhat (and hence improve reported stability margin), and if done correctly (as we'll describe), will have *no other effect*.
 
-### How to implement it
+Please note that the recommended cone dimensions are based on an assumption that the tail end of the rocket is a straight tube.  However, if the tail of the rocket is tapered (e.g. a tail cone such as in a V2), then base drag will be greatly reduced, and so one would imagine that the dimensions of the cone should change.  If anyone knows of a well-tested formula for modifying the base drag cone in the presence of a tail cone, please let us know!
+
+### How to implement it in OpenRocket
 
 Let's start with a short stubby 3FNC:
 
@@ -66,6 +68,10 @@ Note that the base drag of the original body tube is still there, and the new co
 
 Now the apogee is back up to 1084 ft, which is within margin of error of where we started.
 
+<script>
+  addWarningMessage('CD override was first implemented in OpenRocket 22.02. However, a small bug causes the drag calculations of the base drag cone to be slightly off.  Version 23.09 is the first version of OR that implements this correctly.',true)
+</script>
+
 The base drag cone is not very attractive in the 3D view:
 
 <div data-image-path="/img/tutorials/base_drag/threed_view.png"
@@ -82,5 +88,5 @@ Now, we can still see it (so we remember it's there), but it doesn't detract as 
 
 ### Conclusion
 
-This completes the implementation of Base Drag CP Correction.  It corrects the CP while not interfering with any other flight parameters, and looks decent in 3D view.  If and when to use it on your rockets... well, that's up to you.
+This completes our "optimal" implementation of Base Drag CP Correction.  It corrects the CP while not interfering with any other flight parameters, and looks decent in 3D view.  If and when to use it on your rockets... well, that's up to you.
 
