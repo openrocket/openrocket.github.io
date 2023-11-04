@@ -66,7 +66,7 @@ Note that the base drag of the original body tube is still there, and the new co
       data-image-caption='Setting Drag to Zero'
       data-image-width="60%"></div>
 
-Now the apogee is back up to 1084 ft, which is within margin of error of where we started.
+Now the apogee is back up to 1084 ft, which is within margin of error of where we started.  *So now we will always leave the base drag cone in place for our simulations.*
 
 <script>
   addWarningMessage('CD override was first implemented in OpenRocket 22.02. However, a small bug causes the drag calculations of the base drag cone to be slightly off.  Version 23.09 is the first version of OR that implements this correctly.',true)
