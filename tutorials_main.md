@@ -5,9 +5,15 @@ permalink: /tutorials/
 ---
 
 <!-- Introduction -->
-<div class="tutorial-introduction">
+<div class="tutorial-introduction" markdown="1">
   <h1>Welcome to Our Tutorials!</h1>
-  <p>Here you'll find a curated list of tutorials to help you <b>master OpenRocket</b>. <br>Whether you're just starting our, or looking to refine your knowledge, there's something here for everyone. Dive in and happy learning! 😊🚀</p>
+  Here you'll find a curated list of tutorials to help you __master OpenRocket__.
+
+  Whether you're just starting our, or looking to refine your knowledge, there's something here for everyone. Dive in and happy learning! 😊🚀
+
+  <br>
+  Do you have a <u>request for a new tutorial</u> or want to <u>improve an existing tutorial</u>? Then please mail us at <a href="mailto:{{ site.email }}" target="_blank">{{ site.email }}</a>.
+  
 </div>
 
 <hr style="width: 80%">
