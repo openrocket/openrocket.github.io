@@ -2,7 +2,7 @@
 layout: tutorial
 title: Export to OBJ file for 3D printing
 thumbnail: /img/tutorials/thumbnails/tn_export_OBJ_3D_printing.png
-description: 3D printing (parts of) your design is now possible, thanks to the OBJ export feature in OpenRocket. This tutorial will show you how to export your design to OBJ, and how to prepare it for 3D printing.
+description: 3D printing (parts of) your design is now possible, thanks to the OBJ export feature introduced in OpenRocket 23.09. This tutorial will show you how to export your design to OBJ, and how to prepare it for 3D printing.
 date: 2023-09-30
 difficulty: intermediate
 toc: true
@@ -11,10 +11,10 @@ toc: true
 ### Preparing your design
 Since you're now moving from the digital, simulation world to the physical, 3D printing world, you'll have to take into account some things that you didn't have to worry about before. You'll have to make sure that your design is printable. Ensure that there are no components with a width of zero in your design, that the walls are thick enough, and that the parts fit together well. For example, if you have a nose cone that fits into a tube, make sure that the nose cone shoulder is slightly smaller than the inner width of the tube, so that after printing the parts fit well together.
 
-We recommend you take a look at our `A 3D printable model rocket` example file, which you can access by going to `File > Open example > A 3D printable model rocket`. This file contains a design that is ready to be exported to OBJ and 3D printed.
+We recommend you take a look at our `3D Printable Nose Cone and Fins` example file, which you can access by going to `File > Open example > 3D Printable Nose Cone and Fins`. This file contains a design that is ready to be exported to OBJ and 3D printed.
 
 <div data-image-path="/img/tutorials/export_OBJ_3D_printing/ExampleRocket.png" 
-     data-image-caption='Example file "A 3D printable model rocket"'
+     data-image-caption='Example file "3D Printable Nose Cone and Fins"'
      data-image-width="60%"></div>
 
 ### Exporting to OBJ
@@ -43,7 +43,7 @@ We recommend you take a look at our `A 3D printable model rocket` example file, 
       data-image-width="80%"></div>
 
   <script>
-    addWarningMessage('The OBJ exporting is optimized for individual components. We recommend you export each component separately by enabling the option `Export as separate files`. If not, the exported OBJ geometry may not be manifold and may not be sliced properly by your slicer software.', true)
+    addWarningMessage('The OBJ exporting is optimized for individual components. Where possible, we recommend you export each component separately by enabling the option `Export as separate files`. If not, the exported OBJ geometry may not be manifold and may not be sliced properly by your slicer software.', true)
   </script>
 
   When you're done, click `Save`.
