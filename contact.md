@@ -12,17 +12,19 @@ The most active communication channel is our Discord server, which you can join 
 
 ## Mailing Lists
 
-OpenRocket currently has two emailing lists for interested users:
+OpenRocket currently has three emailing lists for interested users:
 
  - [OpenRocket-announce](https://lists.sourceforge.net/lists/listinfo/openrocket-announce) ([archives](https://sourceforge.net/mailarchive/forum.php?forum_name=openrocket-announce))
    Announcements of new OpenRocket versions and developments. This list is moderated.
  - [OpenRocket-devel](https://lists.sourceforge.net/lists/listinfo/openrocket-devel) ([archives](https://sourceforge.net/mailarchive/forum.php?forum_name=openrocket-devel))
    Discussion related to OpenRocket development, documentation and upcoming features.
+- [OpenRocket-website](https://lists.sourceforge.net/lists/listinfo/openrocket-website) ([archives](https://sourceforge.net/mailarchive/forum.php?forum_name=openrocket-website))
+   Discussion related to the OpenRocket website.
 
 You are welcome to join the development mailing list if you are interested in contributing something to OpenRocket or simply want hear about and discuss future development. Note that support requests should be sent to the [support forums](https://www.rocketryforum.com/forumdisplay.php?f=36) instead!
 
 Unsubscribing from the lists can be performed in the above links as
-well. List members can not unsubscribe for you; _Please do not send unsubscription requests to the list._
+well. List members can not unsubscribe for you; _Please do not send unsubscribe requests to the list._
 
 ## Support Forums
 
