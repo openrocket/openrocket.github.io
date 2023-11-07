@@ -165,3 +165,8 @@ nav.navbar {
   font-size: 0.7em;
   margin-left: 5px;
 }
+
+.discord-guild {
+  border-radius: 10px;
+  width: 25%;
+}
