@@ -1,12 +1,20 @@
 ---
 layout: tutorial
-title: Why is my predicted apogee lower than expected?
+title: Why is my predicted apogee much different than expected?
 thumbnail: /img/tutorials/thumbnails/sim_results.png
-description: "A frequently asked question is: \"Why is my predicted apogee much lower than expected?\" It turns out that there are only 2 common errors that are responsible for the majority of such cases. In this tutorial we'll go through them, and give some general guidance on how to understand your sim results."
+description: "A frequently asked question is: \"Why is my predicted apogee much lower (or occasionally, higher) than expected?\" In this tutorial we'll review the most likely culprits, and give some general guidance on how to understand your sim results."
 date: 2023-10-19
 difficulty: beginner
 toc: true
 ---
+
+### Introduction
+
+Sometimes flight simulation results don't seem to make intuitive sense.  Either the projected apogee is much lower or maybe even higher than expected.  It turns out that there are really only two root causes responsible for the majority of such cases.  In this tutorial we'll review them, and show some techniques for understanding your sim results.
+
+We'll assume that you've checked the design itself... in particular, you've got the mass about right, which means either an override for the rocket based on actual measurements, or carefully set materials for all the different components.
+
+The examples in this tutorial are all based on real questions that have been asked by real users over the years.
 
 ### Early Deployment / Motor Selection Errors
 
@@ -66,7 +74,7 @@ Now our apogee is estimated at 1049 feet, almost exactly *triple* our previous v
 
 For a complete run-down of all the ins and outs of motor selection, go check out the [Motor Selection tutorial](/tutorials/motor-selection).
 
-### Bad Simulation Parameters
+### When all else fails, check your simulation parameters
 
 The second likely culprit is **bad simulation parameters**. Let's go back to the same rocket, now it's showing only 426 ft apogee, and again there's a high-speed deployment warning:
 
@@ -80,13 +88,39 @@ Double-checking the motor delay shows that it's correct.  In fact, everything lo
 When all else fails, go and check your simulation settings. Click once to select the sim, and then click the `Edit Simulation` button:
 
 <div data-image-path="/img/tutorials/sim_results/sim_settings.png"
-    data-image-caption='Simulation Settings'
+    data-image-caption='Simulation Settings: incorrect launch angle'
     data-image-width="55%"
     data-image-shadow="true"></div>
 
-There's the problem, the launch rod is angled at 45 degrees. Change that to zero and everything will revert to normal. Other sim settings can mess you up as well, particularly altitude and atmospheric conditions.  These settings are usually not a source of problem but they can be, if you inadvertently make an unwanted change.  Generally, you will set the default sim settings in the `Launch` tab of your OpenRocket preferences, and then only occasionally change the settings for a sim after it has been created.
+There's the problem, the launch rod is angled at 45 degrees. Change that to zero and everything will revert to normal. Other sim settings can mess you up as well, particularly altitude and atmospheric conditions.
+
+Maybe your projected apogee seems too *high*:
+
+<div data-image-path="/img/tutorials/sim_results/too_high.png"
+    data-image-caption='Simulated Apogee too High'
+    data-image-width="55%"
+    data-image-shadow="true"></div>
+
+Yeah, that rocket isn't going >2000' on a C6.  Looking at the sim settings, we see that an errant atmospheric pressure setting is the culprit (unless you were actually planning to launch from the edge of space).
+
+Sim settings aren't usually a source of problem but they can be, if you inadvertently make an unwanted change.  Generally, you will set the default sim settings in the `Launch` tab of your OpenRocket preferences, and then only occasionally change the settings for a sim after it has been created.
 
 <div data-image-path="/img/tutorials/sim_results/launch_preferences.png"
     data-image-caption='Launch Preferences Tab'
     data-image-width="55%"
     data-image-shadow="true"></div>
+
+### High Angle of Attack
+
+Although the previous two causes likely account for the majority of unexpected sim results, there is third that can bite you: high angle of attack, caused by either instability or low speed off the rod.  In the case of instability, the rocket will tumble, resulting in a very low altitude.  Normally you should notice a low stability margin (shown in the rocket figure display) before you even get to the sim results, but it's possible to forget, and then wonder what the heck is going on.
+
+Usually, if the rocket is unstable, you'll get a "tumble" warning in addition to the high angle of attack, and that'll be the giveaway.  Here's an example:
+
+<div data-image-path="/img/tutorials/sim_results/unstable.png"
+    data-image-caption='Unstable Rocket'
+    data-image-width="55%"
+    data-image-shadow="true"></div>
+
+Sometimes you might get an angle of attack warning even on a rocket that is stable.  That can happen if the rocket is very slow off the rod: before the rocket picks up speed it is very susceptible to any kind of wind gust.  Check your speed off the rod; if it's much less than 50 f/s (or about 35 mph or 15 m/s) then that is a likely cause.  You'll need a higher-thrust motor, a longer rod, or a lighter rocket.
+
+
