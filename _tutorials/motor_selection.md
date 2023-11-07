@@ -80,7 +80,7 @@ There are two ways to set the delay. First, you can choose from available option
 
 These represent the available preset delays offered by the manufacturer, *plus* a `plugged` option which means that the motor will have no ejection charge (sometimes this option is directly offered by the manufacturer).
 
-For many black powder motors, the first option shown is `-0`.  Generally, you should _only_ select this option if you are configuring the booster of a multi-stage rocket. Always set a reasonable value, [check your sim results](sim_results.html) to see how well you've chosen, then come back and adjust the delay if needed.
+For many black powder motors, the first option shown is `-0`.  Generally, you should _only_ select this option if you are configuring the booster of a multi-stage rocket. Always set a reasonable value, [check your sim results](/tutorials/sim_results) to see how well you've chosen, then come back and adjust the delay if needed.
 
 What may not be as obvious is that you can also just type your own value into the combobox, e.g.:
 <div data-image-path="/img/tutorials/motor_selection/delay_combobox.png"
