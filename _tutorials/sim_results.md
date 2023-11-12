@@ -10,11 +10,38 @@ toc: true
 
 ### Introduction
 
-Sometimes flight simulation results don't seem to make intuitive sense.  Either the projected apogee is much lower or maybe even higher than expected.  It turns out that there are really only two root causes responsible for the majority of such cases.  In this tutorial we'll review them, and show some techniques for understanding your sim results.
+Sometimes flight simulation results don't seem to make intuitive sense.  Either the projected apogee is much lower or maybe even higher than expected. This tutorial will show some of the most common root causes for this. The examples used are all based on real questions that have been asked by real users over the years.
 
-We'll assume that you've checked the design itself... in particular, you've got the mass about right, which means either an override for the rocket based on actual measurements, or carefully set materials for all the different components.
+### Managing your mass: Get your overrides right
 
-The examples in this tutorial are all based on real questions that have been asked by real users over the years.
+One of the very first things to check is that the total mass of the rocket is correct.  If the rocket is not yet built, that means simply checking that the dimensions and material selection for each component is correct.
+
+If the rocket is already built, then you might have used overrides to set the mass of the whole rocket, or used a mass object.  Either way, always do a quick sanity check on the total dry mass (`Mass with no motors`) of the rocket, as shown in the upper left of the rocket figure::
+
+<div data-image-path="/img/tutorials/sim_results/mass_without_motors.png"
+    data-image-caption='Total Mass Without Motors'
+    data-image-width="55%"
+    data-image-shadow="true"></div>
+
+If that number looks much too high, and you might have made the following mistake in overriding the stage (labeled `Sustainer` by default in one-stage rockets):
+    
+<div data-image-path="/img/tutorials/sim_results/bad_override.png"
+    data-image-caption='Override Error'
+    data-image-width="55%"
+    data-image-shadow="true"></div>
+
+Note that, for the mass override, the checkbox `Override for all subcomponents` has been left unchecked.  This means that the mass of the virtual "Sustainer" component, which is normally zero, will be *added* to the mass of all the subcomponents, resulting in a rocket that weighs around double what it should, resulting in very low apogee estimates.  The correct move when overriding a stage is usually to check `Override for all subcomponents` for the mass or CG or CD override, if you're using those). If you're using the override in a different way (anything other than setting the mass/CG/CD of the entire rocket) then leaving it unchecked may be correct, but that's not the scenario we're discussing right now..
+
+So, for typical usage, the sustainer override should look like this:
+
+<div data-image-path="/img/tutorials/sim_results/correct_override.png"
+    data-image-caption='Correct Override Details'
+    data-image-width="55%"
+    data-image-shadow="true"></div>
+
+Because `Override for all subcomponents` is checked, the mass with no motors for the whole rocket is now correct.  Note also that in the component tree, smaller grey override indicators are shown next to all the subcomponents, to indicate that they've been overridden by a parent.  The blue override indicators are shown next to the component with the active override.
+
+Similar considerations apply when overriding Pods or Boosters, which are also virtual components with no mass of their own.
 
 ### Early Deployment / Motor Selection Errors
 
@@ -26,7 +53,7 @@ Look at these sim results for the "Simple Model Rocket" example design:
     data-image-width="60%"
     data-image-shadow="true"></div>
 
-It sure seems like this rocket ought to go higher than 355 feet on a C6 motor.  Your first hint that early deployment is the problem is that the sim results table will show a very high velocity at deployment, and there will be a warning indicating such if you `hover` over the `red exclamation point` at the left:
+It sure seems like this rocket ought to go higher than 355 feet on a C6 motor.  Your first hint that early deployment is the problem is that the sim results table will show a very high velocity at deployment, and there will be a warning indicating such if you hover over the `red exclamation point` at the left:
 
 <div data-image-path="/img/tutorials/sim_results/high_speed_deployment.png"
     data-image-caption='High-Speed Deployment Warning'
@@ -40,7 +67,7 @@ You can also see it if you create a plot of the sim, using the default settings.
     data-image-width="55%"
     data-image-shadow="true"></div>
 
-In this example, notice that the `Recovery device deployment` event occurs while `Vertical velocity` (red line) is very high.  Also, not that the `Motor burnout` and `Recovery device deployment` are happening at the same time. Why does this happen?  By far the most common mistake is that a **motor** with a **too short delay** has been configured... in fact, often it is a zero-delay booster motor, as in this example. Let's go look at the motor configurations:
+In this example, notice that the `Recovery device deployment` event occurs while `Vertical velocity` (red line) is very high.  Also, note that the `Motor burnout` and `Recovery device deployment` are happening at the same time. Why does this happen?  By far the most common mistake is that a **motor** with a **too short delay** has been configured... in fact, often it is a zero-delay booster motor, as in this example. Let's go look at the motor configurations:
 
 <div data-image-path="/img/tutorials/sim_results/motor_configurations.png"
     data-image-caption='Motor Configurations Tab'
@@ -74,9 +101,22 @@ Now our apogee is estimated at 1049 feet, almost exactly *triple* our previous v
 
 For a complete run-down of all the ins and outs of motor selection, go check out the [Motor Selection tutorial](/tutorials/motor-selection).
 
-### When all else fails, check your simulation parameters
+### Large Angle of Attack
 
-The second likely culprit is **bad simulation parameters**. Let's go back to the same rocket, now it's showing only 426 ft apogee, and again there's a high-speed deployment warning:
+If you get a `Large angle of attack` warning, it's usually caused by either instability or low speed off the rod.  In the case of instability, the rocket will tumble, resulting in a very low altitude.  Normally you should notice a low stability margin (shown in the rocket figure display) before you even get to the sim results, but it's possible to forget, and then wonder what the heck is going on.
+
+Usually, if the rocket is unstable, you'll get a "tumble" warning in addition to the high angle of attack, and that'll be the giveaway.  Here's an example:
+
+<div data-image-path="/img/tutorials/sim_results/unstable.png"
+    data-image-caption='Unstable Rocket'
+    data-image-width="55%"
+    data-image-shadow="true"></div>
+
+Sometimes you might get an angle of attack warning even on a rocket that is stable.  That can happen if the rocket is very slow off the rod: before the rocket picks up speed it is very susceptible to any kind of wind gust.  Check your speed off the rod; if it's much less than 50 f/s (or about 35 mph or 15 m/s) then that is a likely cause.  You'll need a higher-thrust motor, a longer rod, or a lighter rocket.
+
+### When all else fails, check your simulation settings
+
+Let's go back to the same rocket, now it's showing only 426 ft apogee, and again there's a high-speed deployment warning:
 
 <div data-image-path="/img/tutorials/sim_results/second_bad_result.png"
     data-image-caption='Low Predicted Apogee, again'
@@ -110,17 +150,8 @@ Sim settings aren't usually a source of problem but they can be, if you inadvert
     data-image-width="55%"
     data-image-shadow="true"></div>
 
-### High Angle of Attack
+### Conclusions
 
-Although the previous two causes likely account for the majority of unexpected sim results, there is third that can bite you: high angle of attack, caused by either instability or low speed off the rod.  In the case of instability, the rocket will tumble, resulting in a very low altitude.  Normally you should notice a low stability margin (shown in the rocket figure display) before you even get to the sim results, but it's possible to forget, and then wonder what the heck is going on.
+There are many possible reasons for unexpected sim results; *usually* there are visible indicators if you know where to look.  Hopefully this tutorial has given you an idea how to diagnose this sort of problem with your sim.
 
-Usually, if the rocket is unstable, you'll get a "tumble" warning in addition to the high angle of attack, and that'll be the giveaway.  Here's an example:
-
-<div data-image-path="/img/tutorials/sim_results/unstable.png"
-    data-image-caption='Unstable Rocket'
-    data-image-width="55%"
-    data-image-shadow="true"></div>
-
-Sometimes you might get an angle of attack warning even on a rocket that is stable.  That can happen if the rocket is very slow off the rod: before the rocket picks up speed it is very susceptible to any kind of wind gust.  Check your speed off the rod; if it's much less than 50 f/s (or about 35 mph or 15 m/s) then that is a likely cause.  You'll need a higher-thrust motor, a longer rod, or a lighter rocket.
-
-
+If you come up with another case of unexpected sim results that is not covered here, please let us know and we'll add it in.
