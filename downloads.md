@@ -94,6 +94,7 @@ the [install4j multi-platform installer builder](https://www.ej-technologies.com
 <link rel="stylesheet" href="/css/downloads.css">
 
 <script type="text/javascript" src="/downloads/downloads_config.js" defer></script>
+<script type="text/javascript" src="/js/whats-new.js" defer></script>
 <script type="text/javascript" src="/js/fill_downloads.js" defer></script>
 <script type="text/javascript" src="/js/collapsible.js" defer></script>
 <script>

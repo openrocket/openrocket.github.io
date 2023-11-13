@@ -179,40 +179,6 @@ function fillSourceCode(version, format) {
     elem.innerHTML = `<i class="fa-solid fa-download" style="margin-right: 1.5rem"></i>Download release-${version}.${format}`;
 }
 
-// What's new
-function fillWhatsNew(version) {
-    const whatsNewDiv = document.getElementById('whats-new');
-    const whatsNewBtn = document.getElementById('button-whats-new');
-
-    // Define the URL for the markdown file based on the version
-    const markdownUrl = `/whats-new/wn-${version}.html`;
-
-    // Fetch the markdown content
-    fetch(markdownUrl)
-        .then(response => {
-            if (!response.ok) {
-                whatsNewDiv.style.display = 'none';
-                whatsNewBtn.style.display = 'none';
-                throw new Error(`Markdown file ${markdownUrl} not found`);
-            }
-            return response.text();
-        })
-        .then(content => {
-            // If you have a markdown-to-HTML converter, use it here.
-            // For this example, we're directly setting the markdown content.
-            const whatsNewDiv = document.getElementById('content-whats-new');
-            if (whatsNewDiv) {
-                whatsNewDiv.innerHTML = content;
-
-                // Process divs for images/videos
-                processMediaElement(whatsNewDiv);
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching the markdown:', error);
-        });
-}
-
 // Main function
 window.onload = function() {
     const version = getVersion();
@@ -239,5 +205,5 @@ window.onload = function() {
     fillSourceCode(version, 'zip');
     fillSourceCode(version, 'tar.gz');
 
-    fillWhatsNew(version);
+    fillWhatsNew(version, 'content-whats-new');
 }

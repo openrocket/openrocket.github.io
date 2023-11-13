@@ -47,7 +47,16 @@ You may use markdown in the message text, but if you do so, you have to set the 
 To add a new OpenRocket release, you need to update the following files:
 - `downloads/downloads_config.js`: just copy one of the existing releases and update the version number and download links. For the instructions, you should be able to use the previous files (e.g. `downloads/instructions/macOS_new.md`). If the new release does require you to update the instructions, you can add a new file in the `downloads/instructions` folder and reference that as the instructions file. We recommend you only leave in the 2 newest releases. You may delete the configuration for older releases.
 - `_config.yml`: update the `current_version` variable to the new version number (this is the latest OpenRocket release)
-- `_includes/ReleaseNotes.md`: add a new section for the new release (follow previous releases as an example). You can just copy the release notes from GitHub.
+- `_includes/ReleaseNotes.md`: add a new section for the new release (follow previous releases as an example). The content of the release will be the whats-new markdown file content (see below). This happens automatically, you just need to add the correct div. See the following example, change `{YOUR_VERSION}` and `{YOUR_DATE}` to the correct values:
+```HTML
+<h2>
+  <a href="https://github.com/openrocket/openrocket/releases/tag/release-{YOUR_VERSION}" class="a-no-format">
+     OpenRocket {YOUR_VERSION} ({YOUR_DATE})
+  </a>
+</h2>
+
+<div data-version="{YOUR_VERSION}" id="release-{YOUR_VERSION}-content"></div>
+```
 
 In addition, you also need to create a new Markdown file for the `What's new` section of the release.
 1. Create a new file in the `_whats-new` folder. The file name should be `wn-<version>.md` (e.g. `wn-23.09.md`).
