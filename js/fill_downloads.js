@@ -1,3 +1,6 @@
+// Constants
+const downloads_config_path = '/assets/downloads_config.json';
+
 // Utility functions
 
 function getVersion() {
@@ -6,12 +9,18 @@ function getVersion() {
 }
 
 /**
- * Returns the configuration object from downloads_config.js, according to the passed version
+ * Returns the configuration object from downloads_config.yml, according to the passed version
  * @param {string} version 
- * @returns JS object 
+ * @returns JSON object 
  */
-function getConfigObj(version) {
-    return downloads_config.find(obj => obj.name === version);
+async function getConfigObj(version) {
+    try {
+        const response = await fetch(downloads_config_path);
+        const data = await response.json();
+        return data.find(obj => obj.name === version);
+    } catch (e) {
+        console.error('Error loading JSON file', e);
+    }
 }
 
 // Dropdown functions
@@ -27,18 +36,26 @@ function selectDropdownVersion(version) {
 
 function fillDownloadsDropdown() {
     const dropdownContent = document.getElementById('dropdown-content');
-    downloads_config.forEach(version => {
-        const versionLink = document.createElement('a');
-        versionLink.href = `downloads.html?vers=${version.name}`;
-        versionLink.innerHTML = (version.name === CURRENT_VERSION) ? `<b>${version.name}</b>` + " <i>(latest)</i>" : version.name;
-        dropdownContent.appendChild(versionLink);
-    });
+
+    fetch(downloads_config_path)
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(version => {
+                const versionLink = document.createElement('a');
+                versionLink.href = `downloads.html?vers=${version.name}`;
+                versionLink.innerHTML = (version.name === CURRENT_VERSION) ? `<b>${version.name}</b> <i>(latest)</i>` : version.name;
+                dropdownContent.appendChild(versionLink);
+            });
+        })
+        .catch(error => {
+            console.error('Error loading JSON file', error);
+        });
 }
 
 /**
  * Fills the download content of a specific OS
  * @param {string} version The targeted OpenRocket version
- * @param {JS object} configObj The configuration object for the targeted version
+ * @param {JSON object} configObj The configuration object for the targeted version
  * @param {string} OSName The OS to target
  * @param {string} faIcon The name of the Font Awesome icon to use in the title, or an empty string if no icon is needed
  */
@@ -180,7 +197,7 @@ function fillSourceCode(version, format) {
 }
 
 // Main function
-window.onload = function() {
+window.onload = async function() {
     const version = getVersion();
 
     fillDownloadsDropdown();
@@ -190,20 +207,25 @@ window.onload = function() {
         return;
     }
 
-    const configObj = getConfigObj(version);
-    if (!configObj) {
-        document.getElementById('downloads-content').style.display = 'none';
-        selectDropdownVersion('INVALID VERSION');
-        return;
+    try {
+        const configObj = await getConfigObj(version);
+        if (!configObj) {
+            document.getElementById('downloads-content').style.display = 'none';
+            selectDropdownVersion('INVALID VERSION');
+            return;
+        }
+
+        selectDropdownVersion(version);
+        fillOSContent(version, configObj, 'Windows', 'windows');
+        fillOSContent(version, configObj, 'macOS', 'apple', "Intel", "Apple Silicon");
+        fillOSContent(version, configObj, 'Linux', 'linux');
+        fillOSContent(version, configObj, 'JAR', 'java');
+        fillSourceCode(version, 'zip');
+        fillSourceCode(version, 'tar.gz');
+
+        fillWhatsNew(version, 'content-whats-new');
+    } catch (e) {
+        console.error('Error in loading config', e);
+        // Handle the error or display a message
     }
-
-    selectDropdownVersion(version);
-    fillOSContent(version, configObj, 'Windows', 'windows');
-    fillOSContent(version, configObj, 'macOS', 'apple', "Intel", "Apple Silicon");
-    fillOSContent(version, configObj, 'Linux', 'linux');
-    fillOSContent(version, configObj, 'JAR', 'java');
-    fillSourceCode(version, 'zip');
-    fillSourceCode(version, 'tar.gz');
-
-    fillWhatsNew(version, 'content-whats-new');
 }
