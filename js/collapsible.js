@@ -22,8 +22,12 @@ function toggleCollapsible() {
   content.style.transitionDuration = `${lerpedTime}s`;
 
   if (content.style.maxHeight && content.style.maxHeight !== "0px") {
-    content.style.maxHeight = "0px"; // collapse
+    content.style.maxHeight = "0px";      // collapse
+    content.style.paddingTop = "0px";
+    content.style.paddingBottom = "0px";
   } else {
-    content.style.maxHeight = `${content.scrollHeight}px`; // expand
+    content.style.paddingTop = "10px";
+    content.style.paddingBottom = "20px";
+    content.style.maxHeight = `${content.scrollHeight+30}px`; // expand
   }
 }

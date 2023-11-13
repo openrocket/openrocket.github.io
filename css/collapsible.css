@@ -21,7 +21,7 @@
     margin-left: 5px;
   }
   
-  .active:after {
+  .collapsible.active:after {
     content: "\2212";
   }
   
@@ -29,7 +29,7 @@
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height ease-in-out;
+    transition: max-height ease-in-out, padding ease-in-out;
     background-color: white;
     border: 2px solid rgb(235, 235, 235);
   }
