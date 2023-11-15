@@ -1,0 +1,256 @@
+.tutorial-introduction {
+    width: 80%;
+    padding-top: 5px;
+    margin: 0 auto;
+}
+
+/* ========== TUTORIAL FILTER STYLES ========== */
+
+.label-select-difficulty {
+    font-style: italic;
+    color: #888;
+    margin-right: 15px;
+}
+
+.difficulty-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.difficulty-filter input[type="checkbox"] {
+    display: none;
+}
+
+.difficulty-filter label {
+    padding: 1px 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 25px; /* Pill shape */
+    border: 2px solid;
+    opacity: 0.8;
+    margin: 0 10px; /* Adds space between each label */
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, border-color 0.3s; /* Transition effect for smoother color change */
+    user-select: none;
+}
+
+.difficulty-filter label:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Default (unchecked) state */
+.difficulty-filter label {
+    background-color: rgba(220, 220, 220, 0.3); /* Grey with transparency */
+    border-color: #DCDCDC; /* Grey */
+    color: #888; /* Grey text color */
+}
+
+.difficulty-filter input[value="beginner"]:checked + label, .tutorial-difficulty[data-difficulty="beginner"], .tutorial-page-difficulty[data-difficulty="beginner"] {
+    background-color: rgba(50, 205, 50, 0.2); /* LimeGreen with transparency */
+    border-color: #32CD32; /* LimeGreen */
+    color: #228B22; /* ForestGreen */
+}
+
+.difficulty-filter input[value="intermediate"]:checked + label, .tutorial-difficulty[data-difficulty="intermediate"], .tutorial-page-difficulty[data-difficulty="intermediate"] {
+    background-color: rgba(255, 165, 0, 0.2); /* Orange with transparency */
+    border-color: #FFA500; /* Orange */
+    color: #FF8C00; /* DarkOrange */
+}
+
+.difficulty-filter input[value="advanced"]:checked + label, .tutorial-difficulty[data-difficulty="advanced"], .tutorial-page-difficulty[data-difficulty="advanced"] {
+    background-color: rgba(147, 112, 219, 0.2); /* MediumPurple with transparency */
+    border-color: #9370DB; /* MediumPurple */
+    color: #800080; /* Purple */
+}
+
+.difficulty-filter label:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* ========== TUTORIAL CONTAINER STYLES ========== */
+
+.tutorial-container {
+    display: flex;
+    position: relative;
+    width: 90%;
+    left: 10%;
+    padding-right: 5%;
+    gap: 4%;  /* Adjust this value to set the margin between the tutorials and tutorial-selection */
+}
+
+.tutorial:last-child {
+    border-bottom: none;
+}
+
+/* ========== TUTORIAL TABLE OF CONTENTS ========== */
+
+.tutorial-selection {
+    display: block;
+    flex: 1;
+}
+
+.toggle-list {
+    border: 1px solid #ccc;
+}
+
+.toggle-header {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+#tutorialsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    max-height: 0;
+}
+
+#tutorialsList.collapsed {
+    max-height: none;
+}
+
+#tutorialsList li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#tutorialsList li a:hover {
+    background-color: #e5e5e5;
+}
+
+/* ========== TUTORIAL TILE STYLES ========== */
+
+.tutorials {
+    flex: 5;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.tutorial-tile {
+    flex: 0 0 calc(33.333% - 30px);  /* Adjust the margin value accordingly */
+    box-sizing: border-box;
+    margin: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    text-decoration: none;
+    color: inherit;
+    display: block;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will push the title down */
+}
+
+.tutorial-tile:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tutorial-thumbnail {
+    flex-grow: 1; /* Grow to take up all available space */
+    display: flex; /* Make the thumbnail container a flexbox */
+    align-items: center; /* Vertically center the thumbnail image */
+    justify-content: center; /* Horizontally center the thumbnail image */
+}
+
+.tutorial-thumbnail img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.tutorial-title {
+    text-align: center;
+    margin-top: auto;
+    flex-grow: 0; /* Do not grow bigger than its content */
+}
+
+.tutorial-title > h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5px 5px;
+    padding-top: 10px;
+    border-top: 1px solid #d8d8d8;
+}
+
+.tutorial-content header .tutorial-date {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 3px;
+    display: block;
+    text-align: left;
+}
+
+.date-difficulty-wrapper {
+    display: flex;
+    flex-grow: 0; /* Do not grow bigger than its content */
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tutorial-date, .tutorial-page-date {
+    font-size: 0.8em;
+    color: #888;
+    text-align: left;
+}
+
+.tutorial-difficulty, .tutorial-page-difficulty {
+    padding: 1px 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 25px; /* Pill shape */
+    border: 1px solid;
+    opacity: 0.8;
+}
+
+
+/* ========== MOBILE RESPONSIVE STYLES ========== */
+
+.mobile-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 768px) {
+    .tutorial-container {
+        flex-direction: column;  /* Stack the tutorials and selection vertically */
+    }
+    .mobile-toggle {
+        display: block; /* Show the toggle button on mobile */
+    }
+    .tutorial-selection {
+        display: none;  /* Initially hide the tutorial list */
+        width: 100%;    /* Make it full width */
+        order: -1;      /* Place it above the tutorials */
+    }
+    #tutorialsList {
+        max-height: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tutorial-tile {
+        flex: 1 1 100%;
+    }
+}

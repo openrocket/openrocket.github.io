@@ -3,11 +3,7 @@ function setDownloadTextByOS(btn) {
     const btnText = btn.getElementsByTagName("span")[0];
     const btnInitText = btnText.innerHTML;
     const os = navigator.userAgent;
-
-    // I really f*cking hate how I solved this... I need to get site.current_version from
-    // _config.yml, so I just yank it from the initial button text...
-    // Please, if you're more knowledgeable than I am, fix my monstrosity...
-    const version = btnInitText.substr(10);
+    const version = CURRENT_VERSION;    // Passed to the script by the HTML page
 
     if (os.indexOf("Win") != -1) {
         icon.className = "fa-brands fa-windows";

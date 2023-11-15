@@ -1,0 +1,8 @@
+beginner:
+  tooltip: "This tutorial is suitable for beginners with little to no prior knowledge."
+
+intermediate:
+  tooltip: "This tutorial is for those who have a basic understanding and want to learn more."
+
+advanced:
+  tooltip: "This tutorial is for experts who want to dive deep into advanced topics."

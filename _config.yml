@@ -1,14 +1,14 @@
 # Site settings
 title: OpenRocket Simulator
 mantra: Build better rockets
-email: openrocket-devel@lists.sourceforge.net 
+email: openrocket-website@lists.sourceforge.net
 description: > # this means to ignore newlines until "baseurl:"
   OpenRocket is a free, fully featured model rocket simulator that allows you to
   design and simulate your rockets before actually building and flying them.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://openrocket.info" # the base hostname & protocol for your site
 github_username:  openrocket 
-current_version: 22.02
+current_version: 23.09
 defaults:
   -
     scope:
@@ -16,6 +16,16 @@ defaults:
     values:
       layout: "default"
 exclude: ['CNAME', 'Gruntfile.js', 'node_modules', 'original', 'resources', 'params.json', 'package.json']
+
+collections:
+  tutorials:
+    output: true
+    permalink: /tutorials/:name.html
+  whats-new:
+    output: true
+
+plugins:
+  - jekyll-toc
 
 # Build settings
 markdown: kramdown

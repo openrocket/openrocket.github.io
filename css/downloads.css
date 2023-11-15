@@ -1,0 +1,73 @@
+.whats-new-btn {
+    margin:1em auto;
+    display:block;
+    font-size: 18px;
+    text-transform: none;
+    animation: bounce 2s 3;
+}
+
+.version-section {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.version-header {
+    display: inline-block;
+    color: #2196f3;
+    margin-left: 20px;
+}
+
+.dropdown {
+    margin-left: 20px;
+}
+
+.github-link {
+    float: right;
+}
+
+.whats-new {
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+.arch-label {
+    display: inline-block;
+}
+
+.arch-btn {
+    display: inline-block;
+    position: absolute;
+    left: 10em;
+}
+
+.download-content-OS {
+    position: relative;
+}
+
+.collapsible-download {
+    margin-top: 15px;
+}
+
+.thin-separator {
+    height: 0px;
+    border: none;
+    border-top: 1px solid #d8d8d8;
+}
+
+.thick-separator {
+    height: 0px;
+    border: none;
+    border-top: 2px solid #d8d8d8;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-5px);
+    }
+    60% {
+        transform: translateY(-3px);
+    }
+}
