@@ -1,0 +1,107 @@
+---
+layout: interior-page
+---
+
+<!-- Floating Back Button -->
+<a href="/tutorials/" class="floating-back-btn" aria-label="Back to Tutorials" title="Return to tutorials home page">
+    <i class="fa fa-arrow-left"></i>
+</a>
+
+<article class="tutorial-content" id="tutorial-content">
+    <header class="tutorial-header">
+        <div class="header-info">
+            <h2>{{ page.title }}</h2>
+            <div class="date-difficulty-wrapper">
+                <span class="tutorial-page-date">{{ page.date | date: "%B %d, %Y" }}</span>
+                <span class="tutorial-page-difficulty" data-difficulty="{{ page.difficulty }}" title="{{ site.data.tutorial_difficulties[page.difficulty].tooltip }}">
+                    {{ page.difficulty }}
+                </span>
+            </div>
+            <p>{{ page.description }}</p>
+        </div>
+        
+        {% if page.thumbnail %}
+        <div class="header-thumbnail">
+            <img src="{{ page.thumbnail }}" alt="{{ page.title }} Thumbnail">
+        </div>
+        {% endif %}
+    </header>
+
+    {% if page.toc %}
+    <h5>Contents of this tutorial:</h5>
+    <div id="table-of-contents">
+        {% toc %}
+    </div>
+    {% endif %}
+
+    <!-- This will be our modal (only add one per page) -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <div class="image-container">
+            <img id="modalImage">
+        </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div id="currentSection" class="current-section"></div>
+    <div class="progress-container">
+        <div class="progress-bar" id="myProgressBar"></div>
+    </div>
+
+    <section>
+        {{ content }}
+    </section>
+
+    <hr>
+
+    <!-- Noticed a mistake? -->
+    <i>Noticed a mistake? Please notify us at <a href="mailto:{{ site.email }}" target="_blank">{{ site.email }}</a>.</i>
+
+    <!-- You can add tutorial-specific elements here, if needed -->
+    <!-- For instance, a "Back to Tutorials" link -->
+    <footer>
+        <a href="/tutorials/">← Back to Tutorials</a>
+    </footer>
+</article>
+
+<!-- Tutorial-specific styles or scripts can be added here -->
+<style>
+    .tutorial-content {
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
+
+    .tutorial-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; 
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+
+    .header-info {
+        flex-basis: 60%;
+    }
+
+    .header-thumbnail {
+        flex-basis: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header-thumbnail img {
+        max-width: 100%; /* Ensuring thumbnail doesn't overflow its container */
+        height: auto;
+        padding: 10px;
+        padding-left: 35px;
+    }
+
+    .tutorial-content footer {
+        margin-top: 20px;
+    }
+</style>
+
+<link rel="stylesheet" href="/css/tutorial_content_page.css">
+<script src="/js/tutorial_content_page.js"></script>

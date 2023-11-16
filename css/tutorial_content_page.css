@@ -1,0 +1,99 @@
+/* ========== FLOATING BACK BUTTON ========== */
+.floating-back-btn {
+    position: fixed; /* Fixed position so it floats */
+    left: 20px; /* Distance from the left side of the viewport */
+    top: 50%; /* Centered vertically */
+    transform: translateY(-50%); /* Ensures it's centered at any scroll position */
+    background-color: #3498db; /* Background color */
+    color: white; /* Text color for the icon */
+    padding: 0.5em; /* Padding around the icon */
+    text-decoration: none; /* Removes underline from the link */
+    z-index: 1000; /* Ensures it's above other content */
+    border-radius: 50%; /* Makes it round */
+    font-size: 1.5em; /* Size of the icon */
+    display: flex; /* To center the icon inside the button */
+    align-items: center; /* Centers the icon vertically */
+    justify-content: center; /* Centers the icon horizontally */
+    width: 2em; /* Width of the button */
+    height: 2em; /* Height of the button */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: shadow for better visibility */
+}
+
+.floating-back-btn:hover {
+    background-color: #2980b9; /* Slightly darker background color on hover */
+    color: white; /* Ensures the icon color remains white on hover */
+}
+
+/* ========== TUTORIAL CONTENT PAGE ========== */
+.date-difficulty-wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tutorial-page-difficulty {
+    margin-left: 40px !important;
+}
+
+
+/* ========== STEP LIST ========== */
+
+.step-list {
+    list-style-type: none; /* Removes default numbering */
+    padding-left: 0; /* Removes default padding */
+    counter-reset: step-counter; /* Initialize a counter */
+}
+
+.step-list > li {
+    position: relative; /* Allows us to position the pseudo-element */
+    margin-bottom: 40px; /* Spacing between steps */
+    padding-left: 40px; /* Creates space for custom numbers */
+}
+
+.step-list > li::before {
+    content: counter(step-counter); /* Use the current counter value */
+    counter-increment: step-counter; /* Increment for the next item */
+    position: absolute; /* Absolute positioning */
+    left: 0; 
+    top: 0;
+    font-size: 24px; /* Size of the step number */
+    background-color: #2196F3; /* Any color you like */
+    color: white; /* Number color */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    align-items: center; /* Center the number vertically */
+    justify-content: center; /* Center the number horizontally */
+}
+
+/* ========== PROGRESS BAR ========== */
+
+.current-section {
+    font-size: 12px;
+    color: #333;
+    padding: 2px 4px;
+    position: fixed;
+    bottom: 17px;
+    left: 20px;
+    text-align: left;
+    z-index: 1;
+}
+
+.progress-container {
+    height: 12px;
+    background: #ccc;
+    position: fixed;
+    bottom: 5px;
+    left: 20px; /* Match the left padding of .tutorial-content */
+    right: 20px; /* Match the right padding of .tutorial-content */
+    z-index: 1;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #2196f3; /* Change to a color that matches your theme */
+    position: relative;
+}
