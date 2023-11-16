@@ -5,7 +5,7 @@ thumbnail: /img/tutorials/thumbnails/base_drag.png
 description: This tutorial will show the best ways to implement Base Drag CP Correction in your OR model.
 date: 2023-10-27
 difficulty: intermediate
-toc: true
+add_toc: true
 ---
 
 ### Introduction

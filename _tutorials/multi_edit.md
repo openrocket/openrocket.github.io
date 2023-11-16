@@ -5,7 +5,7 @@ thumbnail: /img/tutorials/thumbnails/multi_edit.png
 description: Multi-selection (i.e., selecting multiple items at once) is pretty routine in any modern operating systems. But you might not realize some of the incredibly useful things you can do with multi-selection in OpenRocket, starting with version 22.02. This tutorial will show what’s possible.
 date: 2023-10-16
 difficulty: beginner
-toc: true
+add_toc: true
 ---
 
 ### Notes
