@@ -24,8 +24,5 @@ collections:
   whats-new:
     output: true
 
-#plugins:
-#  - jekyll-toc
-
 # Build settings
 markdown: kramdown
