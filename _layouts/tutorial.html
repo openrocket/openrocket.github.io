@@ -27,10 +27,10 @@ layout: interior-page
         {% endif %}
     </header>
 
-    {% if page.toc %}
+    {% if page.add_toc %}
     <h5>Contents of this tutorial:</h5>
     <div id="table-of-contents">
-        {% toc %}
+        {% include /toc.html html=content %}
     </div>
     {% endif %}
 
