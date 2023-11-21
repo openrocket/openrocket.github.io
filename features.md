@@ -19,6 +19,8 @@ id: features
  - **Fully cross-platform**, written in Java
  - **[Fully documented simulation methods](/documentation.html)**
  - **Open Source** (see our [GitHub repository](https://github.com/openrocket/openrocket)), source code available under the [GNU GPL](https://www.gnu.org/licenses/gpl-3.0.txt)
+ - Export OpenRocket design file to other simulation programs (RockSim, RASAero II)
+ - Export component(s) to OBJ file for 3D printing
 
 ### User interface
 
@@ -57,7 +59,6 @@ Below are a few major features that are under consideration:
  - Aerodynamic computation using CFD [(help needed!)](/contribute.html)
  - Better support for supersonic simulation [(help needed!)](/contribute.html)
  - Printing and saving figures, simulation data and designs
- - Support for ready-made component databases
  - Customized support for hybrid rocket motors and water rockets
  - Importing and plotting actual flight data from altimeters
  - Rocket flight animation
