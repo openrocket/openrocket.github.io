@@ -24,7 +24,6 @@ Below are a few ideas about what kind of input developers can provide or feature
  - 3D visualization of the rocket during design and flight (Help needed!)
  - Printing of designs, simulation results, fin planforms etc
  - Memory profiling and leakage reduction
- - Writing RASAero design files
  - UI enhancements, for example zooming plots etc.
  - Application and WebService integrations
  - WebService and CloudStorage
