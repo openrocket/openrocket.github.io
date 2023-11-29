@@ -4,7 +4,7 @@ layout: interior-page
 id: features
 ---
 
-# Sceenshots
+# Screenshots
 
 {% include screenshots.html %}
 
