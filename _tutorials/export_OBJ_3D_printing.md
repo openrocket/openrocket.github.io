@@ -1,6 +1,6 @@
 ---
 layout: tutorial
-title: Export to OBJ file for 3D printing
+title: Export design to OBJ file for 3D printing
 thumbnail: /img/tutorials/thumbnails/tn_export_OBJ_3D_printing.png
 description: 3D printing (parts of) your design is now possible, thanks to the OBJ export feature introduced in OpenRocket 23.09. This tutorial will show you how to export your design to OBJ, and how to prepare it for 3D printing.
 date: 2023-09-30
