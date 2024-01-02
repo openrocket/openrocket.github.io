@@ -5,7 +5,13 @@ const downloads_config_path = '/assets/downloads_config.json';
 
 function getVersion() {
     const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get('vers');
+    let vers = urlParams.get('vers');
+
+    if (!vers || vers === 'latest') {
+        vers = CURRENT_VERSION;
+    }
+
+    return vers;
 }
 
 /**
@@ -201,11 +207,6 @@ window.onload = async function() {
     const version = getVersion();
 
     fillDownloadsDropdown();
-
-    if (!version) {
-        window.location.replace(`downloads.html?vers=${getLatestVersion()}`);
-        return;
-    }
 
     try {
         const configObj = await getConfigObj(version);
