@@ -63,9 +63,10 @@ function fillDownloadsDropdown() {
  * @param {string} version The targeted OpenRocket version
  * @param {JSON object} configObj The configuration object for the targeted version
  * @param {string} OSName The OS to target
+ * @param {string} title The titleText to be displayed on the site, or null if OSName should be used for the title
  * @param {string} faIcon The name of the Font Awesome icon to use in the title, or an empty string if no icon is needed
  */
-function fillOSContent(version, configObj, OSName, faIcon, ...architectures) {
+function fillOSContent(version, configObj, OSName, titleText, faIcon, ...architectures) {
     const content = document.getElementById(`content-${OSName}`);
     const hasArchitectures = architectures.some(arch => configObj.files[`${OSName}_${arch.replace(/\s+/g, '')}`]);
 
@@ -77,7 +78,8 @@ function fillOSContent(version, configObj, OSName, faIcon, ...architectures) {
         icon.className = `fa-brands fa-${faIcon}`;
         title.appendChild(icon);
     }
-    title.appendChild(document.createTextNode(` ${OSName}`));
+    titleString = titleText == null ? OSName : titleText;
+    title.appendChild(document.createTextNode(` ${titleString}`));
 
     // Extract existing content
     let extractedContent = [];
@@ -217,10 +219,10 @@ window.onload = async function() {
         }
 
         selectDropdownVersion(version);
-        fillOSContent(version, configObj, 'Windows', 'windows');
-        fillOSContent(version, configObj, 'macOS', 'apple', "Intel", "Apple Silicon");
-        fillOSContent(version, configObj, 'Linux', 'linux');
-        fillOSContent(version, configObj, 'JAR', 'java');
+        fillOSContent(version, configObj, 'Windows', null, 'windows');
+        fillOSContent(version, configObj, 'macOS', null, 'apple', "Intel", "Apple Silicon");
+        fillOSContent(version, configObj, 'Linux', null, 'linux');
+        fillOSContent(version, configObj, 'JAR', 'JAR (not recommended)', 'java');
         fillSourceCode(version, 'zip');
         fillSourceCode(version, 'tar.gz');
 

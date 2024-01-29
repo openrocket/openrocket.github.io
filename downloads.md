@@ -46,7 +46,7 @@ the needed dependencies, including the correct version of Java.
 
   <!-- JAR -->
   <div id="content-JAR" class="download-content-OS">
-    Again, we <b>strongly</b> recommend you use one of the packages described above.<br/>
+    Again, we <b>strongly</b> recommend you use one of the <b><font color="red">packaged installers above</font></b>.<br/>
   </div>
 
   <br>
