@@ -13,4 +13,5 @@ broken for Windows users. A workaround for this is to run the JAR file using the
 `java --add-exports=java.base/java.lang=ALL-UNNAMED --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.desktop/sun.java2d=ALL-UNNAMED -jar OpenRocket.jar`
 
 If your Java VM does not start with the above arguments, you can try omitting the `--add-exports=java.base/java.lang=ALL-UNNAMED` argument, so run:
+
 `java --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.desktop/sun.java2d=ALL-UNNAMED -jar OpenRocket.jar`
