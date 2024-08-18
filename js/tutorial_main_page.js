@@ -96,33 +96,64 @@ function alignTitles() {
  * the titles to each other. It's a really complicated process...
  */
 function adjustTileHeights() {
-    // Reset all tiles to their natural height first
-    document.querySelectorAll('.tutorial-tile').forEach(tile => {
-        tile.style.height = '';
-    });
-
-    // Group tiles into rows based on their top offset
     const rows = new Map();
     document.querySelectorAll('.tutorial-tile').forEach(tile => {
-        const topOffset = tile.getBoundingClientRect().top;
-        if (!rows.has(topOffset)) {
-            rows.set(topOffset, []);
+        if (tile.offsetParent !== null) { // Check if the tile is visible
+            const topOffset = tile.getBoundingClientRect().top;
+            if (!rows.has(topOffset)) {
+                rows.set(topOffset, []);
+            }
+            rows.get(topOffset).push(tile);
         }
-        rows.get(topOffset).push(tile);
     });
 
-    // Set all tiles in each row to the height of the tallest tile
-    for (const [topOffset, tiles] of rows.entries()) {
-        const maxHeight = Math.max(...tiles.map(tile => tile.clientHeight));
+    rows.forEach(tiles => {
+        const maxHeight = Math.max(...tiles.map(tile => tile.scrollHeight));
         tiles.forEach(tile => {
             tile.style.height = `${maxHeight}px`;
         });
+    });
+}
+
+function handleImagesLoad() {
+    const images = document.querySelectorAll('.tutorial-tile img');
+    let loadedImages = 0;
+    const totalImages = images.length;
+
+    function imageLoaded() {
+        loadedImages++;
+        if (loadedImages === totalImages) {
+            adjustTileHeights();
+        }
     }
+
+    images.forEach(img => {
+        if (img.complete) {
+            imageLoaded();
+        } else {
+            img.addEventListener('load', imageLoaded);
+            img.addEventListener('error', imageLoaded); // Handle error case as well
+        }
+    });
+
+    // Fallback: if images take too long, adjust heights anyway
+    setTimeout(adjustTileHeights, 3000); // 3 seconds timeout
 }
 
 // Run the function on document ready and on window resize
 $(document).ready(function() {
     filterTutorials(); // Make sure initial filter state is set correctly
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    handleImagesLoad();
+    
+    // Rerun on window resize
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(adjustTileHeights, 250);
+    });
 });
 
 // Attach event handlers without overwriting
