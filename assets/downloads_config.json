@@ -1,5 +1,23 @@
 [
     {
+        "name": "24.12",
+        "files": {
+            "macOS_Intel": " OpenRocket-24.12-installer-macOS-Intel.dmg",
+            "macOS_AppleSilicon": "OpenRocket-24.12-installer-macOS-AppleSilicon.dmg",
+            "Linux_Arm64": "OpenRocket-24.12-installer-Linux-Arm64.sh",
+            "Linux_x86_64": "OpenRocket-24.12-installer-Linux-x86_64.sh",
+            "Windows_Arm64": " OpenRocket-24.12-installer-Windows-Arm64.exe ",
+            "Windows_x86_64": " OpenRocket-24.12-installer-Windows-x86_64.exe",
+            "JAR": "OpenRocket-23.09.jar"
+        },
+        "instructions": {
+            "macOS": "downloads/instructions/macOS_new.md",
+            "Linux": "downloads/instructions/Linux_new.md",
+            "Windows": "downloads/instructions/Windows_new.md",
+            "JAR": "downloads/instructions/JAR_new.md"
+        }
+    },
+    {
         "name": "23.09",
         "files": {
             "macOS_Intel": "OpenRocket-23.09-macOS-Intel.dmg",
