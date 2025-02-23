@@ -65,10 +65,14 @@ function fillDownloadsDropdown() {
  * @param {string} OSName The OS to target
  * @param {string} title The titleText to be displayed on the site, or null if OSName should be used for the title
  * @param {string} faIcon The name of the Font Awesome icon to use in the title, or an empty string if no icon is needed
+ * @param {...string} architectures Optional architecture parameters (e.g., "x86_64", "Arm64")
  */
 function fillOSContent(version, configObj, OSName, titleText, faIcon, ...architectures) {
     const content = document.getElementById(`content-${OSName}`);
-    const hasArchitectures = architectures.some(arch => configObj.files[`${OSName}_${arch.replace(/\s+/g, '')}`]);
+    
+    // Check if we have architecture-specific files
+    const hasArchitectures = architectures.length > 0 && 
+        architectures.some(arch => configObj.files[`${OSName}_${arch.replace(/\s+/g, '')}`]);
 
     // Title
     const title = document.createElement('h3');
@@ -96,11 +100,13 @@ function fillOSContent(version, configObj, OSName, titleText, faIcon, ...archite
         content.appendChild(node);
     });
 
+    // Hide the section if no downloads are available
     if (!hasArchitectures && !configObj.files[OSName]) {
         content.style.display = 'none';
         return;
     }
 
+    // Handle architecture-specific downloads if they exist
     if (hasArchitectures) {
         architectures.forEach(arch => {
             const archKey = `${OSName}_${arch.replace(/\s+/g, '')}`;
@@ -119,7 +125,7 @@ function fillOSContent(version, configObj, OSName, titleText, faIcon, ...archite
             }
         });
     } else {
-        // Use the default button
+        // Use the default button for single architecture
         const btn = createDownloadButton(version, configObj.files[OSName]);
         content.appendChild(btn);
     }
@@ -219,9 +225,9 @@ window.onload = async function() {
         }
 
         selectDropdownVersion(version);
-        fillOSContent(version, configObj, 'Windows', null, 'windows');
+        fillOSContent(version, configObj, 'Windows', null, 'windows', "x86_64", "Arm64");
         fillOSContent(version, configObj, 'macOS', null, 'apple', "Intel", "Apple Silicon");
-        fillOSContent(version, configObj, 'Linux', null, 'linux');
+        fillOSContent(version, configObj, 'Linux', null, 'linux', "x86_64", "Arm64");
         fillOSContent(version, configObj, 'JAR', 'JAR (not recommended)', 'java');
         fillSourceCode(version, 'zip');
         fillSourceCode(version, 'tar.gz');

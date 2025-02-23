@@ -2,6 +2,16 @@ Release Notes
 =============
 
 <h2>
+  <a href="https://github.com/openrocket/openrocket/releases/tag/release-24.12" class="a-no-format">
+     OpenRocket 24.12 (2025-XX-XX)
+  </a>
+</h2>
+
+<div data-version="24.12" id="release-24.12-content"></div>
+
+<hr/>
+
+<h2>
   <a href="https://github.com/openrocket/openrocket/releases/tag/release-23.09" class="a-no-format">
      OpenRocket 23.09 (2023-11-16)
   </a>
