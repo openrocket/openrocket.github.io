@@ -1,6 +1,6 @@
 <h2>
     <a href="https://github.com/openrocket/openrocket" target="_blank" class="a-no-format">
-        <i class="fa fa-github"></i> Open source
+        <i class="fa-brands fa-github"></i> Open source
     </a>
 </h2>
 
