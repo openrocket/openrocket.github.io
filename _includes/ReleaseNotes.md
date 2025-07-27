@@ -3,7 +3,7 @@ Release Notes
 
 <h2>
   <a href="https://github.com/openrocket/openrocket/releases/tag/release-24.12" class="a-no-format">
-     OpenRocket 24.12 (2025-XX-XX)
+     OpenRocket 24.12 (2025-07-27)
   </a>
 </h2>
 
