@@ -105,8 +105,8 @@ figure.enlargeable-image figcaption, figure.enlargeable-video figcaption {
 
 .image-container {
     background-color: #f9f9f9; /* This is white; you can change it to any other color */
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 100%;
+    max-height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;

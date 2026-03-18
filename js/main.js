@@ -32,6 +32,6 @@ function scrollToSection(id) {
         element.scrollIntoView({ behavior: 'smooth' });
     }
 }
-
 // Add parallax object
 background_image_parallax($(".jumbotron"), 0.5);
+

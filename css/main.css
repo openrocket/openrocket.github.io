@@ -170,3 +170,85 @@ nav.navbar {
   border-radius: 10px;
   width: 25%;
 }
+
+.screenshot-heading {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.screenshot-heading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #2196f3;
+  margin: 8px auto 12px;
+  border-radius: 2px;
+}
+
+.screenshot-arrow {
+  color: #2196f3;
+  font-size: 20px;
+  margin-bottom: 16px;
+  animation: bounceDown 1.5s ease-in-out infinite;
+}
+
+@keyframes bounceDown {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(6px); }
+}
+
+.screenshot-img {
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+#screenshotCarousel {
+  margin-bottom: 30px;
+}
+
+#screenshotCarousel .carousel-caption {
+  position: static;
+  background: none;
+  color: #555;
+  text-shadow: none;
+  padding: 8px 0 30px;
+}
+
+#screenshotCarousel .carousel-caption p {
+  font-size: 14px;
+  margin: 0;
+}
+
+#screenshotCarousel .carousel-control.left,
+#screenshotCarousel .carousel-control.right {
+  background-image: none;
+  width: 8%;
+}
+
+#screenshotCarousel .carousel-control .glyphicon {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.45);
+  color: #fff;
+  font-size: 16px;
+  margin-top: -18px;
+}
+
+#screenshotCarousel .carousel-indicators {
+  bottom: -30px;
+}
+
+#screenshotCarousel .carousel-indicators li {
+  background-color: #aaa;
+  border-color: #aaa;
+}
+
+#screenshotCarousel .carousel-indicators .active {
+  background-color: #555;
+  border-color: #555;
+}
