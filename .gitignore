@@ -15,7 +15,8 @@ node_modules
 
 
 # macOS Files
-.DS_Store
+**/.DS_Store
+**/Thumbs.db
 
 # VS Code history files
 .history
