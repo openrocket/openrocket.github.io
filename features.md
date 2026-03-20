@@ -1,13 +1,7 @@
 ---
-title: OpenRocket — Features and screenshots
+title: OpenRocket — Features
 layout: interior-page
 id: features
----
-
-# Screenshots
-
-{% include screenshots.html %}
-
 ---
 
 # Features of OpenRocket
