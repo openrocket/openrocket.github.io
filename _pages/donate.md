@@ -2,9 +2,10 @@
 title: Donate
 layout: interior-page
 id: donate
+permalink: /donate.html
 ---
 
-<script src="/js/confetti.js" type="text/javascript"></script>
+<script src="/assets/js/confetti.js" type="text/javascript"></script>
 <script>fetti = toggleConfetti;
 setTimeout(fetti, 300);
 setTimeout(fetti, 800);</script>
@@ -87,7 +88,7 @@ Contributions of any size are greatly appreciated.
 
 **Thanks again to everyone who uses and supports OpenRocket!**
 
-<script type="text/javascript" src="/js/collapsible.js" defer></script>
+<script type="text/javascript" src="/assets/js/collapsible.js" defer></script>
 <script>
   window.onload = function() {
         attachCollapsibleListeners();

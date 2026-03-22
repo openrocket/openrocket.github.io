@@ -1,7 +1,8 @@
 ---
 layout: interior-page
-id: contact 
+id: contact
 title: OpenRocket — Support and Contact Information
+permalink: /contact.html
 ---
 
 <h2 id="discord"><i class="fab fa-discord"></i> Join Our Discord Community</h2>

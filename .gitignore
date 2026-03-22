@@ -20,3 +20,10 @@ node_modules
 
 # VS Code history files
 .history
+
+# AI tools
+**/copilot.*.xml
+**/AGENTS.md
+**/CLAUDE.md
+**/GEMINI.md
+**/.claude

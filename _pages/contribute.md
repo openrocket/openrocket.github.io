@@ -2,6 +2,7 @@
 title: OpenRocket — Get Involved!
 layout: interior-page
 id: contribute
+permalink: /contribute.html
 ---
 
 # How you can contribute to OpenRocket 🚀

@@ -2,6 +2,7 @@
 title: Downloads
 layout: interior-page
 id: downloads
+permalink: /downloads.html
 ---
 
 <div class="version-section">
@@ -88,14 +89,14 @@ Thanks to a generous license for open source projects, OpenRocket uses
 the [install4j multi-platform installer builder](https://www.ej-technologies.com/products/install4j/overview.html) to produce installers for Windows, macOS and Linux. 
 
 <a href="https://www.ej-technologies.com/products/install4j/overview.html" role="button">
-    <img alt="Download install4j" src="/img/install4j_download_btn.png">
+    <img alt="Download install4j" src="/assets/img/install4j_download_btn.png">
 </a>
 
-<link rel="stylesheet" href="/css/downloads.css">
+<link rel="stylesheet" href="/assets/css/downloads.css">
 
-<script type="text/javascript" src="/js/whats-new.js" defer></script>
-<script type="text/javascript" src="/js/collapsible.js" defer></script>
-<script type="text/javascript" src="/js/fill_downloads.js" defer></script>
+<script type="text/javascript" src="/assets/js/whats-new.js" defer></script>
+<script type="text/javascript" src="/assets/js/collapsible.js" defer></script>
+<script type="text/javascript" src="/assets/js/fill_downloads.js" defer></script>
 <script>
   window.onload = function() {
     attachCollapsibleListeners();

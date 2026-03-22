@@ -1,7 +1,8 @@
 ---
-layout: interior-page 
+layout: interior-page
 id: documentation
 title: OpenRocket — Documentation
+permalink: /documentation.html
 ---
 
 ## Technical Documentation

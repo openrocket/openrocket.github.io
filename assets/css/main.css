@@ -20,7 +20,7 @@ div.jumbotron {
   position: absolute;
   top: 55px;
   width: 100%;
-  background-image: url('/img/starfield.jpg');
+  background-image: url('/assets/img/starfield.jpg');
 }
 
 div.jumbotron {

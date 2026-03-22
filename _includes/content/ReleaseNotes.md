@@ -753,5 +753,5 @@ of simulations.
 
 Initial release.
 
-<script type="text/javascript" src="/js/whats-new.js" defer></script>
-<script type="text/javascript" src="/js/release_notes.js" defer></script>
+<script type="text/javascript" src="/assets/js/whats-new.js" defer></script>
+<script type="text/javascript" src="/assets/js/release_notes.js" defer></script>
