@@ -1,15 +1,22 @@
 ---
 layout: interior-page
-id: contact 
+id: contact
 title: OpenRocket — Support and Contact Information
+permalink: /contact.html
 ---
 
 <h2 id="discord"><i class="fab fa-discord"></i> Join Our Discord Community</h2>
 
-<p>Become a part of our vibrant Discord community! It's the hub where enthusiasts and experts mingle, share ideas, and offer support. Don't miss out on the latest news, engaging discussions, and exclusive insights. <strong>Click the image below and blast off to our server!</strong></p>
+<p>Become a part of our vibrant Discord community! It's the hub where enthusiasts and experts mingle, share ideas, and offer support. Don't miss out on the latest news, engaging discussions, and exclusive insights.</p>
 
-<a href="https://discord.gg/qD2G5v2FAw" target="_blank" >
-  <img src="https://discord.com/api/guilds/1073297014814691328/widget.png?style=banner2" class="discord-guild"/>
+<a href="https://discord.gg/qD2G5v2FAw" target="_blank">
+  <img src="https://discord.com/api/guilds/1073297014814691328/widget.png?style=banner2"
+       class="discord-guild"
+       alt="Join the OpenRocket Discord server"
+       onerror="this.style.display='none'; document.getElementById('discord-fallback').style.display='inline-block';">
+</a>
+<a href="https://discord.gg/qD2G5v2FAw" target="_blank" id="discord-fallback" style="display:none;" class="btn btn-primary btn-lg">
+  <i class="fab fa-discord" style="margin-right: 8px;"></i>Join our Discord Server
 </a>
 
 *(Invite link: <a href="https://discord.gg/qD2G5v2FAw" target="_blank">https://discord.gg/qD2G5v2FAw</a>)*

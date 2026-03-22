@@ -2,6 +2,7 @@
 title: OpenRocket — Features
 layout: interior-page
 id: features
+permalink: /features.html
 ---
 
 # Features of OpenRocket

@@ -1,7 +1,7 @@
 ---
 layout: tutorial
 title: Export design to OBJ file for 3D printing
-thumbnail: /img/tutorials/thumbnails/tn_export_OBJ_3D_printing.png
+thumbnail: /assets/img/tutorials/thumbnails/tn_export_OBJ_3D_printing.png
 description: 3D printing (parts of) your design is now possible, thanks to the OBJ export feature introduced in OpenRocket 23.09. This tutorial will show you how to export your design to OBJ, and how to prepare it for 3D printing.
 date: 2023-09-30
 difficulty: intermediate
@@ -13,7 +13,7 @@ Since you're now moving from the digital, simulation world to the physical, 3D p
 
 We recommend you take a look at our `3D Printable Nose Cone and Fins` example file, which you can access by going to `File > Open example > 3D Printable Nose Cone and Fins`. This file contains a design that is ready to be exported to OBJ and 3D printed.
 
-<div data-image-path="/img/tutorials/export_OBJ_3D_printing/ExampleRocket.png" 
+<div data-image-path="/assets/img/tutorials/export_OBJ_3D_printing/ExampleRocket.png" 
      data-image-caption='Example file "3D Printable Nose Cone and Fins"'
      data-image-width="60%"></div>
 
@@ -22,7 +22,7 @@ We recommend you take a look at our `3D Printable Nose Cone and Fins` example fi
 <li markdown="1">  <!-- We want to keep markdown -->
   The first step is to select the objects you want to export. You can select single components, or multiple objects by holding down the `Ctrl/Cmd` key while clicking on the components. If the selected component contains children, you can also choose to export the children components as well. If you want to export all objects, you can select the rocket component.
 
-  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/SelectExportComponents.png" 
+  <div data-image-path="/assets/img/tutorials/export_OBJ_3D_printing/SelectExportComponents.png" 
       data-image-caption='Selecting which components to export'
       data-image-width="80%"></div>
 </li>
@@ -30,7 +30,7 @@ We recommend you take a look at our `3D Printable Nose Cone and Fins` example fi
 <li markdown="1">
   Once you've selected the objects you want to export, go to `File > Export as > Wavefront OBJ (.obj)`. This will open the OBJ export dialog. Alternatively, you can right-click on the selected components in the component tree and choose `Export as OBJ (.obj)`.
 
-  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/AccessExportDialog.png"
+  <div data-image-path="/assets/img/tutorials/export_OBJ_3D_printing/AccessExportDialog.png"
       data-image-caption='Access the export dialog through the application ribbon or context menu'
       data-image-width="70%"></div>
 </li>
@@ -38,7 +38,7 @@ We recommend you take a look at our `3D Printable Nose Cone and Fins` example fi
 <li markdown="1">
   You will then be greeted by the OBJ export dialog. Here, you can choose your export location and filename, and set the export parameters. The export location is the folder where the OBJ file will be saved. The export parameters are explained in the next section. You can verify which components will be exported by hovering over the text in the `Component` field.
 
-  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/ExportDialog.png"
+  <div data-image-path="/assets/img/tutorials/export_OBJ_3D_printing/ExportDialog.png"
       data-image-caption='OBJ export dialog'
       data-image-width="80%"></div>
 
@@ -52,7 +52,7 @@ We recommend you take a look at our `3D Printable Nose Cone and Fins` example fi
 <li>
   If there are any warnings during the export process, you will be notified by a dialog. For instance, if you have a zero-width body tube, you will get the following warning:
 
-  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/ExportWarning.png"
+  <div data-image-path="/assets/img/tutorials/export_OBJ_3D_printing/ExportWarning.png"
       data-image-caption='Export warning due to a body tube with 0 wall thickness'
       data-image-width="50%"></div>
 </li>
@@ -64,7 +64,7 @@ We recommend you take a look at our `3D Printable Nose Cone and Fins` example fi
     addWarningMessage('If your slicer does not support importing OBJ files, you can use conversion software to convert the OBJ to for instance STL.', false)
   </script>
 
-  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/Sliced.png"
+  <div data-image-path="/assets/img/tutorials/export_OBJ_3D_printing/Sliced.png"
       data-image-caption='Sliced geometry using UltiMaker Cura'
       data-image-width="80%"></div>
 </li>
@@ -76,11 +76,11 @@ We recommend you take a look at our `3D Printable Nose Cone and Fins` example fi
 
   Edit the fin set, and activate the `Split fins` option on the bottom of the dialog. This will split each fin instance to a separate component. Now, all you have to do is export each separate fin instance as an OBJ file and bring that into your slicer.
 
-  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/FinsEdit.png"
+  <div data-image-path="/assets/img/tutorials/export_OBJ_3D_printing/FinsEdit.png"
       data-image-caption='Split fins option in the fin edit dialog'
       data-image-width="50%"></div>
   
-  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/SplitFins.png"
+  <div data-image-path="/assets/img/tutorials/export_OBJ_3D_printing/SplitFins.png"
       data-image-caption='Result before and after splitting the fin'
       data-image-width="70%"></div>
 </li>
@@ -88,7 +88,7 @@ We recommend you take a look at our `3D Printable Nose Cone and Fins` example fi
 <li markdown="1">
   Now, you can export one of the fin instances and duplicate it 3 times in your slicer.
 
-  <div data-image-path="/img/tutorials/export_OBJ_3D_printing/SliceFins.png"
+  <div data-image-path="/assets/img/tutorials/export_OBJ_3D_printing/SliceFins.png"
       data-image-caption='Steps to slice the fins'
       data-image-width="85%"></div>
 </li>
@@ -97,7 +97,7 @@ We recommend you take a look at our `3D Printable Nose Cone and Fins` example fi
 ### Export parameters
 The export dialog has a few parameters that you can set to customize your export. Here's a quick overview of what each parameter does:
 
-<div data-image-path="/img/tutorials/export_OBJ_3D_printing/ExportParameters.png"
+<div data-image-path="/assets/img/tutorials/export_OBJ_3D_printing/ExportParameters.png"
     data-image-caption='Export warning due to a body tube with 0 wall thickness'
     data-image-width="25%"></div>
 

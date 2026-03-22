@@ -1,7 +1,7 @@
 ---
 layout: tutorial
 title: All about Motor Selection and the Motor Database
-thumbnail: /img/tutorials/thumbnails/motor_selection.png
+thumbnail: /assets/img/tutorials/thumbnails/motor_selection.png
 description: Selecting motors for your flight simulations is a fundamental part of using OpenRocket. While many aspects of motor selection may be pretty obvious, there are some subtleties and semi-hidden features that might not be apparent at first glance.  This tutorial will cover just about everything there is to know on the subject, including how to add your own motors to the database.
 date: 2023-10-21
 difficulty: beginner
@@ -14,7 +14,7 @@ Each time a new version of OpenRocket is released, the complete database of moto
 #### Adding your own motor files
 On the occasion that you do need to add a motor, it's as simple as taking a motor file (`.eng` or `.rse`) and placing it in the motors folder of your OR installation. You can see where that is in the first tab of preferences: 
 
-<div data-image-path="/img/tutorials/motor_selection/motors_folder.png"
+<div data-image-path="/assets/img/tutorials/motor_selection/motors_folder.png"
     data-image-caption='User-defined thrust curve folder preferences'
     data-image-width="55%"
     data-image-shadow="true"></div>
@@ -30,7 +30,7 @@ It is pretty common that homemade thrust curve files have some sort of formattin
 When you create a new motor configuration, OR will automatically open the motor selection dialog for you. Later on, if you want to change it, you can do so by clicking on the motor in the table and then the `Select Motor` button.
 
 Let's take a quick tour of the motor selection dialog:
-<div data-image-path="/img/tutorials/motor_selection/motor_selection_dialog.png"
+<div data-image-path="/assets/img/tutorials/motor_selection/motor_selection_dialog.png"
     data-image-caption='Motor Selection Dialog'
     data-image-width="70%"
     data-image-shadow="true"></div>
@@ -73,7 +73,7 @@ The selectors at the top of the dialog for thrust curve and motor delay are the 
 Every motor that has an ejection charge has some delay associated with it, which represents the number of seconds after motor burnout that the ejection charge will fire. Motors will either come with a fixed delay (such as Estes black powder  motors or Quest Q-Jets), an adjustable delay (such as many reloads), or no ejection charge at all (such as most of the larger high power motors). Either way, you should *always* make sure your desired delay is set when you select a motor. The flight simulations will tell you how well you've chosen.
 
 There are two ways to set the delay. First, you can choose from available options in the pull-down list:
-<div data-image-path="/img/tutorials/motor_selection/delay_pulldown.png"
+<div data-image-path="/assets/img/tutorials/motor_selection/delay_pulldown.png"
     data-image-caption='Ejection Delay Pull-down'
     data-image-width="30%"
     data-image-shadow="true"></div>
@@ -83,7 +83,7 @@ These represent the available preset delays offered by the manufacturer, *plus* 
 For many black powder motors, the first option shown is `-0`.  Generally, you should _only_ select this option if you are configuring the booster of a multi-stage rocket. Always set a reasonable value, [check your sim results](/tutorials/sim_results) to see how well you've chosen, then come back and adjust the delay if needed.
 
 What may not be as obvious is that you can also just type your own value into the combobox, e.g.:
-<div data-image-path="/img/tutorials/motor_selection/delay_combobox.png"
+<div data-image-path="/assets/img/tutorials/motor_selection/delay_combobox.png"
     data-image-caption='Typing into the Delay Combobox'
     data-image-width="30%"
     data-image-shadow="true"></div>
@@ -94,21 +94,21 @@ This is good for when you have a composite motor with adjustable delay.  You can
 
 Let's click over to the `Show Details` tab on the right. This shows a bunch of detail about the motor that comes from its thrustcurve file.  We see that there are two different thrust curves for the A8, a red one and a blue one.
 
-<div data-image-path="/img/tutorials/motor_selection/show_details.png"
+<div data-image-path="/assets/img/tutorials/motor_selection/show_details.png"
     data-image-caption='"Show Details" tab'
     data-image-width="70%"
     data-image-shadow="true"></div>
 
 This means that there are more than one thrustcurve file for this motor.  The red line is significantly heavier than the blue, which means that the thrustcurve file with the red curve is currently selected, and will be used in the flight simulations.  Likewise, the details shown above the curve are from that file.  You can also see this by clicking on the `Select thrust curve` pulldown:
 
-<div data-image-path="/img/tutorials/motor_selection/red_curve.png"
+<div data-image-path="/assets/img/tutorials/motor_selection/red_curve.png"
     data-image-caption='Red Curve Selected in Pulldown'
     data-image-width="70%"
     data-image-shadow="true"></div>
 
 When you click on the pulldown, you'll see a list of the available curves (each from its own file), color-coded, with the selected curve highlighted and checked. If you wanted to use the blue curve, just select that one:
 
-<div data-image-path="/img/tutorials/motor_selection/blue_curve.png"
+<div data-image-path="/assets/img/tutorials/motor_selection/blue_curve.png"
     data-image-caption='Blue Curve Selected in Pulldown'
     data-image-width="70%"
     data-image-shadow="true"></div>
