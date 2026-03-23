@@ -1,7 +1,7 @@
 ---
 layout: tutorial
 title: Resources for Learning About Rocketry
-thumbnail: /img/tutorials/thumbnails/resources.png
+thumbnail: /assets/img/tutorials/thumbnails/resources.png
 description: OpenRocket requires a reasonable amount of basic rocketry knowledge to use it productively.  This tutorial provides a list of resources for those who want to learn.
 date: 2023-11-20
 difficulty: beginner

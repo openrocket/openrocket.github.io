@@ -15,9 +15,19 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
-exclude: ['CNAME', 'Gruntfile.js', 'node_modules', 'original', 'resources', 'params.json', 'package.json']
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - Gruntfile.js
+  - node_modules
+  - resources
+  - params.json
+  - package.json
 
 collections:
+  pages:
+    output: true
   tutorials:
     output: true
     permalink: /tutorials/:name.html

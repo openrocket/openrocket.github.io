@@ -3,7 +3,7 @@
     <div class="navbar-header">
       <a href="/index.html" class="navbar-brand">
         <div>
-          <img src="/img/OpenRocket_icon.png" alt=""/>
+          <img src="/assets/img/OpenRocket_icon.png" alt=""/>
           <div>OpenRocket</div>
 
         </div>
@@ -55,6 +55,13 @@
             <li><a href="https://www.rocketryforum.com/forumdisplay.php?36-Rocketry-Electronics-and-Software" target="_blank">Rocketry Forum</a></li>
             <li{% if page.url == '/contribute.html' %} class="active"{% endif %}><a href="/contribute.html">Get Involved!</a></li>
           </uL>
+        </li>
+
+        <li>
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="fa-solid fa-moon icon-moon"></i>
+            <i class="fa-solid fa-sun icon-sun"></i>
+          </button>
         </li>
 
         <li class="nav-donate"><button onclick="location.href='donate.html'" type="button" class="btn btn-green donate-button">

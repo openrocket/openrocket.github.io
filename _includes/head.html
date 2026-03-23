@@ -8,17 +8,23 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="/css/normalize.css">
+  <!-- Apply saved theme before first paint to prevent flash -->
+  <script>
+    (function(){var t=localStorage.getItem('or-theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');if(t==='dark')document.documentElement.classList.add('dark-mode');}());
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/normalize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/bootswatch_paper_3.3.5.css">
+  <link rel="stylesheet" href="/assets/css/bootswatch_paper_3.3.5.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/media.css">
-  <link rel="stylesheet" href="/css/dropdown.css">
-  <link rel="stylesheet" href="/css/toc.css">
-  <link rel="stylesheet" href="/css/tutorial.css">
-  <link rel="stylesheet" href="/css/collapsible.css">
-  <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/media.css">
+  <link rel="stylesheet" href="/assets/css/dropdown.css">
+  <link rel="stylesheet" href="/assets/css/toc.css">
+  <link rel="stylesheet" href="/assets/css/tutorial.css">
+  <link rel="stylesheet" href="/assets/css/collapsible.css">
+  <link rel="stylesheet" href="/assets/css/dark-mode.css">
+  <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
   <!-- Icon library -->
   <link rel="stylesheet" href="/assets/fontawesome-free-6.7.2-web/css/all.css">
 </head>
