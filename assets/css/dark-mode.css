@@ -1,0 +1,630 @@
+/* =============================================================
+   Dark Mode – applied when <html> has class "dark-mode"
+   ============================================================= */
+
+/* ── Colour tokens ─────────────────────────────────────────── */
+html.dark-mode {
+  color-scheme: dark;
+  --dm-bg:            #111827;
+  --dm-bg-surface:    #1f2937;
+  --dm-bg-raised:     #2d3748;
+  --dm-border:        #374151;
+  --dm-text:          #e5e7eb;
+  --dm-text-muted:    #9ca3af;
+  --dm-link:          #60a5fa;
+  --dm-link-hover:    #93c5fd;
+  --dm-navbar-bg:     #0f172a;
+  --dm-navbar-border: #1e3a5f;
+}
+
+/* ── Smooth theme transition ────────────────────────────────── */
+/*
+ * .theme-transitioning is added by JS only during the toggle,
+ * so normal page interactions are not affected by these transitions.
+ */
+html.theme-transitioning body,
+html.theme-transitioning .navbar-default,
+html.theme-transitioning .navbar-default .navbar-brand,
+html.theme-transitioning .navbar-default .navbar-nav > li > a,
+html.theme-transitioning .dropdown-menu,
+html.theme-transitioning .dropdown-menu > li > a,
+html.theme-transitioning .panel,
+html.theme-transitioning .panel-default > .panel-heading,
+html.theme-transitioning .well,
+html.theme-transitioning .toc,
+html.theme-transitioning .footer,
+html.theme-transitioning .btn-default,
+html.theme-transitioning h1,
+html.theme-transitioning h2,
+html.theme-transitioning h3,
+html.theme-transitioning h4,
+html.theme-transitioning h5,
+html.theme-transitioning h6,
+html.theme-transitioning a,
+html.theme-transitioning code,
+html.theme-transitioning pre,
+html.theme-transitioning table,
+html.theme-transitioning .table > thead > tr > th,
+html.theme-transitioning .table > tbody > tr > td,
+html.theme-transitioning .form-control,
+html.theme-transitioning .warning-message,
+html.theme-transitioning .figure-caption,
+html.theme-transitioning .landing-features,
+html.theme-transitioning .theme-toggle-btn,
+html.theme-transitioning .collapsible,
+html.theme-transitioning .collapsible-content,
+html.theme-transitioning .tutorial-tile,
+html.theme-transitioning .tutorial-content,
+html.theme-transitioning .toggle-header,
+html.theme-transitioning .toggle-list,
+html.theme-transitioning .mobile-toggle,
+html.theme-transitioning .progress-container,
+html.theme-transitioning .current-section,
+html.theme-transitioning .difficulty-filter label {
+  transition:
+    background-color 0.35s ease,
+    color            0.35s ease,
+    border-color     0.35s ease,
+    box-shadow       0.35s ease !important;
+}
+
+/* ── Base ───────────────────────────────────────────────────── */
+html.dark-mode body {
+  background-color: var(--dm-bg);
+  color: var(--dm-text);
+}
+
+/* Headings: Bootswatch Paper hardcodes color: #444444 on all headings */
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6,
+html.dark-mode .h1,
+html.dark-mode .h2,
+html.dark-mode .h3,
+html.dark-mode .h4,
+html.dark-mode .h5,
+html.dark-mode .h6 {
+  color: var(--dm-text);
+}
+
+/* Only recolour plain links — never buttons styled as <a> */
+html.dark-mode a:not(.btn) {
+  color: var(--dm-link);
+}
+
+html.dark-mode a:not(.btn):hover,
+html.dark-mode a:not(.btn):focus {
+  color: var(--dm-link-hover);
+}
+
+html.dark-mode hr {
+  border-color: var(--dm-border);
+}
+
+html.dark-mode code,
+html.dark-mode kbd,
+html.dark-mode samp {
+  background-color: var(--dm-bg-raised);
+  color: #f9a8d4;
+  border-color: var(--dm-border);
+}
+
+html.dark-mode pre {
+  background-color: var(--dm-bg-surface);
+  border-color: var(--dm-border);
+  color: #e5e7eb;
+}
+
+html.dark-mode pre code {
+  color: #e5e7eb;
+  background-color: transparent;
+}
+
+/* ── Bootstrap: Navbar ─────────────────────────────────────── */
+html.dark-mode .navbar-default {
+  background-color: var(--dm-navbar-bg);
+  border-color: var(--dm-navbar-border);
+}
+
+html.dark-mode .navbar-default .navbar-brand,
+html.dark-mode .navbar-default .navbar-brand:hover,
+html.dark-mode .navbar-default .navbar-brand:focus {
+  color: #f0f0f0;
+}
+
+html.dark-mode .navbar-default .navbar-nav > li > a {
+  color: #cbd5e1;
+}
+
+html.dark-mode .navbar-default .navbar-nav > li > a:hover,
+html.dark-mode .navbar-default .navbar-nav > li > a:focus {
+  color: #f0f0f0;
+  background-color: #1e293b;
+}
+
+html.dark-mode .navbar-default .navbar-nav > .active > a,
+html.dark-mode .navbar-default .navbar-nav > .active > a:hover,
+html.dark-mode .navbar-default .navbar-nav > .active > a:focus {
+  background-color: #1e293b;
+  color: #f0f0f0;
+}
+
+html.dark-mode .navbar-default .navbar-nav > .open > a,
+html.dark-mode .navbar-default .navbar-nav > .open > a:hover,
+html.dark-mode .navbar-default .navbar-nav > .open > a:focus {
+  background-color: #1e293b;
+  color: #f0f0f0;
+}
+
+html.dark-mode .navbar-default .navbar-toggle {
+  border-color: var(--dm-border);
+}
+
+html.dark-mode .navbar-default .navbar-toggle .icon-bar {
+  background-color: #cbd5e1;
+}
+
+html.dark-mode .navbar-default .navbar-toggle:hover,
+html.dark-mode .navbar-default .navbar-toggle:focus {
+  background-color: #1e293b;
+}
+
+html.dark-mode .navbar-default .navbar-collapse,
+html.dark-mode .navbar-default .navbar-form {
+  border-color: var(--dm-navbar-border);
+}
+
+/* Mobile dropdown inside collapsed navbar */
+@media (max-width: 767px) {
+  html.dark-mode .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #cbd5e1;
+  }
+  html.dark-mode .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: #f0f0f0;
+    background-color: #1e293b;
+  }
+}
+
+/* Custom nav-button overrides */
+html.dark-mode .nav-button:hover {
+  background-color: #1e293b;
+  border-bottom-color: #60a5fa;
+}
+
+html.dark-mode .nav-button.active {
+  background-color: #1e3a5f;
+  border-bottom-color: #60a5fa;
+}
+
+html.dark-mode .nav-button.active > a {
+  color: #e2e8f0 !important;
+}
+
+/* ── Bootstrap: Dropdown menus ─────────────────────────────── */
+html.dark-mode .dropdown-menu {
+  background-color: var(--dm-bg-surface);
+  border-color: var(--dm-border);
+}
+
+html.dark-mode .dropdown-menu > li > a {
+  color: var(--dm-text);
+}
+
+html.dark-mode .dropdown-menu > li > a:hover,
+html.dark-mode .dropdown-menu > li > a:focus {
+  background-color: var(--dm-bg-raised);
+  color: #f0f0f0;
+}
+
+html.dark-mode .dropdown-menu > .active > a,
+html.dark-mode .dropdown-menu > .active > a:hover,
+html.dark-mode .dropdown-menu > .active > a:focus {
+  background-color: #1e3a5f;
+  color: #f0f0f0;
+}
+
+html.dark-mode .dropdown-menu .divider {
+  background-color: var(--dm-border);
+}
+
+/* Custom dropdown.css overrides */
+html.dark-mode .dropdown-content {
+  background-color: var(--dm-bg-surface);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+html.dark-mode .dropdown-content a {
+  color: var(--dm-text);
+}
+
+html.dark-mode .dropdown-content a:hover {
+  background-color: var(--dm-bg-raised);
+}
+
+html.dark-mode .dropbtn-light {
+  background-color: var(--dm-bg-surface);
+  color: var(--dm-text);
+  border-color: var(--dm-border);
+}
+
+html.dark-mode .dropbtn-light:hover {
+  background-color: var(--dm-bg-raised);
+}
+
+/* ── Bootstrap: Buttons ────────────────────────────────────── */
+/* .btn-default: Bootswatch Paper uses white background + #444 text */
+html.dark-mode .btn-default {
+  background-color: var(--dm-bg-raised);
+  border-color: var(--dm-border);
+  color: var(--dm-text);
+}
+
+html.dark-mode .btn-default:hover,
+html.dark-mode .btn-default:focus,
+html.dark-mode .btn-default:active,
+html.dark-mode .btn-default.active {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #f0f0f0;
+}
+
+/* .btn-primary (blue) is already high-contrast in both modes — no change needed */
+
+/* ── Bootstrap: Panels / Wells ─────────────────────────────── */
+html.dark-mode .panel {
+  background-color: var(--dm-bg-surface);
+  border-color: var(--dm-border);
+}
+
+html.dark-mode .panel-default > .panel-heading {
+  background-color: var(--dm-bg-raised);
+  border-color: var(--dm-border);
+  color: var(--dm-text);
+}
+
+html.dark-mode .panel-default {
+  border-color: var(--dm-border);
+}
+
+html.dark-mode .panel-body {
+  color: var(--dm-text);
+}
+
+html.dark-mode .well {
+  background-color: var(--dm-bg-surface);
+  border-color: var(--dm-border);
+  color: var(--dm-text);
+}
+
+/* ── Bootstrap: Tables ─────────────────────────────────────── */
+html.dark-mode .table {
+  color: var(--dm-text);
+}
+
+html.dark-mode .table > thead > tr > th,
+html.dark-mode .table > tbody > tr > th,
+html.dark-mode .table > tfoot > tr > th,
+html.dark-mode .table > thead > tr > td,
+html.dark-mode .table > tbody > tr > td,
+html.dark-mode .table > tfoot > tr > td {
+  border-color: var(--dm-border);
+}
+
+html.dark-mode .table > thead > tr {
+  background-color: var(--dm-bg-raised);
+}
+
+html.dark-mode .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: var(--dm-bg-surface);
+}
+
+html.dark-mode .table-hover > tbody > tr:hover {
+  background-color: var(--dm-bg-raised);
+}
+
+/* ── Bootstrap: Forms ──────────────────────────────────────── */
+html.dark-mode .form-control {
+  background-color: var(--dm-bg-surface);
+  border-color: var(--dm-border);
+  color: var(--dm-text);
+}
+
+html.dark-mode .form-control:focus {
+  border-color: var(--dm-link);
+  background-color: var(--dm-bg-surface);
+  color: var(--dm-text);
+}
+
+html.dark-mode .input-group-addon {
+  background-color: var(--dm-bg-raised);
+  border-color: var(--dm-border);
+  color: var(--dm-text);
+}
+
+/* ── Bootstrap: List groups ────────────────────────────────── */
+html.dark-mode .list-group-item {
+  background-color: var(--dm-bg-surface);
+  border-color: var(--dm-border);
+  color: var(--dm-text);
+}
+
+html.dark-mode a.list-group-item:hover,
+html.dark-mode button.list-group-item:hover {
+  background-color: var(--dm-bg-raised);
+  color: var(--dm-text);
+}
+
+/* ── Bootstrap: Breadcrumbs ────────────────────────────────── */
+html.dark-mode .breadcrumb {
+  background-color: var(--dm-bg-surface);
+  color: var(--dm-text-muted);
+}
+
+html.dark-mode .breadcrumb > .active {
+  color: var(--dm-text-muted);
+}
+
+/* ── Bootstrap: Alerts ─────────────────────────────────────── */
+html.dark-mode .alert-info {
+  background-color: #1e3a5f;
+  border-color: #1e4976;
+  color: #bfdbfe;
+}
+
+html.dark-mode .alert-warning {
+  background-color: #451a03;
+  border-color: #78350f;
+  color: #fde68a;
+}
+
+html.dark-mode .alert-danger {
+  background-color: #450a0a;
+  border-color: #7f1d1d;
+  color: #fecaca;
+}
+
+html.dark-mode .alert-success {
+  background-color: #052e16;
+  border-color: #14532d;
+  color: #bbf7d0;
+}
+
+/* ── Bootstrap: Pagination ─────────────────────────────────── */
+html.dark-mode .pagination > li > a,
+html.dark-mode .pagination > li > span {
+  background-color: var(--dm-bg-surface);
+  border-color: var(--dm-border);
+  color: var(--dm-link);
+}
+
+html.dark-mode .pagination > li > a:hover,
+html.dark-mode .pagination > li > span:hover {
+  background-color: var(--dm-bg-raised);
+  border-color: var(--dm-border);
+  color: var(--dm-link-hover);
+}
+
+html.dark-mode .pagination > .active > a,
+html.dark-mode .pagination > .active > span {
+  background-color: #1e3a5f;
+  border-color: #1e4976;
+  color: #f0f0f0;
+}
+
+/* ── Landing page ──────────────────────────────────────────── */
+html.dark-mode body#landing-page div.landing-features,
+html.dark-mode body#landing-page div.footer {
+  background: var(--dm-bg);
+}
+
+html.dark-mode body#landing-page div.landing-features h3,
+html.dark-mode body#landing-page div.landing-features p {
+  color: var(--dm-text);
+}
+
+/* ── Footer ─────────────────────────────────────────────────── */
+html.dark-mode div.footer {
+  background-color: var(--dm-bg);
+  color: var(--dm-text-muted);
+}
+
+html.dark-mode div.footer a {
+  color: var(--dm-link);
+}
+
+/* ── TOC ────────────────────────────────────────────────────── */
+html.dark-mode .toc {
+  background-color: var(--dm-bg-surface);
+  border-color: var(--dm-border);
+}
+
+html.dark-mode .toc ul li a {
+  color: var(--dm-link);
+}
+
+/* ── Media / Figures ────────────────────────────────────────── */
+html.dark-mode .figure-caption {
+  color: #9ca3af;
+}
+
+html.dark-mode .figure-caption span::after {
+  background-color: var(--dm-border);
+}
+
+html.dark-mode .image-container {
+  background-color: var(--dm-bg-surface);
+}
+
+/* ── Warning message ────────────────────────────────────────── */
+html.dark-mode .warning-message {
+  background-color: #451a03;
+  border-color: #d97706;
+  color: #fde68a;
+}
+
+/* ── Carousel ───────────────────────────────────────────────── */
+html.dark-mode #screenshotCarousel .carousel-caption {
+  color: var(--dm-text-muted);
+}
+
+html.dark-mode #screenshotCarousel .carousel-indicators li {
+  background-color: #4b5563;
+  border-color: #4b5563;
+}
+
+html.dark-mode #screenshotCarousel .carousel-indicators .active {
+  background-color: #9ca3af;
+  border-color: #9ca3af;
+}
+
+/* ── Theme toggle button ─────────────────────────────────────── */
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* Match the Bootswatch Paper navbar height (64px) so the icon centres
+     the same way as the adjacent <a> links (padding-top/bottom: 20px each). */
+  height: 64px;
+  padding: 0 10px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+html.dark-mode .theme-toggle-btn {
+  color: #cbd5e1;
+}
+
+.theme-toggle-btn:hover {
+  color: #000;
+}
+
+html.dark-mode .theme-toggle-btn:hover {
+  color: #f0f0f0;
+}
+
+/* Show moon in light mode, sun in dark mode */
+.theme-toggle-btn .icon-sun  { display: none; }
+.theme-toggle-btn .icon-moon { display: inline; }
+
+html.dark-mode .theme-toggle-btn .icon-sun  { display: inline; }
+html.dark-mode .theme-toggle-btn .icon-moon { display: none; }
+
+/* ── FAQ collapsible ─────────────────────────────────────────── */
+html.dark-mode .collapsible {
+  background-color: var(--dm-bg-raised);
+  color: var(--dm-text);
+  border-bottom: 1px solid var(--dm-border);
+}
+
+html.dark-mode .collapsible.active,
+html.dark-mode .collapsible:hover {
+  background-color: #374151;
+}
+
+html.dark-mode .collapsible-content {
+  background-color: var(--dm-bg-surface);
+  border-color: var(--dm-border);
+  color: var(--dm-text);
+}
+
+/* ── Tutorial main page ─────────────────────────────────────── */
+
+/* Difficulty filter – unchecked (grey) state */
+html.dark-mode .difficulty-filter label {
+  background-color: rgba(100, 100, 100, 0.3);
+  border-color: #4b5563;
+  color: var(--dm-text-muted);
+}
+
+/* Difficulty filter – checked / tile badges: keep hue, brighten text */
+html.dark-mode .difficulty-filter input[value="beginner"]:checked + label,
+html.dark-mode .tutorial-difficulty[data-difficulty="beginner"],
+html.dark-mode .tutorial-page-difficulty[data-difficulty="beginner"] {
+  background-color: rgba(50, 205, 50, 0.15);
+  border-color: #32CD32;
+  color: #4ade80;
+}
+
+html.dark-mode .difficulty-filter input[value="intermediate"]:checked + label,
+html.dark-mode .tutorial-difficulty[data-difficulty="intermediate"],
+html.dark-mode .tutorial-page-difficulty[data-difficulty="intermediate"] {
+  background-color: rgba(255, 165, 0, 0.15);
+  border-color: #FFA500;
+  color: #fb923c;
+}
+
+html.dark-mode .difficulty-filter input[value="advanced"]:checked + label,
+html.dark-mode .tutorial-difficulty[data-difficulty="advanced"],
+html.dark-mode .tutorial-page-difficulty[data-difficulty="advanced"] {
+  background-color: rgba(147, 112, 219, 0.15);
+  border-color: #9370DB;
+  color: #c084fc;
+}
+
+/* Sidebar list */
+html.dark-mode .toggle-list {
+  border-color: var(--dm-border);
+}
+
+html.dark-mode .toggle-header,
+html.dark-mode .mobile-toggle {
+  background-color: var(--dm-bg-raised);
+  color: var(--dm-text);
+}
+
+html.dark-mode #tutorialsList li a {
+  color: var(--dm-text);
+}
+
+html.dark-mode #tutorialsList li a:hover {
+  background-color: var(--dm-bg-raised);
+}
+
+/* Tutorial tiles */
+html.dark-mode .tutorial-tile {
+  background-color: var(--dm-bg-surface);
+  border-color: var(--dm-border);
+  color: var(--dm-text);
+}
+
+html.dark-mode .tutorial-tile:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+html.dark-mode .tutorial-title > h3 {
+  border-top-color: var(--dm-border);
+}
+
+html.dark-mode .tutorial-date,
+html.dark-mode .tutorial-page-date,
+html.dark-mode .label-select-difficulty {
+  color: var(--dm-text-muted);
+}
+
+/* ── Tutorial content page ──────────────────────────────────── */
+
+/* .tutorial-content background is set in an inline <style> block in
+   tutorial.html with specificity (0,1,0); our rule (0,2,1) wins. */
+html.dark-mode .tutorial-content {
+  background-color: var(--dm-bg-surface);
+  color: var(--dm-text);
+}
+
+html.dark-mode .tutorial-header {
+  border-bottom-color: var(--dm-border);
+}
+
+html.dark-mode .current-section {
+  color: var(--dm-text-muted);
+}
+
+html.dark-mode .progress-container {
+  background: var(--dm-bg-raised);
+}

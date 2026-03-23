@@ -178,6 +178,85 @@ function addInstructions(instr, OSInstr, version) {
 
             // Create the zero-md and script elements
             const instrContent = document.createElement('zero-md');
+
+            // Inject dark-mode CSS into zero-md's Shadow DOM.
+            // zero-md renders inside Shadow DOM so global CSS cannot reach it.
+            // A <template> child is zero-md v2's official way to inject custom styles.
+            // :host-context() checks ancestor document state so the rules respond
+            // automatically whenever the html.dark-mode class is toggled.
+            const dmTemplate = document.createElement('template');
+            dmTemplate.innerHTML = `<style>
+              /* Smooth transition when toggling theme */
+              :host-context(html.theme-transitioning) p,
+              :host-context(html.theme-transitioning) li,
+              :host-context(html.theme-transitioning) td,
+              :host-context(html.theme-transitioning) th,
+              :host-context(html.theme-transitioning) h1,
+              :host-context(html.theme-transitioning) h2,
+              :host-context(html.theme-transitioning) h3,
+              :host-context(html.theme-transitioning) h4,
+              :host-context(html.theme-transitioning) code,
+              :host-context(html.theme-transitioning) pre,
+              :host-context(html.theme-transitioning) a,
+              :host-context(html.theme-transitioning) blockquote {
+                transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease !important;
+              }
+
+              /* Dark mode overrides */
+              :host-context(html.dark-mode) p,
+              :host-context(html.dark-mode) li,
+              :host-context(html.dark-mode) strong,
+              :host-context(html.dark-mode) em,
+              :host-context(html.dark-mode) u,
+              :host-context(html.dark-mode) span {
+                color: #e5e7eb;
+              }
+              :host-context(html.dark-mode) h1,
+              :host-context(html.dark-mode) h2,
+              :host-context(html.dark-mode) h3,
+              :host-context(html.dark-mode) h4,
+              :host-context(html.dark-mode) h5,
+              :host-context(html.dark-mode) h6 {
+                color: #e5e7eb;
+                border-bottom-color: #374151;
+              }
+              :host-context(html.dark-mode) a {
+                color: #60a5fa;
+              }
+              :host-context(html.dark-mode) table {
+                color: #e5e7eb;
+              }
+              :host-context(html.dark-mode) th {
+                background-color: #2d3748 !important;
+                color: #e5e7eb !important;
+                border-color: #374151 !important;
+              }
+              :host-context(html.dark-mode) td {
+                color: #e5e7eb !important;
+                border-color: #374151 !important;
+              }
+              :host-context(html.dark-mode) tr:nth-child(even) {
+                background-color: #1f2937;
+              }
+              /* Override inline <style> from the markdown files with !important */
+              :host-context(html.dark-mode) code {
+                color: #f9a8d4 !important;
+                background-color: #2d3748 !important;
+              }
+              :host-context(html.dark-mode) pre {
+                background-color: #1f2937 !important;
+                color: #e5e7eb !important;
+              }
+              :host-context(html.dark-mode) blockquote {
+                border-left-color: #374151;
+                color: #9ca3af;
+              }
+              :host-context(html.dark-mode) hr {
+                background-color: #374151;
+              }
+            </style>`;
+            instrContent.appendChild(dmTemplate);
+
             const markdownContent = document.createElement('script');
             markdownContent.type = 'text/markdown';
             markdownContent.textContent = replacedData;
