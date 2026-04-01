@@ -1,0 +1,61 @@
+---
+title: OpenRocket AI Analyzer
+layout: interior-page
+body_id: ai-analyzer
+permalink: /ai-analyzer.html
+---
+
+<link rel="stylesheet" href="/assets/css/ai-analyzer.css">
+
+<div class="ai-analyzer-shell">
+  <section class="ai-card ai-main-card">
+    <h1>OpenRocket AI Analyzer</h1>
+    <p class="ai-subtitle">
+      Upload your <code>.ork</code> file and let our advanced AI take a look.
+    </p>
+
+    <label for="ork-file-input" id="ai-upload-zone" class="ai-upload-zone">
+      <input id="ork-file-input" class="ai-file-input" type="file" accept=".ork">
+      <i class="fa-solid fa-upload" aria-hidden="true"></i>
+      <strong>Drag and drop your .ork file here</strong>
+      <span>or click to browse</span>
+    </label>
+
+    <p id="ai-selected-file" class="ai-selected-file" aria-live="polite">
+      No file selected yet.
+    </p>
+
+    <div id="ai-analyze-actions" class="ai-analyze-actions" hidden>
+      <button id="ai-analyze-button" type="button" class="btn btn-primary btn-lg ai-analyze-button">
+        Analyze
+      </button>
+    </div>
+
+    <div id="ai-analysis-panel" class="ai-analysis-panel" hidden>
+      <div class="ai-progress-track" aria-hidden="true">
+        <div id="ai-progress-bar" class="ai-progress-bar"></div>
+      </div>
+      <p id="ai-loading-text" class="ai-loading-text" aria-live="polite">
+        Parsing fin geometry...
+      </p>
+    </div>
+
+    <section id="ai-result-panel" class="ai-result-panel" hidden>
+      <p id="ai-result-file" class="ai-result-file"></p>
+      <h2 id="ai-result-title" class="ai-result-title"></h2>
+      <div id="ai-result-body" class="ai-result-body"></div>
+
+      <div class="ai-result-actions">
+        <button id="ai-reset-button" type="button" class="btn btn-default btn-lg">
+          Analyze another .ork
+        </button>
+      </div>
+    </section>
+  </section>
+</div>
+
+<script>
+  window.aiAnalyzerLoadingMessages = {{ site.data.ai_analyzer_loading_lines | jsonify }};
+  window.aiAnalyzerResults = {{ site.data.ai_analyzer_results | jsonify }};
+</script>
+<script type="text/javascript" src="/assets/js/ai-analyzer.js" defer></script>

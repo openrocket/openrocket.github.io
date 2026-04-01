@@ -5,7 +5,7 @@
     <script src="/assets/js/media-utilities.js"></script>
     
     {% include head.html %}
-    <body {% if page.id %}id="{{ page.id }}"{% endif %}>
+    <body {% assign body_id = page.body_id | default: page.id %}{% if body_id %}id="{{ body_id }}"{% endif %}>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

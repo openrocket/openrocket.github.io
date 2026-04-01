@@ -1,0 +1,38 @@
+- title: "Analysis complete:"
+  lines:
+    - 'Your rocket has been classified as "pointy".'
+    - This matches 97.3% of successful rocket designs.
+
+- title: "Result:"
+  lines:
+    - 'Our AI recommends flying it "just once to see what happens,"'
+
+- title: "Deep analysis finished:"
+  lines:
+    - "Your .ork file contains:"
+    - 1 rocket
+    - ambitious optimism
+
+- title: "Simulation summary:"
+  lines:
+    - "Apogee: somewhere up there"
+    - "Landing zone: theoretically nearby"
+    - "Confidence: unreasonably high"
+
+- title: "Neural analysis complete:"
+  lines:
+    - "We compared your rocket against thousands of designs and concluded:"
+    - "yes, this is definitely a rocket."
+
+- title: "Flight readiness score: 8.7/10"
+  lines:
+    - Deducted points because the paint job is not yet at maximum aerodynamic coolness.
+
+- title: "Advanced recommendation:"
+  lines:
+    - Try turning the rocket off and on again.
+
+- title: "OpenRocket AI verdict:"
+  lines:
+    - "We ran a large language model on your .ork file."
+    - "It does not understand XML, but it feels very confident about the fins."
