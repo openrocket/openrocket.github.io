@@ -27,10 +27,8 @@ Then, navigate to the directory in which you downloaded the installer,
 make it executable, and run it as follows:
 
  ```% cd Downloads``` <em>(or wherever you downloaded it to)</em> \
- ```% chmod +x OpenRocket-${VERSION}$-installer-Linux-x86_64.sh``` \
- ```% ./OpenRocket-${VERSION}$-installer-Linux-x86_64.sh```
-
-<em>(If you downloaded the Arm64 installer, replace <code>x86_64</code> with <code>Arm64</code> in the commands above.)</em>
+ ```% chmod +x OpenRocket-${VERSION}$-Linux.sh``` \
+ ```% ./OpenRocket-${VERSION}$-Linux.sh```
 
 The installer will now guide you through the process of installing
 OpenRocket on your system. At any step you can click '''Cancel''' to

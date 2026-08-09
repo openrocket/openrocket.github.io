@@ -28,7 +28,7 @@
         },
         "instructions": {
             "macOS": "downloads/instructions/macOS_new.md",
-            "Linux": "downloads/instructions/Linux_new.md",
+            "Linux": "downloads/instructions/Linux_legacy.md",
             "Windows": "downloads/instructions/Windows_new.md",
             "JAR": "downloads/instructions/JAR_new.md"
         }
@@ -44,7 +44,7 @@
         },
         "instructions": {
             "macOS": "downloads/instructions/macOS_new.md",
-            "Linux": "downloads/instructions/Linux_new.md",
+            "Linux": "downloads/instructions/Linux_legacy.md",
             "Windows": "downloads/instructions/Windows_new.md",
             "JAR": "downloads/instructions/JAR_new.md"
         }
