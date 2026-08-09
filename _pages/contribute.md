@@ -58,7 +58,7 @@ Testers are both a developer's best friend and worst nightmare. They test new fe
 
 ## Other
 
- - [Translating OpenRocket](http://openrocket.trans.free.fr/index.php?lang=en){:target="_blank"} to your language
+ - [Translating OpenRocket](https://crowdin.com/project/openrocket){:target="_blank"} to your language on Crowdin (see [our translation guide](https://openrocket.readthedocs.io/en/latest/dev_guide/contributing_to_translations.html){:target="_blank"} for how to get started)
  - Creating good and interesting example designs that demonstrate some OpenRocket features.
  - Hosting a place to share rocket designs with other enthusiasts.
  - Giving input and suggestions on how to make OpenRocket better.
