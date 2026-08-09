@@ -15,7 +15,7 @@ This list is not intended to be exhaustive, but should be good enough to get jus
 
 ### All About Amateur Rocketry
 
-* Regarded as the **definitive guide to rocketry**, G. Harry Stine's `Handbook of Model Rocketry` (7th edition, 2023) is a treasure trove of knowledge, covering everything from basic principles to advanced model rocket design and launch techniques. It teaches <u>general rocketry principles</u> along with just about everything about model rocket design, construction, and launching. [[Amazon]](https://www.amazon.com/Handbook-Model-Rocketry-7th-Official/dp/0471472425/){:target="_blank"}
+* Regarded as the **definitive guide to rocketry**, G. Harry Stine's `Handbook of Model Rocketry` (7th edition, 2004) is a treasure trove of knowledge, covering everything from basic principles to advanced model rocket design and launch techniques. It teaches <u>general rocketry principles</u> along with just about everything about model rocket design, construction, and launching. [[Amazon]](https://www.amazon.com/Handbook-Model-Rocketry-7th-Official/dp/0471472425/){:target="_blank"}
 
 * Mike Westerfield has written two highly-regarded general rocketry books: `Make: Rockets: Down-to-Earth Rocket Science` is another <u>general rocketry reference</u>, while `Make: High-Power Rockets: Construction and Certification for Thousands of Feed and Beyond` focuses specifically on the <u>high-powered</u> end of the hobby. [[Amazon 1]](https://www.amazon.com/Model-Rocketry-Handbook-21st-Century/dp/1854862294/){:target="_blank"} [[Amazon 2]](https://a.co/d/bI3cVBw){:target="_blank"}
 
@@ -46,3 +46,4 @@ This list is not intended to be exhaustive, but should be good enough to get jus
 * The `National Association of Rocketry` (`NAR`) and `Tripoli Rocketry Association` (`TRA`) web pages are host to a ton of information about the hobby of amateur rocketry. [[NAR]](https://nar.org/){:target="_blank"} [[TRA]](https://tripoli.org){:target="_blank"}
 
 * The `Apogee Rockets` website is unique among vendors in terms of the enormous amount of educational materials it provides. [[link]](https://www.apogeerockets.com/){:target="_blank"}
+
